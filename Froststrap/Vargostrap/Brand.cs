@@ -23,7 +23,7 @@ namespace Froststrap.Vargostrap
 
         // Velopack update feed. Empty = self-update disabled. Never point this at Froststrap's
         // feed: Velopack would replace Vargostrap with a Froststrap build.
-        public const string UpdateRepository = "";
+        public const string UpdateRepository = RepositoryUrl;
         public static bool UpdatesEnabled => !string.IsNullOrEmpty(UpdateRepository);
 
         // Windows AppUserModelID (toast notifications / taskbar grouping). Distinct from

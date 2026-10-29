@@ -17,7 +17,7 @@
       * build/src packaging scripts - installer id/title, shortcut names, bundle ids
 
     Semantic edits (constants, update feed, mutex names, About credits) are hand edits, listed in
-    vargostrap/CHANGES.md. Those reference Froststrap.Vargostrap.Brand.
+    MAINTAINING.md. Those reference Froststrap.Vargostrap.Brand.
 
 .PARAMETER WhatIf
     Lists the files that would change without writing anything.

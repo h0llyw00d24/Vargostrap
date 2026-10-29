@@ -11,7 +11,7 @@ use crate::{action::Action, utils::log};
 const VERSION: &str = env!("CARGO_PKG_VERSION");
 
 const HELP: &str = "\
-Build system for Froststrap
+Build system for Vargostrap
 
 Usage: xtask <ACTION> [OPTIONS]
 

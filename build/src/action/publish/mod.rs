@@ -63,7 +63,7 @@ pub fn main() {
         .join("Froststrap/Froststrap.csproj")
         .into_string()
         .unwrap();
-    log::info!("Froststrap path: {}", path);
+    log::info!("Project path: {}", path);
     let config = a.configuration;
     let output_path = path::dotnet_publish_artifacts().into_string().unwrap();
     let rust_target_triple = arch::rust_triple();

@@ -1,113 +1,66 @@
-<h1 align="center">
-    Froststrap
-</h1>
+<h1 align="center">Vargostrap</h1>
 
 <p align="center">
-    Froststrap is a cross-platform Roblox bootstrapper derived from <a href="https://github.com/fishstrap/fishstrap.git"><strong>Fishstrap</strong></a>.
+    <img src="./.resources/vargostrap.png" height="200" alt="Vargostrap logo"/>
 </p>
 
 <p align="center">
-    <img src="./.resources/froststrap.webp" height=200 alt="logo"/>
+    A Roblox bootstrapper focused on FPS, ping and a smoother game, built on
+    <a href="https://github.com/Froststrap/Froststrap">Froststrap</a>.
 </p>
 
 <p align="center">
-    If you'd like to support our project, consider giving this repository a star!
+    <a href="https://github.com/h0llyw00d24/Vargostrap/releases/latest">Download</a> ·
+    <a href="https://github.com/h0llyw00d24/Vargostrap/issues">Report a problem</a>
 </p>
-
-<div align="center">
-
-[![License][badge-repo-license]][repo-license]
-[![Downloads (Total)][badge-repo-downloads-total]][repo-releases]
-[![Downloads (Latest)][badge-repo-downloads]][repo-releases]
-[![Version][badge-repo-latest]][repo-latest]
-[![Stars][badge-repo-stars]][repo-stargazer]
-[![Discord][badge-discord]][discord-invite]
-
-</div>
-
-> [!CAUTION]
-> The official repository [Froststrap/Froststrap](https://github.com/Froststrap/Froststrap.git) and [our website](https://froststrap.xyz) are the **ONLY PLACES** where you should download the binary/executable. Any other source is **NOT** affiliated with us and poses a potential security threat.
 
 ---
 
-## Key Improvements Over Fishstrap
+## What it does
+
+Vargostrap launches Roblox for you (from the website's Play button, like Roblox's own launcher) and adds tools around it. It never modifies the Roblox client, reads its memory or touches its anti-cheat: it only uses Roblox's allowed FastFlags and settings, public web APIs, and standard Windows features.
+
+### FPS Optimization
+- One-click **Balanced**, **Max FPS** and **Low-end PC** presets, plus individual toggles (gray sky, remove grass, pause voxelizer, low-detail meshes, texture quality, anti-aliasing, rendering API)
+- **Allowlist checker**: warns about any FastFlag Roblox ignores, using a cached, refreshable copy of Roblox's official allowlist
+- Frame-rate limit through Roblox's own setting, including an Unlimited option
+- Full custom FastFlag editor
+
+### Roblox Settings
+- Edit Roblox's in-game settings (frame rate, graphics, volume, camera sensitivity and more) from outside the game
+- Automatic backup of your original settings with one-click restore
+- Optional read-only lock, with checks that warn you if it causes problems
+
+### Ping & Performance
+- **Network monitor**: live latency, jitter and packet loss chart, spike detection with automatic traceroute, per-game history with CSV export
+- **Server picker** with preferred regions, built on automatic best-server matchmaking
+- **Priority management**: CPU priority, EcoQoS exemption, high-performance GPU, optional DSCP tagging
+- **Background traffic control**: pause, slow down or close bandwidth-heavy apps (cloud sync, launchers, torrents, updaters) while you play, and put them back afterwards
+- **Power and Windows**: high-performance power plan while playing, Game Mode, Game Bar capture, network adapter power saving
+- **Benchmarks** (FPS and frame times via Intel PresentMon, CPU, GPU, RAM) with before/after comparison
+- **Bufferbloat test**, **DNS benchmark** and **cleanup** of Roblox logs and cache
 
 ### Integrations
-- Automatically rejoin servers you were disconnected from due to inactivity
-- Disable Roblox’s built-in screenshot and video recording system
-- Custom Froststrap Discord RPC that shows the current page/dialog
-- Replace "Playing Roblox" with the name of the game you're playing using Custom Status Display
-- The playtime counter shows both total and session playtime
-- Roblox Studio RPC integrated within Froststrap
-    * Change the Studio RPC thumbnail depending on the script that is open
-    * Show script type, name, and number of lines of code
+- Customizable Discord Rich Presence for Vargostrap: text, logo, buttons, timer, with live preview
+- Run your own AutoHotkey scripts alongside Roblox; they close when Roblox closes
 
-### Mods
-- Multi-mod system that allows you to download many mods at once
-- Select where to apply the mod (Player/Studio)
-- Download community-made mods directly from within the app
-- Generate mods using hex codes, with options to color the cursor, Shift Lock, or Emote Wheel
-- Change the cursor, Shift Lock, death sound, and game font by selecting a file
-- Use custom cursor sets to change between your cursors faster
+### Safe by design
+- Every system change is recorded before it's made and undone when Roblox closes, after a crash, or with one **Undo all system changes** button
+- Admin rights are requested only for the few changes that need them, and a System Restore point is created first
+- If the app won't start: `Vargostrap.exe --vargostrap-reset`
 
-### FastFlag Enhancements
-- Automatic notification when applying FastFlags that are not in the Roblox FastFlag Allowlist
-- Create or use FastFlag profiles
-- Change all Roblox FastFlags in the allowlist via the FastFlag settings
-- Click 'Clean List' to remove flags that are not in the Roblox FastFlag Allowlist
+## A note on game rules
 
-### UI & Appearance
-- Fully customizable bootstrapper launcher
-- Change the app font to any font you prefer
-- Supports image and gradient background themes
-- Built-in app themes
-- Change the window background to Aero, Acrylic, or Mica
+Remapping keys with AutoHotkey is generally fine, but macros that play for you (auto-clicking, auto-farming) can break Roblox's or a game's rules and get your account banned. You're responsible for the scripts you run.
 
-### Settings
-- Easily switch Roblox update channels
-- Option to fully block Roblox updates
-- Replace Roblox’s changing version-xxxxx folders with a non-changing folder
-- View all currently available Roblox channels
+## Building from source
 
-### Extra Features
-- Easily import settings from other bootstrappers such as Fishstrap and Bloxstrap
-- Create game shortcuts for faster game joining
-- Join servers in your region more easily using the region selector
-- Join servers in your selected region through the system tray while playing
-- Built-in account manager
+See [MAINTAINING.md](MAINTAINING.md).
 
-More features are planned! You can also suggest new features in the Issues section.
+## Credits
 
----
+Vargostrap is a fork of **[Froststrap](https://github.com/Froststrap/Froststrap)**, which is derived from **[Fishstrap](https://github.com/fishstrap/fishstrap)** and **[Bloxstrap](https://github.com/bloxstraplabs/bloxstrap)**. All credit for the original work goes to their authors and contributors, who are also listed in the app's About page.
 
-## Licensing
+Licensed under the [Mozilla Public License 2.0](LICENSE), like Froststrap. Third-party license texts are in [LICENSES](LICENSES).
 
-All new code revisions are under [MPL-2.0](https://opensource.org/license/MPL-2.0).
-
-## Stargazing
-
-To support the development of Froststrap, consider giving the repository a star.
-
-<a href="https://www.star-history.com/?repos=Froststrap%2FFroststrap&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Froststrap/Froststrap&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Froststrap/Froststrap&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Froststrap/Froststrap&type=date&legend=top-left" />
- </picture>
-</a>
-
-<!-- Badge defs -->
-[badge-repo-license]: https://img.shields.io/github/license/Froststrap/Froststrap?style=for-the-badge&color=37add9
-[badge-repo-downloads]: https://img.shields.io/github/downloads/Froststrap/Froststrap/latest/total?style=for-the-badge&color=37add9
-[badge-repo-downloads-total]: https://img.shields.io/github/downloads/Froststrap/Froststrap/total?style=for-the-badge&color=37add9
-[badge-repo-latest]: https://img.shields.io/github/v/release/Froststrap/Froststrap?style=for-the-badge&color=37add9
-[badge-repo-stars]: https://img.shields.io/github/stars/Froststrap/Froststrap?style=for-the-badge&color=37add9
-[badge-discord]: https://img.shields.io/discord/1364660238963179520?style=for-the-badge&label=discord&color=5865f2
-
-[repo-license]: https://github.com/Froststrap/Froststrap/blob/main/LICENSE
-[repo-actions]: https://github.com/Froststrap/Froststrap/actions
-[repo-releases]: https://github.com/Froststrap/Froststrap/releases
-[repo-latest]: https://github.com/Froststrap/Froststrap/releases/latest
-[repo-stargazer]: https://github.com/Froststrap/Froststrap/stargazers
-
-[discord-invite]: https://discord.gg/KdR9vpRcUN
+Vargostrap is not affiliated with Roblox Corporation.
