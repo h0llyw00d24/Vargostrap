@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-    A Roblox bootstrapper focused on FPS, ping and a smoother game, built on
+    A Mike Vargo-inspired Roblox bootstrapper focused on FPS, ping and a smoother game, built on
     <a href="https://github.com/Froststrap/Froststrap">Froststrap</a>.
 </p>
 
