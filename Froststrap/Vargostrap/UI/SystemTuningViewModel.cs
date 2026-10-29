@@ -230,8 +230,9 @@ namespace Froststrap.Vargostrap.UI
             var confirm = await Frontend.ShowMessageBox(
                 "Safe-mode reset will:\n\n"
                     + "• Undo every system change Vargostrap has made that's still active (process priorities, paused apps, services, QoS policies, registry values)\n"
+                    + "• Put back Windows settings changed here (Game Mode, Game Bar capture, adapter power saving)\n"
                     + "• Unlock Roblox's settings file\n"
-                    + "• Turn off priority management and background traffic control\n\n"
+                    + "• Turn off priority management, background traffic control and the power-plan switch\n\n"
                     + "Your FastFlags, Roblox settings and other preferences are kept. Continue?",
                 MessageBoxImage.Warning, MessageBoxButton.YesNo);
 

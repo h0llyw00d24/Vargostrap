@@ -1,0 +1,112 @@
+<!--
+SPDX-FileCopyrightText: 2026 Vargostrap
+
+SPDX-License-Identifier: MPL-2.0
+-->
+
+<UserControl
+    x:Class="Froststrap.Vargostrap.UI.WindowsToolsSection"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Froststrap.UI.Elements.Controls"
+    xmlns:ui="using:FluentAvalonia.UI.Controls"
+    xmlns:perf="clr-namespace:Froststrap.Vargostrap.Performance"
+    xmlns:vui="clr-namespace:Froststrap.Vargostrap.UI"
+    x:DataType="vui:WindowsToolsViewModel">
+
+    <UserControl.Styles>
+        <Style Selector="TextBlock.section">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Margin" Value="0,18,0,8" />
+        </Style>
+        <Style Selector="TextBlock.hint">
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="Foreground" Value="{DynamicResource TextFillColorSecondaryBrush}" />
+        </Style>
+    </UserControl.Styles>
+
+    <StackPanel>
+        <!-- ============ Power and Windows ============ -->
+        <TextBlock Classes="section" Text="Power and Windows settings" />
+
+        <controls:OptionControl Header="High-performance power plan while playing"
+                                Description="{Binding PowerPlanStatus}">
+            <ToggleSwitch IsChecked="{Binding PowerPlanDuringPlay, Mode=TwoWay}" IsEnabled="{Binding PowerPlanAvailable}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl Header="Windows Game Mode"
+                                Description="Windows gives the game in front more CPU and holds back Windows Update installs and notifications while you play. It's on by default in Windows 11; this makes sure. Switching it off here restores what you had.">
+            <ToggleSwitch IsChecked="{Binding GameMode, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl Header="Turn off Xbox Game Bar capture"
+                                Description="Stops Game DVR from recording gameplay in the background (it costs FPS on weaker PCs) and stops the controller/Win+G button opening Game Bar. Switching it off here restores what you had.">
+            <ToggleSwitch IsChecked="{Binding GameBarCaptureOff, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <!-- ============ Network adapter ============ -->
+        <controls:CardExpander Header="Network adapter" Description="{Binding AdapterTitle}" IsExpanded="True">
+            <controls:CardExpander.HeaderContent>
+                <Button Content="Refresh" Command="{Binding RefreshCommand}" />
+            </controls:CardExpander.HeaderContent>
+            <StackPanel Margin="0,8,0,0" Spacing="8">
+                <TextBlock Classes="hint" Text="{Binding AdapterDetails}" />
+                <ui:FAInfoBar Severity="Warning" IsClosable="False"
+                              IsOpen="{Binding IsWireless}" IsVisible="{Binding IsWireless}"
+                              Title="You're on Wi-Fi"
+                              Message="Wi-Fi adds latency and random spikes (interference, other devices, distance from the router) that no setting can remove. For the most stable ping, use an Ethernet cable. If you must use Wi-Fi: 5 GHz, close to the router, with few walls in between." />
+                <controls:OptionControl Header="Don't let Windows turn off this adapter to save power"
+                                        Description="Stops the adapter dozing between packets, which can cause lag spikes on some PCs. Admin (Windows asks for permission). Takes effect after the adapter or PC restarts. Switch off to restore."
+                                        IsVisible="{Binding AdapterFound}">
+                    <ToggleSwitch IsChecked="{Binding NicPowerSavingOff, Mode=TwoWay}" />
+                </controls:OptionControl>
+            </StackPanel>
+        </controls:CardExpander>
+
+        <!-- ============ Cleanup ============ -->
+        <TextBlock Classes="section" Text="Cleanup" />
+        <controls:CardExpander Header="Clean Roblox logs and cache"
+                               Description="Preview first, then delete only what's listed. Roblox re-downloads cached assets as needed."
+                               IsExpanded="True">
+            <StackPanel Margin="0,8,0,0" Spacing="8">
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                    <TextBlock Classes="hint" VerticalAlignment="Center" Text="Delete Roblox logs older than" />
+                    <ComboBox Grid.Column="1" MinWidth="120" ItemsSource="{x:Static vui:WindowsToolsViewModel.LogAgeOptions}" SelectedItem="{Binding LogsOlderThanDays, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding StringFormat=\{0\} day(s)}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </Grid>
+
+                <ItemsControl ItemsSource="{Binding CleanupPreview}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="perf:CleanupCategory">
+                            <Grid ColumnDefinitions="*,Auto" Margin="0,3">
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Name}" />
+                                    <TextBlock Classes="hint" Text="{Binding Description}" />
+                                    <TextBlock Classes="hint" Text="{Binding Folder}" />
+                                </StackPanel>
+                                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Summary}" />
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <TextBlock Classes="hint" Text="{Binding CleanupStatus}"
+                           IsVisible="{Binding CleanupStatus, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <Button Content="Preview" Command="{Binding PreviewCleanupCommand}" />
+                    <Button Content="Clean" Command="{Binding CleanCommand}" IsEnabled="{Binding CanClean}" />
+                </StackPanel>
+                <TextBlock Classes="hint"
+                           Text="To close non-essential apps automatically when Roblox starts, choose &quot;Close at launch&quot; for them in Background traffic control above." />
+            </StackPanel>
+        </controls:CardExpander>
+    </StackPanel>
+</UserControl>

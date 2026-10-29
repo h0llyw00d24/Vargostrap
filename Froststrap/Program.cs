@@ -43,6 +43,10 @@ sealed partial class Program
         if (OperatingSystem.IsWindows() && args.Length > 0 && args[0] == Vargostrap.SystemChanges.ElevatedHelper.Argument)
             return Vargostrap.SystemChanges.ElevatedHelper.Run(args);
 
+        // Vargostrap: command-line safe reset, works even if the UI won't start
+        if (OperatingSystem.IsWindows() && args.Length > 0 && args[0] == "--vargostrap-reset")
+            return Vargostrap.SystemChanges.SafeReset.RunFromCommandLine();
+
         VelopackApp.Build()
             .SetAutoApplyOnStartup(false)
             .OnAfterInstallFastCallback(v => UriHandler.RegisterProtocolHandlers())

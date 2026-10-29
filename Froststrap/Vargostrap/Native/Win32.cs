@@ -185,6 +185,23 @@ namespace Froststrap.Vargostrap.Native
         [LibraryImport("advapi32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static partial bool CloseServiceHandle(IntPtr handle);
+        // --- misc ---
+
+        [StructLayout(LayoutKind.Sequential)]
+        internal struct FILETIME
+        {
+            public uint Low, High;
+            public readonly ulong Value => ((ulong)High << 32) | Low;
+        }
+
+        /// <summary>System-wide idle/kernel/user CPU time, for whole-PC CPU usage.</summary>
+        [LibraryImport("kernel32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static partial bool GetSystemTimes(FILETIME* idle, FILETIME* kernel, FILETIME* user);
+
+        /// <summary>Used only by the command-line safe reset, which runs without the app's UI.</summary>
+        [LibraryImport("user32.dll", EntryPoint = "MessageBoxW", StringMarshalling = StringMarshalling.Utf16)]
+        public static partial int MessageBox(IntPtr hWnd, string text, string caption, uint type);
     }
 }
 

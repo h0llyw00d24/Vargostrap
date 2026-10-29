@@ -72,6 +72,7 @@ powershell -ExecutionPolicy Bypass -File vargostrap\rebrand.ps1
 | `Froststrap/UI/Elements/Settings/MainWindow.axaml(.cs)` (Stage 5) | New nav item (above Region Selector), navigation action, `_pageInfo` entry, view mapping | |
 | `Froststrap/UI/Utility/SearchIndexBuilder.cs` (Stage 5) | Search entry for `pingperformance` | |
 | `Froststrap/Program.cs` (Stage 6) | At the top of `Main`: if the first argument is `--vargostrap-elevated`, run `ElevatedHelper.Run(args)` and exit | The UAC-elevated helper for admin-only changes. No UI, exits when done. |
+| `Froststrap/Program.cs` (Stage 7) | Second line at the top of `Main`: if the first argument is `--vargostrap-reset`, run `SafeReset.RunFromCommandLine()` and exit | Safe-mode reset that works even if the UI won't start. |
 | `Froststrap/App.axaml.cs` (Stage 6) | After `Updater.RunMigrations()`: `SafeReset.RecoverAtStartupAsync` in the background | Undoes system changes left over from a session that crashed. |
 | `Froststrap/UI/Elements/About/Pages/AboutPage.axaml` | Title "Vargostrap". Repo and issue buttons → `Brand`. New **Credits** section linking Froststrap, Fishstrap and Bloxstrap, with a license note. | Visible upstream credit, as requested. |
 
@@ -116,6 +117,12 @@ powershell -ExecutionPolicy Bypass -File vargostrap\rebrand.ps1
 | `Froststrap/Vargostrap/Performance/BackgroundScanner.cs` | Live detection: process I/O rate plus TCP/UDP connection counts (no admin) |
 | `Froststrap/Vargostrap/Performance/TrafficController.cs` | Per-session pause/lower/throttle with a 30 s rescan |
 | `Froststrap/Vargostrap/UI/SystemTuningSection.axaml(.cs)`, `SystemTuningViewModel.cs` | Priority, background traffic and safety sections of Ping & Performance |
+| `Froststrap/Vargostrap/Performance/WindowsTweaks.cs` | Power plans (powercfg), Game Mode and Game Bar/DVR tweaks, primary-adapter detection, adapter power-saving tweak |
+| `Froststrap/Vargostrap/Performance/RobloxCleanup.cs` | Preview-then-delete cleanup of Roblox logs and cache |
+| `Froststrap/Vargostrap/Performance/Benchmark.cs` | Benchmarks (PresentMon frames plus process CPU/RAM), results store, comparison, CSV export |
+| `Froststrap/Vargostrap/Network/NetworkTools.cs` | Bufferbloat test (Cloudflare speed endpoints) and DNS benchmark (raw UDP queries) |
+| `Froststrap/Vargostrap/UI/WindowsToolsSection.axaml(.cs)`, `WindowsToolsViewModel.cs` | Power/Windows settings, adapter panel, cleanup |
+| `Froststrap/Vargostrap/UI/DiagnosticsSection.axaml(.cs)`, `DiagnosticsViewModel.cs` | Benchmarking and network tools |
 | `vargostrap/samples/ahk-test.ahk` | Harmless tooltip-only script for testing the AHK feature |
 | `vargostrap/rebrand.ps1` | Idempotent string rebrand (see above) |
 | `vargostrap/build-dev.ps1` | Windows debug build without Visual Studio (nightly Rust GNU target + WinLibs MinGW) |

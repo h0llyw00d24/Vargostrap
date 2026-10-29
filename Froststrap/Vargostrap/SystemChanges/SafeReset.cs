@@ -18,6 +18,9 @@ namespace Froststrap.Vargostrap.SystemChanges
 
         public static List<JournalEntry> PendingAdminChanges() => SafeRead(ChangeJournal.Admin(Paths.Base));
 
+        public static List<JournalEntry> PersistentTweaks() =>
+            [.. SafeRead(ChangeJournal.Persistent(Paths.Base)), .. SafeRead(ChangeJournal.PersistentAdmin(Paths.Base))];
+
         private static List<JournalEntry> SafeRead(ChangeJournal journal)
         {
             try { return journal.Read(); }
@@ -63,6 +66,26 @@ namespace Froststrap.Vargostrap.SystemChanges
         }
 
         /// <summary>
+        /// Command-line safe reset (<c>Vargostrap.exe --vargostrap-reset</c>), for when the app itself won't
+        /// start. Runs before any UI, shows the summary in a plain Windows message box, and exits.
+        /// </summary>
+        public static int RunFromCommandLine()
+        {
+            try
+            {
+                Paths.Initialize();
+                string summary = ResetAll();
+                Native.Win32.MessageBox(IntPtr.Zero, summary, $"{App.ProjectName} safe-mode reset", 0x40 /* MB_ICONINFORMATION */);
+                return 0;
+            }
+            catch (Exception ex)
+            {
+                Native.Win32.MessageBox(IntPtr.Zero, $"Safe-mode reset failed:\n\n{ex.Message}", $"{App.ProjectName} safe-mode reset", 0x10 /* MB_ICONERROR */);
+                return 1;
+            }
+        }
+
+        /// <summary>
         /// Safe-mode reset: undo every pending system change, release the Roblox settings lock, and turn off
         /// the features that make system changes, so nothing is re-applied on the next launch.
         /// Returns a summary for the user.
@@ -80,10 +103,19 @@ namespace Froststrap.Vargostrap.SystemChanges
             lines.Add(userCount == 0 ? "No pending app changes." : $"Undid {userCount - failures.Count} of {userCount} app change(s).");
             lines.AddRange(failures.Select(f => "  Couldn't undo: " + f));
 
-            int adminCount = PendingAdminChanges().Count;
+            ChangeJournal persistent = ChangeJournal.Persistent(Paths.Base);
+            int persistentCount = SafeRead(persistent).Count;
+            if (persistentCount > 0)
+            {
+                List<string> pFailures = persistent.RevertAll(m => App.Logger.Info(m));
+                lines.Add($"Put back {persistentCount - pFailures.Count} of {persistentCount} Windows setting(s) (Game Mode, Game Bar).");
+                lines.AddRange(pFailures.Select(f => "  Couldn't undo: " + f));
+            }
+
+            int adminCount = PendingAdminChanges().Count + SafeRead(ChangeJournal.PersistentAdmin(Paths.Base)).Count;
             if (adminCount > 0)
             {
-                bool started = ElevatedHelper.Start("revert", Paths.Base);
+                bool started = ElevatedHelper.Start("revert-all", Paths.Base);
                 lines.Add(started
                     ? $"Undoing {adminCount} admin change(s) (Windows asked for permission)."
                     : $"{adminCount} admin change(s) still pending: permission was declined. Run the reset again to retry, or restart Windows (QoS policies clear on restart).");
@@ -96,11 +128,12 @@ namespace Froststrap.Vargostrap.SystemChanges
             }
 
             var s = VargoApp.Settings.Prop;
-            if (s.PriorityEnabled || s.TrafficControlEnabled)
+            if (s.PriorityEnabled || s.TrafficControlEnabled || s.PowerPlanDuringPlay)
             {
                 s.PriorityEnabled = false;
                 s.TrafficControlEnabled = false;
-                lines.Add("Priority management and background traffic control turned off.");
+                s.PowerPlanDuringPlay = false;
+                lines.Add("Priority management, background traffic control and the power-plan switch turned off.");
             }
             VargoApp.Settings.Save();
 

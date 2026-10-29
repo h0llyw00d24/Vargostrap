@@ -1,0 +1,126 @@
+<!--
+SPDX-FileCopyrightText: 2026 Vargostrap
+
+SPDX-License-Identifier: MPL-2.0
+-->
+
+<UserControl
+    x:Class="Froststrap.Vargostrap.UI.DiagnosticsSection"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Froststrap.UI.Elements.Controls"
+    xmlns:perf="clr-namespace:Froststrap.Vargostrap.Performance"
+    xmlns:vui="clr-namespace:Froststrap.Vargostrap.UI"
+    x:DataType="vui:DiagnosticsViewModel">
+
+    <UserControl.Styles>
+        <Style Selector="TextBlock.section">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Margin" Value="0,18,0,8" />
+        </Style>
+        <Style Selector="TextBlock.hint">
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="Foreground" Value="{DynamicResource TextFillColorSecondaryBrush}" />
+        </Style>
+    </UserControl.Styles>
+
+    <StackPanel>
+        <!-- ============ Benchmarking ============ -->
+        <TextBlock Classes="section" Text="Benchmarking" />
+        <TextBlock Classes="hint" Margin="0,0,0,8"
+                   Text="Check whether a change actually helps: run a benchmark in a game, change a setting, then run another in the same spot doing the same thing, and compare. Everything is measured from outside Roblox." />
+
+        <controls:CardExpander Header="Run a benchmark" Description="Join a game first. Labels like Before and After make comparing easy." IsExpanded="True">
+            <StackPanel Margin="0,8,0,0" Spacing="8">
+                <Grid ColumnDefinitions="Auto,*,Auto,Auto" ColumnSpacing="8">
+                    <TextBlock VerticalAlignment="Center" Text="PresentMon" />
+                    <TextBox Grid.Column="1" Text="{Binding PresentMonPath, Mode=TwoWay}" PlaceholderText="Optional: path to PresentMon-…-x64.exe (for FPS and frame times)" />
+                    <Button Grid.Column="2" Content="Browse" Command="{Binding BrowsePresentMonCommand}" />
+                    <Button Grid.Column="3" Content="Get PresentMon" Command="{x:Static vui:DiagnosticsViewModel.OpenWebpageCommand}"
+                            CommandParameter="{x:Static vui:DiagnosticsViewModel.PresentMonUrl}" />
+                </Grid>
+                <TextBlock Classes="hint" Text="{Binding PresentMonStatus}" />
+
+                <Grid ColumnDefinitions="Auto,*,Auto,Auto,Auto" ColumnSpacing="8">
+                    <TextBlock VerticalAlignment="Center" Text="Label" />
+                    <TextBox Grid.Column="1" Text="{Binding Label, Mode=TwoWay}" MaxLength="40" />
+                    <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="Length" />
+                    <ComboBox Grid.Column="3" MinWidth="100" ItemsSource="{x:Static vui:DiagnosticsViewModel.DurationOptions}" SelectedItem="{Binding Seconds, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding StringFormat=\{0\} s}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Button Grid.Column="4" Content="Start" Command="{Binding RunBenchmarkCommand}" IsEnabled="{Binding IsIdle}" />
+                </Grid>
+                <TextBlock Classes="hint" Text="{Binding BenchmarkStatus}"
+                           IsVisible="{Binding BenchmarkStatus, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+            </StackPanel>
+        </controls:CardExpander>
+
+        <controls:CardExpander Header="Results and comparison" Description="1% low FPS shows stutter better than average FPS does." IsExpanded="True">
+            <controls:CardExpander.HeaderContent>
+                <Button Content="Export CSV" Command="{Binding ExportCommand}" />
+            </controls:CardExpander.HeaderContent>
+            <StackPanel Margin="0,8,0,0" Spacing="8">
+                <ItemsControl ItemsSource="{Binding Results}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="perf:BenchmarkResult">
+                            <Grid ColumnDefinitions="*,Auto" Margin="0,3">
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Title}" FontWeight="SemiBold" />
+                                    <TextBlock Classes="hint" Text="{Binding Summary}" />
+                                </StackPanel>
+                                <Button Grid.Column="1" Content="Delete" VerticalAlignment="Center"
+                                        Command="{Binding $parent[ItemsControl].((vui:DiagnosticsViewModel)DataContext).DeleteResultCommand}"
+                                        CommandParameter="{Binding}" />
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <Grid ColumnDefinitions="Auto,*,Auto,*" ColumnSpacing="8">
+                    <TextBlock VerticalAlignment="Center" Text="Before" />
+                    <ComboBox Grid.Column="1" HorizontalAlignment="Stretch" ItemsSource="{Binding Results}" SelectedItem="{Binding CompareBefore, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate x:DataType="perf:BenchmarkResult"><TextBlock Text="{Binding Title}" /></DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="After" />
+                    <ComboBox Grid.Column="3" HorizontalAlignment="Stretch" ItemsSource="{Binding Results}" SelectedItem="{Binding CompareAfter, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate x:DataType="perf:BenchmarkResult"><TextBlock Text="{Binding Title}" /></DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </Grid>
+                <TextBlock Text="{Binding Comparison}" TextWrapping="Wrap"
+                           IsVisible="{Binding Comparison, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+            </StackPanel>
+        </controls:CardExpander>
+
+        <!-- ============ Network tools ============ -->
+        <TextBlock Classes="section" Text="Network tools" />
+
+        <controls:CardExpander Header="Bufferbloat test" Description="Does your ping spike when the connection is busy? About 35 seconds; uses a lot of data." IsExpanded="True">
+            <controls:CardExpander.HeaderContent>
+                <Button Content="Run test" Command="{Binding RunBufferbloatCommand}" IsEnabled="{Binding IsIdle}" />
+            </controls:CardExpander.HeaderContent>
+            <TextBlock Margin="0,8,0,0" TextWrapping="Wrap" Text="{Binding BufferbloatStatus}"
+                       IsVisible="{Binding BufferbloatStatus, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+        </controls:CardExpander>
+
+        <controls:CardExpander Header="DNS benchmark" Description="How fast your DNS and popular public resolvers look up Roblox's servers. Only measures; changes nothing." IsExpanded="True">
+            <controls:CardExpander.HeaderContent>
+                <Button Content="Run benchmark" Command="{Binding RunDnsCommand}" IsEnabled="{Binding IsIdle}" />
+            </controls:CardExpander.HeaderContent>
+            <TextBlock Margin="0,8,0,0" TextWrapping="Wrap" Text="{Binding DnsStatus}"
+                       IsVisible="{Binding DnsStatus, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+        </controls:CardExpander>
+
+        <TextBlock Classes="hint" Margin="0,8,0,0"
+                   Text="Not included on purpose: registry TCP/Nagle tweaks. Roblox's gameplay traffic is UDP, so they don't help." />
+    </StackPanel>
+</UserControl>

@@ -183,21 +183,34 @@ Original plan:
 - Actions per app: **throttle** (Windows QoS policy `New-NetQosPolicy -ThrottleRateActionBitsPerSecond`, admin), **pause** (stop a service and restore its prior state, or use the app's own pause mechanism where one exists; processes are never killed), or **ignore**. Allow/deny choices are remembered per app. A hard-coded protected list (System, csrss, lsass, svchost core groups, Defender, drivers, audio) can never be acted on. Everything is journaled and restored on Roblox exit, app exit, or the next start after a crash.
 - Priority: Roblox to High or Above Normal (never Realtime), opt out of EcoQoS (`SetProcessInformation` power throttling), memory priority (documented `ProcessMemoryPriority`), and I/O priority (see review list). Background apps are lowered and restored afterwards. GPU preference goes in `HKCU\Software\Microsoft\DirectX\UserGpuPreferences`, set per exe path and **reapplied each launch** because the Roblox path changes with every update. There is an optional DSCP 46 QoS policy, with a note that it only helps if the router honours it. No affinity or core-parking changes.
 
-### Stage 7: Windows settings, cleanup, benchmarking, network tools. **In progress (paused 2026-10-29)**
+### Stage 7: Windows settings, cleanup, benchmarking, network tools. **Done (2026-10-29)**
 
-Done (compiles, not wired to UI yet, not tested):
-- Persistent-tweak journals (`PersistentChanges.json` and `.admin.json`), never undone automatically. Selective revert by group; registry changes take an id prefix.
-- `PowerPlans` (powercfg; Ultimate, else High performance), with a `PowerPlan` change kind and `PowerPlanDuringPlay` hooked into the session (journaled, undone on exit).
-- `WindowsTweaks`: Game Mode and Game Bar/DVR capture as HKCU tweaks, plus primary-adapter detection (skips virtual adapters; flags Wi-Fi) and a PnPCapabilities lookup.
-- Elevated helper `persist` / `unpersist <group>` modes and a `RegistryHklmDword` action (for adapter power saving).
-- `BackgroundAction.CloseOnLaunch`: graceful close at launch only, never a default, can't be undone.
-- `RobloxCleanup`: preview, then delete exactly the previewed files. Old logs (N days) and `%TEMP%\Roblox`.
+All on the Ping & Performance page:
+- **Power and Windows:**
+  - High/Ultimate Performance power plan while playing, journaled per session and switched back on exit. It's greyed out where Windows hides those plans.
+  - Game Mode and Game Bar/DVR capture as persistent HKCU tweaks, each previewed before applying. Switching one off restores the original values. If Windows already had the setting, nothing is changed and nothing is undone.
+- **Network adapter:**
+  - The primary adapter is detected, skipping VPN and virtual adapters.
+  - Wi-Fi warning with practical advice.
+  - "Don't let Windows turn off this adapter" (PnPCapabilities = 24) through the elevated helper's persistent `persist`/`unpersist` modes. Takes effect after the adapter or PC restarts.
+- **Cleanup:** preview, then delete exactly the previewed files (old Roblox logs, `%TEMP%\Roblox`). Files in use are skipped. "Close at launch" is a per-app choice in Background traffic control: a graceful close only, never a default, can't be undone.
+- **Benchmarking:**
+  - Optional PresentMon, chosen by the user (not bundled or downloaded) and run elevated: avg FPS, 1% low, average and 99% frame time, GPU busy.
+  - Always recorded: Roblox CPU (process times), PC CPU (GetSystemTimes) and RAM (working set). No memory reads.
+  - Labelled runs, Before/After comparison in plain language, CSV export.
+- **Network tools:**
+  - Bufferbloat test: idle, then download-loaded, then upload-loaded latency, with a grade and SQM/Smart Queue advice. A data-use warning comes first.
+  - DNS benchmark: your DNS against Cloudflare, Google, Quad9 and OpenDNS, measure only.
+  - Note in the UI that TCP/Nagle tweaks are deliberately absent.
+- **Safe reset:** now also restores persistent tweaks (one UAC prompt covers both admin journals via `revert-all`). `Vargostrap.exe --vargostrap-reset` works without the UI.
 
-Left to do:
-- Benchmarking: PresentMon path chosen by the user, launched elevated; parse `MsBetweenPresents`/`FrameTime` and `MsGPUBusy`/`GPUBusy`; Roblox CPU% from process times; RAM from working set; before/after compare; CSV export.
-- Network tools: bufferbloat test (Cloudflare speed endpoints, with a data-use warning and an SQM grade), DNS benchmark (raw UDP queries for Roblox domains; no automatic DNS change), adapter panel (Wi-Fi warning; the power-saving toggle through helper `persist`).
-- Safe reset: also revert both persistent journals, plus a `--vargostrap-reset` CLI hook in Program.cs (`Paths.Initialize()` is safe to call there).
-- UI sections on Ping & Performance (Windows settings, Cleanup, Benchmarking, Network tools), then build, test, and the CHANGES.md entries for Stage 7. Fix CA1861 in `WindowsTweaks.IsVirtual`.
+Tested here: the sections render; cleanup preview found 4 files (1.4 MB) and deleted nothing; the DNS benchmark ran with real results; the CLI reset ran and exited 0.
+
+**Not tested:**
+- Benchmarks (they need Roblox running, and PresentMon for FPS).
+- The bufferbloat test (uses a lot of data; run it when you're happy to).
+- The Game Mode / Game Bar / adapter toggles. They change your real settings; the undo mechanism is the one already verified in Stages 6–7.
+- The power plan switch (your plan is already High performance).
 
 Original plan:
 - High Performance (or Ultimate) power plan during play via `powercfg`, then restore the previous plan. Toggles for Game Mode (`HKCU\Software\Microsoft\GameBar`) and Game Bar / Game DVR capture (`HKCU\System\GameConfigStore`, `…\GameDVR`).

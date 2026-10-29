@@ -193,12 +193,9 @@ SPDX-License-Identifier: MPL-2.0
             <!-- ============ Priority, background traffic, safety (Windows) ============ -->
             <vui:SystemTuningSection />
 
-            <!-- ============ Later stages ============ -->
-            <TextBlock Classes="section" Text="Coming next" />
-            <Border Classes="panel">
-                <TextBlock Classes="hint"
-                           Text="Power and Windows settings (power plan, Game Mode, Game Bar capture), network tools (bufferbloat test, adapter tuning, DNS benchmark), cleanup and benchmarking will appear on this page in the next update." />
-            </Border>
+            <!-- ============ Windows settings, adapter, cleanup, benchmarking, network tools (Windows) ============ -->
+            <vui:WindowsToolsSection />
+            <vui:DiagnosticsSection />
         </StackPanel>
     </ScrollViewer>
 </UserControl>

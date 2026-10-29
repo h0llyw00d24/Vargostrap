@@ -163,9 +163,36 @@ namespace Froststrap.Vargostrap.Performance
 
         public static string AdapterKey(string subkey) => $@"{NetClassKey}\{subkey}";
 
+        private static readonly string[] VirtualAdapterWords = ["virtual", "vpn", "hyper-v", "vmware", "tap-", "wintun", "wireguard", "loopback", "bluetooth"];
+
         private static bool IsVirtual(string description) =>
-            new[] { "virtual", "vpn", "hyper-v", "vmware", "tap-", "wintun", "wireguard", "loopback", "bluetooth" }
-                .Any(w => description.Contains(w, StringComparison.OrdinalIgnoreCase));
+            VirtualAdapterWords.Any(w => description.Contains(w, StringComparison.OrdinalIgnoreCase));
+
+        /// <summary>
+        /// Turns "Allow the computer to turn off this device to save power" off (or back to how it was) for
+        /// the adapter, via the elevated helper's persistent journal. Takes effect after the adapter or PC restarts.
+        /// Returns false if the admin prompt was declined.
+        /// </summary>
+        public static bool SetNicPowerSavingDisabled(AdapterInfo adapter, bool disabled)
+        {
+            if (!disabled)
+                return ElevatedHelper.Start("unpersist", Paths.Base, NicPowerGroup);
+
+            if (adapter.ClassSubkey is null)
+                return false;
+
+            string plan = ElevatedHelper.WritePlan(Paths.Base,
+            [
+                new AdminAction(AdminActionKind.RegistryHklmDword, "PnPCapabilities",
+                    $"Stop Windows turning off {adapter.Description} to save power", PnPCapabilitiesNoPowerSaving,
+                    Key: AdapterKey(adapter.ClassSubkey), Group: NicPowerGroup),
+            ], "AdminPlan.persist.json");
+
+            return ElevatedHelper.Start("persist", Paths.Base, plan);
+        }
+
+        public static bool NicTweakManagedByVargostrap() =>
+            ChangeJournal.PersistentAdmin(Paths.Base).Read().Any(e => e.Id.StartsWith(NicPowerGroup, StringComparison.Ordinal));
 
         private static string? FindClassSubkey(string interfaceId)
         {

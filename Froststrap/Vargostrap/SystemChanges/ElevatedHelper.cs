@@ -83,9 +83,9 @@ namespace Froststrap.Vargostrap.SystemChanges
             }
         }
 
-        public static string WritePlan(string baseDir, IReadOnlyList<AdminAction> actions)
+        public static string WritePlan(string baseDir, IReadOnlyList<AdminAction> actions, string fileName = "AdminPlan.json")
         {
-            string path = Path.Combine(baseDir, "AdminPlan.json");
+            string path = Path.Combine(baseDir, fileName);
 
             using var stream = new MemoryStream();
             using (var w = new Utf8JsonWriter(stream, new JsonWriterOptions { Indented = true }))
@@ -132,9 +132,14 @@ namespace Froststrap.Vargostrap.SystemChanges
 
                 ChangeJournal journal = ChangeJournal.Admin(baseDir);
 
-                if (mode == "revert")
+                if (mode is "revert" or "revert-all")
                 {
                     List<string> failures = journal.RevertAll(log.Write);
+
+                    // revert-all (safe-mode reset) also undoes persistent admin tweaks
+                    if (mode == "revert-all")
+                        failures.AddRange(ChangeJournal.PersistentAdmin(baseDir).RevertAll(log.Write));
+
                     log.Write(failures.Count == 0 ? "Revert complete." : $"Revert finished with {failures.Count} failure(s).");
                     return failures.Count;
                 }
