@@ -16,8 +16,7 @@ namespace Froststrap.Vargostrap
         // Must match <AssemblyName> in Froststrap.csproj (used by avares:// URIs and native resolvers).
         public const string AssemblyName = "Vargostrap";
 
-        // TODO(vargostrap): set to your GitHub account once the fork is pushed.
-        public const string Owner = "Vargostrap";
+        public const string Owner = "h0llyw00d24";
         public const string Repository = $"{Owner}/Vargostrap";
         public const string RepositoryUrl = $"https://github.com/{Repository}";
         public const string IssuesUrl = $"{RepositoryUrl}/issues";
