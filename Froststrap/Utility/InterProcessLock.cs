@@ -25,11 +25,11 @@ namespace Froststrap.Utility
             }
             catch
             {
-                lockDir = Path.Combine(Path.GetTempPath(), "FroststrapLocks");
+                lockDir = Path.Combine(Path.GetTempPath(), $"{App.ProjectName}Locks");
                 Directory.CreateDirectory(lockDir);
             }
 
-            _lockFilePath = Path.Combine(lockDir, $"Froststrap-{name}.lock");
+            _lockFilePath = Path.Combine(lockDir, $"{App.ProjectName}-{name}.lock");
 
             DateTime start = DateTime.UtcNow;
             while (true)

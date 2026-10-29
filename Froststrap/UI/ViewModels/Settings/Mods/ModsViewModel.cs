@@ -678,13 +678,13 @@ namespace Froststrap.UI.ViewModels.Settings.Mods
         {
             try
             {
-                var regularFont = new FontFamily("avares://Froststrap/Resources/Fonts#BuilderIcons-Regular");
+                var regularFont = new FontFamily("avares://Vargostrap/Resources/Fonts#BuilderIcons-Regular");
                 var regularTypeface = new Typeface(regularFont);
                 var regularText = char.ConvertFromUtf32(0xF101);
                 var regularFt = new FormattedText(regularText, CultureInfo.CurrentCulture, FlowDirection.LeftToRight, regularTypeface, 20, Brushes.White);
                 RegularPreviewData = regularFt.BuildGeometry(new Point(0, 0));
 
-                var filledFont = new FontFamily("avares://Froststrap/Resources/Fonts#BuilderIcons-Filled");
+                var filledFont = new FontFamily("avares://Vargostrap/Resources/Fonts#BuilderIcons-Filled");
                 var filledTypeface = new Typeface(filledFont);
                 var filledText = char.ConvertFromUtf32(0xF101);
                 var filledFt = new FormattedText(filledText, CultureInfo.CurrentCulture, FlowDirection.LeftToRight, filledTypeface, 20, Brushes.White);
@@ -860,8 +860,8 @@ namespace Froststrap.UI.ViewModels.Settings.Mods
                 if (fontFamily == null)
                 {
                     fontFamily = fontVariant.Equals("Filled", StringComparison.OrdinalIgnoreCase)
-                        ? new FontFamily("avares://Froststrap/Resources/Fonts#BuilderIcons-Filled")
-                        : new FontFamily("avares://Froststrap/Resources/Fonts#BuilderIcons-Regular");
+                        ? new FontFamily("avares://Vargostrap/Resources/Fonts#BuilderIcons-Filled")
+                        : new FontFamily("avares://Vargostrap/Resources/Fonts#BuilderIcons-Regular");
                 }
 
                 var typeface = new Typeface(fontFamily);

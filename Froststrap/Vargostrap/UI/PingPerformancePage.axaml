@@ -1,0 +1,204 @@
+<!--
+SPDX-FileCopyrightText: 2026 Vargostrap
+
+SPDX-License-Identifier: MPL-2.0
+-->
+
+<UserControl
+    x:Class="Froststrap.Vargostrap.UI.PingPerformancePage"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Froststrap.UI.Elements.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="using:FluentAvalonia.UI.Controls"
+    xmlns:net="clr-namespace:Froststrap.Vargostrap.Network"
+    xmlns:vui="clr-namespace:Froststrap.Vargostrap.UI"
+    d:DesignHeight="2600"
+    d:DesignWidth="1200"
+    x:DataType="vui:PingPerformanceViewModel"
+    mc:Ignorable="d">
+
+    <UserControl.Styles>
+        <Style Selector="TextBlock.section">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Margin" Value="0,18,0,8" />
+        </Style>
+        <Style Selector="TextBlock.hint">
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="Foreground" Value="{DynamicResource TextFillColorSecondaryBrush}" />
+        </Style>
+        <Style Selector="Border.panel">
+            <Setter Property="Background" Value="{DynamicResource CardBackgroundFillColorDefaultBrush}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource CardStrokeColorDefaultBrush}" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="Padding" Value="16" />
+            <Setter Property="Margin" Value="0,0,0,4" />
+        </Style>
+    </UserControl.Styles>
+
+    <ScrollViewer>
+        <StackPanel Margin="14">
+
+            <TextBlock Classes="hint"
+                       Text="Tools for a smoother connection. Everything here runs outside Roblox using standard Windows networking. Nothing touches the Roblox client." />
+
+            <!-- ============ Network monitor ============ -->
+            <TextBlock Classes="section" Text="Network monitor" />
+
+            <Border Classes="panel">
+                <StackPanel Spacing="10">
+                    <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="8">
+                        <TextBlock Text="{Binding LiveTitle}" FontWeight="SemiBold" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" />
+                        <Button Grid.Column="1" Content="Run test" Command="{Binding StartTestCommand}" IsVisible="{Binding IsNotTesting}"
+                                ToolTip.Tip="Measure your connection to Roblox for a minute, without joining a game" />
+                        <Button Grid.Column="2" Content="Stop test" Command="{Binding StopTestCommand}" IsVisible="{Binding IsTesting}" />
+                    </Grid>
+                    <vui:LatencyChart Height="180" Samples="{Binding LiveSamples}" />
+                    <TextBlock Classes="hint" Text="{Binding LiveStats}" />
+                    <TextBlock Classes="hint"
+                               Text="Line: latency (lower is better). Red bars: lost packets. Orange dots: spikes. Jitter is how much latency jumps between samples. High jitter feels like rubber-banding even when average ping is fine." />
+                </StackPanel>
+            </Border>
+
+            <controls:OptionControl Header="Monitor during Roblox sessions"
+                                    Description="Measures latency, jitter and packet loss on your connection to Roblox once a second while you play, and saves each game to the history below. Roblox game servers don't answer ping, so this measures the route to Roblox's network. It's best for spotting problems on your side: Wi-Fi, a busy connection, or your ISP.">
+                <ToggleSwitch IsChecked="{Binding MonitorEnabled, Mode=TwoWay}" />
+            </controls:OptionControl>
+
+            <controls:OptionControl Header="Spike threshold"
+                                    Description="A sample this far above your usual latency counts as a spike.">
+                <ComboBox MinWidth="140" ItemsSource="{x:Static vui:PingPerformanceViewModel.SpikeThresholds}" SelectedItem="{Binding SpikeThreshold, Mode=TwoWay}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding StringFormat=+\{0\} ms}" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </controls:OptionControl>
+
+            <controls:OptionControl Header="Traceroute on spikes"
+                                    Description="When latency spikes, trace the route to the server (at most once a minute) to show where along the path the delay happens. Saved next to the session log.">
+                <ToggleSwitch IsChecked="{Binding TracerouteOnSpike, Mode=TwoWay}" />
+            </controls:OptionControl>
+
+            <controls:CardExpander Header="Session history" Description="One entry per game. Export opens in Excel or Google Sheets." IsExpanded="True">
+                <controls:CardExpander.HeaderContent>
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <Button Content="Refresh" Command="{Binding RefreshHistoryCommand}" />
+                        <Button Content="Open folder" Command="{Binding OpenLogsFolderCommand}" />
+                    </StackPanel>
+                </controls:CardExpander.HeaderContent>
+                <StackPanel Margin="0,8,0,0" Spacing="6">
+                    <TextBlock Classes="hint" Text="No sessions recorded yet." IsVisible="{Binding !HasHistory}" />
+                    <ItemsControl ItemsSource="{Binding History}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="net:NetworkSessionSummary">
+                                <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="8" Margin="0,4">
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding Title}" FontWeight="SemiBold" />
+                                        <TextBlock Classes="hint" Text="{Binding Stats}" />
+                                        <TextBlock Classes="hint" Text="{Binding TargetText}" />
+                                    </StackPanel>
+                                    <Button Grid.Column="1" Content="Traceroute" VerticalAlignment="Center"
+                                            Command="{Binding $parent[ItemsControl].((vui:PingPerformanceViewModel)DataContext).OpenTracerouteCommand}"
+                                            CommandParameter="{Binding}" />
+                                    <Button Grid.Column="2" Content="Export CSV" VerticalAlignment="Center"
+                                            Command="{Binding $parent[ItemsControl].((vui:PingPerformanceViewModel)DataContext).ExportCommand}"
+                                            CommandParameter="{Binding}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </controls:CardExpander>
+
+            <!-- ============ Server picker ============ -->
+            <TextBlock Classes="section" Text="Server picker" />
+            <TextBlock Classes="hint" Margin="0,0,0,8"
+                       Text="Builds on Better Matchmaking: when you launch a game, Vargostrap picks a server in your best region and joins it automatically (there's a Skip button). Region lists come from the RoValra service, as in upstream Froststrap. Roblox's own public server list doesn't say where servers are." />
+
+            <ui:FAInfoBar Severity="Warning" IsClosable="False" Margin="0,0,0,8"
+                          IsOpen="{Binding HasRegionsError}" IsVisible="{Binding HasRegionsError}"
+                          Message="{Binding RegionsError}" />
+
+            <controls:OptionControl Header="Auto-join the best server on launch"
+                                    Description="Same switch as Better Matchmaking on the Bootstrapper page. Applies when you press Play on a game; joining a friend or a specific server is left alone.">
+                <ToggleSwitch IsChecked="{Binding BetterMatchmaking, Mode=TwoWay}" />
+            </controls:OptionControl>
+
+            <controls:OptionControl Header="Always use region (manual override)"
+                                    Description="Pick a region to always join, or Auto to let the ranking below decide. Same setting as the Region Selector page.">
+                <ComboBox MinWidth="220" ItemsSource="{Binding OverrideOptions}" SelectedItem="{Binding ManualRegion, Mode=TwoWay}" />
+            </controls:OptionControl>
+
+            <controls:CardExpander Header="Preferred regions" Description="Tried first, in this order, before nearby regions." IsExpanded="True">
+                <StackPanel Margin="0,8,0,0" Spacing="6">
+                    <ItemsControl ItemsSource="{Binding PreferredRegions}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="x:String">
+                                <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="8" Margin="0,2">
+                                    <TextBlock Text="{Binding}" VerticalAlignment="Center" />
+                                    <Button Grid.Column="1" Content="Move up"
+                                            Command="{Binding $parent[ItemsControl].((vui:PingPerformanceViewModel)DataContext).MoveUpPreferredCommand}"
+                                            CommandParameter="{Binding}" />
+                                    <Button Grid.Column="2" Content="Remove"
+                                            Command="{Binding $parent[ItemsControl].((vui:PingPerformanceViewModel)DataContext).RemovePreferredCommand}"
+                                            CommandParameter="{Binding}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                        <ComboBox HorizontalAlignment="Stretch" PlaceholderText="Choose a region" ItemsSource="{Binding AllRegions}" SelectedItem="{Binding RegionToAdd, Mode=TwoWay}" />
+                        <Button Grid.Column="1" Content="Add" Command="{Binding AddPreferredCommand}" />
+                    </Grid>
+                </StackPanel>
+            </controls:CardExpander>
+
+            <controls:CardExpander Header="Region ranking" Description="The order Vargostrap tries regions in Auto mode: your preferred regions, then the nearest ones." IsExpanded="True">
+                <StackPanel Margin="0,8,0,0" Spacing="4">
+                    <TextBlock Classes="hint" Margin="0,0,0,6"
+                               Text="Nearby regions are ordered by distance from your internet connection's location (upstream's method). Measuring your actual ping to each region isn't possible from outside Roblox: Roblox servers don't answer ping." />
+                    <ItemsControl ItemsSource="{Binding Ranking}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="vui:RegionRow">
+                                <Grid ColumnDefinitions="40,*,200" Margin="0,2">
+                                    <TextBlock Text="{Binding Rank, StringFormat=\{0\}.}" />
+                                    <TextBlock Grid.Column="1" Text="{Binding Region}" />
+                                    <TextBlock Grid.Column="2" Classes="hint" Text="{Binding Source}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </controls:CardExpander>
+
+            <controls:CardExpander Header="Find the best server now" Description="Look up the best server for a game without launching it first.">
+                <StackPanel Margin="0,8,0,0" Spacing="8">
+                    <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="8">
+                        <TextBox Text="{Binding PlaceIdText, Mode=TwoWay}" PlaceholderText="Place ID (the number in the game's roblox.com URL)" />
+                        <Button Grid.Column="1" Content="Find" Command="{Binding FindBestServerCommand}" IsEnabled="{Binding CanFind}" />
+                        <Button Grid.Column="2" Content="Join" Command="{Binding JoinFoundServerCommand}" IsEnabled="{Binding CanJoin}" />
+                    </Grid>
+                    <TextBlock Classes="hint" Text="{Binding FindResult}"
+                               IsVisible="{Binding FindResult, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+                    <TextBlock Classes="hint" Text="Searches are limited to one every 10 seconds to stay within the services' rate limits. Join opens the server through your default Roblox launcher." />
+                </StackPanel>
+            </controls:CardExpander>
+
+            <!-- ============ Priority, background traffic, safety (Windows) ============ -->
+            <vui:SystemTuningSection />
+
+            <!-- ============ Later stages ============ -->
+            <TextBlock Classes="section" Text="Coming next" />
+            <Border Classes="panel">
+                <TextBlock Classes="hint"
+                           Text="Power and Windows settings (power plan, Game Mode, Game Bar capture), network tools (bufferbloat test, adapter tuning, DNS benchmark), cleanup and benchmarking will appear on this page in the next update." />
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

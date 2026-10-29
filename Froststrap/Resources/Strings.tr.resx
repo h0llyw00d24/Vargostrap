@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>Froststrap, {0} sürümüne otomatik olarak güncellenemedi. Lütfen web sitesinden programı indirip çalıştırarak manuel olarak güncelleyin.</value>
+    <value>Vargostrap, {0} sürümüne otomatik olarak güncellenemedi. Lütfen web sitesinden programı indirip çalıştırarak manuel olarak güncelleyin.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Roblox şu anda çalışıyor; başka bir örnek başlatırsanız mevcut örnek kapanacaktır. Yine de başlatmak istediğinizden emin misiniz?</value>
@@ -127,10 +127,10 @@
     <value>Roblox şu anda hizmet dışı olabilir. Daha fazla bilgi için {0}'a bakın.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Bağlantı kurulamadı; bu durum muhtemelen internet bağlantınızın zayıf olduğunu veya bir güvenlik duvarı engellemesi olduğunu gösteriyor. Bağlantınızda bir sorun yoksa, lütfen antivirüs programınızın Froststrap'i engellemediğinden emin olun.</value>
+    <value>Bağlantı kurulamadı; bu durum muhtemelen internet bağlantınızın zayıf olduğunu veya bir güvenlik duvarı engellemesi olduğunu gösteriyor. Bağlantınızda bir sorun yoksa, lütfen antivirüs programınızın Vargostrap'i engellemediğinden emin olun.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>Froststrap'ta Roblox'u indirip yüklemek için yeterli disk alanı bulunmuyor. Lütfen biraz disk alanı boşaltın ve tekrar deneyin.</value>
+    <value>Vargostrap'ta Roblox'u indirip yüklemek için yeterli disk alanı bulunmuyor. Lütfen biraz disk alanı boşaltın ve tekrar deneyin.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Roblox modifikasyonları uygulanıyor...</value>
@@ -166,10 +166,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>Froststrap başarıyla kaldırıldı</value>
+    <value>Vargostrap başarıyla kaldırıldı</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox şu anda çalışıyor, ancak Froststrap'ı kaldırmadan önce kapatılması gerekiyor. Roblox'u şimdi kapatmak ister misiniz?</value>
+    <value>Roblox şu anda çalışıyor, ancak Vargostrap'ı kaldırmadan önce kapatılması gerekiyor. Roblox'u şimdi kapatmak ister misiniz?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Roblox, Windows Media Foundation bileşenlerinin kullanılmasını gerektirir. Görünüşe göre bu bileşenler bilgisayarınızda bulunmuyor; bunun nedeni muhtemelen Windows’un N sürümünü kullanıyor olmanızdır. Lütfen önce bu bileşenleri yükleyin, ardından Roblox’u başlatın.</value>
@@ -278,14 +278,14 @@
     <value>Bağlantı hatası</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>Froststrap, {0} ile bağlantı kuramıyor</value>
+    <value>Vargostrap, {0} ile bağlantı kuramıyor</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Günlük içeriğini kopyala</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Froststrap/Froststrap çalıştırılırken bir istisna oluştu</value>
+    <value>Vargostrap/Vargostrap çalıştırılırken bir istisna oluştu</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Öncelikle [Froststrap Wiki]({0}) sayfasını kontrol ederek bu sorunun daha önce bir düzeltmeyle giderilip giderilmediğine bakın.
@@ -293,7 +293,7 @@
 Eğer giderilmemişse, lütfen bu istisnayı, oluşturulan günlük dosyasının bir kopyasıyla birlikte bir [GitHub sorunu]({1}) aracılığıyla bildirin.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Froststrap İstisnası</value>
+    <value>Vargostrap İstisnası</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Özel</value>
@@ -305,13 +305,13 @@ Eğer giderilmemişse, lütfen bu istisnayı, oluşturulan günlük dosyasının
     <value>Sahte Byfron (~2023)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentDialog" xml:space="preserve">
-    <value>Froststrap (Opak)</value>
+    <value>Vargostrap (Opak)</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>Froststrap (Klasik)</value>
+    <value>Vargostrap (Klasik)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>Froststrap (Cam)</value>
+    <value>Vargostrap (Cam)</value>
   </data>
   <data name="Enums.CursorType.From2006" xml:space="preserve">
     <value>~2006 (Çizgi film tarzında)</value>
@@ -521,10 +521,10 @@ Varsayılan olarak {1} kullanılacak.</value>
     <value>{0} numaralı özel tema silinemedi: {1}</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>Froststrap, v{0} sürümüne yükseltildi</value>
+    <value>Vargostrap, v{0} sürümüne yükseltildi</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Başlattığınız Froststrap sürümü, şu anda sisteminizde kurulu olan sürümden farklıdır.
+    <value>Başlattığınız Vargostrap sürümü, şu anda sisteminizde kurulu olan sürümden farklıdır.
 Şu anda kurulu olan sürümü yükseltmek ister misiniz?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -568,10 +568,10 @@ Varsayılan olarak {1} kullanılacak.</value>
     <value>Şu anda açık olan tüm Roblox oturumlarını kapatana kadar, yaptığınız değişikliklerin tamamının hemen geçerli olmayacağını lütfen unutmayın.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>Froststrap halihazırda çalışıyor</value>
+    <value>Vargostrap halihazırda çalışıyor</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
-    <value>Froststrap’ın önyükleyicisini çok çeşitli seçenekler kullanarak özelleştirin.</value>
+    <value>Vargostrap’ın önyükleyicisini çok çeşitli seçenekler kullanarak özelleştirin.</value>
   </data>
   <data name="Menu.Appearance.CustomisationTitle.Description" xml:space="preserve">
     <value>Bootstrapper’ın başlığı olarak görüntülenen metin.</value>
@@ -580,16 +580,16 @@ Varsayılan olarak {1} kullanılacak.</value>
     <value>Başlık</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Froststrap'ın nasıl görüneceğini ayarlayın.</value>
+    <value>Vargostrap'ın nasıl görüneceğini ayarlayın.</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Title" xml:space="preserve">
     <value>Uygulama Temaları</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Description" xml:space="preserve">
-    <value>Froststrap temalarını ön ayarlarla kolayca özelleştirin ya da kendi benzersiz görünümünüzü yaratın.</value>
+    <value>Vargostrap temalarını ön ayarlarla kolayca özelleştirin ya da kendi benzersiz görünümünüzü yaratın.</value>
   </data>
   <data name="Menu.Appearance.Icon.Description" xml:space="preserve">
-    <value>Froststrap'ın hangi simgeyi kullanacağını seçin.</value>
+    <value>Vargostrap'ın hangi simgeyi kullanacağını seçin.</value>
   </data>
   <data name="Menu.Appearance.Icon.Title" xml:space="preserve">
     <value>Simge</value>
@@ -607,10 +607,10 @@ Varsayılan olarak {1} kullanılacak.</value>
     <value>Görünüm</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>Froststrap, Roblox başlatıldığında kendisini otomatik olarak kontrol eder ve kararlı bir sürüme günceller.</value>
+    <value>Vargostrap, Roblox başlatıldığında kendisini otomatik olarak kontrol eder ve kararlı bir sürüme günceller.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Froststrap'ı Otomatik Olarak Güncelle</value>
+    <value>Vargostrap'ı Otomatik Olarak Güncelle</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Yanlışlıkla başka bir Roblox örneği başlattığınızda mevcut oyununuzun kapanmasını önler.</value>
@@ -619,7 +619,7 @@ Varsayılan olarak {1} kullanılacak.</value>
     <value>Örnek Başlatma Onayı</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Roblox başlatılırken Froststrap'ın ne yapması gerektiğini ayarlayın.</value>
+    <value>Roblox başlatılırken Vargostrap'ın ne yapması gerektiğini ayarlayın.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Roblox, bir sonraki başlatmada temiz bir kurulumla açılacaktır.</value>
@@ -637,7 +637,7 @@ Varsayılan olarak {1} kullanılacak.</value>
     <value>Bu bayrak adı için zaten bir giriş mevcut.</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
-    <value>Froststrap Temizleyici</value>
+    <value>Vargostrap Temizleyici</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
     <value>Yer açmak için eski verileri otomatik olarak siler. İlk olarak Fishstrap tarafından geliştirilmiştir.</value>
@@ -796,7 +796,7 @@ Daha fazla bilgi:
     <value>Masaüstüne Yakın</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Froststrap'ın hangi Roblox oyununu oynadığınızı algılamasını sağlar. Bazı özellikler için bu gerekli olabilir.</value>
+    <value>Vargostrap'ın hangi Roblox oyununu oynadığınızı algılamasını sağlar. Bazı özellikler için bu gerekli olabilir.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Etkinlik Takibini Etkinleştir</value>
@@ -874,7 +874,7 @@ Daha fazla bilgi:
     <value>Ayarlar kaydedildi!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Froststrap Ayarları</value>
+    <value>Vargostrap Ayarları</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Tercih ettiğiniz dili seçin</value>
@@ -896,7 +896,7 @@ Bazı metinler tercih ettiğiniz dile çevrilmemiş olabilir.</value>
     <value>Grafik kalitesini seçilen bir değere sabitler. Not: Bu ayar etkinleştirildiğinde, Roblox menüsündeki grafik kaydırma çubuğu yalnızca oyundaki görüntüleme mesafesini etkileyecektir.</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Froststrap'ın FastFlags'i yönetmesine izin ver</value>
+    <value>Vargostrap'ın FastFlags'i yönetmesine izin ver</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Bu seçeneği devre dışı bırakmak, burada yapılandırılan hiçbir ayarın Roblox’a uygulanmamasını sağlayacaktır.</value>
@@ -926,7 +926,7 @@ Bazı metinler tercih ettiğiniz dile çevrilmemiş olabilir.</value>
     <value>Roblox’un varsayılan çim dokularını kaldırır. Not: Bu ayar, tek tek oyunlarda kullanılan özel çim dokularını etkilemez.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>Froststrap, Roblox'u indiremiyor</value>
+    <value>Vargostrap, Roblox'u indiremiyor</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Roblox şu anda indirilemiyor. Daha fazla bilgi için lütfen aşağıdaki yardım sayfasını okuyun: {0}</value>
@@ -936,7 +936,7 @@ Bazı metinler tercih ettiğiniz dile çevrilmemiş olabilir.</value>
     <value>Dosyadan içe aktar</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Froststrap, '{0}' konumundaki klasöre yazamadığı için bu başlatma işlemi için herhangi bir günlük dosyası oluşturulmayacaktır</value>
+    <value>Vargostrap, '{0}' konumundaki klasöre yazamadığı için bu başlatma işlemi için herhangi bir günlük dosyası oluşturulmayacaktır</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Varsayılan</value>
@@ -954,22 +954,22 @@ Bazı metinler tercih ettiğiniz dile çevrilmemiş olabilir.</value>
     <value>Masaüstü Simgesi</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Froststrap'ı kaldır</value>
+    <value>Vargostrap'ı kaldır</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Kaldırma işlemi, Froststrap’ı sisteminizden silecek ve hala yüklü ise varsayılan Roblox başlatıcısını otomatik olarak yeniden yapılandıracaktır.
+    <value>Kaldırma işlemi, Vargostrap’ı sisteminizden silecek ve hala yüklü ise varsayılan Roblox başlatıcısını otomatik olarak yeniden yapılandıracaktır.
 
 Roblox ile ilgili sorunlar yaşadığınız için kaldırma veya yeniden yükleme işlemi yapıyorsanız, önce [bu yardım sayfasını]({0}) okuyun.
 
-Kaldırma işlemi, tüm kalıntıları tam olarak temizleyemeyebilir; bu nedenle, Froststrap'ın yüklü olduğu konumda kalan dosyaları manuel olarak temizlemeniz gerekebilir.
+Kaldırma işlemi, tüm kalıntıları tam olarak temizleyemeyebilir; bu nedenle, Vargostrap'ın yüklü olduğu konumda kalan dosyaları manuel olarak temizlemeniz gerekebilir.
 
-Froststrap, "{1}" konumuna yüklenmiştir.</value>
+Vargostrap, "{1}" konumuna yüklenmiştir.</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Ayarlarımı ve modlarımı koru</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Bunlar, Froststrap’ın kurulduğu yerde saklanacak ve yeniden kurulumda otomatik olarak geri yüklenecektir.</value>
+    <value>Bunlar, Vargostrap’ın kurulduğu yerde saklanacak ve yeniden kurulumda otomatik olarak geri yüklenecektir.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Kaldır</value>
@@ -981,7 +981,7 @@ Froststrap, "{1}" konumuna yüklenmiştir.</value>
     <value>Şu anda WebView2 çalışma zamanı ortamı yüklü değil. Masaüstü uygulaması gibi bazı Roblox özellikleri, bu ortam olmadan düzgün çalışmayacaktır. Şimdi indirmek ister misiniz?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>Froststrap, Masaüstü ve Başlat Menüsü için kısayollar oluşturamadı. Bunları daha sonra ayarlar üzerinden oluşturmayı deneyin.</value>
+    <value>Vargostrap, Masaüstü ve Başlat Menüsü için kısayollar oluşturamadı. Bunları daha sonra ayarlar üzerinden oluşturmayı deneyin.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Öncelikle [Froststrap Wiki]({0}) sayfasını kontrol ederek bu sorunun daha önce bir düzeltmeyle giderilip giderilmediğine bakın.
@@ -990,7 +990,7 @@ Eğer giderilmemişse, lütfen bu istisnayı bu fork’un bakım ekibine bildiri
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Froststrap'ın nasıl kolayca başlatılabileceğini ayarlayın.</value>
+    <value>Vargostrap'ın nasıl kolayca başlatılabileceğini ayarlayın.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Genel</value>
@@ -1017,14 +1017,14 @@ Eğer giderilmemişse, lütfen bu istisnayı bu fork’un bakım ekibine bildiri
     <value>Lütfen kaldırma işleminin tamamlanmasını bekleyin.</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Froststrap Hakkında</value>
+    <value>Vargostrap Hakkında</value>
   </data>
   <data name="About.Licenses.Title" xml:space="preserve">
     <value>Lisanslar</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Başlattığınız Froststrap sürümü, şu anda kurulu olan sürümden daha eskidir.
+    <value>Başlattığınız Vargostrap sürümü, şu anda kurulu olan sürümden daha eskidir.
 Sorunlar ortaya çıkabilir ve ayarlarınız değişebilir. Yeniden yüklemeniz önerilir.
 Devam etmek istediğinizden emin misiniz?</value>
   </data>
@@ -1037,7 +1037,7 @@ Devam etmek istediğinizden emin misiniz?</value>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Bu sorunun neden ortaya çıkabileceği ve nasıl çözülebileceği hakkında bilgi için lütfen [bu yardım makalesini]({0}) okuyun.
 
-Roblox'un [orijinal başlatıcıyla]({1}) çalışıp çalışmadığını kontrol edin. Çalışmıyorsa, bu bir Froststrap sorunu değildir. Çalışıyorsa, yardım makalesine bakın.</value>
+Roblox'un [orijinal başlatıcıyla]({1}) çalışıp çalışmadığını kontrol edin. Çalışmıyorsa, bu bir Vargostrap sorunu değildir. Çalışıyorsa, yardım makalesine bakın.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Yükleniyor, lütfen bekleyin...</value>
@@ -1067,7 +1067,7 @@ Roblox'un [orijinal başlatıcıyla]({1}) çalışıp çalışmadığını kontr
     <value>Bu sürümde Roblox’ta güncelleme kontrolü yapılmayacak ve modlardaki değişiklikler uygulanmayacaktır.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Roblox'un yüklenmesi veya güncellenmesi gerektiğinden, Froststrap devam edemiyor.</value>
+    <value>Roblox'un yüklenmesi veya güncellenmesi gerektiğinden, Vargostrap devam edemiyor.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Mevcut değil</value>
@@ -1079,7 +1079,7 @@ Roblox'un [orijinal başlatıcıyla]({1}) çalışıp çalışmadığını kontr
     <value>DPI ölçeklendirme davranışı ve [tam ekran optimizasyonları]({0}) gibi uygulama parametrelerini yapılandırın.</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox henüz yüklenmemiştir. Lütfen bu seçeneği kullanmaya çalışmadan önce Froststrap aracılığıyla Roblox’u en az bir kez başlatın.</value>
+    <value>Roblox henüz yüklenmemiştir. Lütfen bu seçeneği kullanmaya çalışmadan önce Vargostrap aracılığıyla Roblox’u en az bir kez başlatın.</value>
   </data>
   <data name="Bootstrapper.JsonManagerSaveFailed" xml:space="preserve">
     <value>{0} kaydedilemedi: {1}</value>
@@ -1094,10 +1094,10 @@ Roblox'un [orijinal başlatıcıyla]({1}) çalışıp çalışmadığını kontr
     <value>Roblox Simgelerini Klasöre Çıkar</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Kısayollarınızda Froststrap’ın Roblox simgelerini kullanmanıza olanak tanır. [Nasıl yapılacağını öğrenin.]({0})</value>
+    <value>Kısayollarınızda Vargostrap’ın Roblox simgelerini kullanmanıza olanak tanır. [Nasıl yapılacağını öğrenin.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>Froststrap, Windows Kayıt Defteri'ne yazamıyor. Muhtemelen bir antivirüs programı müdahale ederek sorunlara neden oluyor. Lütfen Froststrap'ın çalışmasını engelleyebilecek herhangi bir şey olup olmadığını kontrol edin.</value>
+    <value>Vargostrap, Windows Kayıt Defteri'ne yazamıyor. Muhtemelen bir antivirüs programı müdahale ederek sorunlara neden oluyor. Lütfen Vargostrap'ın çalışmasını engelleyebilecek herhangi bir şey olup olmadığını kontrol edin.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Her Şeyi Varsayılan Ayarlara Sıfırla</value>
@@ -1147,7 +1147,7 @@ Test Modu’nu etkinleştirmek ister misiniz?</value>
     <comment>Currently used under the "Froststrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Menu.Channel.Description" xml:space="preserve">
-    <value>Roblox ve Froststrap için dağıtım ve kurulum ayarlarını değiştirin.</value>
+    <value>Roblox ve Vargostrap için dağıtım ve kurulum ayarlarını değiştirin.</value>
   </data>
   <data name="Common.Version" xml:space="preserve">
     <value>Sürüm</value>
@@ -1178,7 +1178,7 @@ Test Modu’nu etkinleştirmek ister misiniz?</value>
     <value>Üzgünüm</value>
   </data>
   <data name="Dialog.Bloxshade.Setting" xml:space="preserve">
-    <value>Froststrap artık Bloxshade'i desteklemiyor.
+    <value>Vargostrap artık Bloxshade'i desteklemiyor.
 Daha fazla bilgi için Bloxshade Discord sunucusuna katılın.</value>
   </data>
   <data name="Common.Profiles" xml:space="preserve">
@@ -1204,7 +1204,7 @@ Varsayılan kanala ({1}) geçmek ister misiniz?</value>
     <value>Otomatik Kanal Değiştirme İşlemi</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
-    <value>Roblox veya Froststrap, tercih ettiğiniz kanalı değiştirmeye çalışabilir.</value>
+    <value>Roblox veya Vargostrap, tercih ettiğiniz kanalı değiştirmeye çalışabilir.</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
     <value>Otomatik olarak değiştir</value>
@@ -1286,10 +1286,10 @@ Tercih ettiğiniz kanalı {0} olarak değiştirmek ister misiniz?</value>
     <value>Roblox’un genel ayarları geçersiz kılmasını engelleyin.</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Title" xml:space="preserve">
-    <value>Froststrap Hesap İzinleri</value>
+    <value>Vargostrap Hesap İzinleri</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Description" xml:space="preserve">
-    <value>Kimlik doğrulama çerezinizi kullanarak Roblox API’lerine erişim sağlar. [Froststrap nelere erişecek?]({0})</value>
+    <value>Kimlik doğrulama çerezinizi kullanarak Roblox API’lerine erişim sağlar. [Vargostrap nelere erişecek?]({0})</value>
   </data>
   <data name="Menu.Appearance.WindowsBackdrop.Title" xml:space="preserve">
     <value>Pencere Arka Planı</value>
@@ -1361,10 +1361,10 @@ Tercih ettiğiniz kanalı {0} olarak değiştirmek ister misiniz?</value>
     <value>Çift Tıklama Eylemi</value>
   </data>
   <data name="Menu.Integrations.DoubleClickAction.Description" xml:space="preserve">
-    <value>Roblox’u başlatırken sistem tepsisindeki Froststrap simgesine çift tıkladığınızda belirli bir pencere açar.</value>
+    <value>Roblox’u başlatırken sistem tepsisindeki Vargostrap simgesine çift tıkladığınızda belirli bir pencere açar.</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Description" xml:space="preserve">
-    <value>Uygulama açıkken Discord profilinizde özel bir “Playing Froststrap” RPC’si görüntülemek için bu seçeneği etkinleştirin.</value>
+    <value>Uygulama açıkken Discord profilinizde özel bir “Playing Vargostrap” RPC’si görüntülemek için bu seçeneği etkinleştirin.</value>
   </data>
   <data name="Menu.Integrations.CustomStatusDisplay.Title" xml:space="preserve">
     <value>Özel Durum Göstergesi</value>
@@ -1439,10 +1439,10 @@ Tercih ettiğiniz kanalı {0} olarak değiştirmek ister misiniz?</value>
     <value>Topluluk Modları</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
-    <value>Froststrap Günlükleri</value>
+    <value>Vargostrap Günlükleri</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
-    <value>Froststrap günlükleri silinecektir.</value>
+    <value>Vargostrap günlükleri silinecektir.</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.FollowUser" xml:space="preserve">
     <value>Görünüşe göre bir arkadaşın şu anda bu oyunu oynuyor. Ona katılmak ister misin?</value>
@@ -1451,7 +1451,7 @@ Tercih ettiğiniz kanalı {0} olarak değiştirmek ister misiniz?</value>
     <value>BetterMatchmaking'i etkinleştir</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.Description" xml:space="preserve">
-    <value>Hangi sunuculara bağlanacağınızı Froststrap'in belirlemesine izin verin. Size en yakın olan sunucuya öncelik verir.</value>
+    <value>Hangi sunuculara bağlanacağınızı Vargostrap'in belirlemesine izin verin. Size en yakın olan sunucuya öncelik verir.</value>
   </data>
   <data name="Menu.FastFlags.Presets.TextureQuality.Title" xml:space="preserve">
     <value>Doku Kalitesi</value>
@@ -2032,7 +2032,7 @@ Aşağıdaki klasörlerden en az birini içermesi gerekir: content, ExtraContent
     <value>Ön Sürümlere İlişkin Güncelleme</value>
   </data>
   <data name="Menu.Deployment.AutoPreReleaseUpdate.Description" xml:space="preserve">
-    <value>Froststrap, Roblox başlatıldığında kendisini otomatik olarak kontrol eder ve bir test sürümüne günceller.</value>
+    <value>Vargostrap, Roblox başlatıldığında kendisini otomatik olarak kontrol eder ve bir test sürümüne günceller.</value>
   </data>
   <data name="Menu.TestMode.Description" xml:space="preserve">
     <value>Roblox başlatıldığında ayarlar penceresini otomatik olarak gizle ve Roblox kapatıldığında yeniden aç.</value>
@@ -2418,7 +2418,7 @@ Eklentiyi yüklemek istiyor musunuz?</value>
     <value>Küçük Sunucular</value>
   </data>
   <data name="Menu.RegionSelector.LoginRequired" xml:space="preserve">
-    <value>Kullanmak için hesap yöneticisi aracılığıyla oturum açın, “Froststrap Hesap İzni”ni etkinleştirin ya da bunu Discord sunucumuza bildirin.</value>
+    <value>Kullanmak için hesap yöneticisi aracılığıyla oturum açın, “Vargostrap Hesap İzni”ni etkinleştirin ya da bunu Discord sunucumuza bildirin.</value>
   </data>
   <data name="Menu.RegionSelector.EnterPlaceId" xml:space="preserve">
     <value>Sunucuları görüntülemek için bir Yer Kimliği girin ve “Ara” düğmesine tıklayın.</value>

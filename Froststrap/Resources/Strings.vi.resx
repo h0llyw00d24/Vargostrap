@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>Froststrap không thể tự động cập nhật lên phiên bản {0}. Vui lòng cập nhật thủ công bằng cách tải xuống và chạy chương trình từ trang web.</value>
+    <value>Vargostrap không thể tự động cập nhật lên phiên bản {0}. Vui lòng cập nhật thủ công bằng cách tải xuống và chạy chương trình từ trang web.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Roblox hiện đang chạy, và việc khởi chạy một phiên bản khác sẽ khiến nó bị đóng. Bạn có chắc chắn muốn tiếp tục khởi chạy không?</value>
@@ -127,10 +127,10 @@
     <value>Roblox có thể đang gặp sự cố vào lúc này. Vui lòng xem {0} để biết thêm thông tin.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Không thể thiết lập kết nối, điều này có thể do kết nối Internet kém hoặc bị tường lửa chặn. Nếu kết nối của bạn bình thường, vui lòng kiểm tra xem phần mềm diệt virus có đang chặn Froststrap hay không.</value>
+    <value>Không thể thiết lập kết nối, điều này có thể do kết nối Internet kém hoặc bị tường lửa chặn. Nếu kết nối của bạn bình thường, vui lòng kiểm tra xem phần mềm diệt virus có đang chặn Vargostrap hay không.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>Froststrap không có đủ dung lượng đĩa để tải xuống và cài đặt Roblox. Vui lòng giải phóng một ít dung lượng đĩa rồi thử lại.</value>
+    <value>Vargostrap không có đủ dung lượng đĩa để tải xuống và cài đặt Roblox. Vui lòng giải phóng một ít dung lượng đĩa rồi thử lại.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Đang áp dụng các bản sửa đổi của Roblox...</value>
@@ -166,10 +166,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>Froststrap đã được gỡ cài đặt thành công</value>
+    <value>Vargostrap đã được gỡ cài đặt thành công</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox hiện đang chạy, nhưng cần phải đóng ứng dụng này trước khi gỡ cài đặt Froststrap. Bạn có muốn đóng Roblox ngay bây giờ không?</value>
+    <value>Roblox hiện đang chạy, nhưng cần phải đóng ứng dụng này trước khi gỡ cài đặt Vargostrap. Bạn có muốn đóng Roblox ngay bây giờ không?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Roblox yêu cầu phải sử dụng các thành phần của Windows Media Foundation. Có vẻ như bạn chưa cài đặt các thành phần này, có thể là do bạn đang sử dụng phiên bản Windows N. Vui lòng cài đặt chúng trước, sau đó hãy khởi chạy Roblox.</value>
@@ -278,14 +278,14 @@ Thời gian hoạt động: {1}</value>
     <value>Lỗi kết nối</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>Froststrap không thể kết nối với {0}</value>
+    <value>Vargostrap không thể kết nối với {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Sao chép nội dung nhật ký</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Đã xảy ra một lỗi ngoại lệ trong khi chạy Froststrap/Froststrap</value>
+    <value>Đã xảy ra một lỗi ngoại lệ trong khi chạy Vargostrap/Vargostrap</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Hãy kiểm tra [Froststrap Wiki]({0}) trước để xem liệu vấn đề này đã được khắc phục chưa.
@@ -293,7 +293,7 @@ Thời gian hoạt động: {1}</value>
 Nếu chưa, vui lòng báo cáo lỗi này qua một [vấn đề trên GitHub]({1}) kèm theo bản sao của tệp nhật ký đã được tạo ra.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Lỗi Froststrap</value>
+    <value>Lỗi Vargostrap</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Tùy chỉnh</value>
@@ -305,16 +305,16 @@ Nếu chưa, vui lòng báo cáo lỗi này qua một [vấn đề trên GitHub]
     <value>Byfron giả (~2023)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentDialog" xml:space="preserve">
-    <value>Froststrap (Mờ)</value>
+    <value>Vargostrap (Mờ)</value>
   </data>
   <data name="Enums.BootstrapperStyle.TwentyFiveDialog" xml:space="preserve">
     <value>Roblox (~năm 2025)</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>Froststrap (Phiên bản cổ điển)</value>
+    <value>Vargostrap (Phiên bản cổ điển)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>Froststrap (Kính)</value>
+    <value>Vargostrap (Kính)</value>
   </data>
   <data name="Enums.CursorType.From2006" xml:space="preserve">
     <value>~2006 (Phong cách hoạt hình)</value>
@@ -524,10 +524,10 @@ Sẽ sử dụng mặc định là {1}.</value>
     <value>Không thể xóa chủ đề tùy chỉnh {0}: {1}</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>Froststrap đã được nâng cấp lên phiên bản v{0}</value>
+    <value>Vargostrap đã được nâng cấp lên phiên bản v{0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Phiên bản Froststrap mà bạn vừa khởi chạy khác với phiên bản hiện đang được cài đặt.
+    <value>Phiên bản Vargostrap mà bạn vừa khởi chạy khác với phiên bản hiện đang được cài đặt.
 Bạn có muốn nâng cấp phiên bản hiện đang được cài đặt không?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -571,10 +571,10 @@ Bạn có muốn nâng cấp phiên bản hiện đang được cài đặt khô
     <value>Xin lưu ý rằng không phải tất cả các thay đổi của bạn sẽ được áp dụng ngay lập tức cho đến khi bạn đóng tất cả các phiên Roblox đang mở.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>Froststrap hiện đang chạy</value>
+    <value>Vargostrap hiện đang chạy</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
-    <value>Tùy chỉnh trình khởi động của Froststrap bằng cách sử dụng nhiều tùy chọn đa dạng.</value>
+    <value>Tùy chỉnh trình khởi động của Vargostrap bằng cách sử dụng nhiều tùy chọn đa dạng.</value>
   </data>
   <data name="Menu.Appearance.CustomisationTitle.Description" xml:space="preserve">
     <value>Văn bản hiển thị làm tiêu đề của trình khởi động.</value>
@@ -583,16 +583,16 @@ Bạn có muốn nâng cấp phiên bản hiện đang được cài đặt khô
     <value>Tiêu đề</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Cấu hình giao diện của Froststrap.</value>
+    <value>Cấu hình giao diện của Vargostrap.</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Title" xml:space="preserve">
     <value>Chủ đề ứng dụng</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Description" xml:space="preserve">
-    <value>Dễ dàng tùy chỉnh các chủ đề Froststrap bằng các cài đặt sẵn hoặc tạo phong cách độc đáo của riêng bạn.</value>
+    <value>Dễ dàng tùy chỉnh các chủ đề Vargostrap bằng các cài đặt sẵn hoặc tạo phong cách độc đáo của riêng bạn.</value>
   </data>
   <data name="Menu.Appearance.Icon.Description" xml:space="preserve">
-    <value>Chọn biểu tượng mà Froststrap sẽ sử dụng.</value>
+    <value>Chọn biểu tượng mà Vargostrap sẽ sử dụng.</value>
   </data>
   <data name="Menu.Appearance.Icon.Title" xml:space="preserve">
     <value>Biểu tượng</value>
@@ -610,10 +610,10 @@ Bạn có muốn nâng cấp phiên bản hiện đang được cài đặt khô
     <value>Hình thức</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>Froststrap sẽ tự động kiểm tra và cập nhật lên phiên bản ổn định khi khởi chạy Roblox.</value>
+    <value>Vargostrap sẽ tự động kiểm tra và cập nhật lên phiên bản ổn định khi khởi chạy Roblox.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Tự động cập nhật Froststrap</value>
+    <value>Tự động cập nhật Vargostrap</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Ngăn chặn việc trò chơi hiện tại của bạn bị đóng khi vô tình khởi chạy một phiên bản Roblox khác.</value>
@@ -622,7 +622,7 @@ Bạn có muốn nâng cấp phiên bản hiện đang được cài đặt khô
     <value>Xác nhận khởi chạy phiên bản</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Cấu hình các thao tác mà Froststrap sẽ thực hiện khi khởi chạy Roblox.</value>
+    <value>Cấu hình các thao tác mà Vargostrap sẽ thực hiện khi khởi chạy Roblox.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Roblox sẽ được cài đặt lại hoàn toàn vào lần khởi động tiếp theo.</value>
@@ -640,7 +640,7 @@ Bạn có muốn nâng cấp phiên bản hiện đang được cài đặt khô
     <value>Đã có một mục nhập cho tên lá cờ này rồi.</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
-    <value>Chất tẩy rửa Froststrap</value>
+    <value>Chất tẩy rửa Vargostrap</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
     <value>Tự động xóa dữ liệu cũ để giải phóng dung lượng. Ban đầu được phát triển bởi Fishstrap.</value>
@@ -799,7 +799,7 @@ Thông tin thêm:
     <value>Gần như trên máy tính để bàn</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Cho phép Froststrap nhận diện trò chơi Roblox mà bạn đang chơi. Một số tính năng có thể yêu cầu điều này.</value>
+    <value>Cho phép Vargostrap nhận diện trò chơi Roblox mà bạn đang chơi. Một số tính năng có thể yêu cầu điều này.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Bật tính năng theo dõi hoạt động</value>
@@ -877,7 +877,7 @@ Thông tin thêm:
     <value>Cài đặt đã được lưu!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Cài đặt Froststrap</value>
+    <value>Cài đặt Vargostrap</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Chọn ngôn ngữ ưa thích</value>
@@ -899,7 +899,7 @@ Một số nội dung có thể chưa được dịch sang ngôn ngữ bạn ch�
     <value>Khóa chất lượng đồ họa ở mức đã chọn. Lưu ý: Khi bật cài đặt này, thanh trượt đồ họa trong menu Roblox sẽ chỉ ảnh hưởng đến khoảng cách hiển thị trong trò chơi.</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Cho phép Froststrap quản lý FastFlags</value>
+    <value>Cho phép Vargostrap quản lý FastFlags</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Việc tắt tùy chọn này sẽ ngăn không cho bất kỳ thiết lập nào được cấu hình tại đây được áp dụng cho Roblox.</value>
@@ -929,7 +929,7 @@ Một số nội dung có thể chưa được dịch sang ngôn ngữ bạn ch�
     <value>Loại bỏ các họa tiết cỏ mặc định của Roblox. Lưu ý: Cài đặt này không ảnh hưởng đến các họa tiết cỏ tùy chỉnh được sử dụng trong từng trò chơi riêng lẻ.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>Froststrap không thể tải xuống Roblox</value>
+    <value>Vargostrap không thể tải xuống Roblox</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Hiện tại không thể tải xuống Roblox. Vui lòng tham khảo trang trợ giúp sau đây để biết thêm thông tin: {0}</value>
@@ -939,7 +939,7 @@ Một số nội dung có thể chưa được dịch sang ngôn ngữ bạn ch�
     <value>Nhập từ tệp</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Sẽ không có tệp nhật ký nào được ghi lại cho lần khởi chạy này vì Froststrap không thể ghi vào thư mục tại '{0}'</value>
+    <value>Sẽ không có tệp nhật ký nào được ghi lại cho lần khởi chạy này vì Vargostrap không thể ghi vào thư mục tại '{0}'</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Mặc định</value>
@@ -957,22 +957,22 @@ Một số nội dung có thể chưa được dịch sang ngôn ngữ bạn ch�
     <value>Biểu tượng trên màn hình</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Gỡ cài đặt Froststrap</value>
+    <value>Gỡ cài đặt Vargostrap</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Việc gỡ cài đặt sẽ xóa Froststrap khỏi hệ thống của bạn và tự động cấu hình lại trình khởi chạy Roblox mặc định nếu nó vẫn còn được cài đặt.
+    <value>Việc gỡ cài đặt sẽ xóa Vargostrap khỏi hệ thống của bạn và tự động cấu hình lại trình khởi chạy Roblox mặc định nếu nó vẫn còn được cài đặt.
 
 Nếu bạn đang gỡ cài đặt hoặc cài đặt lại vì gặp sự cố với Roblox, hãy đọc [trang trợ giúp này]({0}) trước.
 
-Quá trình gỡ cài đặt có thể không dọn dẹp hoàn toàn các tệp còn sót lại, do đó bạn có thể cần phải dọn dẹp thủ công các tệp còn sót lại tại vị trí đã cài đặt Froststrap.
+Quá trình gỡ cài đặt có thể không dọn dẹp hoàn toàn các tệp còn sót lại, do đó bạn có thể cần phải dọn dẹp thủ công các tệp còn sót lại tại vị trí đã cài đặt Vargostrap.
 
-Froststrap đã được cài đặt tại "{1}".</value>
+Vargostrap đã được cài đặt tại "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Giữ nguyên cài đặt và các bản mod của tôi</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Chúng sẽ được lưu giữ tại vị trí đã cài đặt Froststrap và sẽ tự động được khôi phục khi cài đặt lại.</value>
+    <value>Chúng sẽ được lưu giữ tại vị trí đã cài đặt Vargostrap và sẽ tự động được khôi phục khi cài đặt lại.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Gỡ cài đặt</value>
@@ -984,7 +984,7 @@ Froststrap đã được cài đặt tại "{1}".</value>
     <value>Hiện tại, bạn chưa cài đặt môi trường chạy WebView2. Một số tính năng của Roblox sẽ không hoạt động bình thường nếu thiếu môi trường này, chẳng hạn như ứng dụng trên máy tính để bàn. Bạn có muốn tải xuống ngay bây giờ không?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>Froststrap không thể tạo lối tắt trên Màn hình nền và Menu Bắt đầu. Hãy thử tạo chúng sau thông qua phần cài đặt.</value>
+    <value>Vargostrap không thể tạo lối tắt trên Màn hình nền và Menu Bắt đầu. Hãy thử tạo chúng sau thông qua phần cài đặt.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Hãy kiểm tra [Froststrap Wiki]({0}) trước để xem liệu vấn đề này đã được khắc phục chưa.
@@ -993,7 +993,7 @@ Nếu chưa, vui lòng báo cáo lỗi này cho nhóm quản trị của nhánh 
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Cấu hình để có thể khởi chạy Froststrap một cách dễ dàng.</value>
+    <value>Cấu hình để có thể khởi chạy Vargostrap một cách dễ dàng.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Tổng quan</value>
@@ -1020,14 +1020,14 @@ Nếu chưa, vui lòng báo cáo lỗi này cho nhóm quản trị của nhánh 
     <value>Vui lòng đợi cho đến khi quá trình gỡ cài đặt hoàn tất.</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Giới thiệu về Froststrap</value>
+    <value>Giới thiệu về Vargostrap</value>
   </data>
   <data name="About.Licenses.Title" xml:space="preserve">
     <value>Giấy phép</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Phiên bản Froststrap mà bạn vừa khởi chạy cũ hơn phiên bản hiện đang được cài đặt.
+    <value>Phiên bản Vargostrap mà bạn vừa khởi chạy cũ hơn phiên bản hiện đang được cài đặt.
 Có thể xảy ra sự cố và các thiết lập của bạn có thể bị thay đổi. Bạn nên cài đặt lại.
 Bạn có chắc chắn muốn tiếp tục không?</value>
   </data>
@@ -1040,7 +1040,7 @@ Bạn có chắc chắn muốn tiếp tục không?</value>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Để biết thêm thông tin về nguyên nhân dẫn đến tình trạng này và cách khắc phục, vui lòng đọc [bài viết trợ giúp này]({0}).
 
-Hãy kiểm tra xem Roblox có hoạt động với [trình khởi chạy gốc]({1}) hay không. Nếu không, thì đây không phải là sự cố liên quan đến Froststrap. Nếu có, hãy tham khảo bài viết trợ giúp.</value>
+Hãy kiểm tra xem Roblox có hoạt động với [trình khởi chạy gốc]({1}) hay không. Nếu không, thì đây không phải là sự cố liên quan đến Vargostrap. Nếu có, hãy tham khảo bài viết trợ giúp.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Đang tải, vui lòng chờ...</value>
@@ -1070,7 +1070,7 @@ Hãy kiểm tra xem Roblox có hoạt động với [trình khởi chạy gốc]
     <value>Trong đợt ra mắt này, Roblox sẽ không được kiểm tra các bản cập nhật và các thay đổi đối với các mod sẽ không được áp dụng.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Vì Roblox cần được cài đặt hoặc cập nhật, nên Froststrap không thể tiếp tục.</value>
+    <value>Vì Roblox cần được cài đặt hoặc cập nhật, nên Vargostrap không thể tiếp tục.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Không có sẵn</value>
@@ -1082,7 +1082,7 @@ Hãy kiểm tra xem Roblox có hoạt động với [trình khởi chạy gốc]
     <value>Cấu hình các thông số ứng dụng như cách thức điều chỉnh tỷ lệ DPI và [các tối ưu hóa chế độ toàn màn hình]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox chưa được cài đặt. Vui lòng khởi chạy Roblox bằng Froststrap ít nhất một lần trước khi thử sử dụng tùy chọn này.</value>
+    <value>Roblox chưa được cài đặt. Vui lòng khởi chạy Roblox bằng Vargostrap ít nhất một lần trước khi thử sử dụng tùy chọn này.</value>
   </data>
   <data name="Bootstrapper.JsonManagerSaveFailed" xml:space="preserve">
     <value>Không thể lưu {0}: {1}</value>
@@ -1097,10 +1097,10 @@ Hãy kiểm tra xem Roblox có hoạt động với [trình khởi chạy gốc]
     <value>Trích xuất các biểu tượng Roblox vào thư mục</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Cho phép bạn sử dụng bộ biểu tượng Roblox của Froststrap cho các phím tắt của mình. [Xem cách thực hiện.]({0})</value>
+    <value>Cho phép bạn sử dụng bộ biểu tượng Roblox của Vargostrap cho các phím tắt của mình. [Xem cách thực hiện.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>Froststrap không thể ghi vào Sổ đăng ký Windows. Có khả năng phần mềm diệt virus đang can thiệp và gây ra sự cố. Vui lòng kiểm tra để đảm bảo không có yếu tố nào hạn chế hoạt động của Froststrap.</value>
+    <value>Vargostrap không thể ghi vào Sổ đăng ký Windows. Có khả năng phần mềm diệt virus đang can thiệp và gây ra sự cố. Vui lòng kiểm tra để đảm bảo không có yếu tố nào hạn chế hoạt động của Vargostrap.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Đặt lại mọi thứ về mặc định</value>
@@ -1147,7 +1147,7 @@ Bạn có muốn bật Chế độ Thử nghiệm không?</value>
     <comment>Currently used under the "Froststrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Menu.Channel.Description" xml:space="preserve">
-    <value>Thay đổi cài đặt triển khai và cài đặt cho Roblox và Froststrap.</value>
+    <value>Thay đổi cài đặt triển khai và cài đặt cho Roblox và Vargostrap.</value>
   </data>
   <data name="Common.Version" xml:space="preserve">
     <value>Phiên bản</value>
@@ -1178,7 +1178,7 @@ Bạn có muốn bật Chế độ Thử nghiệm không?</value>
     <value>Xin lỗi</value>
   </data>
   <data name="Dialog.Bloxshade.Setting" xml:space="preserve">
-    <value>Froststrap hiện không còn hỗ trợ Bloxshade nữa.
+    <value>Vargostrap hiện không còn hỗ trợ Bloxshade nữa.
 Để biết thêm thông tin, hãy tham gia máy chủ Discord của Bloxshade.</value>
   </data>
   <data name="Common.Profiles" xml:space="preserve">
@@ -1204,7 +1204,7 @@ Bạn có muốn chuyển sang kênh mặc định ({1}) không?</value>
     <value>Hành động chuyển kênh tự động</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
-    <value>Roblox hoặc Froststrap có thể sẽ cố gắng thay đổi kênh ưa thích của bạn.</value>
+    <value>Roblox hoặc Vargostrap có thể sẽ cố gắng thay đổi kênh ưa thích của bạn.</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
     <value>Tự động thay đổi</value>
@@ -1286,10 +1286,10 @@ Bạn có muốn chuyển kênh ưa thích sang {0} không?</value>
     <value>Ngăn Roblox ghi đè lên các cài đặt chung.</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Title" xml:space="preserve">
-    <value>Quyền truy cập tài khoản Froststrap</value>
+    <value>Quyền truy cập tài khoản Vargostrap</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Description" xml:space="preserve">
-    <value>Cho phép truy cập các API của Roblox bằng cookie xác thực của bạn. [Froststrap sẽ truy cập những gì?]({0})</value>
+    <value>Cho phép truy cập các API của Roblox bằng cookie xác thực của bạn. [Vargostrap sẽ truy cập những gì?]({0})</value>
   </data>
   <data name="Menu.Appearance.WindowsBackdrop.Title" xml:space="preserve">
     <value>Phông nền cửa sổ</value>
@@ -1361,10 +1361,10 @@ Bạn có muốn chuyển kênh ưa thích sang {0} không?</value>
     <value>Hành động nhấp đúp</value>
   </data>
   <data name="Menu.Integrations.DoubleClickAction.Description" xml:space="preserve">
-    <value>Mở một cửa sổ cụ thể khi bạn nhấp đúp vào biểu tượng Froststrap trên khay hệ thống trong khi khởi chạy Roblox.</value>
+    <value>Mở một cửa sổ cụ thể khi bạn nhấp đúp vào biểu tượng Vargostrap trên khay hệ thống trong khi khởi chạy Roblox.</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Description" xml:space="preserve">
-    <value>Bật tính năng này để hiển thị thông báo RPC tùy chỉnh “Playing Froststrap” trên hồ sơ Discord của bạn khi ứng dụng đang mở.</value>
+    <value>Bật tính năng này để hiển thị thông báo RPC tùy chỉnh “Playing Vargostrap” trên hồ sơ Discord của bạn khi ứng dụng đang mở.</value>
   </data>
   <data name="Menu.Integrations.CustomStatusDisplay.Title" xml:space="preserve">
     <value>Hiển thị trạng thái tùy chỉnh</value>
@@ -1439,10 +1439,10 @@ Bạn có muốn chuyển kênh ưa thích sang {0} không?</value>
     <value>Mod của cộng đồng</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
-    <value>Nhật ký Froststrap</value>
+    <value>Nhật ký Vargostrap</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
-    <value>Các bản ghi của Froststrap sẽ bị xóa.</value>
+    <value>Các bản ghi của Vargostrap sẽ bị xóa.</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.FollowUser" xml:space="preserve">
     <value>Có vẻ như một người bạn đang chơi trò chơi này. Bạn có muốn tham gia cùng họ không?</value>
@@ -1451,7 +1451,7 @@ Bạn có muốn chuyển kênh ưa thích sang {0} không?</value>
     <value>Kích hoạt tính năng Ghép đôi Tốt hơn</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.Description" xml:space="preserve">
-    <value>Hãy để Froststrap quyết định bạn sẽ tham gia máy chủ nào. Chương trình sẽ ưu tiên máy chủ có khoảng cách gần nhất với bạn.</value>
+    <value>Hãy để Vargostrap quyết định bạn sẽ tham gia máy chủ nào. Chương trình sẽ ưu tiên máy chủ có khoảng cách gần nhất với bạn.</value>
   </data>
   <data name="Menu.FastFlags.Presets.TextureQuality.Title" xml:space="preserve">
     <value>Chất lượng kết cấu</value>
@@ -2035,7 +2035,7 @@ Nó phải chứa ít nhất một trong các thư mục sau: content, ExtraCont
     <value>Cập nhật các phiên bản thử nghiệm</value>
   </data>
   <data name="Menu.Deployment.AutoPreReleaseUpdate.Description" xml:space="preserve">
-    <value>Froststrap sẽ tự động kiểm tra và cập nhật lên phiên bản thử nghiệm khi khởi chạy Roblox.</value>
+    <value>Vargostrap sẽ tự động kiểm tra và cập nhật lên phiên bản thử nghiệm khi khởi chạy Roblox.</value>
   </data>
   <data name="Menu.TestMode.Description" xml:space="preserve">
     <value>Tự động ẩn cửa sổ cài đặt khi khởi chạy Roblox và hiển thị lại cửa sổ này khi Roblox đóng lại.</value>
@@ -2424,7 +2424,7 @@ Bạn có muốn cài đặt plugin này không?</value>
     <value>Máy chủ nhỏ</value>
   </data>
   <data name="Menu.RegionSelector.LoginRequired" xml:space="preserve">
-    <value>Hãy đăng nhập bằng Trình quản lý tài khoản, bật tính năng “Quyền truy cập tài khoản Froststrap” hoặc báo cáo vấn đề này lên máy chủ Discord của chúng tôi để sử dụng.</value>
+    <value>Hãy đăng nhập bằng Trình quản lý tài khoản, bật tính năng “Quyền truy cập tài khoản Vargostrap” hoặc báo cáo vấn đề này lên máy chủ Discord của chúng tôi để sử dụng.</value>
   </data>
   <data name="Menu.RegionSelector.EnterPlaceId" xml:space="preserve">
     <value>Nhập ID địa điểm và nhấp vào Tìm kiếm để xem các máy chủ.</value>

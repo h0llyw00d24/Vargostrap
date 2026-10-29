@@ -32,7 +32,7 @@ SPDX-License-Identifier: MPL-2.0
                 <TextBlock
                     FontSize="20"
                     FontWeight="Bold"
-                    Text="Froststrap" />
+                    Text="Vargostrap" />
 
                 <controls:MarkdownTextBlock Foreground="{DynamicResource TextFillColorSecondaryBrush}"
                                             MarkdownText="{x:Static resources:Strings.Menu_Appearance_Froststrap_Description}"
@@ -215,7 +215,7 @@ SPDX-License-Identifier: MPL-2.0
                     Classes="NoUserExpansion"
                     IsExpanded="{Binding WindowManipulationEnabled, Mode=OneWay}"
                     Header="Window Manipulation"
-                    Description="Allow Froststrap to customize the Roblox window (title, icon, etc.)."
+                    Description="Allow Vargostrap to customize the Roblox window (title, icon, etc.)."
                     IsVisible="{x:Static gv:GlobalViewModel.IsWindows}">
                     <controls:CardExpander.HeaderContent>
                         <StackPanel Orientation="Horizontal" Spacing="8">
@@ -500,7 +500,7 @@ SPDX-License-Identifier: MPL-2.0
                 </controls:OptionControl>
 
                 <controls:OptionControl Header="{x:Static resources:Strings.Menu_Appearance_CustomisationTitle_Title}" Description="{x:Static resources:Strings.Menu_Appearance_CustomisationTitle_Description}">
-                    <TextBox PlaceholderText="Froststrap" Width="200" Text="{Binding Title, Mode=TwoWay}" />
+                    <TextBox PlaceholderText="Vargostrap" Width="200" Text="{Binding Title, Mode=TwoWay}" />
                 </controls:OptionControl>
             </StackPanel>
         </ScrollViewer>

@@ -1,0 +1,68 @@
+<!--
+SPDX-FileCopyrightText: 2026 Vargostrap
+
+SPDX-License-Identifier: MPL-2.0
+-->
+
+<UserControl
+    x:Class="Froststrap.Vargostrap.UI.AhkScriptsSection"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Froststrap.UI.Elements.Controls"
+    xmlns:ui="using:FluentAvalonia.UI.Controls"
+    xmlns:vm="clr-namespace:Froststrap.Vargostrap.Models"
+    xmlns:vui="clr-namespace:Froststrap.Vargostrap.UI"
+    x:DataType="vui:AhkScriptsSectionViewModel"
+    IsVisible="{x:Static vui:AhkScriptsSectionViewModel.IsWindows}">
+
+    <controls:CardExpander
+        Header="AutoHotkey scripts"
+        Description="Start your own AutoHotkey scripts when Roblox launches, and close them when Roblox closes.">
+        <controls:CardExpander.HeaderContent>
+            <ToggleSwitch IsChecked="{Binding Enabled, Mode=TwoWay}" />
+        </controls:CardExpander.HeaderContent>
+
+        <StackPanel Margin="0,8,0,0" Spacing="10">
+            <ui:FAInfoBar Severity="Warning" IsClosable="False"
+                          IsOpen="{x:Static vui:AhkScriptsSectionViewModel.AhkMissing}"
+                          IsVisible="{x:Static vui:AhkScriptsSectionViewModel.AhkMissing}"
+                          Title="AutoHotkey isn't installed"
+                          Message="Install AutoHotkey (v2 is recommended) from autohotkey.com, then reopen this page. Your scripts won't run until it's installed.">
+                <ui:FAInfoBar.ActionButton>
+                    <Button Content="Get AutoHotkey"
+                            Command="{x:Static vui:AhkScriptsSectionViewModel.OpenDownloadCommand}"
+                            CommandParameter="{x:Static vui:AhkScriptsSectionViewModel.DownloadUrl}" />
+                </ui:FAInfoBar.ActionButton>
+            </ui:FAInfoBar>
+
+            <TextBlock FontSize="13" TextWrapping="Wrap" Foreground="{DynamicResource TextFillColorSecondaryBrush}"
+                       Text="{x:Static vui:AhkScriptsSectionViewModel.AhkStatus}" />
+
+            <TextBlock FontSize="13" TextWrapping="Wrap" Foreground="{DynamicResource TextFillColorSecondaryBrush}"
+                       Text="Vargostrap only starts the scripts checked below, as separate programs. It doesn't change Roblox in any way. Key-remapping scripts are generally fine. Macros that play for you (auto-clicking, auto-farming) can break Roblox's or a game's rules and may get your account banned. You're responsible for what your scripts do." />
+
+            <ItemsControl ItemsSource="{Binding Scripts}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate x:DataType="vm:AhkScript">
+                        <Grid ColumnDefinitions="Auto,*,Auto" Margin="0,2">
+                            <CheckBox IsChecked="{Binding Enabled, Mode=TwoWay}" ToolTip.Tip="Run this script" />
+                            <TextBlock Grid.Column="1" Text="{Binding Path}" VerticalAlignment="Center"
+                                       TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Path}" Margin="4,0,8,0" />
+                            <Button Grid.Column="2" Content="Remove"
+                                    Command="{Binding $parent[ItemsControl].((vui:AhkScriptsSectionViewModel)DataContext).RemoveScriptCommand}"
+                                    CommandParameter="{Binding}" />
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <TextBlock FontSize="13" Foreground="{DynamicResource TextFillColorSecondaryBrush}"
+                       Text="No scripts added yet." IsVisible="{Binding !HasScripts}" />
+
+            <Button Content="Add script…" Command="{Binding AddScriptCommand}" CommandParameter="{Binding $self}" HorizontalAlignment="Left" />
+
+            <TextBlock FontSize="13" TextWrapping="Wrap" Foreground="{DynamicResource TextFillColorSecondaryBrush}"
+                       Text="Click Save at the bottom to keep changes. Scripts start on your next Roblox launch through Vargostrap." />
+        </StackPanel>
+    </controls:CardExpander>
+</UserControl>

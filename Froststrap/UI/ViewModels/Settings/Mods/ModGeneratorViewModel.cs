@@ -299,8 +299,8 @@ namespace Froststrap.UI.ViewModels.Settings.Mods
                     fontFamily = resource as Avalonia.Media.FontFamily;
 
                 fontFamily ??= string.Equals(fontVariant, "Filled", StringComparison.OrdinalIgnoreCase)
-                    ? new Avalonia.Media.FontFamily("avares://Froststrap/Resources/Fonts#BuilderIcons-Filled")
-                    : new Avalonia.Media.FontFamily("avares://Froststrap/Resources/Fonts#BuilderIcons-Regular");
+                    ? new Avalonia.Media.FontFamily("avares://Vargostrap/Resources/Fonts#BuilderIcons-Filled")
+                    : new Avalonia.Media.FontFamily("avares://Vargostrap/Resources/Fonts#BuilderIcons-Regular");
 
                 var typeface = new Typeface(fontFamily);
                 var characterCodes = Enumerable.Range(0xF101, 495).ToList();

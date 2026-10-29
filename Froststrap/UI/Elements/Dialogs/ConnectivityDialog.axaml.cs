@@ -45,7 +45,7 @@ namespace Froststrap.UI.Elements.Dialogs
             }
             else
             {
-                var uri = new Uri($"avares://Froststrap/Resources/MessageBox/{iconFilename}.png");
+                var uri = new Uri($"avares://Vargostrap/Resources/MessageBox/{iconFilename}.png");
                 using var stream = AssetLoader.Open(uri);
                 IconImage.Source = new Bitmap(stream);
             }

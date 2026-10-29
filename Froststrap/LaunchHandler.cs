@@ -139,7 +139,7 @@ namespace Froststrap
         private static string ActivationRequestPath => Path.Combine(
             string.IsNullOrEmpty(Paths.Base) ? Path.GetTempPath() : Paths.Base,
             "Locks",
-            "Froststrap-SettingsActivate.request");
+            $"{App.ProjectName}-SettingsActivate.request");
 
         private static void RequestSettingsActivation()
         {
@@ -457,7 +457,7 @@ namespace Froststrap
             await Task.Run(() =>
             {
                 App.Logger.Info("Started event waiter");
-                using (EventWaitHandle handle = new(false, EventResetMode.AutoReset, "Froststrap-BackgroundUpdaterKillEvent"))
+                using (EventWaitHandle handle = new(false, EventResetMode.AutoReset, $"{App.ProjectName}-BackgroundUpdaterKillEvent"))
                     handle.WaitOne();
 
                 App.Logger.Info("Received close event, killing it all!");

@@ -77,7 +77,7 @@ namespace Froststrap
         {
             static string DesktopFile => Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                "applications", "froststrap.desktop");
+                "applications", Vargostrap.Brand.LinuxDesktopFile);
 
             // Inside an AppImage, ProcessPath is a temporary mount, APPIMAGE is the real file.
             static string ExePath => Environment.GetEnvironmentVariable("APPIMAGE") ?? Environment.ProcessPath!;
@@ -91,7 +91,7 @@ namespace Froststrap
                     $"[Desktop Entry]\nType=Application\nName=Froststrap\nExec=\"{ExePath}\" %u\nTerminal=false\nNoDisplay=true\nMimeType={mime}\n");
 
                 foreach (string scheme in Schemes)
-                    Run("xdg-mime", $"default froststrap.desktop x-scheme-handler/{scheme}");
+                    Run("xdg-mime", $"default {Vargostrap.Brand.LinuxDesktopFile} x-scheme-handler/{scheme}");
                 Run("update-desktop-database", $"\"{Path.GetDirectoryName(DesktopFile)}\"");
             }
 
@@ -112,7 +112,7 @@ namespace Froststrap
                 });
                 string current = query?.StandardOutput.ReadToEnd().Trim() ?? "";
                 query?.WaitForExit(5000);
-                return current == "froststrap.desktop";
+                return current == Vargostrap.Brand.LinuxDesktopFile;
             }
 
             static void Run(string file, string args)

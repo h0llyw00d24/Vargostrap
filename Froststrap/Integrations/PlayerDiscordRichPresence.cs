@@ -390,6 +390,7 @@ namespace Froststrap.Integrations
             string icon = universeDetails.Thumbnail.ImageUrl ?? "roblox";
             string smallImage = "roblox";
             string smallImageText = "Roblox";
+            Vargostrap.Discord.VargoRpc.ApplyInGameLogo(ref smallImage, ref smallImageText); // Vargostrap
 
             if (App.Settings.Prop.ShowAccountOnRichPresence)
             {

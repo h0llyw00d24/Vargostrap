@@ -14,6 +14,7 @@ SPDX-License-Identifier: MPL-2.0
     xmlns:resources="using:Froststrap.Resources"
     xmlns:vm="clr-namespace:Froststrap.UI.ViewModels.Settings"
     xmlns:gv="using:Froststrap.UI.ViewModels"
+    xmlns:vargoui="clr-namespace:Froststrap.Vargostrap.UI"
     d:DesignHeight="2500"
     d:DesignWidth="1200"
     x:DataType="vm:IntegrationsViewModel"
@@ -159,6 +160,8 @@ SPDX-License-Identifier: MPL-2.0
                                     Header="{x:Static resources:Strings.Menu_Integrations_FroststrapRPC_Title}">
                 <ToggleSwitch IsChecked="{Binding ShowUsingFroststrapRPC, Mode=TwoWay}" />
             </controls:OptionControl>
+
+            <vargoui:VargoRpcSection /> <!-- Vargostrap -->
 
             <TextBlock
                        FontSize="20"

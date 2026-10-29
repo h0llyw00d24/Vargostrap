@@ -13,7 +13,7 @@ SPDX-License-Identifier: MPL-2.0
                          x:DataType="vm:TwentyFiveDialogViewModel"
                          Width="576" Height="482"
                          CanResize="False"
-                         Title="Froststrap"
+                         Title="Vargostrap"
                          WindowDecorations="None"
                          WindowStartupLocation="CenterScreen"
                          ExtendClientAreaToDecorationsHint="True"
@@ -21,7 +21,7 @@ SPDX-License-Identifier: MPL-2.0
 
     <Grid>
         <controls:TitleBar VerticalAlignment="Top" Title="" Icon="{x:Null}" ShowClose="False" ShowMaximize="False" ShowMinimize="False" />
-        <Image Source="avares://Froststrap/Resources/BootstrapperStyles/TwentyFiveDialog/PlayerLogo.png"
+        <Image Source="avares://Vargostrap/Resources/BootstrapperStyles/TwentyFiveDialog/PlayerLogo.png"
                Height="254" Width="254"
                HorizontalAlignment="Center"
                VerticalAlignment="Top"
@@ -40,7 +40,7 @@ SPDX-License-Identifier: MPL-2.0
                          Maximum="{Binding ProgressMaximum}"
                          Value="{Binding ProgressValue}" />
 
-            <Image Source="avares://Froststrap/Resources/BootstrapperStyles/TwentyFiveDialog/Roblox.png"
+            <Image Source="avares://Vargostrap/Resources/BootstrapperStyles/TwentyFiveDialog/Roblox.png"
                    Height="32" Width="103"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Center"

@@ -17,7 +17,7 @@ SPDX-License-Identifier: MPL-2.0
                          Width="600" Height="400"
                          CanResize="False"
                          WindowStartupLocation="CenterScreen"
-                         Title="Froststrap"
+                         Title="Vargostrap"
                          ExtendClientAreaToDecorationsHint="True"
                          Background="Transparent"
                          TransparencyLevelHint="Transparent">

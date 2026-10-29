@@ -1,0 +1,140 @@
+<!--
+SPDX-FileCopyrightText: 2026 Vargostrap
+
+SPDX-License-Identifier: MPL-2.0
+-->
+
+<UserControl
+    x:Class="Froststrap.Vargostrap.UI.SystemTuningSection"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Froststrap.UI.Elements.Controls"
+    xmlns:vui="clr-namespace:Froststrap.Vargostrap.UI"
+    x:DataType="vui:SystemTuningViewModel">
+
+    <UserControl.Styles>
+        <Style Selector="TextBlock.section">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Margin" Value="0,18,0,8" />
+        </Style>
+        <Style Selector="TextBlock.hint">
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="Foreground" Value="{DynamicResource TextFillColorSecondaryBrush}" />
+        </Style>
+    </UserControl.Styles>
+
+    <StackPanel>
+
+        <!-- ============ Priority management ============ -->
+        <TextBlock Classes="section" Text="Priority management" />
+        <TextBlock Classes="hint" Margin="0,0,0,8"
+                   Text="Applied each time Roblox starts through Vargostrap and undone when it closes. Uses the same Windows controls as Task Manager and Windows' graphics settings, from outside Roblox." />
+
+        <controls:CardExpander Header="Prioritize Roblox"
+                               Description="Give Roblox more CPU time and keep Windows from throttling it while you play.">
+            <controls:CardExpander.HeaderContent>
+                <ToggleSwitch IsChecked="{Binding PriorityEnabled, Mode=TwoWay}" />
+            </controls:CardExpander.HeaderContent>
+            <StackPanel Margin="0,8,0,0" Spacing="4">
+                <controls:OptionControl Header="Roblox CPU priority"
+                                        Description="Above normal is enough for most PCs. High can help on busy systems. Realtime is never used: it can freeze Windows.">
+                    <ComboBox MinWidth="160" ItemsSource="{x:Static vui:SystemTuningViewModel.PriorityLevels}" SelectedItem="{Binding RobloxPriority, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Converter={x:Static vui:PriorityLevelConverter.Instance}}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </controls:OptionControl>
+                <controls:OptionControl Header="Exempt from EcoQoS"
+                                        Description="Stops Windows 11's efficiency mode from slowing Roblox down to save power.">
+                    <ToggleSwitch IsChecked="{Binding DisableEcoQos, Mode=TwoWay}" />
+                </controls:OptionControl>
+                <controls:OptionControl Header="Keep memory priority normal"
+                                        Description="Stops Windows from treating Roblox's memory as low priority and paging it out early when RAM is tight.">
+                    <ToggleSwitch IsChecked="{Binding MemoryPriority, Mode=TwoWay}" />
+                </controls:OptionControl>
+                <controls:OptionControl Header="Use the high-performance GPU"
+                                        Description="On laptops with two graphics chips, makes Roblox use the faster one (the Windows graphics settings option). Re-applied each launch because Roblox's folder changes with every update.">
+                    <ToggleSwitch IsChecked="{Binding HighPerformanceGpu, Mode=TwoWay}" />
+                </controls:OptionControl>
+                <controls:OptionControl Header="Tag Roblox traffic as high priority (DSCP)"
+                                        Description="Admin. Adds a Windows QoS policy that marks Roblox's packets DSCP 46. It only helps if your router honours DSCP (many home routers ignore it). Needs one permission prompt per launch.">
+                    <ToggleSwitch IsChecked="{Binding Dscp, Mode=TwoWay}" />
+                </controls:OptionControl>
+            </StackPanel>
+        </controls:CardExpander>
+
+        <!-- ============ Background traffic control ============ -->
+        <TextBlock Classes="section" Text="Background traffic control" />
+        <TextBlock Classes="hint" Margin="0,0,0,8"
+                   Text="While Roblox runs, pause or slow down apps that eat your bandwidth, and put them back when it closes. Nothing is ever force-closed, and Windows system processes are never touched." />
+
+        <controls:CardExpander Header="Control background apps while Roblox runs"
+                               Description="Uses your choice for each app below. Choices are remembered per app."
+                               IsExpanded="True">
+            <controls:CardExpander.HeaderContent>
+                <ToggleSwitch IsChecked="{Binding TrafficEnabled, Mode=TwoWay}" />
+            </controls:CardExpander.HeaderContent>
+            <StackPanel Margin="0,8,0,0" Spacing="8">
+                <TextBlock Classes="hint"
+                           Text="Pause: freezes the app (or stops its Windows service, admin) until Roblox closes. Lower priority: the app gets less CPU. Throttle uploads: a Windows QoS limit (admin). Windows can only limit what an app sends, not what it downloads, so use Pause for big downloads." />
+
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                    <TextBlock Classes="hint" VerticalAlignment="Center" Text="Upload limit for throttled apps" />
+                    <ComboBox Grid.Column="1" MinWidth="120" ItemsSource="{x:Static vui:SystemTuningViewModel.ThrottleOptions}" SelectedItem="{Binding ThrottleMbps, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding StringFormat=\{0\} Mbit/s}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </Grid>
+
+                <TextBlock FontWeight="SemiBold" Text="Running now" Margin="0,6,0,0" />
+                <TextBlock Classes="hint"
+                           Text="Activity is each app's total network and disk I/O, with its open internet connections. Windows only gives exact per-app network bytes to admin tools. Refreshes every 2 seconds." />
+                <TextBlock Classes="hint" Text="No known background apps are running." IsVisible="{Binding !HasApps}" />
+
+                <ItemsControl ItemsSource="{Binding Apps}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="vui:BackgroundAppRow">
+                            <Grid ColumnDefinitions="*,180,180" ColumnSpacing="8" Margin="0,3">
+                                <StackPanel VerticalAlignment="Center">
+                                    <TextBlock Text="{Binding Name}" />
+                                    <TextBlock Classes="hint" Text="{Binding Category}" />
+                                </StackPanel>
+                                <TextBlock Grid.Column="1" Classes="hint" VerticalAlignment="Center" Text="{Binding Activity}" />
+                                <ComboBox Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"
+                                          ItemsSource="{Binding AllowedActions}" SelectedItem="{Binding Action, Mode=TwoWay}">
+                                    <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Converter={x:Static vui:BackgroundActionConverter.Instance}}" />
+                                        </DataTemplate>
+                                    </ComboBox.ItemTemplate>
+                                </ComboBox>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <Button Content="Preview what happens at launch" Command="{Binding PreviewCommand}" HorizontalAlignment="Left" />
+            </StackPanel>
+        </controls:CardExpander>
+
+        <!-- ============ Safety ============ -->
+        <TextBlock Classes="section" Text="Undo and safety" />
+        <controls:CardExpander Header="Safe-mode reset" Description="{Binding PendingText}">
+            <controls:CardExpander.HeaderContent>
+                <Button Content="Undo all system changes" Command="{Binding ResetCommand}" />
+            </controls:CardExpander.HeaderContent>
+            <StackPanel Margin="0,8,0,0" Spacing="8">
+                <TextBlock Classes="hint"
+                           Text="Every change is written to a journal before it's made, and undone when Roblox closes. If Vargostrap or Windows crashes mid-game, it's undone the next time Vargostrap starts. Admin QoS policies also clear when Windows restarts. Before the first admin change each day, Vargostrap asks Windows for a System Restore point (if System Protection is on)." />
+                <Button Content="Open admin change log" Command="{Binding OpenHelperLogCommand}" HorizontalAlignment="Left" />
+            </StackPanel>
+        </controls:CardExpander>
+    </StackPanel>
+</UserControl>

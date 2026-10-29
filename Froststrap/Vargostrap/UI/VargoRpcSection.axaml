@@ -1,0 +1,130 @@
+<!--
+SPDX-FileCopyrightText: 2026 Vargostrap
+
+SPDX-License-Identifier: MPL-2.0
+-->
+
+<UserControl
+    x:Class="Froststrap.Vargostrap.UI.VargoRpcSection"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Froststrap.UI.Elements.Controls"
+    xmlns:vui="clr-namespace:Froststrap.Vargostrap.UI"
+    x:DataType="vui:VargoRpcSectionViewModel">
+
+    <UserControl.Styles>
+        <Style Selector="TextBlock.hint">
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="Foreground" Value="{DynamicResource TextFillColorSecondaryBrush}" />
+        </Style>
+        <Style Selector="TextBlock.label">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,0,12,0" />
+        </Style>
+    </UserControl.Styles>
+
+    <controls:CardExpander
+        Header="Customize Vargostrap RPC"
+        Description="Choose what your Discord profile shows while Vargostrap is open: text, logo, timer and buttons.">
+        <StackPanel Margin="0,8,0,0" Spacing="14">
+
+            <!-- Preview -->
+            <Border Background="#FF2B2D31" CornerRadius="8" Padding="14" MaxWidth="460" HorizontalAlignment="Left">
+                <StackPanel Spacing="10">
+                    <TextBlock Text="PREVIEW" FontSize="11" FontWeight="Bold" Foreground="#FFB5BAC1" />
+                    <Grid ColumnDefinitions="Auto,*">
+                        <Panel Width="72" Height="72" VerticalAlignment="Top">
+                            <Border CornerRadius="8" Background="#FF1E1F22" />
+                            <Image Source="avares://Vargostrap/Froststrap.png" IsVisible="{Binding PreviewShowsLogo}"
+                                   RenderOptions.BitmapInterpolationMode="HighQuality" />
+                            <TextBlock Text="{Binding PreviewLogoHint}" IsVisible="{Binding !PreviewShowsLogo}"
+                                       FontSize="10" Foreground="#FF949BA4" TextWrapping="Wrap" TextAlignment="Center"
+                                       VerticalAlignment="Center" Margin="4" />
+                        </Panel>
+                        <StackPanel Grid.Column="1" Margin="12,0,0,0" Spacing="2" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding PreviewAppName}" FontWeight="Bold" Foreground="#FFF2F3F5" />
+                            <TextBlock Text="{Binding PreviewDetails}" IsVisible="{Binding PreviewDetails, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"
+                                       Foreground="#FFDBDEE1" TextTrimming="CharacterEllipsis" />
+                            <TextBlock Text="{Binding PreviewState}" IsVisible="{Binding PreviewState, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"
+                                       Foreground="#FFDBDEE1" TextTrimming="CharacterEllipsis" />
+                            <TextBlock Text="00:42 elapsed" IsVisible="{Binding PreviewShowsTimer}" Foreground="#FFDBDEE1" />
+                        </StackPanel>
+                    </Grid>
+                    <Button HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" IsHitTestVisible="False"
+                            Content="{Binding PreviewButton1}" IsVisible="{Binding HasPreviewButton1}" />
+                    <Button HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" IsHitTestVisible="False"
+                            Content="{Binding PreviewButton2}" IsVisible="{Binding HasPreviewButton2}" />
+                </StackPanel>
+            </Border>
+            <TextBlock Classes="hint"
+                       Text="Changes show in Discord immediately (if the Vargostrap RPC toggle above is on). Click Save at the bottom to keep them." />
+
+            <!-- Text -->
+            <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto" RowSpacing="8">
+                <TextBlock Classes="label" Text="Top line" />
+                <TextBox Grid.Column="1" Text="{Binding Details, Mode=TwoWay}" MaxLength="128" PlaceholderText="Leave empty to hide" />
+                <TextBlock Grid.Row="1" Classes="label" Text="Second line" />
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding State, Mode=TwoWay}" MaxLength="128" PlaceholderText="Leave empty to hide" />
+                <TextBlock Grid.Row="2" Grid.Column="1" Classes="hint"
+                           Text="Use {page} for the Vargostrap page you're on and {version} for the app version. Up to 128 characters. A line under 2 characters is hidden." />
+            </Grid>
+
+            <controls:OptionControl Header="Show elapsed time" Description="Shows how long Vargostrap has been open.">
+                <ToggleSwitch IsChecked="{Binding ShowTimer, Mode=TwoWay}" />
+            </controls:OptionControl>
+
+            <controls:OptionControl Header="Show version on hover" Description="Hovering over the logo in Discord shows the Vargostrap version.">
+                <ToggleSwitch IsChecked="{Binding ShowVersion, Mode=TwoWay}" />
+            </controls:OptionControl>
+
+            <!-- Logo -->
+            <controls:OptionControl Header="Show Vargostrap logo" Description="Shows the Vargostrap logo as the big picture in your presence.">
+                <ToggleSwitch IsChecked="{Binding ShowLogo, Mode=TwoWay}" />
+            </controls:OptionControl>
+
+            <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto" RowSpacing="6">
+                <TextBlock Classes="label" Text="Logo image" />
+                <TextBox Grid.Column="1" Text="{Binding Logo, Mode=TwoWay}"
+                         PlaceholderText="https:// link to a PNG, or an art asset name from your Discord app" />
+                <TextBlock Grid.Row="1" Grid.Column="1" Classes="hint" Text="{Binding LogoStatus}" />
+            </Grid>
+
+            <controls:OptionControl Header="Show logo while playing Roblox"
+                                    Description="Puts the Vargostrap logo as the small icon on your in-game Roblox presence (instead of the Roblox icon). Needs an https:// logo link above. If you show your Roblox account on the presence, the avatar takes priority.">
+                <ToggleSwitch IsChecked="{Binding ShowLogoInGame, Mode=TwoWay}" IsEnabled="{Binding InGameLogoAvailable}" />
+            </controls:OptionControl>
+
+            <!-- Buttons -->
+            <StackPanel Spacing="8">
+                <TextBlock Text="Buttons" FontWeight="SemiBold" />
+                <Grid ColumnDefinitions="200,*" ColumnSpacing="8" RowDefinitions="Auto,Auto" RowSpacing="8">
+                    <TextBox Text="{Binding Button1Label, Mode=TwoWay}" MaxLength="32" PlaceholderText="Button 1 label" />
+                    <TextBox Grid.Column="1" Text="{Binding Button1Url, Mode=TwoWay}" PlaceholderText="https://…" />
+                    <TextBox Grid.Row="1" Text="{Binding Button2Label, Mode=TwoWay}" MaxLength="32" PlaceholderText="Button 2 label" />
+                    <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Button2Url, Mode=TwoWay}" PlaceholderText="https://…" />
+                </Grid>
+                <TextBlock Classes="hint"
+                           Text="A button appears only with both a label (up to 32 characters) and an https:// link. Discord doesn't show buttons on your own profile, only to other people." />
+            </StackPanel>
+
+            <!-- Application -->
+            <StackPanel Spacing="8">
+                <TextBlock Text="Discord application" FontWeight="SemiBold" />
+                <TextBlock Classes="hint" Text="{Binding ApplicationStatus}" />
+                <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="8">
+                    <TextBox Text="{Binding ApplicationIdInput, Mode=TwoWay}" PlaceholderText="Application ID (leave empty for Froststrap's)" />
+                    <Button Grid.Column="1" Content="Apply" Command="{Binding ApplyApplicationIdCommand}" IsEnabled="{Binding CanApplyApplicationId}" />
+                    <Button Grid.Column="2" Content="Developer Portal"
+                            Command="{Binding OpenDeveloperPortalCommand}" CommandParameter="{Binding DeveloperPortalUrl}" />
+                </Grid>
+                <TextBlock Classes="hint" Foreground="Orange" Text="{Binding ApplicationIdError}"
+                           IsVisible="{Binding ApplicationIdError, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+                <TextBlock Classes="hint"
+                           Text="To show &quot;Playing Vargostrap&quot;: create an application named Vargostrap in the Developer Portal, copy its Application ID here, and upload the logo under Rich Presence → Art Assets with the name vargostrap." />
+            </StackPanel>
+
+            <Button Content="Reset to defaults" Command="{Binding ResetCommand}" HorizontalAlignment="Left" />
+        </StackPanel>
+    </controls:CardExpander>
+</UserControl>

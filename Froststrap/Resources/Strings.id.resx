@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>Froststrap tidak dapat diperbarui secara otomatis ke versi {0}. Silakan perbarui secara manual dengan mengunduh dan menjalankannya dari situs web.</value>
+    <value>Vargostrap tidak dapat diperbarui secara otomatis ke versi {0}. Silakan perbarui secara manual dengan mengunduh dan menjalankannya dari situs web.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Roblox sedang berjalan, dan jika Anda meluncurkan instance lain, Roblox yang sedang berjalan akan ditutup. Apakah Anda yakin ingin melanjutkan peluncuran?</value>
@@ -127,10 +127,10 @@
     <value>Roblox mungkin sedang tidak bisa diakses saat ini. Lihat {0} untuk informasi lebih lanjut.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Koneksi tidak dapat terjalin, yang kemungkinan menandakan koneksi internet yang buruk atau pemblokiran oleh firewall. Jika koneksi Anda baik-baik saja, pastikan bahwa program antivirus Anda tidak memblokir Froststrap.</value>
+    <value>Koneksi tidak dapat terjalin, yang kemungkinan menandakan koneksi internet yang buruk atau pemblokiran oleh firewall. Jika koneksi Anda baik-baik saja, pastikan bahwa program antivirus Anda tidak memblokir Vargostrap.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>Froststrap tidak memiliki ruang disk yang cukup untuk mengunduh dan menginstal Roblox. Silakan kosongkan ruang disk dan coba lagi.</value>
+    <value>Vargostrap tidak memiliki ruang disk yang cukup untuk mengunduh dan menginstal Roblox. Silakan kosongkan ruang disk dan coba lagi.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Menerapkan modifikasi Roblox...</value>
@@ -166,10 +166,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>Froststrap telah berhasil dihapus</value>
+    <value>Vargostrap telah berhasil dihapus</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox sedang berjalan saat ini, tetapi harus ditutup terlebih dahulu sebelum menghapus instalasi Froststrap. Apakah Anda ingin menutup Roblox sekarang?</value>
+    <value>Roblox sedang berjalan saat ini, tetapi harus ditutup terlebih dahulu sebelum menghapus instalasi Vargostrap. Apakah Anda ingin menutup Roblox sekarang?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Roblox memerlukan penggunaan komponen Windows Media Foundation. Sepertinya komponen tersebut belum terpasang di komputer Anda, kemungkinan karena Anda menggunakan edisi N dari Windows. Silakan pasang komponen tersebut terlebih dahulu, lalu jalankan Roblox.</value>
@@ -278,14 +278,14 @@ Waktu operasional: {1}</value>
     <value>Kesalahan konektivitas</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>Froststrap tidak dapat terhubung ke {0}</value>
+    <value>Vargostrap tidak dapat terhubung ke {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Salin isi log</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Terjadi pengecualian saat menjalankan Froststrap/Froststrap</value>
+    <value>Terjadi pengecualian saat menjalankan Vargostrap/Vargostrap</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Silakan periksa [Froststrap Wiki]({0}) terlebih dahulu untuk melihat apakah masalah ini sudah diatasi dengan solusi yang tersedia.
@@ -293,7 +293,7 @@ Waktu operasional: {1}</value>
 Jika belum, silakan laporkan pengecualian ini melalui [GitHub issue]({1}) beserta salinan berkas log yang telah dibuat.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Pengecualian Froststrap</value>
+    <value>Pengecualian Vargostrap</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Kustom</value>
@@ -305,13 +305,13 @@ Jika belum, silakan laporkan pengecualian ini melalui [GitHub issue]({1}) besert
     <value>Byfron Palsu (~2023)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentDialog" xml:space="preserve">
-    <value>Froststrap (Buram)</value>
+    <value>Vargostrap (Buram)</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>Froststrap (Klasik)</value>
+    <value>Vargostrap (Klasik)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>Froststrap (Kaca)</value>
+    <value>Vargostrap (Kaca)</value>
   </data>
   <data name="Enums.CursorType.From2006" xml:space="preserve">
     <value>~2006 (Bergaya kartun)</value>
@@ -515,10 +515,10 @@ Akan menggunakan {1} sebagai pengganti.</value>
     <value>Gagal menghapus tema khusus {0}: {1}</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>Froststrap telah diperbarui ke versi {0}</value>
+    <value>Vargostrap telah diperbarui ke versi {0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Versi Froststrap yang baru saja Anda jalankan berbeda dengan versi yang saat ini terpasang.
+    <value>Versi Vargostrap yang baru saja Anda jalankan berbeda dengan versi yang saat ini terpasang.
 Apakah Anda ingin memperbarui versi yang saat ini terpasang?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -562,10 +562,10 @@ Apakah Anda ingin memperbarui versi yang saat ini terpasang?</value>
     <value>Harap diperhatikan bahwa tidak semua perubahan yang Anda lakukan akan langsung berlaku sampai Anda menutup semua sesi Roblox yang sedang terbuka.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>Froststrap sudah berjalan</value>
+    <value>Vargostrap sudah berjalan</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
-    <value>Sesuaikan bootstrapper Froststrap menggunakan beragam pilihan.</value>
+    <value>Sesuaikan bootstrapper Vargostrap menggunakan beragam pilihan.</value>
   </data>
   <data name="Menu.Appearance.CustomisationTitle.Description" xml:space="preserve">
     <value>Teks yang ditampilkan sebagai judul bootstrapper.</value>
@@ -574,16 +574,16 @@ Apakah Anda ingin memperbarui versi yang saat ini terpasang?</value>
     <value>Judul</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Atur tampilan Froststrap.</value>
+    <value>Atur tampilan Vargostrap.</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Title" xml:space="preserve">
     <value>Tema Aplikasi</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Description" xml:space="preserve">
-    <value>Sesuaikan tema Froststrap dengan mudah menggunakan preset atau buat tampilan unik Anda sendiri.</value>
+    <value>Sesuaikan tema Vargostrap dengan mudah menggunakan preset atau buat tampilan unik Anda sendiri.</value>
   </data>
   <data name="Menu.Appearance.Icon.Description" xml:space="preserve">
-    <value>Pilih ikon mana yang akan digunakan oleh Froststrap.</value>
+    <value>Pilih ikon mana yang akan digunakan oleh Vargostrap.</value>
   </data>
   <data name="Menu.Appearance.Icon.Title" xml:space="preserve">
     <value>Ikon</value>
@@ -601,10 +601,10 @@ Apakah Anda ingin memperbarui versi yang saat ini terpasang?</value>
     <value>Penampilan</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>Froststrap akan secara otomatis memeriksa dan memperbarui dirinya sendiri ke versi stabil saat Roblox dijalankan.</value>
+    <value>Vargostrap akan secara otomatis memeriksa dan memperbarui dirinya sendiri ke versi stabil saat Roblox dijalankan.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Perbarui Froststrap Secara Otomatis</value>
+    <value>Perbarui Vargostrap Secara Otomatis</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Mencegah penutupan game yang sedang Anda mainkan saat secara tidak sengaja membuka instance Roblox lainnya.</value>
@@ -613,7 +613,7 @@ Apakah Anda ingin memperbarui versi yang saat ini terpasang?</value>
     <value>Konfirmasi Peluncuran Instans</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Atur tindakan yang harus dilakukan Froststrap saat meluncurkan Roblox.</value>
+    <value>Atur tindakan yang harus dilakukan Vargostrap saat meluncurkan Roblox.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Instalasi baru Roblox akan dilakukan saat aplikasi diluncurkan berikutnya.</value>
@@ -631,7 +631,7 @@ Apakah Anda ingin memperbarui versi yang saat ini terpasang?</value>
     <value>Entri untuk nama bendera ini sudah ada.</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
-    <value>Pembersih Froststrap</value>
+    <value>Pembersih Vargostrap</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
     <value>Secara otomatis menghapus data lama untuk mengosongkan ruang penyimpanan. Awalnya dibuat oleh Fishstrap.</value>
@@ -781,7 +781,7 @@ Informasi lebih lanjut:
     <value>Mirip dengan Desktop</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Memungkinkan Froststrap untuk mendeteksi game Roblox apa yang sedang Anda mainkan. Beberapa fitur mungkin memerlukan hal ini.</value>
+    <value>Memungkinkan Vargostrap untuk mendeteksi game Roblox apa yang sedang Anda mainkan. Beberapa fitur mungkin memerlukan hal ini.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Aktifkan Pelacakan Aktivitas</value>
@@ -859,7 +859,7 @@ Informasi lebih lanjut:
     <value>Pengaturan telah disimpan!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Pengaturan Froststrap</value>
+    <value>Pengaturan Vargostrap</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Pilih bahasa yang diinginkan</value>
@@ -881,7 +881,7 @@ Beberapa teks mungkin belum diterjemahkan ke dalam bahasa pilihan Anda.</value>
     <value>Mengunci kualitas grafis pada tingkat yang dipilih. Catatan: Jika pengaturan ini diaktifkan, penggeser kualitas grafis di menu Roblox hanya akan memengaruhi jarak render dalam permainan.</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Izinkan Froststrap untuk Mengelola FastFlags</value>
+    <value>Izinkan Vargostrap untuk Mengelola FastFlags</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Menonaktifkan opsi ini akan mencegah agar pengaturan apa pun yang ditentukan di sini diterapkan ke Roblox.</value>
@@ -911,7 +911,7 @@ Beberapa teks mungkin belum diterjemahkan ke dalam bahasa pilihan Anda.</value>
     <value>Menghapus tekstur rumput bawaan Roblox. Catatan: Pengaturan ini tidak memengaruhi tekstur rumput khusus yang digunakan oleh masing-masing game.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>Froststrap tidak dapat mengunduh Roblox</value>
+    <value>Vargostrap tidak dapat mengunduh Roblox</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Roblox tidak dapat diunduh saat ini. Silakan baca halaman bantuan berikut untuk informasi lebih lanjut: {0}</value>
@@ -921,7 +921,7 @@ Beberapa teks mungkin belum diterjemahkan ke dalam bahasa pilihan Anda.</value>
     <value>Impor dari berkas</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Tidak akan ada berkas log yang dibuat untuk proses peluncuran ini karena Froststrap tidak dapat menulis ke folder di '{0}'</value>
+    <value>Tidak akan ada berkas log yang dibuat untuk proses peluncuran ini karena Vargostrap tidak dapat menulis ke folder di '{0}'</value>
   </data>
   <data name="Common.Disabled" xml:space="preserve">
     <value>Cacat</value>
@@ -936,22 +936,22 @@ Beberapa teks mungkin belum diterjemahkan ke dalam bahasa pilihan Anda.</value>
     <value>Ikon Desktop</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Hapus Instalasi Froststrap</value>
+    <value>Hapus Instalasi Vargostrap</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Proses penghapusan instalasi akan menghapus Froststrap dari sistem Anda, serta secara otomatis mengonfigurasi ulang peluncur Roblox bawaan jika masih terpasang.
+    <value>Proses penghapusan instalasi akan menghapus Vargostrap dari sistem Anda, serta secara otomatis mengonfigurasi ulang peluncur Roblox bawaan jika masih terpasang.
 
 Jika Anda menghapus atau menginstal ulang karena mengalami masalah dengan Roblox, bacalah [halaman bantuan ini]({0}) terlebih dahulu.
 
-Proses penghapusan mungkin tidak dapat membersihkan sisa-sisa file secara menyeluruh, sehingga Anda mungkin perlu membersihkan file-file sisa di lokasi tempat Froststrap diinstal secara manual.
+Proses penghapusan mungkin tidak dapat membersihkan sisa-sisa file secara menyeluruh, sehingga Anda mungkin perlu membersihkan file-file sisa di lokasi tempat Vargostrap diinstal secara manual.
 
-Froststrap diinstal di "{1}".</value>
+Vargostrap diinstal di "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Pertahankan pengaturan dan modifikasi saya</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>File-file tersebut akan disimpan di tempat di mana Froststrap diinstal, dan akan dipulihkan secara otomatis saat diinstal ulang.</value>
+    <value>File-file tersebut akan disimpan di tempat di mana Vargostrap diinstal, dan akan dipulihkan secara otomatis saat diinstal ulang.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Hapus Instalasi</value>
@@ -963,7 +963,7 @@ Froststrap diinstal di "{1}".</value>
     <value>Saat ini, runtime WebView2 belum terpasang di perangkat Anda. Beberapa fitur Roblox tidak akan berfungsi dengan baik tanpa runtime tersebut, seperti aplikasi desktop. Apakah Anda ingin mengunduhnya sekarang?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>Froststrap tidak dapat membuat pintasan untuk Desktop dan Menu Mulai. Cobalah membuatnya nanti melalui pengaturan.</value>
+    <value>Vargostrap tidak dapat membuat pintasan untuk Desktop dan Menu Mulai. Cobalah membuatnya nanti melalui pengaturan.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Silakan periksa [Froststrap Wiki]({0}) terlebih dahulu untuk melihat apakah masalah ini sudah ditangani dengan solusi.
@@ -972,7 +972,7 @@ Jika belum, silakan laporkan pengecualian ini kepada pengelola fork ini. JANGAN 
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Atur agar Froststrap dapat dijalankan dengan mudah.</value>
+    <value>Atur agar Vargostrap dapat dijalankan dengan mudah.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Umum</value>
@@ -999,14 +999,14 @@ Jika belum, silakan laporkan pengecualian ini kepada pengelola fork ini. JANGAN 
     <value>Mohon tunggu hingga proses penghapusan instalasi selesai.</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Tentang Froststrap</value>
+    <value>Tentang Vargostrap</value>
   </data>
   <data name="About.Licenses.Title" xml:space="preserve">
     <value>Lisensi</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Versi Froststrap yang baru saja Anda jalankan lebih lama daripada versi yang saat ini terpasang.
+    <value>Versi Vargostrap yang baru saja Anda jalankan lebih lama daripada versi yang saat ini terpasang.
 Masalah mungkin terjadi dan pengaturan Anda mungkin berubah. Disarankan untuk menginstal ulang.
 Apakah Anda yakin ingin melanjutkan?</value>
   </data>
@@ -1019,7 +1019,7 @@ Apakah Anda yakin ingin melanjutkan?</value>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Untuk informasi mengenai penyebab masalah ini dan cara mengatasinya, silakan baca [artikel bantuan ini]({0}).
 
-Coba periksa apakah Roblox dapat berjalan dengan [launcher aslinya]({1}). Jika tidak, berarti ini bukan masalah yang terkait dengan Froststrap. Jika ya, silakan lihat artikel bantuan tersebut.</value>
+Coba periksa apakah Roblox dapat berjalan dengan [launcher aslinya]({1}). Jika tidak, berarti ini bukan masalah yang terkait dengan Vargostrap. Jika ya, silakan lihat artikel bantuan tersebut.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Sedang dimuat, mohon tunggu...</value>
@@ -1049,7 +1049,7 @@ Coba periksa apakah Roblox dapat berjalan dengan [launcher aslinya]({1}). Jika t
     <value>Pada peluncuran kali ini, Roblox tidak akan diperiksa untuk pembaruan, dan perubahan pada mod tidak akan diterapkan.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Karena Roblox perlu diinstal atau diperbarui, Froststrap tidak dapat dilanjutkan.</value>
+    <value>Karena Roblox perlu diinstal atau diperbarui, Vargostrap tidak dapat dilanjutkan.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Tidak tersedia</value>
@@ -1061,7 +1061,7 @@ Coba periksa apakah Roblox dapat berjalan dengan [launcher aslinya]({1}). Jika t
     <value>Konfigurasikan parameter aplikasi seperti perilaku penskalaan DPI dan [optimalisasi layar penuh]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox belum terpasang. Silakan jalankan Roblox menggunakan Froststrap setidaknya sekali sebelum mencoba menggunakan opsi ini.</value>
+    <value>Roblox belum terpasang. Silakan jalankan Roblox menggunakan Vargostrap setidaknya sekali sebelum mencoba menggunakan opsi ini.</value>
   </data>
   <data name="Bootstrapper.JsonManagerSaveFailed" xml:space="preserve">
     <value>Gagal menyimpan {0}: {1}</value>
@@ -1076,10 +1076,10 @@ Coba periksa apakah Roblox dapat berjalan dengan [launcher aslinya]({1}). Jika t
     <value>Ekstrak Ikon Roblox ke Folder</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Memungkinkan Anda menggunakan berbagai ikon Roblox dari Froststrap untuk pintasan Anda. [Lihat caranya.]({0})</value>
+    <value>Memungkinkan Anda menggunakan berbagai ikon Roblox dari Vargostrap untuk pintasan Anda. [Lihat caranya.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>Froststrap tidak dapat menulis ke Registri Windows. Kemungkinan ada program antivirus yang mengganggu dan menyebabkan masalah. Silakan periksa untuk memastikan tidak ada hal yang dapat membatasi kinerja Froststrap.</value>
+    <value>Vargostrap tidak dapat menulis ke Registri Windows. Kemungkinan ada program antivirus yang mengganggu dan menyebabkan masalah. Silakan periksa untuk memastikan tidak ada hal yang dapat membatasi kinerja Vargostrap.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Kembalikan Semua Pengaturan ke Default</value>
@@ -1129,7 +1129,7 @@ Apakah Anda ingin mengaktifkan Mode Uji?</value>
     <comment>Currently used under the "Froststrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Menu.Channel.Description" xml:space="preserve">
-    <value>Ubah pengaturan penerapan dan pemasangan untuk Roblox dan Froststrap.</value>
+    <value>Ubah pengaturan penerapan dan pemasangan untuk Roblox dan Vargostrap.</value>
   </data>
   <data name="Common.Version" xml:space="preserve">
     <value>Versi</value>
@@ -1160,7 +1160,7 @@ Apakah Anda ingin mengaktifkan Mode Uji?</value>
     <value>Maaf</value>
   </data>
   <data name="Dialog.Bloxshade.Setting" xml:space="preserve">
-    <value>Froststrap tidak lagi mendukung Bloxshade.
+    <value>Vargostrap tidak lagi mendukung Bloxshade.
 Untuk informasi lebih lanjut, bergabunglah dengan server Discord Bloxshade.</value>
   </data>
   <data name="Common.Profiles" xml:space="preserve">
@@ -1186,7 +1186,7 @@ Apakah Anda ingin beralih ke saluran default ({1})?</value>
     <value>Tindakan Pergantian Saluran Otomatis</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
-    <value>Roblox atau Froststrap mungkin akan mencoba mengubah saluran pilihan Anda.</value>
+    <value>Roblox atau Vargostrap mungkin akan mencoba mengubah saluran pilihan Anda.</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
     <value>Berubah secara otomatis</value>
@@ -1268,10 +1268,10 @@ Apakah Anda ingin mengganti saluran pilihan Anda menjadi {0}?</value>
     <value>Cegah Roblox agar tidak mengganti pengaturan global.</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Title" xml:space="preserve">
-    <value>Izin Akun Froststrap</value>
+    <value>Izin Akun Vargostrap</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Description" xml:space="preserve">
-    <value>Memberikan akses ke API Roblox menggunakan cookie otentikasi Anda. [Apa saja yang akan diakses oleh Froststrap?]({0})</value>
+    <value>Memberikan akses ke API Roblox menggunakan cookie otentikasi Anda. [Apa saja yang akan diakses oleh Vargostrap?]({0})</value>
   </data>
   <data name="Menu.Appearance.WindowsBackdrop.Title" xml:space="preserve">
     <value>Latar Belakang Jendela</value>
@@ -1343,10 +1343,10 @@ Apakah Anda ingin mengganti saluran pilihan Anda menjadi {0}?</value>
     <value>Tindakan Klik Ganda</value>
   </data>
   <data name="Menu.Integrations.DoubleClickAction.Description" xml:space="preserve">
-    <value>Membuka jendela tertentu saat Anda mengklik dua kali ikon Froststrap di baki sistem saat meluncurkan Roblox.</value>
+    <value>Membuka jendela tertentu saat Anda mengklik dua kali ikon Vargostrap di baki sistem saat meluncurkan Roblox.</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Description" xml:space="preserve">
-    <value>Aktifkan opsi ini untuk menampilkan RPC khusus 'Playing Froststrap' di profil Discord Anda saat aplikasi sedang terbuka.</value>
+    <value>Aktifkan opsi ini untuk menampilkan RPC khusus 'Playing Vargostrap' di profil Discord Anda saat aplikasi sedang terbuka.</value>
   </data>
   <data name="Menu.Integrations.CustomStatusDisplay.Title" xml:space="preserve">
     <value>Tampilan Status Khusus</value>
@@ -1421,10 +1421,10 @@ Apakah Anda ingin mengganti saluran pilihan Anda menjadi {0}?</value>
     <value>Mod Komunitas</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
-    <value>Catatan Froststrap</value>
+    <value>Catatan Vargostrap</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
-    <value>Log Froststrap akan dihapus.</value>
+    <value>Log Vargostrap akan dihapus.</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.FollowUser" xml:space="preserve">
     <value>Sepertinya ada teman yang sedang memainkan game ini. Mau ikut main bareng mereka?</value>
@@ -1433,7 +1433,7 @@ Apakah Anda ingin mengganti saluran pilihan Anda menjadi {0}?</value>
     <value>Aktifkan BetterMatchmaking</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.Description" xml:space="preserve">
-    <value>Biarkan Froststrap yang menentukan server mana yang akan Anda masuki. Froststrap akan memprioritaskan server yang jaraknya paling dekat dengan Anda.</value>
+    <value>Biarkan Vargostrap yang menentukan server mana yang akan Anda masuki. Vargostrap akan memprioritaskan server yang jaraknya paling dekat dengan Anda.</value>
   </data>
   <data name="Menu.FastFlags.Presets.TextureQuality.Title" xml:space="preserve">
     <value>Kualitas Tekstur</value>
@@ -1999,7 +1999,7 @@ Sumber tersebut harus berisi setidaknya salah satu dari folder berikut: content,
     <value>Pembaruan untuk Versi Pra-Rilis</value>
   </data>
   <data name="Menu.Deployment.AutoPreReleaseUpdate.Description" xml:space="preserve">
-    <value>Froststrap akan secara otomatis memeriksa dan memperbarui dirinya sendiri ke versi uji coba saat Roblox diluncurkan.</value>
+    <value>Vargostrap akan secara otomatis memeriksa dan memperbarui dirinya sendiri ke versi uji coba saat Roblox diluncurkan.</value>
   </data>
   <data name="Menu.TestMode.Description" xml:space="preserve">
     <value>Sembunyikan jendela pengaturan secara otomatis saat Roblox dijalankan dan tampilkan kembali saat Roblox ditutup.</value>
@@ -2388,7 +2388,7 @@ Apakah Anda ingin menginstal plugin ini?</value>
     <value>Server Kecil</value>
   </data>
   <data name="Menu.RegionSelector.LoginRequired" xml:space="preserve">
-    <value>Masuk menggunakan Account Manager atau aktifkan 'Izin Akun Froststrap', atau laporkan hal ini ke server Discord kami agar dapat menggunakannya.</value>
+    <value>Masuk menggunakan Account Manager atau aktifkan 'Izin Akun Vargostrap', atau laporkan hal ini ke server Discord kami agar dapat menggunakannya.</value>
   </data>
   <data name="Menu.RegionSelector.EnterPlaceId" xml:space="preserve">
     <value>Masukkan ID Tempat, lalu klik Cari untuk melihat server.</value>

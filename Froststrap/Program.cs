@@ -39,6 +39,10 @@ sealed partial class Program
     {
         AppInitializer.InitializeNativeResolvers();
 
+        // Vargostrap: elevated helper for admin-only system changes (no UI, exits when done)
+        if (OperatingSystem.IsWindows() && args.Length > 0 && args[0] == Vargostrap.SystemChanges.ElevatedHelper.Argument)
+            return Vargostrap.SystemChanges.ElevatedHelper.Run(args);
+
         VelopackApp.Build()
             .SetAutoApplyOnStartup(false)
             .OnAfterInstallFastCallback(v => UriHandler.RegisterProtocolHandlers())

@@ -403,7 +403,7 @@ namespace Froststrap.UI.Elements.Dialogs
         private void LoadPresetProfiles()
         {
             LoadPresetProfile.Items.Clear();
-            var presetAssets = AssetLoader.GetAssets(new Uri("avares://Froststrap/Resources/PresetFlags/"), null);
+            var presetAssets = AssetLoader.GetAssets(new Uri("avares://Vargostrap/Resources/PresetFlags/"), null);
             foreach (var assetUri in presetAssets)
             {
                 string profileName = Path.GetFileName(assetUri.AbsolutePath);

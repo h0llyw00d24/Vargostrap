@@ -20,6 +20,7 @@ SPDX-License-Identifier: MPL-2.0
     xmlns:transitions="clr-namespace:Froststrap.UI.Utility"
     xmlns:ui="using:FluentAvalonia.UI.Controls"
     xmlns:vm="clr-namespace:Froststrap.UI.ViewModels.Settings"
+    xmlns:vargo="clr-namespace:Froststrap.Vargostrap"
     Title="{x:Static resources:Strings.Menu_Title}"
     WindowDecorationsTheme="{StaticResource SettingsWindowDecorationsTheme}"
     Width="1125"
@@ -210,15 +211,15 @@ SPDX-License-Identifier: MPL-2.0
 
                 <ui:FANavigationViewItemSeparator />
 
-                <ui:FANavigationViewItem Content="{x:Static resources:Strings.Menu_FastFlags_Title}" Tag="fastflags">
+                <ui:FANavigationViewItem Content="{x:Static vargo:VargoStrings.FpsOptimizationTitle}" Tag="fastflags">
                     <ui:FANavigationViewItem.Icon>
-                        <ic:Lucide Icon="Flag" />
+                        <ic:Lucide Icon="Gauge" />
                     </ui:FANavigationViewItem.Icon>
                 </ui:FANavigationViewItem>
 
-                <ui:FANavigationViewItem Name="gbs" Content="{x:Static resources:Strings.Menu_GlobalSettings_Title}" Tag="globalsettings">
+                <ui:FANavigationViewItem Name="gbs" Content="{x:Static vargo:VargoStrings.RobloxSettingsTitle}" Tag="globalsettings">
                     <ui:FANavigationViewItem.Icon>
-                        <ic:Lucide Icon="PenLine" />
+                        <ic:Lucide Icon="SlidersHorizontal" />
                     </ui:FANavigationViewItem.Icon>
                 </ui:FANavigationViewItem>
 
@@ -229,6 +230,12 @@ SPDX-License-Identifier: MPL-2.0
                 </ui:FANavigationViewItem>
 
                 <ui:FANavigationViewItemSeparator />
+
+                <ui:FANavigationViewItem Content="{x:Static vargo:VargoStrings.PingPerformanceTitle}" Tag="pingperformance">
+                    <ui:FANavigationViewItem.Icon>
+                        <ic:Lucide Icon="Activity" />
+                    </ui:FANavigationViewItem.Icon>
+                </ui:FANavigationViewItem>
 
                 <ui:FANavigationViewItem Content="{x:Static resources:Strings.Menu_RegionSelector_Title}" Tag="regionselector">
                     <ui:FANavigationViewItem.Icon>

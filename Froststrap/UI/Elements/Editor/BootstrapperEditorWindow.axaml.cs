@@ -231,7 +231,7 @@ namespace Froststrap.UI.Elements.Editor
             try
             {
                 string themeName = App.Settings.Prop.Theme.GetFinal().ToString();
-                var uri = new Uri($"avares://Froststrap/UI/AppThemes/EditorThemes/Editor-Theme-{themeName}.xshd");
+                var uri = new Uri($"avares://Vargostrap/UI/AppThemes/EditorThemes/Editor-Theme-{themeName}.xshd");
 
                 using var xmlStream = AssetLoader.Open(uri);
                 using var reader = XmlReader.Create(xmlStream);

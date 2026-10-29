@@ -37,10 +37,11 @@ namespace Froststrap.UI.Utility
                 new { Display = Strings.Menu_Integrations_Title, Tag = "integrations" },
                 new { Display = Strings.Menu_Behaviour_Title, Tag = "behaviour" },
                 new { Display = Strings.Menu_PresetMods_Title, Tag = "mods" },
-                new { Display = Strings.Menu_FastFlags_Title, Tag = "fastflags" },
+                new { Display = Vargostrap.VargoStrings.FpsOptimizationTitle, Tag = "fastflags" },
                 new { Display = Strings.Menu_Appearance_Title, Tag = "appearance" },
                 new { Display = Strings.Menu_RegionSelector_Title, Tag = "regionselector" },
-                new { Display = Strings.Menu_GlobalSettings_Title, Tag = "globalsettings" },
+                new { Display = Vargostrap.VargoStrings.PingPerformanceTitle, Tag = "pingperformance" },
+                new { Display = Vargostrap.VargoStrings.RobloxSettingsTitle, Tag = "globalsettings" },
                 new { Display = Strings.Common_Shortcuts, Tag = "shortcuts" },
                 new { Display = Strings.Common_Deployment, Tag = "channels" }
             };

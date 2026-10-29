@@ -9,7 +9,7 @@ namespace Froststrap.Integrations.AccountManager;
 
 internal static class CredentialStore
 {
-    private const string TargetPrefix = "ktsu.CredentialCache:Froststrap:";
+    private const string TargetPrefix = $"ktsu.CredentialCache:{App.ProjectName}:";
     private const string FileName = "credentials.json";
     private const uint CredentialTypeGeneric = 1;
     private const uint CredentialPersistLocalMachine = 2;

@@ -811,6 +811,7 @@ internal partial class Bootstrapper : IDisposable
         SetStatus(Strings.Bootstrapper_Status_SearchingNearbyServers);
 
         var topRegions = await fetcher.GetClosestRegionsForAutoModeAsync(cancellationToken);
+        topRegions = Vargostrap.Network.RegionRanking.Rank(topRegions); // Vargostrap: preferred + measured regions first
 
         if (cancellationToken.IsCancellationRequested)
             return "";
@@ -1296,7 +1297,8 @@ internal partial class Bootstrapper : IDisposable
     {
         if (!(App.Settings.Prop.EnableActivityTracking
             || App.LaunchSettings.TestModeFlag.Active
-            || autoclosePids.Count > 0))
+            || autoclosePids.Count > 0
+            || Vargostrap.VargoSession.NeedsWatcher)) // Vargostrap
             return;
 
         if (PendingWatcherData is not null)
@@ -1964,7 +1966,7 @@ internal partial class Bootstrapper : IDisposable
         {
             App.Logger.Error(ex, "Flatpak not found.");
             await Frontend.ShowMessageBox(
-                "Flatpak is required on Linux.\n\nPlease install Flatpak first, then launch Froststrap again.",
+                "Flatpak is required on Linux.\n\nPlease install Flatpak first, then launch Vargostrap again.",
                 MessageBoxImage.Error
             );
             App.Terminate(ErrorCode.ERROR_CANCELLED);

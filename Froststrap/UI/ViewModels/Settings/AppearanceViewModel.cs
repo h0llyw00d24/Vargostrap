@@ -947,12 +947,7 @@ namespace Froststrap.UI.ViewModels.Settings
 
         private void ResetGradient()
         {
-            List<GradientStops> defaultStops =
-            [
-                new() { Offset = 0.0, Color = "#8025304A" },
-                new() { Offset = 0.5, Color = "#80272F48" },
-                new() { Offset = 1.0, Color = "#80202C36" }
-            ];
+            List<GradientStops> defaultStops = Vargostrap.VargoTheme.CreateDefaultGradient();
 
             foreach (var stop in GradientStops) stop.PropertyChanged -= OnGradientStopPropertyChanged;
             GradientStops.Clear();

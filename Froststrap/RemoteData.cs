@@ -20,7 +20,7 @@ namespace Froststrap
         private const int MaxSignatureLength = 80;
         private string SignatureFileLocation => $"{FileLocation}.p256.sig";
         private const string ConfigPublicKeyBase64 = "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJdlC7QtmASE6ErcMxYrF/zhB6Yur5v+as5eEic5sTawX1weypXzLxZiyqltXS+naupU498V622IGLQAuG/xHTQ==";
-        private static readonly byte[] ConfigPublicKey = Convert.FromBase64String(ConfigPublicKeyBase64);
+        internal static readonly byte[] ConfigPublicKey = Convert.FromBase64String(ConfigPublicKeyBase64);
 
         public void Subscribe(EventHandler Handler)
         {
@@ -156,7 +156,7 @@ namespace Froststrap
             }
         }
 
-        private static bool VerifyEcdsa(byte[] data, byte[] signature, byte[] publicKey)
+        internal static bool VerifyEcdsa(byte[] data, byte[] signature, byte[] publicKey)
         {
             if (data == null || signature == null || publicKey == null)
                 return false;

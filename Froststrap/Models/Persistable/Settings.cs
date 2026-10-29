@@ -72,12 +72,7 @@ namespace Froststrap.Models.Persistable
         public BootstrapperIcon BootstrapperIcon { get; set; } = BootstrapperIcon.IconFroststrap;
         public WindowsBackdrops SelectedBackdrop { get; set; } = WindowsBackdrops.None;
         public string Locale { get; set; } = "nil";
-        public List<GradientStops> CustomGradientStops { get; set; } =
-        [
-            new GradientStops { Offset = 0.0, Color = "#8025304A" },
-            new GradientStops { Offset = 0.5, Color = "#80272F48" },
-            new GradientStops { Offset = 1.0, Color = "#80202C36" }
-        ];
+        public List<GradientStops> CustomGradientStops { get; set; } = Vargostrap.VargoTheme.CreateDefaultGradient();
         public double? GradientAngle { get; set; } = 45;
         public BackgroundMode BackgroundType { get; set; } = BackgroundMode.Gradient;
         public string? BackgroundImagePath { get; set; } = "";
@@ -85,7 +80,7 @@ namespace Froststrap.Models.Persistable
         public double BackgroundOpacity { get; set; } = 1.0;
         public string BootstrapperTitle { get; set; } = App.ProjectName;
         public string BootstrapperIconCustomLocation { get; set; } = "";
-        public Theme Theme { get; set; } = Theme.Default;
+        public Theme Theme { get; set; } = Vargostrap.VargoTheme.DefaultTheme;
         public bool EnableWindowManipulation { get; set; }
         public RobloxIcon RobloxIcon { get; set; } = RobloxIcon.IconDefault;
         public string RobloxTitle { get; set; } = "Roblox";

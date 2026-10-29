@@ -12,6 +12,7 @@ SPDX-License-Identifier: MPL-2.0
              xmlns:dmodels="clr-namespace:Froststrap.UI.ViewModels.About"
              xmlns:controls="clr-namespace:Froststrap.UI.Elements.Controls"
              xmlns:resources="clr-namespace:Froststrap.Resources"
+             xmlns:vargo="clr-namespace:Froststrap.Vargostrap"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="1500"
              x:DataType="dmodels:AboutViewModel"
              x:Class="Froststrap.UI.Elements.About.Pages.AboutPage"
@@ -38,14 +39,14 @@ SPDX-License-Identifier: MPL-2.0
             <Grid Margin="0,0,0,24" HorizontalAlignment="Center" ColumnDefinitions="Auto,*">
                 <Panel Grid.Column="0">
                     <Image x:Name="Image1" Width="72" Height="72" VerticalAlignment="Center"
-                           Source="avares://Froststrap/Froststrap.png" RenderOptions.BitmapInterpolationMode="HighQuality" />
+                           Source="avares://Vargostrap/Froststrap.png" RenderOptions.BitmapInterpolationMode="HighQuality" />
                     <Image x:Name="Image2" Width="72" Height="72" VerticalAlignment="Center"
-                           Source="avares://Froststrap/Resources/BootstrapperStyles/ByfronDialog/Matt.png" RenderOptions.BitmapInterpolationMode="HighQuality"
+                           Source="avares://Vargostrap/Resources/BootstrapperStyles/ByfronDialog/Matt.png" RenderOptions.BitmapInterpolationMode="HighQuality"
                            Opacity="0" />
                 </Panel>
 
                 <StackPanel Grid.Column="1" Margin="12,0,0,0" VerticalAlignment="Center">
-                    <TextBlock Text="Froststrap" FontSize="24" FontWeight="Bold" />
+                    <TextBlock Text="Vargostrap" FontSize="24" FontWeight="Bold" />
                     <TextBlock Text="{x:Static resources:Strings.Menu_About_Description}"
                                Foreground="{DynamicResource TextFillColorTertiaryBrush}"  />
                 </StackPanel>
@@ -55,7 +56,7 @@ SPDX-License-Identifier: MPL-2.0
                 <Button Margin="0,0,8,8"
                         Content="{x:Static resources:Strings.Menu_About_GithubRepository}"
                         Command="{x:Static models:GlobalViewModel.OpenWebpageCommand}"
-                        CommandParameter="https://github.com/Froststrap/Froststrap" />
+                        CommandParameter="{x:Static vargo:Brand.RepositoryUrl}" />
 
                 <Button Margin="0,0,8,8"
                         Content="{x:Static resources:Strings.Menu_About_HelpInformation}"
@@ -65,13 +66,23 @@ SPDX-License-Identifier: MPL-2.0
                 <Button Margin="0,0,8,8"
                         Content="{x:Static resources:Strings.Menu_About_ReportIssue}"
                         Command="{x:Static models:GlobalViewModel.OpenWebpageCommand}"
-                        CommandParameter="https://github.com/Froststrap/Froststrap/issues" />
+                        CommandParameter="{x:Static vargo:Brand.IssuesUrl}" />
 
                 <Button Margin="0,0,0,8"
                         Content="{x:Static resources:Strings.Menu_About_DiscordServer}"
                         Command="{x:Static models:GlobalViewModel.OpenWebpageCommand}"
                         CommandParameter="https://discord.gg/KdR9vpRcUN" />
             </WrapPanel>
+
+            <!-- Vargostrap: upstream credits (required visible attribution) -->
+            <TextBlock Text="Credits" FontWeight="Bold" FontSize="20" Margin="0,16,0,0" />
+            <TextBlock TextWrapping="Wrap" Foreground="{DynamicResource TextFillColorTertiaryBrush}"
+                       Text="Vargostrap is a fork of Froststrap, which is derived from Fishstrap and Bloxstrap. All credit for the original work goes to their authors and contributors. Froststrap is licensed under the Mozilla Public License 2.0 and Vargostrap keeps that license." />
+            <StackPanel Margin="0,8,0,0" Spacing="2">
+                <controls:MarkdownTextBlock MarkdownText="[Froststrap](https://github.com/Froststrap/Froststrap) by the Froststrap team" />
+                <controls:MarkdownTextBlock MarkdownText="[Fishstrap](https://github.com/fishstrap/fishstrap) by the Fishstrap team" />
+                <controls:MarkdownTextBlock MarkdownText="[Bloxstrap](https://github.com/bloxstraplabs/bloxstrap) by pizzaboxer and contributors" />
+            </StackPanel>
 
             <StackPanel IsVisible="{Binding BuildInformationVisibility}">
                 <TextBlock Text="{x:Static resources:Strings.Menu_About_BuildInfo}" FontWeight="Bold" FontSize="20" Margin="0,16,0,0" />

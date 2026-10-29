@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>Aplikaci Froststrap se nepodařilo automaticky aktualizovat na verzi {0}. Aktualizujte ji prosím ručně stažením a spuštěním souboru z webových stránek.</value>
+    <value>Aplikaci Vargostrap se nepodařilo automaticky aktualizovat na verzi {0}. Aktualizujte ji prosím ručně stažením a spuštěním souboru z webových stránek.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Roblox je právě spuštěn a spuštění další instance ho ukončí. Opravdu chcete pokračovat ve spuštění?</value>
@@ -127,10 +127,10 @@
     <value>Roblox je momentálně možná mimo provoz. Další informace najdete na {0}.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Nepodařilo se navázat spojení, což pravděpodobně znamená, že máte špatné připojení k internetu nebo že vás blokuje firewall. Pokud je vaše připojení v pořádku, zkontrolujte prosím, zda váš antivirový program neblokuje Froststrap.</value>
+    <value>Nepodařilo se navázat spojení, což pravděpodobně znamená, že máte špatné připojení k internetu nebo že vás blokuje firewall. Pokud je vaše připojení v pořádku, zkontrolujte prosím, zda váš antivirový program neblokuje Vargostrap.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>Froststrap nemá dostatek místa na disku pro stažení a instalaci Robloxu. Uvolněte prosím místo na disku a zkuste to znovu.</value>
+    <value>Vargostrap nemá dostatek místa na disku pro stažení a instalaci Robloxu. Uvolněte prosím místo na disku a zkuste to znovu.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Používání modifikací pro Roblox...</value>
@@ -166,10 +166,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>Program Froststrap byl úspěšně odinstalován</value>
+    <value>Program Vargostrap byl úspěšně odinstalován</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox je právě spuštěn, ale před odinstalací Froststrapu je nutné jej zavřít. Chcete Roblox zavřít nyní?</value>
+    <value>Roblox je právě spuštěn, ale před odinstalací Vargostrapu je nutné jej zavřít. Chcete Roblox zavřít nyní?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Roblox vyžaduje použití komponent Windows Media Foundation. Zdá se, že vám tyto komponenty chybí, pravděpodobně proto, že používáte edici Windows N. Nejprve je prosím nainstalujte a teprve poté spusťte Roblox.</value>
@@ -275,14 +275,14 @@ Doba provozu: {1}</value>
     <value>Chyba připojení</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>Froststrap se nemůže připojit k {0}</value>
+    <value>Vargostrap se nemůže připojit k {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Zkopírovat obsah protokolu</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Při spuštění Froststrap/Froststrap došlo k výjimce</value>
+    <value>Při spuštění Vargostrap/Vargostrap došlo k výjimce</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Nejprve se podívejte na [Froststrap Wiki]({0}), zda již nebyl tento problém vyřešen.
@@ -290,7 +290,7 @@ Doba provozu: {1}</value>
 Pokud ne, nahlaste prosím tuto výjimku prostřednictvím [GitHub issue]({1}) spolu s kopií vytvořeného souboru protokolu.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Výjimka Froststrap</value>
+    <value>Výjimka Vargostrap</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Na míru</value>
@@ -302,16 +302,16 @@ Pokud ne, nahlaste prosím tuto výjimku prostřednictvím [GitHub issue]({1}) s
     <value>Padělek Byfronu (~2023)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentDialog" xml:space="preserve">
-    <value>Froststrap (neprůhledný)</value>
+    <value>Vargostrap (neprůhledný)</value>
   </data>
   <data name="Enums.BootstrapperStyle.TwentyFiveDialog" xml:space="preserve">
     <value>Roblox (cca 2025)</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>Froststrap (klasická verze)</value>
+    <value>Vargostrap (klasická verze)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>Froststrap (sklo)</value>
+    <value>Vargostrap (sklo)</value>
   </data>
   <data name="Enums.CursorType.From2006" xml:space="preserve">
     <value>~2006 (kreslený)</value>
@@ -518,10 +518,10 @@ Použije se výchozí nastavení {1}.</value>
     <value>Nepodařilo se odstranit vlastní téma {0}: {1}</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>Froststrap byl aktualizován na verzi {0}</value>
+    <value>Vargostrap byl aktualizován na verzi {0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Verze Froststrapu, kterou jste spustili, se liší od verze, kterou máte aktuálně nainstalovanou.
+    <value>Verze Vargostrapu, kterou jste spustili, se liší od verze, kterou máte aktuálně nainstalovanou.
 Chcete aktualizovat aktuálně nainstalovanou verzi?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -565,10 +565,10 @@ Chcete aktualizovat aktuálně nainstalovanou verzi?</value>
     <value>Vezměte prosím na vědomí, že ne všechny vaše změny se projeví okamžitě, dokud neukončíte všechny aktuálně spuštěné instance Robloxu.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>Froststrap již běží</value>
+    <value>Vargostrap již běží</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
-    <value>Přizpůsobte si bootstrapper projektu Froststrap pomocí celé řady možností.</value>
+    <value>Přizpůsobte si bootstrapper projektu Vargostrap pomocí celé řady možností.</value>
   </data>
   <data name="Menu.Appearance.CustomisationTitle.Description" xml:space="preserve">
     <value>Text, který se zobrazuje jako název bootstrapperu.</value>
@@ -577,16 +577,16 @@ Chcete aktualizovat aktuálně nainstalovanou verzi?</value>
     <value>Název</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Nastavte, jak má Froststrap vypadat.</value>
+    <value>Nastavte, jak má Vargostrap vypadat.</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Title" xml:space="preserve">
     <value>Motivy aplikací</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Description" xml:space="preserve">
-    <value>Šablony Froststrap můžete snadno přizpůsobit pomocí přednastavených variant nebo si vytvořit svůj vlastní jedinečný vzhled.</value>
+    <value>Šablony Vargostrap můžete snadno přizpůsobit pomocí přednastavených variant nebo si vytvořit svůj vlastní jedinečný vzhled.</value>
   </data>
   <data name="Menu.Appearance.Icon.Description" xml:space="preserve">
-    <value>Vyberte, jakou ikonu má Froststrap používat.</value>
+    <value>Vyberte, jakou ikonu má Vargostrap používat.</value>
   </data>
   <data name="Menu.Appearance.Icon.Title" xml:space="preserve">
     <value>Ikona</value>
@@ -604,10 +604,10 @@ Chcete aktualizovat aktuálně nainstalovanou verzi?</value>
     <value>Vzhled</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>Froststrap se při spuštění Robloxu automaticky zkontroluje a aktualizuje na stabilní verzi.</value>
+    <value>Vargostrap se při spuštění Robloxu automaticky zkontroluje a aktualizuje na stabilní verzi.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Automatická aktualizace Froststrap</value>
+    <value>Automatická aktualizace Vargostrap</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Zabraňuje ukončení vaší aktuální hry v případě, že omylem spustíte další instanci Robloxu.</value>
@@ -616,7 +616,7 @@ Chcete aktualizovat aktuálně nainstalovanou verzi?</value>
     <value>Potvrzení spuštění instance</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Nastavte, jak se má Froststrap chovat při spuštění Robloxu.</value>
+    <value>Nastavte, jak se má Vargostrap chovat při spuštění Robloxu.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Při příštím spuštění dojde k čisté instalaci aplikace Roblox.</value>
@@ -631,7 +631,7 @@ Chcete aktualizovat aktuálně nainstalovanou verzi?</value>
     <value>Záznam s tímto názvem vlajky již existuje.</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
-    <value>Čistič Froststrap</value>
+    <value>Čistič Vargostrap</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
     <value>Automaticky maže stará data, aby uvolnilo místo. Původně vytvořil Fishstrap.</value>
@@ -784,7 +784,7 @@ Další informace:
     <value>Podobné jako na počítači</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Umožňuje aplikaci Froststrap rozpoznat, kterou hru na Robloxu právě hrajete. Některé funkce to mohou vyžadovat.</value>
+    <value>Umožňuje aplikaci Vargostrap rozpoznat, kterou hru na Robloxu právě hrajete. Některé funkce to mohou vyžadovat.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Zapnout sledování aktivity</value>
@@ -862,7 +862,7 @@ Další informace:
     <value>Nastavení uloženo!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Nastavení Froststrap</value>
+    <value>Nastavení Vargostrap</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Vyberte si preferovaný jazyk</value>
@@ -884,7 +884,7 @@ Některé texty nemusí být přeloženy do zvoleného jazyka.</value>
     <value>Upevní kvalitu grafiky na zvolenou úroveň. Poznámka: Je-li toto nastavení zapnuto, posuvník grafiky v nabídce Robloxu bude ovlivňovat pouze vzdálenost vykreslování ve hře.</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Povolit Froststrap spravovat FastFlags</value>
+    <value>Povolit Vargostrap spravovat FastFlags</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Pokud tuto možnost deaktivujete, nic z toho, co je zde nastaveno, se v Robloxu neuplatní.</value>
@@ -914,7 +914,7 @@ Některé texty nemusí být přeloženy do zvoleného jazyka.</value>
     <value>Odstraní výchozí textury trávy ve hře Roblox. Poznámka: Toto nastavení nemá vliv na vlastní textury trávy používané v jednotlivých hrách.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>Froststrap nemůže stáhnout Roblox</value>
+    <value>Vargostrap nemůže stáhnout Roblox</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Hru Roblox nelze v tuto chvíli stáhnout. Další informace najdete na následující stránce nápovědy: {0}</value>
@@ -924,7 +924,7 @@ Některé texty nemusí být přeloženy do zvoleného jazyka.</value>
     <value>Importovat ze souboru</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Pro tento spuštěný proces nebude vytvořen žádný soubor protokolu, protože Froststrap nemůže zapisovat do složky „{0}“</value>
+    <value>Pro tento spuštěný proces nebude vytvořen žádný soubor protokolu, protože Vargostrap nemůže zapisovat do složky „{0}“</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Výchozí</value>
@@ -942,22 +942,22 @@ Některé texty nemusí být přeloženy do zvoleného jazyka.</value>
     <value>Ikona na ploše</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Odinstalovat Froststrap</value>
+    <value>Odinstalovat Vargostrap</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Odinstalací se z vašeho systému odstraní Froststrap a automaticky se znovu nakonfiguruje výchozí spouštěč Roblox, pokud je stále nainstalován.
+    <value>Odinstalací se z vašeho systému odstraní Vargostrap a automaticky se znovu nakonfiguruje výchozí spouštěč Roblox, pokud je stále nainstalován.
 
 Pokud odinstalováváte nebo přeinstalováváte kvůli problémům s Robloxem, přečtěte si nejprve [tuto stránku nápovědy]({0}).
 
-Proces odinstalace nemusí být schopen zcela odstranit všechny zbytky, takže možná budete muset ručně odstranit zbývající soubory z místa, kde byl Froststrap nainstalován.
+Proces odinstalace nemusí být schopen zcela odstranit všechny zbytky, takže možná budete muset ručně odstranit zbývající soubory z místa, kde byl Vargostrap nainstalován.
 
-Froststrap byl nainstalován do složky „{1}“.</value>
+Vargostrap byl nainstalován do složky „{1}“.</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Zachovat moje nastavení a modifikace</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Budou uloženy na místě, kde byl nainstalován Froststrap, a při opětovné instalaci se automaticky obnoví.</value>
+    <value>Budou uloženy na místě, kde byl nainstalován Vargostrap, a při opětovné instalaci se automaticky obnoví.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Odinstalovat</value>
@@ -969,7 +969,7 @@ Froststrap byl nainstalován do složky „{1}“.</value>
     <value>V současné době nemáte nainstalované runtime prostředí WebView2. Bez něj nebudou některé funkce Robloxu fungovat správně, například desktopová aplikace. Chcete si jej stáhnout hned teď?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>Froststrap se nepodařilo vytvořit zástupce na ploše a v nabídce Start. Zkuste je vytvořit později v nastavení.</value>
+    <value>Vargostrap se nepodařilo vytvořit zástupce na ploše a v nabídce Start. Zkuste je vytvořit později v nastavení.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Nejprve se podívejte na [Froststrap Wiki]({0}), zda již nebyl tento problém vyřešen.
@@ -978,7 +978,7 @@ Pokud ne, nahlaste prosím tuto výjimku správcům tohoto forku. NEHLASTE to pr
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Nastavte, jak lze Froststrap snadno spustit.</value>
+    <value>Nastavte, jak lze Vargostrap snadno spustit.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Obecné informace</value>
@@ -1005,14 +1005,14 @@ Pokud ne, nahlaste prosím tuto výjimku správcům tohoto forku. NEHLASTE to pr
     <value>Počkejte prosím, až se odinstalace dokončí.</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>O společnosti Froststrap</value>
+    <value>O společnosti Vargostrap</value>
   </data>
   <data name="About.Licenses.Title" xml:space="preserve">
     <value>Licence</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Verze Froststrapu, kterou jste spustili, je starší než verze, kterou máte aktuálně nainstalovanou.
+    <value>Verze Vargostrapu, kterou jste spustili, je starší než verze, kterou máte aktuálně nainstalovanou.
 Mohou nastat problémy a vaše nastavení se může změnit. Doporučujeme provést přeinstalaci.
 Opravdu chcete pokračovat?</value>
   </data>
@@ -1025,7 +1025,7 @@ Opravdu chcete pokračovat?</value>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Informace o tom, proč k tomu může docházet a jak tento problém vyřešit, najdete v [tomto článku nápovědy]({0}).
 
-Zkuste, zda Roblox funguje s [původním spouštěčem]({1}). Pokud ne, nejedná se o problém související s Froststrapem. Pokud ano, postupujte podle pokynů v článku nápovědy.</value>
+Zkuste, zda Roblox funguje s [původním spouštěčem]({1}). Pokud ne, nejedná se o problém související s Vargostrapem. Pokud ano, postupujte podle pokynů v článku nápovědy.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Načítání, prosím vyčkejte...</value>
@@ -1055,7 +1055,7 @@ Zkuste, zda Roblox funguje s [původním spouštěčem]({1}). Pokud ne, nejedná
     <value>Při tomto spuštění nebude Roblox kontrolován z hlediska aktualizací a změny v modech nebudou aplikovány.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Vzhledem k tomu, že je třeba nainstalovat nebo aktualizovat Roblox, nelze v aplikaci Froststrap pokračovat.</value>
+    <value>Vzhledem k tomu, že je třeba nainstalovat nebo aktualizovat Roblox, nelze v aplikaci Vargostrap pokračovat.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Není k dispozici</value>
@@ -1067,7 +1067,7 @@ Zkuste, zda Roblox funguje s [původním spouštěčem]({1}). Pokud ne, nejedná
     <value>Nastavte parametry aplikace, jako je chování škálování DPI a [optimalizace pro režim celé obrazovky]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox ještě není nainstalován. Než se pokusíte tuto možnost použít, spusťte prosím alespoň jednou aplikaci Roblox pomocí Froststrap.</value>
+    <value>Roblox ještě není nainstalován. Než se pokusíte tuto možnost použít, spusťte prosím alespoň jednou aplikaci Roblox pomocí Vargostrap.</value>
   </data>
   <data name="Bootstrapper.JsonManagerSaveFailed" xml:space="preserve">
     <value>Nepodařilo se uložit {0}: {1}</value>
@@ -1082,10 +1082,10 @@ Zkuste, zda Roblox funguje s [původním spouštěčem]({1}). Pokud ne, nejedná
     <value>Extrahovat ikony Robloxu do složky</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Umožňuje vám používat sadu ikon Froststrap pro Roblox jako zkratky. [Jak na to.]({0})</value>
+    <value>Umožňuje vám používat sadu ikon Vargostrap pro Roblox jako zkratky. [Jak na to.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>Froststrap nemůže zapisovat do registru systému Windows. Pravděpodobně dochází k rušení ze strany antivirového programu, což způsobuje potíže. Zkontrolujte prosím, zda neexistuje nic, co by omezovalo fungování aplikace Froststrap.</value>
+    <value>Vargostrap nemůže zapisovat do registru systému Windows. Pravděpodobně dochází k rušení ze strany antivirového programu, což způsobuje potíže. Zkontrolujte prosím, zda neexistuje nic, co by omezovalo fungování aplikace Vargostrap.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Obnovit vše na výchozí nastavení</value>
@@ -1135,7 +1135,7 @@ Chcete zapnout testovací režim?</value>
     <comment>Currently used under the "Froststrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Menu.Channel.Description" xml:space="preserve">
-    <value>Změňte nastavení nasazení a instalace pro Roblox a Froststrap.</value>
+    <value>Změňte nastavení nasazení a instalace pro Roblox a Vargostrap.</value>
   </data>
   <data name="Common.Version" xml:space="preserve">
     <value>Verze</value>
@@ -1166,7 +1166,7 @@ Chcete zapnout testovací režim?</value>
     <value>Promiň</value>
   </data>
   <data name="Dialog.Bloxshade.Setting" xml:space="preserve">
-    <value>Froststrap již nepodporuje Bloxshade.
+    <value>Vargostrap již nepodporuje Bloxshade.
 Další informace najdete na serveru Bloxshade na Discordu.</value>
   </data>
   <data name="Common.Profiles" xml:space="preserve">
@@ -1192,7 +1192,7 @@ Chcete přepnout na výchozí kanál ({1})?</value>
     <value>Akce automatického přepnutí kanálu</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
-    <value>Roblox nebo Froststrap se mohou pokusit změnit váš preferovaný kanál.</value>
+    <value>Roblox nebo Vargostrap se mohou pokusit změnit váš preferovaný kanál.</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
     <value>Změnit automaticky</value>
@@ -1274,10 +1274,10 @@ Chcete změnit svůj preferovaný kanál na {0}?</value>
     <value>Zabraňte tomu, aby Roblox přepsal globální nastavení.</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Title" xml:space="preserve">
-    <value>Oprávnění k účtu Froststrap</value>
+    <value>Oprávnění k účtu Vargostrap</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Description" xml:space="preserve">
-    <value>Umožňuje přístup k rozhraním API služby Roblox pomocí vašeho ověřovacího souboru cookie. [K čemu bude mít Froststrap přístup?]({0})</value>
+    <value>Umožňuje přístup k rozhraním API služby Roblox pomocí vašeho ověřovacího souboru cookie. [K čemu bude mít Vargostrap přístup?]({0})</value>
   </data>
   <data name="Menu.Appearance.WindowsBackdrop.Title" xml:space="preserve">
     <value>Okenní pozadí</value>
@@ -1349,10 +1349,10 @@ Chcete změnit svůj preferovaný kanál na {0}?</value>
     <value>Akce při dvojitém kliknutí</value>
   </data>
   <data name="Menu.Integrations.DoubleClickAction.Description" xml:space="preserve">
-    <value>Při spuštění Robloxu se otevře konkrétní okno, pokud dvakrát kliknete na ikonu Froststrap v systémové liště.</value>
+    <value>Při spuštění Robloxu se otevře konkrétní okno, pokud dvakrát kliknete na ikonu Vargostrap v systémové liště.</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Description" xml:space="preserve">
-    <value>Tuto možnost zapněte, aby se ve vašem profilu na Discord zobrazoval vlastní RPC „Playing Froststrap“, dokud je aplikace spuštěná.</value>
+    <value>Tuto možnost zapněte, aby se ve vašem profilu na Discord zobrazoval vlastní RPC „Playing Vargostrap“, dokud je aplikace spuštěná.</value>
   </data>
   <data name="Menu.Integrations.CustomStatusDisplay.Title" xml:space="preserve">
     <value>Zobrazení vlastního stavu</value>
@@ -1427,10 +1427,10 @@ Chcete změnit svůj preferovaný kanál na {0}?</value>
     <value>Modifikace komunity</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
-    <value>Záznamy Froststrap</value>
+    <value>Záznamy Vargostrap</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
-    <value>Protokoly Froststrap budou smazány.</value>
+    <value>Protokoly Vargostrap budou smazány.</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.FollowUser" xml:space="preserve">
     <value>Vypadá to, že jeden z tvých přátel právě hraje tuto hru. Chceš se k němu přidat?</value>
@@ -1439,7 +1439,7 @@ Chcete změnit svůj preferovaný kanál na {0}?</value>
     <value>Zapnout funkci BetterMatchmaking</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.Description" xml:space="preserve">
-    <value>Nechte Froststrap, aby rozhodl, ke kterým serverům se připojíte. Upřednostňuje server, který je od vás nejblíže.</value>
+    <value>Nechte Vargostrap, aby rozhodl, ke kterým serverům se připojíte. Upřednostňuje server, který je od vás nejblíže.</value>
   </data>
   <data name="Menu.FastFlags.Presets.TextureQuality.Title" xml:space="preserve">
     <value>Kvalita textury</value>
@@ -2017,7 +2017,7 @@ Musí obsahovat alespoň jednu z následujících složek: content, ExtraContent
     <value>Aktualizace předběžných verzí</value>
   </data>
   <data name="Menu.Deployment.AutoPreReleaseUpdate.Description" xml:space="preserve">
-    <value>Froststrap při spuštění Robloxu automaticky provede kontrolu a aktualizuje se na testovací verzi.</value>
+    <value>Vargostrap při spuštění Robloxu automaticky provede kontrolu a aktualizuje se na testovací verzi.</value>
   </data>
   <data name="Menu.TestMode.Description" xml:space="preserve">
     <value>Při spuštění Robloxu automaticky skrýt okno nastavení a po ukončení Robloxu jej znovu zobrazit.</value>
@@ -2391,7 +2391,7 @@ Chcete plugin nainstalovat?</value>
     <value>Malé servery</value>
   </data>
   <data name="Menu.RegionSelector.LoginRequired" xml:space="preserve">
-    <value>Chcete-li tuto funkci používat, přihlaste se pomocí správce účtů, zapněte „Froststrap Account Permission“ nebo to nahlaste na našem serveru Discord.</value>
+    <value>Chcete-li tuto funkci používat, přihlaste se pomocí správce účtů, zapněte „Vargostrap Account Permission“ nebo to nahlaste na našem serveru Discord.</value>
   </data>
   <data name="Menu.RegionSelector.EnterPlaceId" xml:space="preserve">
     <value>Zadejte ID místa a klikněte na tlačítko „Hledat“, abyste zobrazili servery.</value>

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>Froststrap nu a putut să se actualizeze automat la versiunea {0}. Vă rugăm să îl actualizați manual, descărcându-l și rulându-l de pe site-ul web.</value>
+    <value>Vargostrap nu a putut să se actualizeze automat la versiunea {0}. Vă rugăm să îl actualizați manual, descărcându-l și rulându-l de pe site-ul web.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Roblox rulează în prezent, iar lansarea unei alte instanțe va duce la închiderea acestuia. Ești sigur că vrei să continui cu lansarea?</value>
@@ -127,10 +127,10 @@
     <value>Este posibil ca Roblox să nu funcționeze în acest moment. Vezi {0} pentru mai multe informații.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Nu s-a putut stabili conexiunea, ceea ce indică probabil o conexiune slabă la internet sau o blocare din partea firewall-ului. Dacă conexiunea ta funcționează corect, te rugăm să te asiguri că programul tău antivirus nu blochează Froststrap.</value>
+    <value>Nu s-a putut stabili conexiunea, ceea ce indică probabil o conexiune slabă la internet sau o blocare din partea firewall-ului. Dacă conexiunea ta funcționează corect, te rugăm să te asiguri că programul tău antivirus nu blochează Vargostrap.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>Froststrap nu dispune de suficient spațiu pe disc pentru a descărca și instala Roblox. Te rugăm să eliberezi puțin spațiu pe disc și să încerci din nou.</value>
+    <value>Vargostrap nu dispune de suficient spațiu pe disc pentru a descărca și instala Roblox. Te rugăm să eliberezi puțin spațiu pe disc și să încerci din nou.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Se aplică modificările Roblox...</value>
@@ -166,10 +166,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>Froststrap a fost dezinstalat cu succes</value>
+    <value>Vargostrap a fost dezinstalat cu succes</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox rulează în prezent, dar trebuie închis înainte de a dezinstala Froststrap. Doriți să închideți Roblox acum?</value>
+    <value>Roblox rulează în prezent, dar trebuie închis înainte de a dezinstala Vargostrap. Doriți să închideți Roblox acum?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Roblox necesită utilizarea componentelor Windows Media Foundation. Se pare că acestea nu sunt instalate, probabil deoarece folosești o ediție N a sistemului de operare Windows. Te rugăm să le instalezi mai întâi, apoi să pornești Roblox.</value>
@@ -275,14 +275,14 @@ Timp de funcționare: {1}</value>
     <value>Eroare de conectivitate</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>Froststrap nu se poate conecta la {0}</value>
+    <value>Vargostrap nu se poate conecta la {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Copierea conținutului jurnalului</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>A apărut o excepție în timpul rulării Froststrap/Froststrap</value>
+    <value>A apărut o excepție în timpul rulării Vargostrap/Vargostrap</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Verificați mai întâi [Froststrap Wiki]({0}) pentru a vedea dacă această problemă a fost deja rezolvată.
@@ -290,7 +290,7 @@ Timp de funcționare: {1}</value>
 Dacă nu, vă rugăm să raportați această excepție printr-o [problemă pe GitHub]({1}), împreună cu o copie a fișierului jurnal care a fost creat.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Excepție Froststrap</value>
+    <value>Excepție Vargostrap</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Personalizat</value>
@@ -302,13 +302,13 @@ Dacă nu, vă rugăm să raportați această excepție printr-o [problemă pe Gi
     <value>Byfron contrafăcut (~2023)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentDialog" xml:space="preserve">
-    <value>Froststrap (opac)</value>
+    <value>Vargostrap (opac)</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>Froststrap (Clasic)</value>
+    <value>Vargostrap (Clasic)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>Froststrap (Sticlă)</value>
+    <value>Vargostrap (Sticlă)</value>
   </data>
   <data name="Enums.CursorType.From2006" xml:space="preserve">
     <value>~2006 (în stil desen animat)</value>
@@ -515,10 +515,10 @@ Se utilizează implicit {1}.</value>
     <value>Nu s-a putut șterge tema personalizată {0}: {1}</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>Froststrap a fost actualizat la versiunea v{0}</value>
+    <value>Vargostrap a fost actualizat la versiunea v{0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Versiunea Froststrap pe care ați lansat-o este diferită de cea pe care o aveți instalată în prezent.
+    <value>Versiunea Vargostrap pe care ați lansat-o este diferită de cea pe care o aveți instalată în prezent.
 Doriți să actualizați versiunea instalată în prezent?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -562,10 +562,10 @@ Doriți să actualizați versiunea instalată în prezent?</value>
     <value>Vă rugăm să rețineți că nu toate modificările efectuate vor fi aplicate imediat, până când nu închideți toate sesiunile Roblox deschise în prezent.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>Froststrap rulează deja</value>
+    <value>Vargostrap rulează deja</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
-    <value>Personalizați programul de inițializare al Froststrap folosind o gamă largă de opțiuni.</value>
+    <value>Personalizați programul de inițializare al Vargostrap folosind o gamă largă de opțiuni.</value>
   </data>
   <data name="Menu.Appearance.CustomisationTitle.Description" xml:space="preserve">
     <value>Textul care apare ca titlu al programului de inițializare.</value>
@@ -574,16 +574,16 @@ Doriți să actualizați versiunea instalată în prezent?</value>
     <value>Titlu</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Configurează aspectul Froststrap.</value>
+    <value>Configurează aspectul Vargostrap.</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Title" xml:space="preserve">
     <value>Teme pentru aplicații</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Description" xml:space="preserve">
-    <value>Personalizați cu ușurință temele Froststrap folosind presetările disponibile sau creați-vă propriul aspect unic.</value>
+    <value>Personalizați cu ușurință temele Vargostrap folosind presetările disponibile sau creați-vă propriul aspect unic.</value>
   </data>
   <data name="Menu.Appearance.Icon.Description" xml:space="preserve">
-    <value>Alege pictograma pe care ar trebui să o folosească Froststrap.</value>
+    <value>Alege pictograma pe care ar trebui să o folosească Vargostrap.</value>
   </data>
   <data name="Menu.Appearance.Icon.Title" xml:space="preserve">
     <value>Icoană</value>
@@ -601,10 +601,10 @@ Doriți să actualizați versiunea instalată în prezent?</value>
     <value>Aspect</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>Froststrap se va verifica automat și se va actualiza la o versiune stabilă la lansarea Roblox.</value>
+    <value>Vargostrap se va verifica automat și se va actualiza la o versiune stabilă la lansarea Roblox.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Actualizare automată a Froststrap</value>
+    <value>Actualizare automată a Vargostrap</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Împiedică închiderea jocului curent în cazul în care lansezi din greșeală o altă instanță Roblox.</value>
@@ -613,7 +613,7 @@ Doriți să actualizați versiunea instalată în prezent?</value>
     <value>Confirmarea lansării instanței</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Configurează ce trebuie să facă Froststrap la lansarea Roblox.</value>
+    <value>Configurează ce trebuie să facă Vargostrap la lansarea Roblox.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>La următoarea pornire, se va efectua o instalare curată a Roblox.</value>
@@ -628,7 +628,7 @@ Doriți să actualizați versiunea instalată în prezent?</value>
     <value>Există deja o intrare pentru acest nume de steag.</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
-    <value>Produs de curățare Froststrap</value>
+    <value>Produs de curățare Vargostrap</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
     <value>Șterge automat datele vechi pentru a elibera spațiu. Creat inițial de Fishstrap.</value>
@@ -781,7 +781,7 @@ Mai multe informații:
     <value>Aproape de desktop</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Permite aplicației Froststrap să detecteze ce joc Roblox joci. Anumite funcții pot necesita acest lucru.</value>
+    <value>Permite aplicației Vargostrap să detecteze ce joc Roblox joci. Anumite funcții pot necesita acest lucru.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Activează monitorizarea activității</value>
@@ -859,7 +859,7 @@ Mai multe informații:
     <value>Setările au fost salvate!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Setări Froststrap</value>
+    <value>Setări Vargostrap</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Alegeți limba preferată</value>
@@ -881,7 +881,7 @@ Este posibil ca unele texte să nu fie traduse în limba preferată.</value>
     <value>Fixează calitatea grafică la un nivel selectat. Notă: Când această setare este activată, glisorul de grafică din meniul Roblox va influența doar distanța de redare în cadrul unui joc.</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Permiteți Froststrap să gestioneze FastFlags</value>
+    <value>Permiteți Vargostrap să gestioneze FastFlags</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Dacă dezactivați această opțiune, setările configurate aici nu vor fi aplicate în Roblox.</value>
@@ -911,7 +911,7 @@ Este posibil ca unele texte să nu fie traduse în limba preferată.</value>
     <value>Elimină texturile implicite ale ierbii din Roblox. Notă: această setare nu afectează texturile personalizate ale ierbii utilizate de jocurile individuale.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>Froststrap nu poate descărca Roblox</value>
+    <value>Vargostrap nu poate descărca Roblox</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>În acest moment, Roblox nu poate fi descărcat. Pentru mai multe informații, te rugăm să consulți următoarea pagină de ajutor: {0}</value>
@@ -921,7 +921,7 @@ Este posibil ca unele texte să nu fie traduse în limba preferată.</value>
     <value>Import din fișier</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Nu se va crea niciun fișier jurnal pentru această lansare, deoarece Froststrap nu poate scrie în folderul de la „{0}”</value>
+    <value>Nu se va crea niciun fișier jurnal pentru această lansare, deoarece Vargostrap nu poate scrie în folderul de la „{0}”</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Implicit</value>
@@ -939,22 +939,22 @@ Este posibil ca unele texte să nu fie traduse în limba preferată.</value>
     <value>Pictogramă pe desktop</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Dezinstalați Froststrap</value>
+    <value>Dezinstalați Vargostrap</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Dezinstalarea va elimina Froststrap din sistemul tău și va reconfigura automat lansatorul Roblox implicit, dacă acesta este încă instalat.
+    <value>Dezinstalarea va elimina Vargostrap din sistemul tău și va reconfigura automat lansatorul Roblox implicit, dacă acesta este încă instalat.
 
 Dacă dezinstalați sau reinstalați aplicația deoarece întâmpinați probleme cu Roblox, citiți mai întâi [această pagină de ajutor]({0}).
 
-Este posibil ca procesul de dezinstalare să nu reușească să șteargă complet toate urmele, așa că s-ar putea să fie necesar să ștergeți manual fișierele rămase în locația în care a fost instalat Froststrap.
+Este posibil ca procesul de dezinstalare să nu reușească să șteargă complet toate urmele, așa că s-ar putea să fie necesar să ștergeți manual fișierele rămase în locația în care a fost instalat Vargostrap.
 
-Froststrap a fost instalat în „{1}”.</value>
+Vargostrap a fost instalat în „{1}”.</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Păstrează setările și modificările mele</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Acestea vor fi păstrate în locul în care a fost instalat Froststrap și vor fi restaurate automat la o reinstalare.</value>
+    <value>Acestea vor fi păstrate în locul în care a fost instalat Vargostrap și vor fi restaurate automat la o reinstalare.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Dezinstalare</value>
@@ -966,7 +966,7 @@ Froststrap a fost instalat în „{1}”.</value>
     <value>În prezent, nu ai instalat mediul de execuție WebView2. Anumite funcții ale Roblox nu vor funcționa corespunzător fără acesta, cum ar fi aplicația pentru desktop. Dorești să îl descarci acum?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>Froststrap nu a reușit să creeze comenzi rapide pentru desktop și meniul Start. Încearcă să le creezi mai târziu din setări.</value>
+    <value>Vargostrap nu a reușit să creeze comenzi rapide pentru desktop și meniul Start. Încearcă să le creezi mai târziu din setări.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Verificați mai întâi [Froststrap Wiki]({0}) pentru a vedea dacă această problemă a fost deja rezolvată.
@@ -975,7 +975,7 @@ Dacă nu, vă rugăm să raportați această excepție administratorilor acestui
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Configurați modul în care Froststrap poate fi lansat cu ușurință.</value>
+    <value>Configurați modul în care Vargostrap poate fi lansat cu ușurință.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Generalități</value>
@@ -1002,14 +1002,14 @@ Dacă nu, vă rugăm să raportați această excepție administratorilor acestui
     <value>Vă rugăm să așteptați până la finalizarea dezinstalării.</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Despre Froststrap</value>
+    <value>Despre Vargostrap</value>
   </data>
   <data name="About.Licenses.Title" xml:space="preserve">
     <value>Licențe</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Versiunea Froststrap pe care ați lansat-o este mai veche decât cea pe care o aveți instalată în prezent.
+    <value>Versiunea Vargostrap pe care ați lansat-o este mai veche decât cea pe care o aveți instalată în prezent.
 Pot apărea probleme, iar setările dvs. pot fi modificate. Se recomandă reinstalarea.
 Sunteți sigur că doriți să continuați?</value>
   </data>
@@ -1022,7 +1022,7 @@ Sunteți sigur că doriți să continuați?</value>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Pentru informații despre motivele pentru care s-ar putea întâmpla acest lucru și despre modul în care se poate remedia problema, te rugăm să citești [acest articol de ajutor]({0}).
 
-Verifică dacă Roblox funcționează cu [lansatorul original]({1}). Dacă nu funcționează, atunci nu este vorba de o problemă legată de Froststrap. Dacă funcționează, consultă articolul de ajutor.</value>
+Verifică dacă Roblox funcționează cu [lansatorul original]({1}). Dacă nu funcționează, atunci nu este vorba de o problemă legată de Vargostrap. Dacă funcționează, consultă articolul de ajutor.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Se încarcă, vă rugăm să așteptați...</value>
@@ -1052,7 +1052,7 @@ Verifică dacă Roblox funcționează cu [lansatorul original]({1}). Dacă nu fu
     <value>Cu ocazia acestei lansări, Roblox nu va fi verificat pentru actualizări, iar modificările aduse modurilor nu vor fi aplicate.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Deoarece Roblox trebuie instalat sau actualizat, Froststrap nu poate continua.</value>
+    <value>Deoarece Roblox trebuie instalat sau actualizat, Vargostrap nu poate continua.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Nu este disponibil</value>
@@ -1064,7 +1064,7 @@ Verifică dacă Roblox funcționează cu [lansatorul original]({1}). Dacă nu fu
     <value>Configurați parametrii aplicației, cum ar fi comportamentul de scalare DPI și [optimizările pentru ecran complet]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox nu a fost încă instalat. Te rugăm să pornești Roblox folosind Froststrap cel puțin o dată înainte de a încerca să utilizezi această opțiune.</value>
+    <value>Roblox nu a fost încă instalat. Te rugăm să pornești Roblox folosind Vargostrap cel puțin o dată înainte de a încerca să utilizezi această opțiune.</value>
   </data>
   <data name="Bootstrapper.JsonManagerSaveFailed" xml:space="preserve">
     <value>Nu s-a putut salva {0}: {1}</value>
@@ -1079,10 +1079,10 @@ Verifică dacă Roblox funcționează cu [lansatorul original]({1}). Dacă nu fu
     <value>Extrage pictogramele Roblox într-un dosar</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Îți permite să folosești gama de pictograme Roblox de la Froststrap pentru comenzile tale rapide. [Află cum.]({0})</value>
+    <value>Îți permite să folosești gama de pictograme Roblox de la Vargostrap pentru comenzile tale rapide. [Află cum.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>Froststrap nu poate scrie în Registrul Windows. Este posibil ca un program antivirus să interfereze și să provoace probleme. Vă rugăm să verificați dacă nu există nimic care ar putea restricționa funcționarea Froststrap.</value>
+    <value>Vargostrap nu poate scrie în Registrul Windows. Este posibil ca un program antivirus să interfereze și să provoace probleme. Vă rugăm să verificați dacă nu există nimic care ar putea restricționa funcționarea Vargostrap.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Resetare la setările implicite</value>
@@ -1128,7 +1128,7 @@ Dorești să activezi Modul de testare?</value>
     <comment>Shown in the save file dialog, where the file type selection dropdown is, e.g. "Zip archive (*.zip)"</comment>
   </data>
   <data name="Menu.Channel.Description" xml:space="preserve">
-    <value>Modificați setările de implementare și instalare pentru Roblox și Froststrap.</value>
+    <value>Modificați setările de implementare și instalare pentru Roblox și Vargostrap.</value>
   </data>
   <data name="Common.Version" xml:space="preserve">
     <value>Versiune</value>
@@ -1159,7 +1159,7 @@ Dorești să activezi Modul de testare?</value>
     <value>Îmi pare rău</value>
   </data>
   <data name="Dialog.Bloxshade.Setting" xml:space="preserve">
-    <value>Froststrap nu mai oferă suport pentru Bloxshade.
+    <value>Vargostrap nu mai oferă suport pentru Bloxshade.
 Pentru mai multe informații, alătură-te serverului Discord al Bloxshade.</value>
   </data>
   <data name="Common.Profiles" xml:space="preserve">
@@ -1185,7 +1185,7 @@ Doriți să treceți la canalul implicit ({1})?</value>
     <value>Acțiunea de schimbare automată a canalului</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
-    <value>Roblox sau Froststrap ar putea încerca să-ți schimbe canalul preferat.</value>
+    <value>Roblox sau Vargostrap ar putea încerca să-ți schimbe canalul preferat.</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
     <value>Modificare automată</value>
@@ -1267,10 +1267,10 @@ Dorești să-ți schimbi canalul preferat la {0}?</value>
     <value>Împiedică Roblox să suprascrie setările globale.</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Title" xml:space="preserve">
-    <value>Permisiuni pentru contul Froststrap</value>
+    <value>Permisiuni pentru contul Vargostrap</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Description" xml:space="preserve">
-    <value>Oferă acces la API-urile Roblox folosind cookie-ul tău de autentificare. [La ce va avea acces Froststrap?]({0})</value>
+    <value>Oferă acces la API-urile Roblox folosind cookie-ul tău de autentificare. [La ce va avea acces Vargostrap?]({0})</value>
   </data>
   <data name="Menu.Appearance.WindowsBackdrop.Title" xml:space="preserve">
     <value>Fundal pentru fereastră</value>
@@ -1342,10 +1342,10 @@ Dorești să-ți schimbi canalul preferat la {0}?</value>
     <value>Acțiune la dublu clic</value>
   </data>
   <data name="Menu.Integrations.DoubleClickAction.Description" xml:space="preserve">
-    <value>Deschide o fereastră specifică atunci când dai dublu clic pe Froststrap din bara de sistem în timp ce pornești Roblox.</value>
+    <value>Deschide o fereastră specifică atunci când dai dublu clic pe Vargostrap din bara de sistem în timp ce pornești Roblox.</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Description" xml:space="preserve">
-    <value>Activează această opțiune pentru a afișa un RPC personalizat „Playing Froststrap” în profilul tău de pe Discord cât timp aplicația este deschisă.</value>
+    <value>Activează această opțiune pentru a afișa un RPC personalizat „Playing Vargostrap” în profilul tău de pe Discord cât timp aplicația este deschisă.</value>
   </data>
   <data name="Menu.Integrations.CustomStatusDisplay.Title" xml:space="preserve">
     <value>Afișarea stării personalizate</value>
@@ -1420,10 +1420,10 @@ Dorești să-ți schimbi canalul preferat la {0}?</value>
     <value>Moduri comunitare</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
-    <value>Jurnalele Froststrap</value>
+    <value>Jurnalele Vargostrap</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
-    <value>Jurnalele Froststrap vor fi șterse.</value>
+    <value>Jurnalele Vargostrap vor fi șterse.</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.FollowUser" xml:space="preserve">
     <value>Se pare că un prieten joacă acest joc chiar acum. Vrei să te alături lui?</value>
@@ -1432,7 +1432,7 @@ Dorești să-ți schimbi canalul preferat la {0}?</value>
     <value>Activează funcția BetterMatchmaking</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.Description" xml:space="preserve">
-    <value>Lasă Froststrap să decidă la ce servere te conectezi. Acesta acordă prioritate serverului situat la cea mai mică distanță față de tine.</value>
+    <value>Lasă Vargostrap să decidă la ce servere te conectezi. Acesta acordă prioritate serverului situat la cea mai mică distanță față de tine.</value>
   </data>
   <data name="Menu.FastFlags.Presets.TextureQuality.Title" xml:space="preserve">
     <value>Calitatea texturii</value>
@@ -1995,7 +1995,7 @@ Aceasta trebuie să conțină cel puțin unul dintre următoarele foldere: conte
     <value>Actualizare privind versiunile preliminare</value>
   </data>
   <data name="Menu.Deployment.AutoPreReleaseUpdate.Description" xml:space="preserve">
-    <value>Froststrap se va verifica automat și se va actualiza la o versiune de testare la lansarea Roblox.</value>
+    <value>Vargostrap se va verifica automat și se va actualiza la o versiune de testare la lansarea Roblox.</value>
   </data>
   <data name="Menu.TestMode.Description" xml:space="preserve">
     <value>Ascunde automat fereastra de setări la lansarea Roblox și afișeaz-o din nou la închiderea Roblox.</value>
@@ -2384,7 +2384,7 @@ Dorești să instalezi pluginul?</value>
     <value>Servere mici</value>
   </data>
   <data name="Menu.RegionSelector.LoginRequired" xml:space="preserve">
-    <value>Conectează-te folosind Managerul de conturi, activează opțiunea „Froststrap Account Permission” sau raportează această problemă pe serverul nostru Discord pentru a putea utiliza funcția.</value>
+    <value>Conectează-te folosind Managerul de conturi, activează opțiunea „Vargostrap Account Permission” sau raportează această problemă pe serverul nostru Discord pentru a putea utiliza funcția.</value>
   </data>
   <data name="Menu.RegionSelector.EnterPlaceId" xml:space="preserve">
     <value>Introduceți un ID de locație și faceți clic pe „Căutare” pentru a vizualiza serverele.</value>

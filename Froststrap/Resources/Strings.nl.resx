@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>Froststrap kon niet automatisch worden bijgewerkt naar versie {0}. Werk het programma handmatig bij door het vanaf de website te downloaden en uit te voeren.</value>
+    <value>Vargostrap kon niet automatisch worden bijgewerkt naar versie {0}. Werk het programma handmatig bij door het vanaf de website te downloaden en uit te voeren.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Roblox is momenteel actief. Als je nog een exemplaar start, wordt het huidige exemplaar gesloten. Weet je zeker dat je wilt doorgaan met het starten?</value>
@@ -127,10 +127,10 @@
     <value>Roblox is momenteel mogelijk niet beschikbaar. Zie {0} voor meer informatie.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Er kon geen verbinding worden gemaakt, wat waarschijnlijk wijst op een slechte internetverbinding of een blokkering door een firewall. Als je verbinding in orde is, controleer dan of je antivirusprogramma Froststrap niet blokkeert.</value>
+    <value>Er kon geen verbinding worden gemaakt, wat waarschijnlijk wijst op een slechte internetverbinding of een blokkering door een firewall. Als je verbinding in orde is, controleer dan of je antivirusprogramma Vargostrap niet blokkeert.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>Froststrap heeft onvoldoende schijfruimte om Roblox te downloaden en te installeren. Maak wat schijfruimte vrij en probeer het opnieuw.</value>
+    <value>Vargostrap heeft onvoldoende schijfruimte om Roblox te downloaden en te installeren. Maak wat schijfruimte vrij en probeer het opnieuw.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Roblox-modificaties toepassen...</value>
@@ -166,10 +166,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>Froststrap is succesvol verwijderd</value>
+    <value>Vargostrap is succesvol verwijderd</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox is momenteel actief, maar moet worden afgesloten voordat je Froststrap kunt verwijderen. Wil je Roblox nu afsluiten?</value>
+    <value>Roblox is momenteel actief, maar moet worden afgesloten voordat je Vargostrap kunt verwijderen. Wil je Roblox nu afsluiten?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Voor Roblox zijn Windows Media Foundation-componenten vereist. Het lijkt erop dat je deze niet hebt, waarschijnlijk omdat je een N-editie van Windows gebruikt. Installeer deze eerst en start Roblox daarna op.</value>
@@ -269,14 +269,14 @@ Uptime: {1}</value>
     <value>Verbindingsfout</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>Froststrap kan geen verbinding maken met {0}</value>
+    <value>Vargostrap kan geen verbinding maken met {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>De inhoud van het logboek kopiëren</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Er is een uitzondering opgetreden tijdens het uitvoeren van Froststrap/Froststrap</value>
+    <value>Er is een uitzondering opgetreden tijdens het uitvoeren van Vargostrap/Vargostrap</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Kijk eerst op de [Froststrap Wiki]({0}) om te zien of er al een oplossing voor dit probleem is gevonden.
@@ -284,7 +284,7 @@ Uptime: {1}</value>
 Zo niet, meld deze uitzondering dan via een [GitHub-issue]({1}) en voeg daarbij een kopie van het logbestand toe dat is aangemaakt.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Froststrap-uitzondering</value>
+    <value>Vargostrap-uitzondering</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Op maat</value>
@@ -296,10 +296,10 @@ Zo niet, meld deze uitzondering dan via een [GitHub-issue]({1}) en voeg daarbij 
     <value>Nep-Byfron (~2023)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentDialog" xml:space="preserve">
-    <value>Froststrap (ondoorzichtig)</value>
+    <value>Vargostrap (ondoorzichtig)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>Froststrap (glas)</value>
+    <value>Vargostrap (glas)</value>
   </data>
   <data name="Enums.CursorType.From2006" xml:space="preserve">
     <value>~2006 (Cartoonachtig)</value>
@@ -505,10 +505,10 @@ Er wordt nu standaard {1} gebruikt.</value>
     <value>Het verwijderen van het aangepaste thema {0} is mislukt: {1}</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>Froststrap is bijgewerkt naar versie {0}</value>
+    <value>Vargostrap is bijgewerkt naar versie {0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>De versie van Froststrap die u hebt gestart, verschilt van de versie die momenteel is geïnstalleerd.
+    <value>De versie van Vargostrap die u hebt gestart, verschilt van de versie die momenteel is geïnstalleerd.
 Wilt u de momenteel geïnstalleerde versie upgraden?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -549,10 +549,10 @@ Wilt u de momenteel geïnstalleerde versie upgraden?</value>
     <value>Houd er rekening mee dat niet al je wijzigingen onmiddellijk van kracht worden, totdat je alle momenteel geopende Roblox-instanties hebt gesloten.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>Froststrap is al actief</value>
+    <value>Vargostrap is al actief</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
-    <value>Pas de bootstrapper van Froststrap aan met behulp van een breed scala aan opties.</value>
+    <value>Pas de bootstrapper van Vargostrap aan met behulp van een breed scala aan opties.</value>
   </data>
   <data name="Menu.Appearance.CustomisationTitle.Description" xml:space="preserve">
     <value>De tekst die als titel van de bootstrapper wordt weergegeven.</value>
@@ -561,16 +561,16 @@ Wilt u de momenteel geïnstalleerde versie upgraden?</value>
     <value>Titel</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Stel in hoe Froststrap eruit moet zien.</value>
+    <value>Stel in hoe Vargostrap eruit moet zien.</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Title" xml:space="preserve">
     <value>App-thema’s</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Description" xml:space="preserve">
-    <value>Pas Froststrap-thema’s eenvoudig aan met voorinstellingen of creëer je eigen unieke look.</value>
+    <value>Pas Vargostrap-thema’s eenvoudig aan met voorinstellingen of creëer je eigen unieke look.</value>
   </data>
   <data name="Menu.Appearance.Icon.Description" xml:space="preserve">
-    <value>Kies welk pictogram Froststrap moet gebruiken.</value>
+    <value>Kies welk pictogram Vargostrap moet gebruiken.</value>
   </data>
   <data name="Menu.Appearance.Icon.Title" xml:space="preserve">
     <value>Pictogram</value>
@@ -588,10 +588,10 @@ Wilt u de momenteel geïnstalleerde versie upgraden?</value>
     <value>Uiterlijk</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>Froststrap controleert automatisch of er een stabiele versie beschikbaar is en werkt zichzelf bij wanneer Roblox wordt gestart.</value>
+    <value>Vargostrap controleert automatisch of er een stabiele versie beschikbaar is en werkt zichzelf bij wanneer Roblox wordt gestart.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Froststrap automatisch bijwerken</value>
+    <value>Vargostrap automatisch bijwerken</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Voorkomt dat je huidige spel wordt afgesloten wanneer je per ongeluk een andere Roblox-instantie start.</value>
@@ -600,7 +600,7 @@ Wilt u de momenteel geïnstalleerde versie upgraden?</value>
     <value>Bevestiging van het opstarten van de instantie</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Stel in wat Froststrap moet doen bij het opstarten van Roblox.</value>
+    <value>Stel in wat Vargostrap moet doen bij het opstarten van Roblox.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Bij de volgende keer opstarten wordt Roblox opnieuw geïnstalleerd.</value>
@@ -618,7 +618,7 @@ Wilt u de momenteel geïnstalleerde versie upgraden?</value>
     <value>Er bestaat al een vermelding voor deze vlagnaam.</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
-    <value>Froststrap-reiniger</value>
+    <value>Vargostrap-reiniger</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
     <value>Wist automatisch oude gegevens om ruimte vrij te maken. Oorspronkelijk gemaakt door Fishstrap.</value>
@@ -771,7 +771,7 @@ Meer informatie:
     <value>Dicht bij het bureaublad</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Hiermee kan Froststrap detecteren welk Roblox-spel je speelt. Voor bepaalde functies kan dit nodig zijn.</value>
+    <value>Hiermee kan Vargostrap detecteren welk Roblox-spel je speelt. Voor bepaalde functies kan dit nodig zijn.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Activiteitenregistratie inschakelen</value>
@@ -849,7 +849,7 @@ Meer informatie:
     <value>Instellingen opgeslagen!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Instellingen voor Froststrap</value>
+    <value>Instellingen voor Vargostrap</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Kies de gewenste taal</value>
@@ -871,7 +871,7 @@ Het is mogelijk dat sommige tekst niet in de gewenste taal is vertaald.</value>
     <value>Hiermee wordt de grafische kwaliteit vastgezet op een geselecteerd niveau. Opmerking: als deze instelling is ingeschakeld, heeft de grafische schuifbalk in het Roblox-menu alleen invloed op de weergaveafstand in een spel.</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Froststrap toestaan om FastFlags te beheren</value>
+    <value>Vargostrap toestaan om FastFlags te beheren</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Als je deze optie uitschakelt, wordt niets van wat hier is geconfigureerd toegepast op Roblox.</value>
@@ -901,7 +901,7 @@ Het is mogelijk dat sommige tekst niet in de gewenste taal is vertaald.</value>
     <value>Verwijdert de standaardgrastexturen van Roblox. Opmerking: deze instelling heeft geen invloed op aangepaste grastexturen die door afzonderlijke spellen worden gebruikt.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>Froststrap kan Roblox niet downloaden</value>
+    <value>Vargostrap kan Roblox niet downloaden</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Roblox kan op dit moment niet worden gedownload. Lees de volgende helppagina voor meer informatie: {0}</value>
@@ -911,7 +911,7 @@ Het is mogelijk dat sommige tekst niet in de gewenste taal is vertaald.</value>
     <value>Importeren vanuit bestand</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Er wordt geen logbestand aangemaakt voor deze start, omdat Froststrap geen gegevens kan schrijven naar de map op '{0}'</value>
+    <value>Er wordt geen logbestand aangemaakt voor deze start, omdat Vargostrap geen gegevens kan schrijven naar de map op '{0}'</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Standaard</value>
@@ -929,22 +929,22 @@ Het is mogelijk dat sommige tekst niet in de gewenste taal is vertaald.</value>
     <value>Bureaubladpictogram</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Froststrap verwijderen</value>
+    <value>Vargostrap verwijderen</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Door het programma te verwijderen, wordt Froststrap van je systeem verwijderd en wordt de standaard Roblox-launcher automatisch opnieuw geconfigureerd, als deze nog geïnstalleerd is.
+    <value>Door het programma te verwijderen, wordt Vargostrap van je systeem verwijderd en wordt de standaard Roblox-launcher automatisch opnieuw geconfigureerd, als deze nog geïnstalleerd is.
 
 Als je het programma verwijdert of opnieuw installeert omdat je problemen ondervindt met Roblox, lees dan eerst [deze helppagina]({0}).
 
-Het is mogelijk dat het verwijderingsproces niet alle bestanden volledig verwijdert, dus moet je eventueel handmatig de overgebleven bestanden verwijderen op de locatie waar Froststrap was geïnstalleerd.
+Het is mogelijk dat het verwijderingsproces niet alle bestanden volledig verwijdert, dus moet je eventueel handmatig de overgebleven bestanden verwijderen op de locatie waar Vargostrap was geïnstalleerd.
 
-Froststrap was geïnstalleerd in "{1}".</value>
+Vargostrap was geïnstalleerd in "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Mijn instellingen en aanpassingen behouden</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Ze worden bewaard op de plek waar Froststrap was geïnstalleerd en worden bij een herinstallatie automatisch hersteld.</value>
+    <value>Ze worden bewaard op de plek waar Vargostrap was geïnstalleerd en worden bij een herinstallatie automatisch hersteld.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Verwijderen</value>
@@ -956,7 +956,7 @@ Froststrap was geïnstalleerd in "{1}".</value>
     <value>Je hebt momenteel de WebView2-runtime niet geïnstalleerd. Zonder deze runtime werken sommige Roblox-functies niet naar behoren, zoals de desktop-app. Wil je deze nu downloaden?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>Froststrap kon geen snelkoppelingen aanmaken voor het bureaublad en het Startmenu. Probeer deze later via de instellingen aan te maken.</value>
+    <value>Vargostrap kon geen snelkoppelingen aanmaken voor het bureaublad en het Startmenu. Probeer deze later via de instellingen aan te maken.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Kijk eerst op de [Froststrap Wiki]({0}) om te zien of er al een oplossing voor dit probleem is gevonden.
@@ -965,7 +965,7 @@ Zo niet, meld deze uitzondering dan aan de beheerders van deze fork. Meld dit NI
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Stel in hoe Froststrap snel kan worden gestart.</value>
+    <value>Stel in hoe Vargostrap snel kan worden gestart.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Algemeen</value>
@@ -992,14 +992,14 @@ Zo niet, meld deze uitzondering dan aan de beheerders van deze fork. Meld dit NI
     <value>Wacht even tot het verwijderen is voltooid.</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Over Froststrap</value>
+    <value>Over Vargostrap</value>
   </data>
   <data name="About.Licenses.Title" xml:space="preserve">
     <value>Licenties</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>De versie van Froststrap die je hebt gestart, is ouder dan de versie die momenteel is geïnstalleerd.
+    <value>De versie van Vargostrap die je hebt gestart, is ouder dan de versie die momenteel is geïnstalleerd.
 Er kunnen problemen optreden en je instellingen kunnen worden gewijzigd. Het wordt aanbevolen om het programma opnieuw te installeren.
 Weet je zeker dat je door wilt gaan?</value>
   </data>
@@ -1012,7 +1012,7 @@ Weet je zeker dat je door wilt gaan?</value>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Lees [dit helpartikel]({0}) voor meer informatie over de mogelijke oorzaken hiervan en hoe je dit kunt oplossen.
 
-Controleer of Roblox werkt met [de originele launcher]({1}). Als dat niet het geval is, ligt het probleem niet bij Froststrap. Als het wel werkt, raadpleeg dan het helpartikel.</value>
+Controleer of Roblox werkt met [de originele launcher]({1}). Als dat niet het geval is, ligt het probleem niet bij Vargostrap. Als het wel werkt, raadpleeg dan het helpartikel.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Bezig met laden, even geduld a.u.b...</value>
@@ -1042,7 +1042,7 @@ Controleer of Roblox werkt met [de originele launcher]({1}). Als dat niet het ge
     <value>Bij deze lancering wordt Roblox niet gecontroleerd op updates en worden wijzigingen aan mods niet doorgevoerd.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Omdat Roblox moet worden geïnstalleerd of bijgewerkt, kan Froststrap niet verdergaan.</value>
+    <value>Omdat Roblox moet worden geïnstalleerd of bijgewerkt, kan Vargostrap niet verdergaan.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Niet beschikbaar</value>
@@ -1054,7 +1054,7 @@ Controleer of Roblox werkt met [de originele launcher]({1}). Als dat niet het ge
     <value>Stel de applicatieparameters in, zoals het DPI-schaalgedrag en [optimalisaties voor volledig scherm]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox is nog niet geïnstalleerd. Start Roblox alstublieft minstens één keer via Froststrap voordat u deze optie probeert te gebruiken.</value>
+    <value>Roblox is nog niet geïnstalleerd. Start Roblox alstublieft minstens één keer via Vargostrap voordat u deze optie probeert te gebruiken.</value>
   </data>
   <data name="Bootstrapper.JsonManagerSaveFailed" xml:space="preserve">
     <value>Het opslaan van {0} is mislukt: {1}</value>
@@ -1069,10 +1069,10 @@ Controleer of Roblox werkt met [de originele launcher]({1}). Als dat niet het ge
     <value>Roblox-pictogrammen naar map kopiëren</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Hiermee kun je de Roblox-pictogrammen uit het assortiment van Froststrap gebruiken voor je snelkoppelingen. [Bekijk hoe.]({0})</value>
+    <value>Hiermee kun je de Roblox-pictogrammen uit het assortiment van Vargostrap gebruiken voor je snelkoppelingen. [Bekijk hoe.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>Froststrap kan geen gegevens naar het Windows-register schrijven. Waarschijnlijk veroorzaakt een antivirusprogramma storingen. Controleer of er niets is dat de werking van Froststrap belemmert.</value>
+    <value>Vargostrap kan geen gegevens naar het Windows-register schrijven. Waarschijnlijk veroorzaakt een antivirusprogramma storingen. Controleer of er niets is dat de werking van Vargostrap belemmert.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Alles terugzetten naar de standaardinstellingen</value>
@@ -1122,7 +1122,7 @@ Wil je de testmodus inschakelen?</value>
     <comment>Currently used under the "Froststrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Menu.Channel.Description" xml:space="preserve">
-    <value>Pas de implementatie- en installatie-instellingen voor Roblox en Froststrap aan.</value>
+    <value>Pas de implementatie- en installatie-instellingen voor Roblox en Vargostrap aan.</value>
   </data>
   <data name="Common.Version" xml:space="preserve">
     <value>Versie</value>
@@ -1150,7 +1150,7 @@ Wil je de testmodus inschakelen?</value>
     Om problemen te voorkomen, wordt er doorgegaan met de upgrade.</value>
   </data>
   <data name="Dialog.Bloxshade.Setting" xml:space="preserve">
-    <value>Froststrap biedt geen ondersteuning meer voor Bloxshade.
+    <value>Vargostrap biedt geen ondersteuning meer voor Bloxshade.
 Ga voor meer informatie naar de Discord-server van Bloxshade.</value>
   </data>
   <data name="Common.Profiles" xml:space="preserve">
@@ -1176,7 +1176,7 @@ Wil je overschakelen naar het standaardkanaal ({1})?</value>
     <value>Automatische kanaalwisseling</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
-    <value>Roblox of Froststrap kan proberen je voorkeurskanaal te wijzigen.</value>
+    <value>Roblox of Vargostrap kan proberen je voorkeurskanaal te wijzigen.</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
     <value>Automatisch wijzigen</value>
@@ -1258,10 +1258,10 @@ Wil je je voorkeurskanaal wijzigen naar {0}?</value>
     <value>Voorkom dat Roblox de algemene instellingen overschrijft.</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Title" xml:space="preserve">
-    <value>Rechten voor Froststrap-accounts</value>
+    <value>Rechten voor Vargostrap-accounts</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Description" xml:space="preserve">
-    <value>Biedt toegang tot de Roblox-API’s via je authenticatiecookie. [Waar krijgt Froststrap toegang toe?]({0})</value>
+    <value>Biedt toegang tot de Roblox-API’s via je authenticatiecookie. [Waar krijgt Vargostrap toegang toe?]({0})</value>
   </data>
   <data name="Menu.Appearance.WindowsBackdrop.Title" xml:space="preserve">
     <value>Achtergrond voor het raam</value>
@@ -1333,10 +1333,10 @@ Wil je je voorkeurskanaal wijzigen naar {0}?</value>
     <value>Dubbelklikactie</value>
   </data>
   <data name="Menu.Integrations.DoubleClickAction.Description" xml:space="preserve">
-    <value>Er wordt een specifiek venster geopend wanneer je tijdens het opstarten van Roblox dubbelklikt op Froststrap in het systeemvak.</value>
+    <value>Er wordt een specifiek venster geopend wanneer je tijdens het opstarten van Roblox dubbelklikt op Vargostrap in het systeemvak.</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Description" xml:space="preserve">
-    <value>Schakel deze optie in om een aangepaste RPC ‘Playing Froststrap’ in je Discord-profiel weer te geven zolang de app geopend is.</value>
+    <value>Schakel deze optie in om een aangepaste RPC ‘Playing Vargostrap’ in je Discord-profiel weer te geven zolang de app geopend is.</value>
   </data>
   <data name="Menu.Integrations.CustomStatusDisplay.Title" xml:space="preserve">
     <value>Aangepaste statusweergave</value>
@@ -1411,10 +1411,10 @@ Wil je je voorkeurskanaal wijzigen naar {0}?</value>
     <value>Community-mods</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
-    <value>Froststrap-logbestanden</value>
+    <value>Vargostrap-logbestanden</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
-    <value>Froststrap-logbestanden worden verwijderd.</value>
+    <value>Vargostrap-logbestanden worden verwijderd.</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.FollowUser" xml:space="preserve">
     <value>Het lijkt erop dat een vriend dit spel op dit moment aan het spelen is. Wil je meedoen?</value>
@@ -1423,7 +1423,7 @@ Wil je je voorkeurskanaal wijzigen naar {0}?</value>
     <value>BetterMatchmaking inschakelen</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.Description" xml:space="preserve">
-    <value>Laat Froststrap bepalen bij welke servers je je aansluit. Er wordt voorrang gegeven aan de server die het dichtst bij jou ligt.</value>
+    <value>Laat Vargostrap bepalen bij welke servers je je aansluit. Er wordt voorrang gegeven aan de server die het dichtst bij jou ligt.</value>
   </data>
   <data name="Menu.FastFlags.Presets.TextureQuality.Title" xml:space="preserve">
     <value>Textuurkwaliteit</value>
@@ -1977,7 +1977,7 @@ Deze moet ten minste één van de volgende mappen bevatten: content, ExtraConten
     <value>Update voor voorlopige versies</value>
   </data>
   <data name="Menu.Deployment.AutoPreReleaseUpdate.Description" xml:space="preserve">
-    <value>Froststrap controleert automatisch of er een testversie beschikbaar is en werkt zichzelf bij wanneer Roblox wordt gestart.</value>
+    <value>Vargostrap controleert automatisch of er een testversie beschikbaar is en werkt zichzelf bij wanneer Roblox wordt gestart.</value>
   </data>
   <data name="Menu.TestMode.Description" xml:space="preserve">
     <value>Verberg het instellingenvenster automatisch bij het opstarten van Roblox en laat het weer verschijnen wanneer Roblox wordt afgesloten.</value>
@@ -2357,7 +2357,7 @@ Wil je de plug-in installeren?</value>
     <value>Kleine servers</value>
   </data>
   <data name="Menu.RegionSelector.LoginRequired" xml:space="preserve">
-    <value>Log in via Account Manager, schakel 'Froststrap Account Permission' in of meld dit op onze Discord-server om deze functie te kunnen gebruiken.</value>
+    <value>Log in via Account Manager, schakel 'Vargostrap Account Permission' in of meld dit op onze Discord-server om deze functie te kunnen gebruiken.</value>
   </data>
   <data name="Menu.RegionSelector.EnterPlaceId" xml:space="preserve">
     <value>Voer een Place ID in en klik op Zoeken om de servers te bekijken.</value>

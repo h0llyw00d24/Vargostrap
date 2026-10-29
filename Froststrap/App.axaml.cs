@@ -49,12 +49,12 @@ internal partial class App : Application
     private const string MockReleaseTagEnvironmentVariable = "MOCK_RELEASE_TAG";
     private const string MockCurrentVersionEnvironmentVariable = "MOCK_CURRENT_VERSION";
 
-    public const string ProjectName = "Froststrap";
-    public const string ProjectOwner = "Froststrap";
-    public const string ProjectRepository = "Froststrap/Froststrap";
-    public const string ProjectDownloadLink = "https://github.com/Froststrap/Froststrap/releases";
+    public const string ProjectName = Vargostrap.Brand.Name;
+    public const string ProjectOwner = Vargostrap.Brand.Owner;
+    public const string ProjectRepository = Vargostrap.Brand.Repository;
+    public const string ProjectDownloadLink = $"{Vargostrap.Brand.RepositoryUrl}/releases";
     public const string ProjectHelpLink = "https://github.com/bloxstraplabs/bloxstrap/wiki";
-    public const string ProjectSupportLink = "https://github.com/Froststrap/Froststrap/issues/new";
+    public const string ProjectSupportLink = $"{Vargostrap.Brand.RepositoryUrl}/issues/new";
     public const string ProjectRemoteDataLink = "https://raw.githubusercontent.com/Froststrap/config/refs/heads/main/Data.json";
 
     public static string RobloxPlayerAppName => OperatingSystem.IsMacOS() ? "RobloxPlayer.app" : "RobloxPlayerBeta.exe";
@@ -378,12 +378,12 @@ internal partial class App : Application
         using var baseKey = Registry.CurrentUser;
 
         bool keyExists = baseKey.GetSubKeyNames().Contains("AppUserModelId") &&
-                         baseKey.OpenSubKey("AppUserModelId")?.GetSubKeyNames().Contains("xyz.froststrap.desktop") == true;
+                         baseKey.OpenSubKey("AppUserModelId")?.GetSubKeyNames().Contains(Vargostrap.Brand.AppUserModelId) == true;
 
         if (!keyExists)
         {
             using var aumidKey = baseKey.CreateSubKey(aumidKeyPath);
-            aumidKey.SetValue("DisplayName", "Froststrap");
+            aumidKey.SetValue("DisplayName", ProjectName);
             aumidKey.SetValue("IconBackgroundColor", "FFDDDDDD");
             aumidKey.SetValue("IconUri", iconPath);
             Logger.Info("Created AUMID registry key.");
@@ -638,6 +638,9 @@ internal partial class App : Application
                 _ = AssertWindowsAUMIDAsync();
 
                 await Updater.RunMigrations();
+
+                if (OperatingSystem.IsWindows())
+                    _ = Task.Run(Vargostrap.SystemChanges.SafeReset.RecoverAtStartupAsync); // Vargostrap: undo leftovers after a crash
 
                 if (Settings.Prop.AllowCookieAccess)
                     await Cookies.LoadCookies();

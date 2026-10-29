@@ -51,7 +51,7 @@ static class Processes
 
     public static void KillBackgroundUpdater()
     {
-        using EventWaitHandle handle = new(false, EventResetMode.AutoReset, "Froststrap-BackgroundUpdaterKillEvent");
+        using EventWaitHandle handle = new(false, EventResetMode.AutoReset, $"{App.ProjectName}-BackgroundUpdaterKillEvent");
         handle.Set();
     }
 }

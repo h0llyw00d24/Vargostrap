@@ -8,7 +8,7 @@ namespace Froststrap
 {
     static class Resource
     {
-        static readonly Uri[] assetUris = AssetLoader.GetAssets(new Uri("avares://Froststrap/"), null).ToArray();
+        static readonly Uri[] assetUris = AssetLoader.GetAssets(new Uri("avares://Vargostrap/"), null).ToArray();
 
         public static Stream GetStream(string name)
         {

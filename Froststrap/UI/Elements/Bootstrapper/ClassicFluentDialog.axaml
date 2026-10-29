@@ -16,7 +16,7 @@ SPDX-License-Identifier: MPL-2.0
                          x:DataType="vm:ClassicFluentDialogViewModel"
                          Width="420" Height="190"
                          CanResize="False"
-                         Title="Froststrap"
+                         Title="Vargostrap"
                          WindowStartupLocation="CenterScreen"
                          ExtendClientAreaToDecorationsHint="True"
                          ExtendClientAreaTitleBarHeightHint="-1">
@@ -24,7 +24,7 @@ SPDX-License-Identifier: MPL-2.0
     <Grid RowDefinitions="Auto, *, Auto">
         <controls:TitleBar Grid.Row="0"
                            Icon="{Binding Icon}"
-                           Title="Froststrap"
+                           Title="Vargostrap"
                            ShowMinimize="False"
                            ShowMaximize="False"
                            ShowClose="False"/>

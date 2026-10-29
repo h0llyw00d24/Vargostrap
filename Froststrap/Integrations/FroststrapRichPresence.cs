@@ -25,7 +25,7 @@ namespace Froststrap.Integrations
 
         public FroststrapRichPresence()
         {
-            _rpcClient = new DiscordRpcClient("1399535282713399418", -1, new NullLogger(), true, DiscordIpcPipeClient.Create())
+            _rpcClient = new DiscordRpcClient(Vargostrap.Discord.VargoRpc.ApplicationId, -1, new NullLogger(), true, DiscordIpcPipeClient.Create())
             {
                 SkipIdenticalPresence = true,
                 ShutdownOnly = true
@@ -93,35 +93,14 @@ namespace Froststrap.Integrations
             if (_disposed || _rpcClient == null || !_rpcClient.IsInitialized)
                 return;
 
-            string state = DiscordPresenceHelper.Truncate(
-                !string.IsNullOrEmpty(_currentDialog)
-                    ? $"Page: {_currentPage} | Dialog: {_currentDialog}"
-                    : $"Page: {_currentPage}",
-                128);
+            // Vargostrap: text, images and buttons come from the user's RPC customization
+            RichPresence presence = Vargostrap.Discord.VargoRpc.Build(_currentPage, _currentDialog, _startTimestamps);
+            string state = Vargostrap.Discord.VargoRpc.Fingerprint(presence);
 
             if (state == _lastState)
                 return;
 
             _lastState = state;
-
-            var presence = new RichPresence
-            {
-                Details = "Customize Roblox to your liking!",
-                State = state,
-                Timestamps = _startTimestamps,
-                Assets = new Assets
-                {
-                    LargeImageKey = "froststrap",
-                    LargeImageText = "Froststrap",
-                    SmallImageKey = "checkmark",
-                    SmallImageText = DiscordPresenceHelper.Truncate($"{App.Version}", 128)
-                },
-                Buttons =
-                [
-                    new Button { Label = "GitHub", Url = "https://github.com/Froststrap/Froststrap" },
-                    new Button { Label = "Discord", Url = "https://discord.gg/KdR9vpRcUN" }
-                ]
-            };
 
             try
             {
@@ -135,6 +114,13 @@ namespace Froststrap.Integrations
             {
                 App.Logger.Error("Unhandled exception: ", ex);
             }
+        }
+
+        /// <summary>Vargostrap: re-sends the presence after the customization changed.</summary>
+        public void Refresh()
+        {
+            _lastState = "";
+            UpdatePresence();
         }
 
         // i have refixed this fucking code 3 times now it BETTER not get removed

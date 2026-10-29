@@ -38,7 +38,7 @@ namespace Froststrap.Models.SettingTasks
 
                 foreach (string iconName in AllowedIconNames)
                 {
-                    var assetUri = new Uri($"avares://Froststrap/Resources/{iconName}");
+                    var assetUri = new Uri($"avares://Vargostrap/Resources/{iconName}");
 
                     if (!AssetLoader.Exists(assetUri))
                         continue;

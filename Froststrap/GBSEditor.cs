@@ -319,7 +319,7 @@ internal class GBSEditor
                 App.Logger.Info($"Created directory: {directory}");
             }
 
-            var uri = new Uri("avares://Froststrap/Resources/GlobalBasicSettings_Template.xml");
+            var uri = new Uri("avares://Vargostrap/Resources/GlobalBasicSettings_Template.xml");
             using var resourceStream = Avalonia.Platform.AssetLoader.Open(uri);
             using var fileStream = File.Create(FileLocation);
             resourceStream.CopyTo(fileStream);
@@ -463,6 +463,8 @@ internal class GBSEditor
             return false;
         }
 
+        Vargostrap.RobloxSettings.SettingsBackup.EnsureBackup(); // Vargostrap: keep the pre-Vargostrap original
+
         bool wasReadOnly = GetReadOnly();
         if (wasReadOnly)
         {
@@ -570,6 +572,7 @@ internal class GBSEditor
         try
         {
             if (!File.Exists(importPath)) return false;
+            Vargostrap.RobloxSettings.SettingsBackup.EnsureBackup(); // Vargostrap
             SetReadOnly(false, true);
             File.Copy(importPath, FileLocation, true);
             Load();

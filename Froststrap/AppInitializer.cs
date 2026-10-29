@@ -176,7 +176,7 @@ internal static class AppInitializer
 
     private static readonly string[] ResolverAssemblies =
     [
-        "Froststrap",
+        Froststrap.Vargostrap.Brand.AssemblyName,
         "backend",
         "SkiaSharp",
         "HarfBuzzSharp",

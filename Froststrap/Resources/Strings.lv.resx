@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>Froststrap nevarēja automātiski atjaunināties līdz versijai {0}. Lūdzu, atjauniniet to manuāli, lejupielādējot un palaistot programmu no tīmekļa vietnes.</value>
+    <value>Vargostrap nevarēja automātiski atjaunināties līdz versijai {0}. Lūdzu, atjauniniet to manuāli, lejupielādējot un palaistot programmu no tīmekļa vietnes.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Šobrīd „Roblox“ darbojas, un, uzsākot vēl vienu instanci, tā tiks aizvērta. Vai tiešām vēlaties turpināt uzsākšanu?</value>
@@ -127,10 +127,10 @@
     <value>Šobrīd „Roblox“ var būt nedarbīgs. Sīkāku informāciju skatiet {0}.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Neizdevās izveidot savienojumu, kas, visticamāk, liecina par vāju interneta savienojumu vai ugunsmūra bloķējumu. Ja savienojums darbojas pareizi, lūdzu, pārliecinieties, ka jūsu antivīruss neblokē Froststrap.</value>
+    <value>Neizdevās izveidot savienojumu, kas, visticamāk, liecina par vāju interneta savienojumu vai ugunsmūra bloķējumu. Ja savienojums darbojas pareizi, lūdzu, pārliecinieties, ka jūsu antivīruss neblokē Vargostrap.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>Froststrap rīkam nav pietiekami daudz diska vietas, lai lejupielādētu un instalētu Roblox. Lūdzu, atbrīvojiet nedaudz diska vietas un mēģiniet vēlreiz.</value>
+    <value>Vargostrap rīkam nav pietiekami daudz diska vietas, lai lejupielādētu un instalētu Roblox. Lūdzu, atbrīvojiet nedaudz diska vietas un mēģiniet vēlreiz.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Roblox modifikāciju piemērošana...</value>
@@ -166,10 +166,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>Froststrap ir veiksmīgi atinstalēts</value>
+    <value>Vargostrap ir veiksmīgi atinstalēts</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Šobrīd darbojas „Roblox“, taču pirms „Froststrap“ atinstalēšanas tas ir jāaizver. Vai vēlaties aizvērt „Roblox“ tagad?</value>
+    <value>Šobrīd darbojas „Roblox“, taču pirms „Vargostrap“ atinstalēšanas tas ir jāaizver. Vai vēlaties aizvērt „Roblox“ tagad?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Lai darbinātu Roblox, ir nepieciešami Windows Media Foundation komponenti. Šķiet, ka tie jums trūkst, visticamāk tāpēc, ka izmantojat Windows N versiju. Lūdzu, vispirms instalējiet šos komponentus un tikai tad palaidiet Roblox.</value>
@@ -278,14 +278,14 @@ Darbības laiks: {1}</value>
     <value>Savienojuma kļūda</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>Froststrap nevar izveidot savienojumu ar {0}</value>
+    <value>Vargostrap nevar izveidot savienojumu ar {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Kopēt žurnāla saturu</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Froststrap/Froststrap izpildes laikā radās izņēmums</value>
+    <value>Vargostrap/Vargostrap izpildes laikā radās izņēmums</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Vispirms pārbaudiet [Froststrap Wiki]({0}), lai noskaidrotu, vai šī problēma jau ir atrisināta.
@@ -293,7 +293,7 @@ Darbības laiks: {1}</value>
 Ja nē, lūdzu, ziņojiet par šo izņēmumu, izveidojot [GitHub problēmu]({1}) un pievienojot izveidotā žurnāla faila kopiju.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Froststrap izņēmums</value>
+    <value>Vargostrap izņēmums</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Pēc pasūtījuma</value>
@@ -305,13 +305,13 @@ Ja nē, lūdzu, ziņojiet par šo izņēmumu, izveidojot [GitHub problēmu]({1})
     <value>Viltots „Byfron“ (~2023)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentDialog" xml:space="preserve">
-    <value>Froststrap (necaurspīdīgs)</value>
+    <value>Vargostrap (necaurspīdīgs)</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>Froststrap (klasiskais)</value>
+    <value>Vargostrap (klasiskais)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>Froststrap (stikls)</value>
+    <value>Vargostrap (stikls)</value>
   </data>
   <data name="Enums.CursorType.From2006" xml:space="preserve">
     <value>~2006 (karikatūrisks)</value>
@@ -521,10 +521,10 @@ Tiek izmantota noklusējuma vērtība {1}.</value>
     <value>Neizdevās dzēst pielāgoto tēmu {0}: {1}</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>Froststrap ir atjaunināts līdz versijai v{0}</value>
+    <value>Vargostrap ir atjaunināts līdz versijai v{0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Froststrap versija, kuru esat palaidis, atšķiras no versijas, kas pašlaik ir instalēta.
+    <value>Vargostrap versija, kuru esat palaidis, atšķiras no versijas, kas pašlaik ir instalēta.
 Vai vēlaties atjaunināt pašlaik instalēto versiju?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -568,10 +568,10 @@ Vai vēlaties atjaunināt pašlaik instalēto versiju?</value>
     <value>Lūdzu, ņemiet vērā, ka ne visas jūsu izmaiņas stāsies spēkā uzreiz, kamēr neaizvērsiet visas pašlaik atvērtās „Roblox“ instances.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>Froststrap jau darbojas</value>
+    <value>Vargostrap jau darbojas</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
-    <value>Pielāgojiet „Froststrap“ sākotnējo konfiguratoru, izmantojot plašu opciju klāstu.</value>
+    <value>Pielāgojiet „Vargostrap“ sākotnējo konfiguratoru, izmantojot plašu opciju klāstu.</value>
   </data>
   <data name="Menu.Appearance.CustomisationTitle.Description" xml:space="preserve">
     <value>Teksts, kas tiek parādīts kā bootstrappera nosaukums.</value>
@@ -580,16 +580,16 @@ Vai vēlaties atjaunināt pašlaik instalēto versiju?</value>
     <value>Nosaukums</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Iestatiet, kādam jāizskatās Froststrap.</value>
+    <value>Iestatiet, kādam jāizskatās Vargostrap.</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Title" xml:space="preserve">
     <value>Lietotņu tēmas</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Description" xml:space="preserve">
-    <value>Viegli pielāgojiet „Froststrap“ tēmas, izmantojot iepriekš iestatītos variantus, vai izveidojiet savu unikālo izskatu.</value>
+    <value>Viegli pielāgojiet „Vargostrap“ tēmas, izmantojot iepriekš iestatītos variantus, vai izveidojiet savu unikālo izskatu.</value>
   </data>
   <data name="Menu.Appearance.Icon.Description" xml:space="preserve">
-    <value>Izvēlieties, kādu ikonu „Froststrap” vajadzētu izmantot.</value>
+    <value>Izvēlieties, kādu ikonu „Vargostrap” vajadzētu izmantot.</value>
   </data>
   <data name="Menu.Appearance.Icon.Title" xml:space="preserve">
     <value>Ikona</value>
@@ -607,10 +607,10 @@ Vai vēlaties atjaunināt pašlaik instalēto versiju?</value>
     <value>Izskats</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>Froststrap, uzsākot Roblox, automātiski pārbaudīs un atjaunināsies līdz stabilai versijai.</value>
+    <value>Vargostrap, uzsākot Roblox, automātiski pārbaudīs un atjaunināsies līdz stabilai versijai.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Froststrap automātiskā atjaunināšana</value>
+    <value>Vargostrap automātiskā atjaunināšana</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Novērš esošās spēles aizvēršanu, ja nejauši tiek palaista cita „Roblox“ instance.</value>
@@ -619,7 +619,7 @@ Vai vēlaties atjaunināt pašlaik instalēto versiju?</value>
     <value>Instances palaišanas apstiprinājums</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Iestatiet, kā Froststrap rīkosies, palaižot Roblox.</value>
+    <value>Iestatiet, kā Vargostrap rīkosies, palaižot Roblox.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Nākamajā palaišanas reizē tiks veikta Roblox tīrā instalācija.</value>
@@ -634,7 +634,7 @@ Vai vēlaties atjaunināt pašlaik instalēto versiju?</value>
     <value>Ieraksts ar šo karoga nosaukumu jau pastāv.</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
-    <value>„Froststrap“ tīrīšanas līdzeklis</value>
+    <value>„Vargostrap“ tīrīšanas līdzeklis</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
     <value>Automātiski dzēš vecos datus, lai atbrīvotu vietu. Sākotnēji izstrādājis Fishstrap.</value>
@@ -793,7 +793,7 @@ Papildu informācija:
     <value>Līdzīgi kā datorā</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Ļauj Froststrap noteikt, kuru Roblox spēli tu spēlē. Dažām funkcijām tas var būt nepieciešams.</value>
+    <value>Ļauj Vargostrap noteikt, kuru Roblox spēli tu spēlē. Dažām funkcijām tas var būt nepieciešams.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Ieslēgt darbību uzraudzību</value>
@@ -871,7 +871,7 @@ Papildu informācija:
     <value>Iestatījumi saglabāti!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Froststrap iestatījumi</value>
+    <value>Vargostrap iestatījumi</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Izvēlieties vēlamo valodu</value>
@@ -893,7 +893,7 @@ Daļa teksta var būt netulkota vēlamajā valodā.</value>
     <value>Fiksē grafikas kvalitāti izvēlētajā līmenī. Piezīme: ja šis iestatījums ir ieslēgts, grafikas slīdnis „Roblox“ izvēlnē ietekmēs tikai attēlošanas attālumu spēlē.</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Atļaut „Froststrap” pārvaldīt „FastFlags”</value>
+    <value>Atļaut „Vargostrap” pārvaldīt „FastFlags”</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Ja šo opciju atspējosiet, šeit konfigurētie iestatījumi netiks piemēroti Roblox.</value>
@@ -923,7 +923,7 @@ Daļa teksta var būt netulkota vēlamajā valodā.</value>
     <value>Noņem „Roblox“ noklusējuma zāles tekstūras. Piezīme: šis iestatījums neietekmē atsevišķās spēlēs izmantotās pielāgotās zāles tekstūras.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>Froststrap nevar lejupielādēt Roblox</value>
+    <value>Vargostrap nevar lejupielādēt Roblox</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Šobrīd „Roblox“ nav iespējams lejupielādēt. Lūdzu, izlasiet šo palīdzības lapu, lai iegūtu vairāk informācijas: {0}</value>
@@ -933,7 +933,7 @@ Daļa teksta var būt netulkota vēlamajā valodā.</value>
     <value>Importēt no faila</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Par šo palaišanu netiks izveidots nekāds žurnāla fails, jo Froststrap nevar veikt ierakstīšanu mapē „{0}“</value>
+    <value>Par šo palaišanu netiks izveidots nekāds žurnāla fails, jo Vargostrap nevar veikt ierakstīšanu mapē „{0}“</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Noklusējums</value>
@@ -951,22 +951,22 @@ Daļa teksta var būt netulkota vēlamajā valodā.</value>
     <value>Darbvirsmas ikona</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Atinstalēt Froststrap</value>
+    <value>Atinstalēt Vargostrap</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Atinstalēšana no jūsu sistēmas izdzēsīs programmu „Froststrap“ un automātiski pārkonfigurēs standarta „Roblox“ palaišanas programmu, ja tā joprojām ir instalēta.
+    <value>Atinstalēšana no jūsu sistēmas izdzēsīs programmu „Vargostrap“ un automātiski pārkonfigurēs standarta „Roblox“ palaišanas programmu, ja tā joprojām ir instalēta.
 
 Ja veicat atinstalēšanu vai pārinstalēšanu, jo rodas problēmas ar Roblox, vispirms izlasiet [šo palīdzības lapu]({0}).
 
-Atinstalēšanas process var nebūt spējīgs pilnībā iztīrīt sistēmu, tāpēc, iespējams, būs nepieciešams manuāli izdzēst atlikušos failus no vietas, kur bija instalēts Froststrap.
+Atinstalēšanas process var nebūt spējīgs pilnībā iztīrīt sistēmu, tāpēc, iespējams, būs nepieciešams manuāli izdzēst atlikušos failus no vietas, kur bija instalēts Vargostrap.
 
-Froststrap tika instalēts vietā "{1}".</value>
+Vargostrap tika instalēts vietā "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Saglabāt manus iestatījumus un modifikācijas</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Tie tiks saglabāti tajā vietā, kur bija instalēts „Froststrap”, un tiks automātiski atjaunoti, veicot atkārtotu instalēšanu.</value>
+    <value>Tie tiks saglabāti tajā vietā, kur bija instalēts „Vargostrap”, un tiks automātiski atjaunoti, veicot atkārtotu instalēšanu.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Atinstalēt</value>
@@ -978,7 +978,7 @@ Froststrap tika instalēts vietā "{1}".</value>
     <value>Pašlaik tev nav instalēta WebView2 izpildes vide. Bez tās dažas Roblox funkcijas, piemēram, datora lietotne, nedarbosies pareizi. Vai vēlies to lejupielādēt tagad?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>Froststrap nevarēja izveidot saīsnes uz darbvirsmas un sākuma izvēlnē. Mēģiniet tās izveidot vēlāk, izmantojot iestatījumus.</value>
+    <value>Vargostrap nevarēja izveidot saīsnes uz darbvirsmas un sākuma izvēlnē. Mēģiniet tās izveidot vēlāk, izmantojot iestatījumus.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Vispirms pārbaudiet [Froststrap Wiki]({0}), lai redzētu, vai šī problēma jau ir atrisināta.
@@ -987,7 +987,7 @@ Ja nē, lūdzu, ziņojiet par šo izņēmumu šī atzara uzturētājiem. NEziņo
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Iestatiet, kā Froststrap var viegli palaist.</value>
+    <value>Iestatiet, kā Vargostrap var viegli palaist.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Vispārīgi</value>
@@ -1014,14 +1014,14 @@ Ja nē, lūdzu, ziņojiet par šo izņēmumu šī atzara uzturētājiem. NEziņo
     <value>Lūdzu, pagaidiet, kamēr tiks pabeigta programmas atinstalēšana.</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Par „Froststrap“</value>
+    <value>Par „Vargostrap“</value>
   </data>
   <data name="About.Licenses.Title" xml:space="preserve">
     <value>Licences</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Froststrap versija, kuru esat palaidis, ir vecāka par versiju, kas pašlaik ir instalēta.
+    <value>Vargostrap versija, kuru esat palaidis, ir vecāka par versiju, kas pašlaik ir instalēta.
 Var rasties problēmas, un jūsu iestatījumi var tikt mainīti. Ieteicams veikt atkārtotu instalēšanu.
 Vai esat pārliecināts, ka vēlaties turpināt?</value>
   </data>
@@ -1034,7 +1034,7 @@ Vai esat pārliecināts, ka vēlaties turpināt?</value>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Lai uzzinātu, kāpēc tas varētu notikt un kā šo problēmu atrisināt, lūdzu, izlasiet [šo palīdzības rakstu]({0}).
 
-Pārbaudiet, vai Roblox darbojas ar [oriģinālo palaišanas programmu]({1}). Ja nedarbojas, tad šī nav Froststrap problēma. Ja darbojas, skatieties palīdzības rakstu.</value>
+Pārbaudiet, vai Roblox darbojas ar [oriģinālo palaišanas programmu]({1}). Ja nedarbojas, tad šī nav Vargostrap problēma. Ja darbojas, skatieties palīdzības rakstu.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Ielādējas, lūdzu, pagaidiet...</value>
@@ -1064,7 +1064,7 @@ Pārbaudiet, vai Roblox darbojas ar [oriģinālo palaišanas programmu]({1}). Ja
     <value>Šajā versijā Roblox netiks pārbaudīts, vai ir pieejami atjauninājumi, un izmaiņas modifikācijās netiks piemērotas.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Tā kā ir jāinstalē vai jāatjaunina Roblox, Froststrap nevar turpināt darbu.</value>
+    <value>Tā kā ir jāinstalē vai jāatjaunina Roblox, Vargostrap nevar turpināt darbu.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Nav pieejams</value>
@@ -1076,7 +1076,7 @@ Pārbaudiet, vai Roblox darbojas ar [oriģinālo palaišanas programmu]({1}). Ja
     <value>Konfigurējiet lietojumprogrammas parametrus, piemēram, DPI mērogošanas darbību un [pilnekrāna optimizācijas]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox vēl nav instalēts. Lūdzu, vismaz vienu reizi palaidiet Roblox, izmantojot Froststrap, pirms mēģināt izmantot šo opciju.</value>
+    <value>Roblox vēl nav instalēts. Lūdzu, vismaz vienu reizi palaidiet Roblox, izmantojot Vargostrap, pirms mēģināt izmantot šo opciju.</value>
   </data>
   <data name="Bootstrapper.JsonManagerSaveFailed" xml:space="preserve">
     <value>Neizdevās saglabāt {0}: {1}</value>
@@ -1091,10 +1091,10 @@ Pārbaudiet, vai Roblox darbojas ar [oriģinālo palaišanas programmu]({1}). Ja
     <value>Izgūt Roblox ikonas uz mapi</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Ļauj izmantot Froststrap piedāvātās Roblox ikonas savām saīsnēm. [Uzzini, kā.]({0})</value>
+    <value>Ļauj izmantot Vargostrap piedāvātās Roblox ikonas savām saīsnēm. [Uzzini, kā.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>Froststrap nevar veikt ierakstus Windows reģistrā. Iespējams, ka antivīruss traucē darbību un rada problēmas. Lūdzu, pārbaudiet, vai nav kaut kas, kas varētu ierobežot Froststrap darbību.</value>
+    <value>Vargostrap nevar veikt ierakstus Windows reģistrā. Iespējams, ka antivīruss traucē darbību un rada problēmas. Lūdzu, pārbaudiet, vai nav kaut kas, kas varētu ierobežot Vargostrap darbību.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Atjaunot visus iestatījumus uz noklusējuma vērtībām</value>
@@ -1144,7 +1144,7 @@ Vai vēlaties ieslēgt testa režīmu?</value>
     <comment>Currently used under the "Froststrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Menu.Channel.Description" xml:space="preserve">
-    <value>Mainiet Roblox un Froststrap izvietošanas un instalēšanas iestatījumus.</value>
+    <value>Mainiet Roblox un Vargostrap izvietošanas un instalēšanas iestatījumus.</value>
   </data>
   <data name="Common.Version" xml:space="preserve">
     <value>Versija</value>
@@ -1175,7 +1175,7 @@ Vai vēlaties ieslēgt testa režīmu?</value>
     <value>Atvainojiet</value>
   </data>
   <data name="Dialog.Bloxshade.Setting" xml:space="preserve">
-    <value>Froststrap vairs neatbalsta Bloxshade.
+    <value>Vargostrap vairs neatbalsta Bloxshade.
 Lai uzzinātu vairāk, pievienojies Bloxshade Discord serverim.</value>
   </data>
   <data name="Common.Profiles" xml:space="preserve">
@@ -1201,7 +1201,7 @@ Vai vēlaties pāriet uz noklusējuma kanālu ({1})?</value>
     <value>Automātiskā kanāla maiņa</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
-    <value>„Roblox“ vai „Froststrap“ var mēģināt mainīt jūsu izvēlēto kanālu.</value>
+    <value>„Roblox“ vai „Vargostrap“ var mēģināt mainīt jūsu izvēlēto kanālu.</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
     <value>Mainīt automātiski</value>
@@ -1283,10 +1283,10 @@ Vai vēlies mainīt savu izvēlēto kanālu uz {0}?</value>
     <value>Neļaujiet „Roblox“ pārrakstīt vispārējos iestatījumus.</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Title" xml:space="preserve">
-    <value>Froststrap konta atļaujas</value>
+    <value>Vargostrap konta atļaujas</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Description" xml:space="preserve">
-    <value>Nodrošina piekļuvi Roblox API, izmantojot jūsu autentifikācijas sīkfailu. [Kam Froststrap piekļūs?]({0})</value>
+    <value>Nodrošina piekļuvi Roblox API, izmantojot jūsu autentifikācijas sīkfailu. [Kam Vargostrap piekļūs?]({0})</value>
   </data>
   <data name="Menu.Appearance.WindowsBackdrop.Title" xml:space="preserve">
     <value>Logu fons</value>
@@ -1358,10 +1358,10 @@ Vai vēlies mainīt savu izvēlēto kanālu uz {0}?</value>
     <value>Dubultklikšķa darbība</value>
   </data>
   <data name="Menu.Integrations.DoubleClickAction.Description" xml:space="preserve">
-    <value>Atver konkrētu logu, ja, palaižot Roblox, divreiz noklikšķina uz Froststrap sistēmas panelī.</value>
+    <value>Atver konkrētu logu, ja, palaižot Roblox, divreiz noklikšķina uz Vargostrap sistēmas panelī.</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Description" xml:space="preserve">
-    <value>Ieslēdziet šo opciju, lai Discord profilā tiktu parādīts pielāgots RPC „Playing Froststrap”, kamēr lietotne ir atvērta.</value>
+    <value>Ieslēdziet šo opciju, lai Discord profilā tiktu parādīts pielāgots RPC „Playing Vargostrap”, kamēr lietotne ir atvērta.</value>
   </data>
   <data name="Menu.Integrations.CustomStatusDisplay.Title" xml:space="preserve">
     <value>Pielāgotais statusa rādījums</value>
@@ -1436,10 +1436,10 @@ Vai vēlies mainīt savu izvēlēto kanālu uz {0}?</value>
     <value>Kopienas modifikācijas</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
-    <value>Froststrap žurnāli</value>
+    <value>Vargostrap žurnāli</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
-    <value>Froststrap žurnāli tiks dzēsti.</value>
+    <value>Vargostrap žurnāli tiks dzēsti.</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.FollowUser" xml:space="preserve">
     <value>Izskatās, ka kāds draugs šobrīd spēlē šo spēli. Vai vēlies pievienoties?</value>
@@ -1448,7 +1448,7 @@ Vai vēlies mainīt savu izvēlēto kanālu uz {0}?</value>
     <value>Iespējot funkciju „BetterMatchmaking”</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.Description" xml:space="preserve">
-    <value>Ļaujiet Froststrap izlemt, kuriem serveriem pievienoties. Tiks dota priekšroka serverim, kas atrodas vistuvāk jums.</value>
+    <value>Ļaujiet Vargostrap izlemt, kuriem serveriem pievienoties. Tiks dota priekšroka serverim, kas atrodas vistuvāk jums.</value>
   </data>
   <data name="Menu.FastFlags.Presets.TextureQuality.Title" xml:space="preserve">
     <value>Tekstūras kvalitāte</value>
@@ -2032,7 +2032,7 @@ Tajā ir jābūt vismaz vienai no šīm mapēm: content, ExtraContent, PlatformC
     <value>Priekšizlaides atjauninājums</value>
   </data>
   <data name="Menu.Deployment.AutoPreReleaseUpdate.Description" xml:space="preserve">
-    <value>Froststrap, uzsākot Roblox, automātiski pārbaudīs un atjaunināsies uz testa versiju.</value>
+    <value>Vargostrap, uzsākot Roblox, automātiski pārbaudīs un atjaunināsies uz testa versiju.</value>
   </data>
   <data name="Menu.TestMode.Description" xml:space="preserve">
     <value>Automātiski paslēpt iestatījumu logu, uzsākot Roblox, un atjaunot to, kad Roblox tiek aizvērts.</value>
@@ -2415,7 +2415,7 @@ Vai vēlaties instalēt šo spraudni?</value>
     <value>Mazie serveri</value>
   </data>
   <data name="Menu.RegionSelector.LoginRequired" xml:space="preserve">
-    <value>Lai izmantotu šo funkciju, piesakieties, izmantojot konta pārvaldnieku, vai ieslēdziet „Froststrap konta atļaujas”, vai arī ziņojiet par to mūsu Discord serverī.</value>
+    <value>Lai izmantotu šo funkciju, piesakieties, izmantojot konta pārvaldnieku, vai ieslēdziet „Vargostrap konta atļaujas”, vai arī ziņojiet par to mūsu Discord serverī.</value>
   </data>
   <data name="Menu.RegionSelector.EnterPlaceId" xml:space="preserve">
     <value>Ievadiet vietas identifikatoru un noklikšķiniet uz „Meklēt”, lai apskatītu serverus.</value>

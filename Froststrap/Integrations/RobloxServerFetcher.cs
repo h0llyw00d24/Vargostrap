@@ -43,7 +43,7 @@ namespace Froststrap.Integrations
 
             _client = new HttpClient(handler);
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            _client.DefaultRequestHeaders.UserAgent.ParseAdd("Roblox/Froststrap");
+            _client.DefaultRequestHeaders.UserAgent.ParseAdd($"Roblox/{App.ProjectName}");
         }
 
         private static string BuildRegionKey(string? city, string? country)
@@ -797,6 +797,7 @@ namespace Froststrap.Integrations
                 }
 
                 var topRegions = await GetClosestRegionsForAutoModeAsync(cancellationToken);
+                topRegions = Vargostrap.Network.RegionRanking.Rank(topRegions); // Vargostrap
                 if (topRegions.Count == 0)
                 {
                     await Frontend.ShowMessageBox("Could not determine your location for Auto mode. Please try again later.", MessageBoxImage.Warning);

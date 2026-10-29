@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>Froststrapil ei õnnestunud automaatselt uuendada versioonile {0}. Palun uuendage seda käsitsi, laadides selle alla veebisaidilt ja käivitades selle sealt.</value>
+    <value>Vargostrapil ei õnnestunud automaatselt uuendada versioonile {0}. Palun uuendage seda käsitsi, laadides selle alla veebisaidilt ja käivitades selle sealt.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Roblox on hetkel käivitatud ja uue instantsi käivitamine sulgeb selle. Kas soovid kindlasti käivitamist jätkata?</value>
@@ -127,10 +127,10 @@
     <value>Roblox võib hetkel olla maas. Lisateavet leiate siit: {0}.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Ühendust ei õnnestunud luua, mis viitab tõenäoliselt nõrgale internetiühendusele või tulemüüri blokeeringule. Kui teie internetiühendus on korras, veenduge palun, et teie viirusetõrjeprogramm ei blokeeri Froststrapi.</value>
+    <value>Ühendust ei õnnestunud luua, mis viitab tõenäoliselt nõrgale internetiühendusele või tulemüüri blokeeringule. Kui teie internetiühendus on korras, veenduge palun, et teie viirusetõrjeprogramm ei blokeeri Vargostrapi.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>Froststrapil ei ole piisavalt kettaruumi Robloxi allalaadimiseks ja installimiseks. Palun vabasta veidi kettaruumi ja proovi uuesti.</value>
+    <value>Vargostrapil ei ole piisavalt kettaruumi Robloxi allalaadimiseks ja installimiseks. Palun vabasta veidi kettaruumi ja proovi uuesti.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Robloxi muudatuste rakendamine...</value>
@@ -166,10 +166,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>Froststrap on edukalt eemaldatud</value>
+    <value>Vargostrap on edukalt eemaldatud</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox on hetkel käivitatud, kuid enne Froststrapi eemaldamist tuleb see sulgeda. Kas soovid Robloxi kohe sulgeda?</value>
+    <value>Roblox on hetkel käivitatud, kuid enne Vargostrapi eemaldamist tuleb see sulgeda. Kas soovid Robloxi kohe sulgeda?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Roblox nõuab Windows Media Foundationi komponentide kasutamist. Ilmselt puuduvad need sinu arvutist, tõenäoliselt seetõttu, et kasutad Windowsi N-versiooni. Palun installeeri need esmalt ja käivita seejärel Roblox.</value>
@@ -278,14 +278,14 @@ Töötundide arv: {1}</value>
     <value>Ühendusviga</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>Froststrap ei suuda ühendust luua {0}ga</value>
+    <value>Vargostrap ei suuda ühendust luua {0}ga</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Kopeeri logi sisu</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Froststrap/Froststrap käivitamisel tekkis erand</value>
+    <value>Vargostrap/Vargostrap käivitamisel tekkis erand</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Vaata esmalt [Froststrap Wiki]({0}) lehelt järele, kas sellele probleemile on juba lahendus leitud.
@@ -293,7 +293,7 @@ Töötundide arv: {1}</value>
 Kui mitte, siis palun teata sellest erandist [GitHubi probleemi kaudu]({1}) koos loodud logifaili koopiaga.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Froststrap’i erand</value>
+    <value>Vargostrap’i erand</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Kohandatud</value>
@@ -305,13 +305,13 @@ Kui mitte, siis palun teata sellest erandist [GitHubi probleemi kaudu]({1}) koos
     <value>Võltsitud Byfron (~2023)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentDialog" xml:space="preserve">
-    <value>Froststrap (läbipaistmatu)</value>
+    <value>Vargostrap (läbipaistmatu)</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>Froststrap (klassikaline)</value>
+    <value>Vargostrap (klassikaline)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>Froststrap (klaas)</value>
+    <value>Vargostrap (klaas)</value>
   </data>
   <data name="Enums.CursorType.From2006" xml:space="preserve">
     <value>~2006 (koomiksilik)</value>
@@ -518,10 +518,10 @@ Kasutatakse vaikimisi {1}.</value>
     <value>Kohandatud teema {0} kustutamine ebaõnnestus: {1}</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>Froststrap on uuendatud versioonile v{0}</value>
+    <value>Vargostrap on uuendatud versioonile v{0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Teie käivitatud Froststrap’i versioon erineb teie praegu installitud versioonist.
+    <value>Teie käivitatud Vargostrap’i versioon erineb teie praegu installitud versioonist.
 Kas soovite oma praegu installitud versiooni uuendada?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -565,10 +565,10 @@ Kas soovite oma praegu installitud versiooni uuendada?</value>
     <value>Pange tähele, et mitte kõik teie muudatused ei jõustu kohe, kuni te pole sulgenud kõiki hetkel avatud Roblox-i instantsse.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>Froststrap on juba käivitunud</value>
+    <value>Vargostrap on juba käivitunud</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
-    <value>Kohandage Froststrapi käivitajat mitmesuguste valikuvõimaluste abil.</value>
+    <value>Kohandage Vargostrapi käivitajat mitmesuguste valikuvõimaluste abil.</value>
   </data>
   <data name="Menu.Appearance.CustomisationTitle.Description" xml:space="preserve">
     <value>Tekst, mis kuvatakse bootstrapperi pealkirjana.</value>
@@ -577,16 +577,16 @@ Kas soovite oma praegu installitud versiooni uuendada?</value>
     <value>Pealkiri</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Määra kindlaks, kuidas Froststrap peaks välja nägema.</value>
+    <value>Määra kindlaks, kuidas Vargostrap peaks välja nägema.</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Title" xml:space="preserve">
     <value>Rakenduste teemad</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Description" xml:space="preserve">
-    <value>Kohanda Froststrap’i teemasid hõlpsalt eelseadistuste abil või loo oma ainulaadne kujundus.</value>
+    <value>Kohanda Vargostrap’i teemasid hõlpsalt eelseadistuste abil või loo oma ainulaadne kujundus.</value>
   </data>
   <data name="Menu.Appearance.Icon.Description" xml:space="preserve">
-    <value>Vali, millist ikooni Froststrap peaks kasutama.</value>
+    <value>Vali, millist ikooni Vargostrap peaks kasutama.</value>
   </data>
   <data name="Menu.Appearance.Icon.Title" xml:space="preserve">
     <value>Ikoon</value>
@@ -604,10 +604,10 @@ Kas soovite oma praegu installitud versiooni uuendada?</value>
     <value>Välimus</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>Froststrap kontrollib ja uuendab end automaatselt stabiilse versioonini, kui Roblox käivitatakse.</value>
+    <value>Vargostrap kontrollib ja uuendab end automaatselt stabiilse versioonini, kui Roblox käivitatakse.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Froststrapi automaatne uuendamine</value>
+    <value>Vargostrapi automaatne uuendamine</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Võimaldab vältida olemasoleva mängu sulgemist, kui käivitatakse kogemata teine Roblox-instants.</value>
@@ -616,7 +616,7 @@ Kas soovite oma praegu installitud versiooni uuendada?</value>
     <value>Instantsi käivitamise kinnitus</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Määra kindlaks, mida Froststrap peaks tegema Robloxi käivitamisel.</value>
+    <value>Määra kindlaks, mida Vargostrap peaks tegema Robloxi käivitamisel.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Järgmisel käivitamisel toimub Robloxi puhas installimine.</value>
@@ -631,7 +631,7 @@ Kas soovite oma praegu installitud versiooni uuendada?</value>
     <value>Selle lipu nime kohta on juba olemas kanne.</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
-    <value>Froststrap puhastusvahend</value>
+    <value>Vargostrap puhastusvahend</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
     <value>Kustutab vanad andmed automaatselt, et vabastada ruumi. Algne looja: Fishstrap.</value>
@@ -787,7 +787,7 @@ Lisateave:
     <value>Lähedal töölauale</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Võimaldab Froststrapil tuvastada, millist Roblox-mängu sa mängid. Teatud funktsioonide kasutamiseks võib see olla vajalik.</value>
+    <value>Võimaldab Vargostrapil tuvastada, millist Roblox-mängu sa mängid. Teatud funktsioonide kasutamiseks võib see olla vajalik.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Luba tegevuse jälgimine</value>
@@ -865,7 +865,7 @@ Lisateave:
     <value>Seaded on salvestatud!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Froststrap'i seaded</value>
+    <value>Vargostrap'i seaded</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Valige soovitud keel</value>
@@ -887,7 +887,7 @@ Mõned tekstid ei pruugi olla eelistatud keelde tõlgitud.</value>
     <value>Kinnitab graafika kvaliteedi valitud tasemele. Märkus: Kui see seade on sisse lülitatud, mõjutab Robloxi menüüs olev graafika liugur ainult renderdamiskaugust mängus.</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Luba Froststrapil FastFlags’i hallata</value>
+    <value>Luba Vargostrapil FastFlags’i hallata</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Selle funktsiooni keelamine takistab siin konfigureeritud seadete rakendamist Robloxis.</value>
@@ -917,7 +917,7 @@ Mõned tekstid ei pruugi olla eelistatud keelde tõlgitud.</value>
     <value>Eemaldab Robloxi vaikimisi kasutatavad murutekstuurid. Märkus: see seade ei mõjuta üksikutes mängudes kasutatavaid kohandatud murutekstuure.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>Froststrap ei suuda Robloxi alla laadida</value>
+    <value>Vargostrap ei suuda Robloxi alla laadida</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Robloxit ei ole hetkel võimalik alla laadida. Lisateabe saamiseks palun lugege järgmist abilehte: {0}</value>
@@ -927,7 +927,7 @@ Mõned tekstid ei pruugi olla eelistatud keelde tõlgitud.</value>
     <value>Importimine failist</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Selle käivitamise kohta ei salvestata logifaili, kuna Froststrap ei saa kirjutada kausta '{0}'</value>
+    <value>Selle käivitamise kohta ei salvestata logifaili, kuna Vargostrap ei saa kirjutada kausta '{0}'</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Vaikimisi</value>
@@ -945,22 +945,22 @@ Mõned tekstid ei pruugi olla eelistatud keelde tõlgitud.</value>
     <value>Töölaua ikoon</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Froststrapi eemaldamine</value>
+    <value>Vargostrapi eemaldamine</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Eemaldamine kustutab Froststrapi teie süsteemist ja seadistab automaatselt uuesti Robloxi vaikimisi käivitaja, kui see on endiselt installitud.
+    <value>Eemaldamine kustutab Vargostrapi teie süsteemist ja seadistab automaatselt uuesti Robloxi vaikimisi käivitaja, kui see on endiselt installitud.
 
 Kui eemaldad või paigaldad programmi uuesti, kuna sul on probleeme Robloxiga, loe esmalt [seda abilehte]({0}).
 
-Eemaldamisprotsess ei pruugi kõiki faile täielikult kustutada, seega võib olla vaja käsitsi kustutada jääkfaile kohast, kuhu Froststrap oli paigaldatud.
+Eemaldamisprotsess ei pruugi kõiki faile täielikult kustutada, seega võib olla vaja käsitsi kustutada jääkfaile kohast, kuhu Vargostrap oli paigaldatud.
 
-Froststrap oli paigaldatud kataloogi „{1}”.</value>
+Vargostrap oli paigaldatud kataloogi „{1}”.</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Säilita mu seaded ja modifikatsioonid</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Need säilitatakse kohas, kuhu Froststrap paigaldati, ning taastatakse automaatselt uuesti paigaldamisel.</value>
+    <value>Need säilitatakse kohas, kuhu Vargostrap paigaldati, ning taastatakse automaatselt uuesti paigaldamisel.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Eemaldamine</value>
@@ -972,7 +972,7 @@ Froststrap oli paigaldatud kataloogi „{1}”.</value>
     <value>Hetkel pole sul WebView2-i käivituskeskkonda installitud. Ilma selleta ei tööta mõned Robloxi funktsioonid korralikult, näiteks töölaua rakendus. Kas soovid selle kohe alla laadida?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>Froststrapil ei õnnestunud luua töölauale ja Start-menüüsse otseteid. Proovi neid hiljem seadete kaudu luua.</value>
+    <value>Vargostrapil ei õnnestunud luua töölauale ja Start-menüüsse otseteid. Proovi neid hiljem seadete kaudu luua.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Vaata esmalt [Froststrap Wiki]({0}) lehelt, kas sellele probleemile on juba lahendus leitud.
@@ -981,7 +981,7 @@ Kui mitte, siis palun teata sellest erandist selle haru hooldajatele. Ära teata
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Määra, kuidas Froststrapi saab hõlpsasti käivitada.</value>
+    <value>Määra, kuidas Vargostrapi saab hõlpsasti käivitada.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Üldine</value>
@@ -1008,14 +1008,14 @@ Kui mitte, siis palun teata sellest erandist selle haru hooldajatele. Ära teata
     <value>Palun oodake, kuni eemaldamine on lõppenud.</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Froststrapi kohta</value>
+    <value>Vargostrapi kohta</value>
   </data>
   <data name="About.Licenses.Title" xml:space="preserve">
     <value>Litsentsid</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Teie käivitatud Froststrap’i versioon on vanem kui teie praegu installitud versioon.
+    <value>Teie käivitatud Vargostrap’i versioon on vanem kui teie praegu installitud versioon.
 Võivad tekkida probleemid ja teie seaded võivad muutuda. Soovitame programmi uuesti installida.
 Kas olete kindel, et soovite jätkata?</value>
   </data>
@@ -1028,7 +1028,7 @@ Kas olete kindel, et soovite jätkata?</value>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Et saada teavet selle kohta, miks see võib juhtuda ja kuidas seda lahendada, lugege palun [seda abikirja]({0}).
 
-Kontrollige, kas Roblox töötab [originaalse käivitajaga]({1}). Kui ei, siis ei ole tegemist Froststrapi probleemiga. Kui töötab, siis vaadake abikirja.</value>
+Kontrollige, kas Roblox töötab [originaalse käivitajaga]({1}). Kui ei, siis ei ole tegemist Vargostrapi probleemiga. Kui töötab, siis vaadake abikirja.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Laadimine käib, palun oodake...</value>
@@ -1058,7 +1058,7 @@ Kontrollige, kas Roblox töötab [originaalse käivitajaga]({1}). Kui ei, siis e
     <value>Selle versiooni käivitamisel ei kontrollita Robloxi uuenduste olemasolu ega rakendata modifikatsioonide muudatusi.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Kuna Roblox tuleb installida või uuendada, ei saa Froststrap jätkata.</value>
+    <value>Kuna Roblox tuleb installida või uuendada, ei saa Vargostrap jätkata.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Ei ole saadaval</value>
@@ -1070,7 +1070,7 @@ Kontrollige, kas Roblox töötab [originaalse käivitajaga]({1}). Kui ei, siis e
     <value>Määrake rakenduse parameetrid, nagu DPI-skaalimise käitumine ja [täisekraani optimeerimised]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox pole veel installitud. Palun käivita Roblox Froststrapi abil vähemalt üks kord, enne kui proovid seda valikut kasutada.</value>
+    <value>Roblox pole veel installitud. Palun käivita Roblox Vargostrapi abil vähemalt üks kord, enne kui proovid seda valikut kasutada.</value>
   </data>
   <data name="Bootstrapper.JsonManagerSaveFailed" xml:space="preserve">
     <value>{0} salvestamine ebaõnnestus: {1}</value>
@@ -1085,10 +1085,10 @@ Kontrollige, kas Roblox töötab [originaalse käivitajaga]({1}). Kui ei, siis e
     <value>Kopeeri Robloxi ikoonid kausta</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Võimaldab sul kasutada oma kiirviidete jaoks Froststrapi Roblox-ikoonide valikut. [Vaata, kuidas.]({0})</value>
+    <value>Võimaldab sul kasutada oma kiirviidete jaoks Vargostrapi Roblox-ikoonide valikut. [Vaata, kuidas.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>Froststrap ei saa kirjutada Windowsi registrisse. Tõenäoliselt segab viirusetõrjeprogramm selle tööd ja põhjustab probleeme. Palun kontrollige, et midagi ei piiraks Froststrapi tööd.</value>
+    <value>Vargostrap ei saa kirjutada Windowsi registrisse. Tõenäoliselt segab viirusetõrjeprogramm selle tööd ja põhjustab probleeme. Palun kontrollige, et midagi ei piiraks Vargostrapi tööd.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Taasta kõik vaikimisi seaded</value>
@@ -1138,7 +1138,7 @@ Kas soovid testrežiimi sisse lülitada?</value>
     <comment>Currently used under the "Froststrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Menu.Channel.Description" xml:space="preserve">
-    <value>Muuda Robloxi ja Froststrapi kasutuselevõtu- ja paigaldusseadeid.</value>
+    <value>Muuda Robloxi ja Vargostrapi kasutuselevõtu- ja paigaldusseadeid.</value>
   </data>
   <data name="Common.Version" xml:space="preserve">
     <value>Versioon</value>
@@ -1169,7 +1169,7 @@ Kas soovid testrežiimi sisse lülitada?</value>
     <value>Vabandust</value>
   </data>
   <data name="Dialog.Bloxshade.Setting" xml:space="preserve">
-    <value>Froststrap ei toeta enam Bloxshade’i.
+    <value>Vargostrap ei toeta enam Bloxshade’i.
 Lisateabe saamiseks liitu Bloxshade’i Discordi serveriga.</value>
   </data>
   <data name="Common.Profiles" xml:space="preserve">
@@ -1195,7 +1195,7 @@ Kas soovite minna üle vaikimisi kanalile ({1})?</value>
     <value>Automaatne kanali vahetamine</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
-    <value>Roblox või Froststrap võivad proovida muuta sinu eelistatud kanalit.</value>
+    <value>Roblox või Vargostrap võivad proovida muuta sinu eelistatud kanalit.</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
     <value>Muuda automaatselt</value>
@@ -1277,10 +1277,10 @@ Kas soovid muuta oma eelistatud kanali {0}-ks?</value>
     <value>Ära lase Robloxil üle kirjutada üldseadistusi.</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Title" xml:space="preserve">
-    <value>Froststrap’i kontoõigused</value>
+    <value>Vargostrap’i kontoõigused</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Description" xml:space="preserve">
-    <value>Võimaldab juurdepääsu Robloxi API-dele, kasutades sinu autentimisküpsist. [Millistele andmetele Froststrap juurdepääsu saab?]({0})</value>
+    <value>Võimaldab juurdepääsu Robloxi API-dele, kasutades sinu autentimisküpsist. [Millistele andmetele Vargostrap juurdepääsu saab?]({0})</value>
   </data>
   <data name="Menu.Appearance.WindowsBackdrop.Title" xml:space="preserve">
     <value>Aknataust</value>
@@ -1352,10 +1352,10 @@ Kas soovid muuta oma eelistatud kanali {0}-ks?</value>
     <value>Topeltklõpsu tegevus</value>
   </data>
   <data name="Menu.Integrations.DoubleClickAction.Description" xml:space="preserve">
-    <value>Avab konkreetse akna, kui Robloxi käivitamisel topeltklõpsad süsteemiribal asuvat Froststrapi ikooni.</value>
+    <value>Avab konkreetse akna, kui Robloxi käivitamisel topeltklõpsad süsteemiribal asuvat Vargostrapi ikooni.</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Description" xml:space="preserve">
-    <value>Lülita see sisse, et rakenduse avatuna kuvataks su Discordi profiilis kohandatud RPC „Playing Froststrap”.</value>
+    <value>Lülita see sisse, et rakenduse avatuna kuvataks su Discordi profiilis kohandatud RPC „Playing Vargostrap”.</value>
   </data>
   <data name="Menu.Integrations.CustomStatusDisplay.Title" xml:space="preserve">
     <value>Kohandatud staatuse kuvamine</value>
@@ -1430,10 +1430,10 @@ Kas soovid muuta oma eelistatud kanali {0}-ks?</value>
     <value>Kogukonna moderaatorid</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
-    <value>Froststrapi logid</value>
+    <value>Vargostrapi logid</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
-    <value>Froststrap’i logifailid kustutatakse.</value>
+    <value>Vargostrap’i logifailid kustutatakse.</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.FollowUser" xml:space="preserve">
     <value>Paistab, et üks sõber mängib seda mängu praegu. Kas soovid temaga ühineda?</value>
@@ -1442,7 +1442,7 @@ Kas soovid muuta oma eelistatud kanali {0}-ks?</value>
     <value>Luba BetterMatchmaking</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.Description" xml:space="preserve">
-    <value>Lase Froststrapil otsustada, millistesse serveritesse sa ühined. Eelistatakse serverit, mis asub sinust kõige lähemal.</value>
+    <value>Lase Vargostrapil otsustada, millistesse serveritesse sa ühined. Eelistatakse serverit, mis asub sinust kõige lähemal.</value>
   </data>
   <data name="Menu.FastFlags.Presets.TextureQuality.Title" xml:space="preserve">
     <value>Tekstuuri kvaliteet</value>
@@ -2020,7 +2020,7 @@ See peab sisaldama vähemalt ühte järgmistest kaustadest: content, ExtraConten
     <value>Eelversioonide uuendamine</value>
   </data>
   <data name="Menu.Deployment.AutoPreReleaseUpdate.Description" xml:space="preserve">
-    <value>Froststrap kontrollib automaatselt ja uuendab end testversiooniks, kui Roblox käivitatakse.</value>
+    <value>Vargostrap kontrollib automaatselt ja uuendab end testversiooniks, kui Roblox käivitatakse.</value>
   </data>
   <data name="Menu.TestMode.Description" xml:space="preserve">
     <value>Peida seadete aken automaatselt Robloxi käivitamisel ja taasta see Robloxi sulgemisel.</value>
@@ -2400,7 +2400,7 @@ Kas soovite pistikprogrammi paigaldada?</value>
     <value>Väikesed serverid</value>
   </data>
   <data name="Menu.RegionSelector.LoginRequired" xml:space="preserve">
-    <value>Logi sisse kontohalduri kaudu, lülita sisse „Froststrap Account Permission” või teata sellest meie Discordi serveris, et seda kasutada.</value>
+    <value>Logi sisse kontohalduri kaudu, lülita sisse „Vargostrap Account Permission” või teata sellest meie Discordi serveris, et seda kasutada.</value>
   </data>
   <data name="Menu.RegionSelector.EnterPlaceId" xml:space="preserve">
     <value>Sisestage koha ID ja klõpsake nuppu „Otsi”, et servereid vaadata.</value>

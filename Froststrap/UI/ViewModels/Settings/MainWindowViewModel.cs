@@ -51,10 +51,11 @@ namespace Froststrap.UI.ViewModels.Settings
             ["behaviour"] = LucideIconNames.Play,
             ["linuxsettings"] = LucideIconNames.Settings,
             ["mods"] = LucideIconNames.BookOpen,
-            ["fastflags"] = LucideIconNames.Flag,
+            ["fastflags"] = LucideIconNames.Gauge,
             ["appearance"] = LucideIconNames.Palette,
             ["regionselector"] = LucideIconNames.Globe,
-            ["globalsettings"] = LucideIconNames.PenLine,
+            ["pingperformance"] = LucideIconNames.Activity, // Vargostrap
+            ["globalsettings"] = LucideIconNames.SlidersHorizontal,
             ["shortcuts"] = LucideIconNames.Link2,
             ["quickplay"] = LucideIconNames.Gamepad2,
             ["channels"] = LucideIconNames.HardDriveUpload,
@@ -154,6 +155,7 @@ namespace Froststrap.UI.ViewModels.Settings
         public IRelayCommand NavigateToFastFlagEditorCommand { get; }
         public IRelayCommand NavigateToAppearanceCommand { get; }
         public IRelayCommand NavigateToRegionSelectorCommand { get; }
+        public IRelayCommand NavigateToPingPerformanceCommand { get; } // Vargostrap
         public IRelayCommand NavigateToGlobalSettingsCommand { get; }
         public IRelayCommand NavigateToGlobalSettingsEditorCommand { get; }
         public IRelayCommand NavigateToShortcutsCommand { get; }
@@ -196,17 +198,16 @@ namespace Froststrap.UI.ViewModels.Settings
             NavigateToPresetModsCommand = new RelayCommand(() => Navigate("mods", Strings.Menu_PresetMods_Title, Strings.Menu_PresetMods_Description, new ModsPresetsViewModel()));
             NavigateToFastFlagsCommand = new RelayCommand(() =>
             {
+                // Vargostrap: the FastFlag Settings page is replaced by FPS Optimization
                 var dialogService = new FastFlagsDialogService(this);
-                var viewModel = new FastFlagsViewModel(
-                    new DefaultFastFlagsService(),
-                    new DefaultSettingsService(),
-                    dialogService
-                );
-                Navigate("fastflags", Strings.Menu_FastFlags_Title, Strings.Menu_FastFlags_Description, viewModel);
+                var viewModel = new Vargostrap.UI.FpsOptimizationViewModel(dialogService);
+                Navigate("fastflags", Vargostrap.VargoStrings.FpsOptimizationTitle, Vargostrap.VargoStrings.FpsOptimizationDescription, viewModel);
             });
             NavigateToAppearanceCommand = new RelayCommand(() => Navigate("appearance", Strings.Menu_Appearance_Title, Strings.Menu_Appearance_Description, new AppearanceViewModel()));
             NavigateToRegionSelectorCommand = new RelayCommand(() => Navigate("regionselector", Strings.Menu_RegionSelector_Title, Strings.Menu_RegionSelector_Description, new RegionSelectorViewModel()));
-            NavigateToGlobalSettingsCommand = new RelayCommand(() => Navigate("globalsettings", Strings.Menu_GlobalSettings_Title, Strings.Menu_GBSEditor_Description, new GlobalSettingsViewModel()));
+            NavigateToPingPerformanceCommand = new RelayCommand(() => Navigate("pingperformance", Vargostrap.VargoStrings.PingPerformanceTitle, Vargostrap.VargoStrings.PingPerformanceDescription, new Vargostrap.UI.PingPerformanceViewModel())); // Vargostrap
+            // Vargostrap: the Global Settings page is replaced by Roblox Settings
+            NavigateToGlobalSettingsCommand = new RelayCommand(() => Navigate("globalsettings", Vargostrap.VargoStrings.RobloxSettingsTitle, Vargostrap.VargoStrings.RobloxSettingsDescription, new Vargostrap.UI.RobloxSettingsViewModel(new DefaultGlobalDialogService())));
             NavigateToShortcutsCommand = new RelayCommand(() => Navigate("shortcuts", Strings.Common_Shortcuts, Strings.Menu_Shortcuts_Description, new ShortcutsViewModel()));
             NavigateToQuickPlayCommand = new RelayCommand(() => Navigate("quickplay", Strings.Menu_QuickPlay_Title, Strings.Menu_QuickPlay_Description, new QuickPlayViewModel()));
             NavigateToChannelsCommand = new RelayCommand(() => Navigate("channels", Strings.Common_Deployment, Strings.Menu_Channel_Description, new ChannelViewModel()));
@@ -214,7 +215,7 @@ namespace Froststrap.UI.ViewModels.Settings
             NavigateToGlobalSettingsEditorCommand = new RelayCommand(() =>
             {
                 ObservableCollection<BreadcrumbItemModel> crumbs = [
-                    new() { Content = Strings.Menu_GlobalSettings_Title, Tag = "globalsettings" },
+                    new() { Content = Vargostrap.VargoStrings.RobloxSettingsTitle, Tag = "globalsettings" },
                     new() { Content = Strings.Common_Editor, Tag = null, IsLast = true }
                 ];
                 Navigate("globalsettingseditor", Strings.Common_Editor, Strings.Menu_GlobalSettingsEditor_Description, new GlobalSettingsEditorViewModel(this), crumbs);
@@ -223,7 +224,7 @@ namespace Froststrap.UI.ViewModels.Settings
             NavigateToFastFlagEditorCommand = new RelayCommand(() =>
             {
                 ObservableCollection<BreadcrumbItemModel> crumbs = [
-                    new() { Content = Strings.Menu_FastFlags_Title, Tag = "fastflags" },
+                    new() { Content = Vargostrap.VargoStrings.FpsOptimizationTitle, Tag = "fastflags" },
                     new() { Content = Strings.Common_Editor, Tag = null, IsLast = true }
                 ];
                 Navigate("fastflageditor", Strings.Common_Editor, Strings.Menu_FastFlagEditor_Description, new FastFlagEditorViewModel(this), crumbs);
@@ -299,12 +300,14 @@ namespace Froststrap.UI.ViewModels.Settings
                     NavigateToMyModsCommand.Execute(null);
                     break;
                 case "Froststrap.UI.ViewModels.Settings.FastFlagsViewModel":
+                case "Froststrap.Vargostrap.UI.FpsOptimizationViewModel":
                     NavigateToFastFlagsCommand.Execute(null);
                     break;
                 case "Froststrap.UI.ViewModels.Settings.AppearanceViewModel":
                     NavigateToAppearanceCommand.Execute(null);
                     break;
                 case "Froststrap.UI.ViewModels.Settings.GlobalSettingsViewModel":
+                case "Froststrap.Vargostrap.UI.RobloxSettingsViewModel":
                     if (GBSEnabled)
                         NavigateToGlobalSettingsCommand.Execute(null);
                     break;
@@ -328,6 +331,9 @@ namespace Froststrap.UI.ViewModels.Settings
                     break;
                 case "Froststrap.UI.ViewModels.Settings.RegionSelectorViewModel":
                     NavigateToRegionSelectorCommand.Execute(null);
+                    break;
+                case "Froststrap.Vargostrap.UI.PingPerformanceViewModel":
+                    NavigateToPingPerformanceCommand.Execute(null);
                     break;
                 case "Froststrap.UI.ViewModels.Settings.FastFlags.FastFlagEditorViewModel":
                     NavigateToFastFlagEditorCommand.Execute(null);
@@ -366,6 +372,7 @@ namespace Froststrap.UI.ViewModels.Settings
             App.State.Save();
             App.FastFlags.Save();
             App.GlobalSettings.Save();
+            Vargostrap.VargoApp.Settings.Save(); // Vargostrap
 
             if (OperatingSystem.IsLinux())
                 App.SoberSettings.Save();

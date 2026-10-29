@@ -34,7 +34,7 @@ namespace Froststrap;
 internal sealed class UpdaterManager(bool includePrerelease = false)
 {
     // Maybe will change to our own API backend at some point in the future
-    private const string UpdateRepository = "https://github.com/Froststrap/packages";
+    private const string UpdateRepository = Vargostrap.Brand.UpdateRepository;
 
     private readonly UpdateManager manager = CreateManager(includePrerelease);
 
@@ -46,12 +46,18 @@ internal sealed class UpdaterManager(bool includePrerelease = false)
         if (!string.IsNullOrWhiteSpace(devSource))
             return new UpdateManager(devSource);
 
+        // Vargostrap: GithubSource rejects an empty repo URL; use an inert local source instead
+        if (!Vargostrap.Brand.UpdatesEnabled)
+            return new UpdateManager(Path.GetTempPath());
+
         return new UpdateManager(
             new GithubSource(UpdateRepository, null, includePrerelease)
         );
     }
 
-    public bool IsInstalled => manager.IsInstalled;
+    // Vargostrap: with no update feed configured, report "not updatable" so both the startup
+    // check and the manual button bail out instead of querying a nonexistent source
+    public bool IsInstalled => Vargostrap.Brand.UpdatesEnabled && manager.IsInstalled;
 
     // CI builds (e.g. 0.0.2-ci.106) must never update themselves, otherwise they jump straight to the latest release
     public static bool IsCiBuild => App.Version.Contains("-ci.", StringComparison.OrdinalIgnoreCase);

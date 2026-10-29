@@ -92,7 +92,7 @@ namespace Froststrap.Extensions
 
         private static Bitmap LoadFromResource(string name)
         {
-            var uri = new Uri($"avares://Froststrap/Resources/{name}.ico");
+            var uri = new Uri($"avares://Vargostrap/Resources/{name}.ico");
             using var stream = AssetLoader.Open(uri);
             return new Bitmap(stream);
         }
@@ -135,7 +135,7 @@ namespace Froststrap.Extensions
 
         private static byte[] LoadResourceBytes(string name)
         {
-            var uri = new Uri($"avares://Froststrap/Resources/{name}.ico");
+            var uri = new Uri($"avares://Vargostrap/Resources/{name}.ico");
             using var stream = AssetLoader.Open(uri);
             using var ms = new MemoryStream();
             stream.CopyTo(ms);

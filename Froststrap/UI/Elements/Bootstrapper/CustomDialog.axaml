@@ -12,7 +12,7 @@ SPDX-License-Identifier: MPL-2.0
                          xmlns:controls="clr-namespace:Froststrap.UI.Elements.Controls"
                          mc:Ignorable="d"
                          x:Class="Froststrap.UI.Elements.Bootstrapper.CustomDialog"
-                         Title="Froststrap"
+                         Title="Vargostrap"
                          Width="800"
                          Height="450"
                          MinWidth="150"
@@ -25,7 +25,7 @@ SPDX-License-Identifier: MPL-2.0
     <Grid RowDefinitions="Auto,*">
         <controls:TitleBar
             x:Name="RootTitleBar"
-            Title="Froststrap"
+            Title="Vargostrap"
             Grid.Row="0"
             ZIndex="1001"
             ShowClose="False"

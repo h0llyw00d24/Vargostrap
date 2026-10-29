@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>A Froststrap nem tudott automatikusan frissülni a {0} verzióra. Kérjük, frissítse kézzel úgy, hogy letölti és elindítja a programot a weboldalról.</value>
+    <value>A Vargostrap nem tudott automatikusan frissülni a {0} verzióra. Kérjük, frissítse kézzel úgy, hogy letölti és elindítja a programot a weboldalról.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>A Roblox jelenleg fut, és egy újabb példány elindítása leállítja azt. Biztosan el akarod indítani?</value>
@@ -127,10 +127,10 @@
     <value>Lehet, hogy a Roblox jelenleg nem elérhető. További információkért lásd a {0} részt.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Nem sikerült létrehozni a kapcsolatot, ami valószínűleg gyenge internetkapcsolatra vagy tűzfal általi blokkolásra utal. Ha az internetkapcsolatod rendben van, kérjük, ellenőrizd, hogy a víruskereső programod nem blokkolja-e a Froststrap alkalmazást.</value>
+    <value>Nem sikerült létrehozni a kapcsolatot, ami valószínűleg gyenge internetkapcsolatra vagy tűzfal általi blokkolásra utal. Ha az internetkapcsolatod rendben van, kérjük, ellenőrizd, hogy a víruskereső programod nem blokkolja-e a Vargostrap alkalmazást.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>A Froststrap-on nincs elegendő lemezterület a Roblox letöltéséhez és telepítéséhez. Kérjük, szabadítson fel némi lemezterületet, majd próbálja meg újra.</value>
+    <value>A Vargostrap-on nincs elegendő lemezterület a Roblox letöltéséhez és telepítéséhez. Kérjük, szabadítson fel némi lemezterületet, majd próbálja meg újra.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>A Roblox-módosítások alkalmazása...</value>
@@ -166,10 +166,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>A Froststrap eltávolítása sikeresen befejeződött</value>
+    <value>A Vargostrap eltávolítása sikeresen befejeződött</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>A Roblox jelenleg fut, de a Froststrap eltávolítása előtt be kell zárni. Szeretnéd most bezárni a Robloxot?</value>
+    <value>A Roblox jelenleg fut, de a Vargostrap eltávolítása előtt be kell zárni. Szeretnéd most bezárni a Robloxot?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>A Robloxhoz a Windows Media Foundation összetevőinek használata szükséges. Úgy tűnik, ezek hiányoznak a rendszeréből, valószínűleg azért, mert a Windows N kiadását használja. Kérjük, először telepítse őket, majd indítsa el a Robloxot.</value>
@@ -275,14 +275,14 @@
     <value>Kapcsolati hiba</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>A Froststrap nem tud csatlakozni a {0}-hoz</value>
+    <value>A Vargostrap nem tud csatlakozni a {0}-hoz</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>A napló tartalmának másolása</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>A Froststrap/Froststrap futtatása közben kivétel történt</value>
+    <value>A Vargostrap/Vargostrap futtatása közben kivétel történt</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Először nézd meg a [Froststrap Wiki]({0}) oldalt, hogy megnézd, megoldották-e már ezt a problémát.
@@ -290,7 +290,7 @@
 Ha nem, akkor kérjük, jelentsd be ezt a kivételt egy [GitHub-problémajelentés]({1}) formájában, mellékelve a létrehozott naplófájl másolatát.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Froststrap kivétel</value>
+    <value>Vargostrap kivétel</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Egyedi</value>
@@ -302,13 +302,13 @@ Ha nem, akkor kérjük, jelentsd be ezt a kivételt egy [GitHub-problémajelent�
     <value>Hamis Byfron (~2023)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentDialog" xml:space="preserve">
-    <value>Froststrap (átlátszatlan)</value>
+    <value>Vargostrap (átlátszatlan)</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>Froststrap (klasszikus)</value>
+    <value>Vargostrap (klasszikus)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>Froststrap (üveg)</value>
+    <value>Vargostrap (üveg)</value>
   </data>
   <data name="Enums.CursorType.From2006" xml:space="preserve">
     <value>~2006 (rajzfilmszerű)</value>
@@ -518,10 +518,10 @@ Alapértelmezésként a {1} kerül beállításra.</value>
     <value>A {0} egyéni téma törlése nem sikerült: {1}</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>A Froststrap frissült a v{0} verzióra</value>
+    <value>A Vargostrap frissült a v{0} verzióra</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Az Ön által elindított Froststrap-verzió eltér a jelenleg telepített verziótól.
+    <value>Az Ön által elindított Vargostrap-verzió eltér a jelenleg telepített verziótól.
 Szeretné frissíteni a jelenleg telepített verziót?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -565,10 +565,10 @@ Szeretné frissíteni a jelenleg telepített verziót?</value>
     <value>Felhívjuk figyelmét, hogy a módosítások nem mindegyike lép azonnal hatályba, amíg az összes jelenleg megnyitott Roblox-példányt be nem zárja.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>A Froststrap már fut</value>
+    <value>A Vargostrap már fut</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
-    <value>A Froststrap bootstrapperjét számos beállítási lehetőség segítségével testreszabhatja.</value>
+    <value>A Vargostrap bootstrapperjét számos beállítási lehetőség segítségével testreszabhatja.</value>
   </data>
   <data name="Menu.Appearance.CustomisationTitle.Description" xml:space="preserve">
     <value>Az a szöveg, amely a bootstrapper címeként jelenik meg.</value>
@@ -577,16 +577,16 @@ Szeretné frissíteni a jelenleg telepített verziót?</value>
     <value>Cím</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Állítsd be, hogyan jelenjen meg a Froststrap.</value>
+    <value>Állítsd be, hogyan jelenjen meg a Vargostrap.</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Title" xml:space="preserve">
     <value>Alkalmazás-témák</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Description" xml:space="preserve">
-    <value>A Froststrap témáit egyszerűen testreszabhatja az előre beállított sablonok segítségével, vagy létrehozhat saját, egyedi megjelenést.</value>
+    <value>A Vargostrap témáit egyszerűen testreszabhatja az előre beállított sablonok segítségével, vagy létrehozhat saját, egyedi megjelenést.</value>
   </data>
   <data name="Menu.Appearance.Icon.Description" xml:space="preserve">
-    <value>Válaszd ki, melyik ikont használja a Froststrap.</value>
+    <value>Válaszd ki, melyik ikont használja a Vargostrap.</value>
   </data>
   <data name="Menu.Appearance.Icon.Title" xml:space="preserve">
     <value>Ikon</value>
@@ -604,10 +604,10 @@ Szeretné frissíteni a jelenleg telepített verziót?</value>
     <value>Megjelenés</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>A Froststrap a Roblox indításakor automatikusan ellenőrzi és frissíti magát egy stabil verzióra.</value>
+    <value>A Vargostrap a Roblox indításakor automatikusan ellenőrzi és frissíti magát egy stabil verzióra.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>A Froststrap automatikus frissítése</value>
+    <value>A Vargostrap automatikus frissítése</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Megakadályozza a már futó játék bezáródását, ha véletlenül elindítasz egy másik Roblox-példányt.</value>
@@ -616,7 +616,7 @@ Szeretné frissíteni a jelenleg telepített verziót?</value>
     <value>Az példány elindításának visszaigazolása</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Állítsd be, hogy a Froststrap mit tegyen a Roblox indításakor.</value>
+    <value>Állítsd be, hogy a Vargostrap mit tegyen a Roblox indításakor.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>A Roblox következő indításakor a program tiszta telepítése fog megtörténni.</value>
@@ -631,7 +631,7 @@ Szeretné frissíteni a jelenleg telepített verziót?</value>
     <value>Ehhez a zászlónevéhez már létezik egy bejegyzés.</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
-    <value>Froststrap tisztítószer</value>
+    <value>Vargostrap tisztítószer</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
     <value>A régi adatokat automatikusan törli, hogy helyet szabadítson fel. Eredetileg Fishstrap készítette.</value>
@@ -790,7 +790,7 @@ További információk:
     <value>Az asztalhoz közel</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Lehetővé teszi a Froststrap számára, hogy felismerje, melyik Roblox-játékot játszod éppen. Bizonyos funkciókhoz ez szükséges lehet.</value>
+    <value>Lehetővé teszi a Vargostrap számára, hogy felismerje, melyik Roblox-játékot játszod éppen. Bizonyos funkciókhoz ez szükséges lehet.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>A tevékenységkövetés engedélyezése</value>
@@ -868,7 +868,7 @@ További információk:
     <value>A beállítások elmentve!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Froststrap beállítások</value>
+    <value>Vargostrap beállítások</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Válassza ki a kívánt nyelvet</value>
@@ -890,7 +890,7 @@ Előfordulhat, hogy egyes szövegrészek nem lesznek lefordítva a kiválasztott
     <value>A grafikai minőséget a kiválasztott szintre rögzíti. Megjegyzés: Ha ez a beállítás engedélyezve van, a Roblox menüben található grafikai csúszka csak a játékban megjelenő renderelési távolságot befolyásolja.</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Engedélyezze a Froststrap számára a FastFlags kezelését</value>
+    <value>Engedélyezze a Vargostrap számára a FastFlags kezelését</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Ha ezt letiltod, az itt beállítottak nem kerülnek alkalmazásra a Robloxban.</value>
@@ -920,7 +920,7 @@ Előfordulhat, hogy egyes szövegrészek nem lesznek lefordítva a kiválasztott
     <value>Eltávolítja a Roblox alapértelmezett fűtextúráit. Megjegyzés: Ez a beállítás nem érinti az egyes játékok által használt egyedi fűtextúrákat.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>A Froststrap nem tudja letölteni a Robloxot</value>
+    <value>A Vargostrap nem tudja letölteni a Robloxot</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>A Roblox jelenleg nem tölthető le. További információkért kérjük, olvassa el az alábbi súgóoldalt: {0}</value>
@@ -930,7 +930,7 @@ Előfordulhat, hogy egyes szövegrészek nem lesznek lefordítva a kiválasztott
     <value>Importálás fájlból</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Erre az indításra nem készül naplófájl, mivel a Froststrap nem tud írni a „{0}” mappába.</value>
+    <value>Erre az indításra nem készül naplófájl, mivel a Vargostrap nem tud írni a „{0}” mappába.</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Alapértelmezett</value>
@@ -948,22 +948,22 @@ Előfordulhat, hogy egyes szövegrészek nem lesznek lefordítva a kiválasztott
     <value>Asztali ikon</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>A Froststrap eltávolítása</value>
+    <value>A Vargostrap eltávolítása</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Az eltávolítás során a Froststrap eltávolításra kerül a rendszeredből, és automatikusan újrakonfigurálja az alapértelmezett Roblox indítót, ha az még telepítve van.
+    <value>Az eltávolítás során a Vargostrap eltávolításra kerül a rendszeredből, és automatikusan újrakonfigurálja az alapértelmezett Roblox indítót, ha az még telepítve van.
 
 Ha a Roblox-szal kapcsolatos problémák miatt távolítod el vagy telepíted újra a programot, először olvasd el [ezt a súgóoldalt]({0}).
 
-Előfordulhat, hogy az eltávolítási folyamat nem tudja teljesen megtisztítani a rendszert, ezért előfordulhat, hogy manuálisan kell eltávolítanod a Froststrap telepítési helyén maradt fájlokat.
+Előfordulhat, hogy az eltávolítási folyamat nem tudja teljesen megtisztítani a rendszert, ezért előfordulhat, hogy manuálisan kell eltávolítanod a Vargostrap telepítési helyén maradt fájlokat.
 
-A Froststrap a „{1}” mappába volt telepítve.</value>
+A Vargostrap a „{1}” mappába volt telepítve.</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>A beállításaimat és a módosításaimat megőrizni</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Ezeket a Froststrap telepítésének helyén tárolják, és újratelepítéskor automatikusan visszaállnak.</value>
+    <value>Ezeket a Vargostrap telepítésének helyén tárolják, és újratelepítéskor automatikusan visszaállnak.</value>
   </data>
   <data name="LaunchMenu.LaunchRoblox" xml:space="preserve">
     <value>Indítsd el a Robloxot</value>
@@ -972,7 +972,7 @@ A Froststrap a „{1}” mappába volt telepítve.</value>
     <value>Jelenleg nincs telepítve a WebView2 futtatókörnyezet. Enélkül a Roblox egyes funkciói, például az asztali alkalmazás, nem fognak megfelelően működni. Szeretnéd most letölteni?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>A Froststrap nem tudott parancsikonokat létrehozni az asztalra és a Start menübe. Próbáld meg később létrehozni őket a beállítások segítségével.</value>
+    <value>A Vargostrap nem tudott parancsikonokat létrehozni az asztalra és a Start menübe. Próbáld meg később létrehozni őket a beállítások segítségével.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Először nézd meg a [Froststrap Wiki]({0}) oldalt, hogy megnézd, megoldották-e már ezt a problémát.
@@ -981,7 +981,7 @@ Ha nem, akkor kérjük, jelentsd ezt a kivételt a fork karbantartóinak. NE jel
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Állítsd be, hogyan lehet a Froststrap-ot könnyedén elindítani.</value>
+    <value>Állítsd be, hogyan lehet a Vargostrap-ot könnyedén elindítani.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Általános</value>
@@ -1008,14 +1008,14 @@ Ha nem, akkor kérjük, jelentsd ezt a kivételt a fork karbantartóinak. NE jel
     <value>Kérjük, várja meg, amíg az eltávolítás befejeződik.</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>A Froststrapról</value>
+    <value>A Vargostrapról</value>
   </data>
   <data name="About.Licenses.Title" xml:space="preserve">
     <value>Engedélyek</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Az Ön által elindított Froststrap-verzió régebbi, mint a jelenleg telepített verzió.
+    <value>Az Ön által elindított Vargostrap-verzió régebbi, mint a jelenleg telepített verzió.
 Problémák léphetnek fel, és a beállításai megváltozhatnak. Javasoljuk az újratelepítést.
 Biztosan folytatni szeretné?</value>
   </data>
@@ -1028,7 +1028,7 @@ Biztosan folytatni szeretné?</value>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Ha többet szeretnél megtudni arról, hogy miért fordulhat elő ez a probléma, és hogyan lehet megoldani, kérjük, olvasd el [ezt a súgócikket]({0}).
 
-Ellenőrizd, hogy a Roblox működik-e [az eredeti indítóprogrammal]({1}). Ha nem, akkor ez nem a Froststrap hibája. Ha igen, akkor olvass el a súgócikket.</value>
+Ellenőrizd, hogy a Roblox működik-e [az eredeti indítóprogrammal]({1}). Ha nem, akkor ez nem a Vargostrap hibája. Ha igen, akkor olvass el a súgócikket.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Betöltés, kérjük, várjon...</value>
@@ -1058,7 +1058,7 @@ Ellenőrizd, hogy a Roblox működik-e [az eredeti indítóprogrammal]({1}). Ha 
     <value>Ebben a kiadásban a Roblox nem fogja ellenőrizni a frissítéseket, és a modokhoz tartozó módosítások sem kerülnek alkalmazásra.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Mivel a Roblox telepítésére vagy frissítésére van szükség, a Froststrap nem tud tovább futni.</value>
+    <value>Mivel a Roblox telepítésére vagy frissítésére van szükség, a Vargostrap nem tud tovább futni.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Nem elérhető</value>
@@ -1070,7 +1070,7 @@ Ellenőrizd, hogy a Roblox működik-e [az eredeti indítóprogrammal]({1}). Ha 
     <value>Állítsa be az alkalmazás paramétereit, például a DPI-skálázás viselkedését és a [teljes képernyős optimalizálásokat]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>A Roblox még nincs telepítve. Kérjük, mielőtt ezt az opciót használná, indítsa el a Robloxot a Froststrap segítségével legalább egyszer.</value>
+    <value>A Roblox még nincs telepítve. Kérjük, mielőtt ezt az opciót használná, indítsa el a Robloxot a Vargostrap segítségével legalább egyszer.</value>
   </data>
   <data name="Bootstrapper.JsonManagerSaveFailed" xml:space="preserve">
     <value>A {0} mentése nem sikerült: {1}</value>
@@ -1085,10 +1085,10 @@ Ellenőrizd, hogy a Roblox működik-e [az eredeti indítóprogrammal]({1}). Ha 
     <value>Roblox-ikonok kibontása egy mappába</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Lehetővé teszi, hogy a Froststrap Roblox-ikonjait használd a gyorsbillentyűidhez. [Nézd meg, hogyan.]({0})</value>
+    <value>Lehetővé teszi, hogy a Vargostrap Roblox-ikonjait használd a gyorsbillentyűidhez. [Nézd meg, hogyan.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>A Froststrap nem tud írni a Windows rendszerleíró adatbázisába. Valószínűleg egy vírusirtó program zavarja a működését, és ez okozza a problémát. Kérjük, ellenőrizze, hogy nincs-e valami, ami korlátozná a Froststrap működését.</value>
+    <value>A Vargostrap nem tud írni a Windows rendszerleíró adatbázisába. Valószínűleg egy vírusirtó program zavarja a működését, és ez okozza a problémát. Kérjük, ellenőrizze, hogy nincs-e valami, ami korlátozná a Vargostrap működését.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Minden beállítást visszaállítani az alapértelmezett értékre</value>
@@ -1131,7 +1131,7 @@ Szeretnéd engedélyezni a Tesztmódot?</value>
     <comment>Shown in the save file dialog, where the file type selection dropdown is, e.g. "Zip archive (*.zip)"</comment>
   </data>
   <data name="Menu.Channel.Description" xml:space="preserve">
-    <value>A Roblox és a Froststrap telepítési és beállítási paramétereinek módosítása.</value>
+    <value>A Roblox és a Vargostrap telepítési és beállítási paramétereinek módosítása.</value>
   </data>
   <data name="Common.Version" xml:space="preserve">
     <value>Verzió</value>
@@ -1162,7 +1162,7 @@ Szeretnéd engedélyezni a Tesztmódot?</value>
     <value>Elnézést</value>
   </data>
   <data name="Dialog.Bloxshade.Setting" xml:space="preserve">
-    <value>A Froststrap már nem támogatja a Bloxshade-et.
+    <value>A Vargostrap már nem támogatja a Bloxshade-et.
 További információkért csatlakozz a Bloxshade Discord-szerveréhez.</value>
   </data>
   <data name="Common.Profiles" xml:space="preserve">
@@ -1188,7 +1188,7 @@ Szeretnél átváltani az alapértelmezett csatornára ({1})?</value>
     <value>Automatikus csatornaváltás</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
-    <value>Előfordulhat, hogy a Roblox vagy a Froststrap megpróbálja megváltoztatni a beállított csatornádat.</value>
+    <value>Előfordulhat, hogy a Roblox vagy a Vargostrap megpróbálja megváltoztatni a beállított csatornádat.</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
     <value>Automatikus módosítás</value>
@@ -1270,10 +1270,10 @@ Szeretnéd a preferált csatornádat {0}-ra váltani?</value>
     <value>Megakadályozza, hogy a Roblox felülírja a globális beállításokat.</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Title" xml:space="preserve">
-    <value>Froststrap-fiók jogosultságai</value>
+    <value>Vargostrap-fiók jogosultságai</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Description" xml:space="preserve">
-    <value>A hitelesítési cookie-d segítségével hozzáférést biztosít a Roblox API-khoz. [Mire fog a Froststrap hozzáférni?]({0})</value>
+    <value>A hitelesítési cookie-d segítségével hozzáférést biztosít a Roblox API-khoz. [Mire fog a Vargostrap hozzáférni?]({0})</value>
   </data>
   <data name="Menu.Appearance.WindowsBackdrop.Title" xml:space="preserve">
     <value>Ablakháttér</value>
@@ -1345,10 +1345,10 @@ Szeretnéd a preferált csatornádat {0}-ra váltani?</value>
     <value>Kettős kattintás művelete</value>
   </data>
   <data name="Menu.Integrations.DoubleClickAction.Description" xml:space="preserve">
-    <value>A Roblox indításakor egy adott ablak nyílik meg, ha duplán rákattintasz a tálcán található Froststrap ikonra.</value>
+    <value>A Roblox indításakor egy adott ablak nyílik meg, ha duplán rákattintasz a tálcán található Vargostrap ikonra.</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Description" xml:space="preserve">
-    <value>Ha ezt engedélyezed, az alkalmazás megnyitása közben egy egyedi „Playing Froststrap” RPC jelenik meg a Discord-profilodban.</value>
+    <value>Ha ezt engedélyezed, az alkalmazás megnyitása közben egy egyedi „Playing Vargostrap” RPC jelenik meg a Discord-profilodban.</value>
   </data>
   <data name="Menu.Integrations.CustomStatusDisplay.Title" xml:space="preserve">
     <value>Egyéni állapotkijelzés</value>
@@ -1423,10 +1423,10 @@ Szeretnéd a preferált csatornádat {0}-ra váltani?</value>
     <value>Közösségi moderátorok</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
-    <value>Froststrap naplófájlok</value>
+    <value>Vargostrap naplófájlok</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
-    <value>A Froststrap naplófájlok törlésre kerülnek.</value>
+    <value>A Vargostrap naplófájlok törlésre kerülnek.</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.FollowUser" xml:space="preserve">
     <value>Úgy tűnik, egy barátod éppen ezt a játékot játszik. Csatlakozni szeretnél hozzá?</value>
@@ -1435,7 +1435,7 @@ Szeretnéd a preferált csatornádat {0}-ra váltani?</value>
     <value>A BetterMatchmaking engedélyezése</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.Description" xml:space="preserve">
-    <value>Hagyd, hogy a Froststrap döntse el, melyik szerverhez csatlakozz. Elsőbbséget ad annak a szervernek, amelyik a legközelebb van hozzád.</value>
+    <value>Hagyd, hogy a Vargostrap döntse el, melyik szerverhez csatlakozz. Elsőbbséget ad annak a szervernek, amelyik a legközelebb van hozzád.</value>
   </data>
   <data name="Menu.FastFlags.Presets.TextureQuality.Title" xml:space="preserve">
     <value>Textúra minősége</value>
@@ -2019,7 +2019,7 @@ Legalább az alábbi mappák egyikét tartalmaznia kell: content, ExtraContent, 
     <value>Előzetes kiadások frissítése</value>
   </data>
   <data name="Menu.Deployment.AutoPreReleaseUpdate.Description" xml:space="preserve">
-    <value>A Froststrap a Roblox indításakor automatikusan ellenőrzi a rendszert, és tesztverzióra frissíti magát.</value>
+    <value>A Vargostrap a Roblox indításakor automatikusan ellenőrzi a rendszert, és tesztverzióra frissíti magát.</value>
   </data>
   <data name="Menu.TestMode.Description" xml:space="preserve">
     <value>A Roblox indításakor automatikusan elrejtse a beállítások ablakát, és a Roblox bezárásakor állítsa vissza.</value>
@@ -2405,7 +2405,7 @@ Szeretnéd telepíteni a bővítményt?</value>
     <value>Kis szerver</value>
   </data>
   <data name="Menu.RegionSelector.LoginRequired" xml:space="preserve">
-    <value>A használathoz jelentkezz be a fiókkezelőn keresztül, kapcsold be a „Froststrap fiókhozzáférés” opciót, vagy jelezd ezt a Discord-szerverünkön.</value>
+    <value>A használathoz jelentkezz be a fiókkezelőn keresztül, kapcsold be a „Vargostrap fiókhozzáférés” opciót, vagy jelezd ezt a Discord-szerverünkön.</value>
   </data>
   <data name="Menu.RegionSelector.EnterPlaceId" xml:space="preserve">
     <value>Írja be a helyazonosítót, majd kattintson a „Keresés” gombra a szerverek megtekintéséhez.</value>

@@ -28,13 +28,13 @@ pub fn pack(version: String, pack_dir: &std::path::Path, entitlements: Option<&s
 
     std::fs::create_dir_all(&velopack_path).unwrap();
 
-    let main_exe = if consts::OS == "windows" { "Froststrap.exe" } else { "Froststrap" };
+    let main_exe = if consts::OS == "windows" { "Vargostrap.exe" } else { "Vargostrap" };
 
     let mut args: Vec<String> = [
         "pack",
-        "--packId", "Froststrap",
-        "--packTitle", "Froststrap",
-        "--packAuthors", "Froststrap",
+        "--packId", "Vargostrap",
+        "--packTitle", "Vargostrap",
+        "--packAuthors", "Vargostrap",
         "--packVersion", &version,
         "--packDir", &pack_path,
         "--outputDir", &velopack_path.to_string_lossy(),
@@ -59,7 +59,7 @@ pub fn pack(version: String, pack_dir: &std::path::Path, entitlements: Option<&s
     #[cfg(target_os = "macos")]
     {
         use std::env;
-        args.extend(["--bundleId".to_string(), "xyz.froststrap.desktop".to_string()]);
+        args.extend(["--bundleId".to_string(), "xyz.vargostrap.desktop".to_string()]);
 
         if env::var("SIGN").is_ok_and(|v| v.eq_ignore_ascii_case("true")) {
             let Some(entitlements) = entitlements else {
@@ -75,7 +75,7 @@ pub fn pack(version: String, pack_dir: &std::path::Path, entitlements: Option<&s
                 "--signEntitlements".to_string(),
                 entitlements.to_string_lossy().into_owned(),
                 "--notaryProfile".to_string(),
-                "froststrap-notary".to_string(),
+                "vargostrap-notary".to_string(),
             ]);
         }
     }

@@ -10,7 +10,7 @@ pub fn main() {
     }
     let version = super::version();
     let icon = path::xtask_root().join("icon512.png");
-    let desktop = path::dist().join("Froststrap.desktop");
+    let desktop = path::dist().join("Vargostrap.desktop");
 
     std::fs::create_dir_all(path::dist()).unwrap();
 
@@ -26,11 +26,11 @@ fn desktop_entry(version: &str) -> String {
         r#"
         [Desktop Entry]
         Type=Application
-        Name=Froststrap
+        Name=Vargostrap
         Comment=A fork of Fishstrap, focused on performance and customization
-        Exec=Froststrap %u
-        TryExec=Froststrap
-        Icon=froststrap
+        Exec=Vargostrap %u
+        TryExec=Vargostrap
+        Icon=vargostrap
         Terminal=false
         Categories=Game;
         MimeType=x-scheme-handler/roblox;x-scheme-handler/roblox-player;
@@ -48,7 +48,7 @@ fn build_nfpm(
     let nfpm = ensure_tool(&path::dist(), "nfpm",
         "https://github.com/goreleaser/nfpm/releases/download/v2.47.0/nfpm_2.47.0_Linux_x86_64.tar.gz", true);
 
-    let binary = output_dir.join("Froststrap");
+    let binary = output_dir.join("Vargostrap");
     let libs_dir = output_dir.join("libs");
     let native_libs = native_libraries(&libs_dir);
 
@@ -82,8 +82,8 @@ fn build_nfpm(
 
     for p in ["deb", "rpm", "archlinux"] {
         let out_name = match p {
-            "archlinux" => format!("Froststrap-linux-{}-{}.pkg.tar.zst", arch::target_arch(), p),
-            _ => format!("Froststrap-linux-{}.{}", arch::target_arch(), p),
+            "archlinux" => format!("Vargostrap-linux-{}-{}.pkg.tar.zst", arch::target_arch(), p),
+            _ => format!("Vargostrap-linux-{}.{}", arch::target_arch(), p),
         };
         
         log::info!("Building .{} via nFPM", p);
@@ -113,7 +113,7 @@ fn post_install_script() -> String {
           gtk-update-icon-cache -q /usr/share/icons/hicolor || :
         fi
 
-        /usr/bin/Froststrap --register-mime-types 2>/dev/null || :
+        /usr/bin/Vargostrap --register-mime-types 2>/dev/null || :
     "#,
     )
 }
@@ -141,7 +141,7 @@ fn nfpm_config(
     version: &str,
     native_libs: &[PathBuf],
 ) -> String {
-    let mut native_contents = String::from("              - dst: /usr/lib/froststrap\n                type: dir\n");
+    let mut native_contents = String::from("              - dst: /usr/lib/vargostrap\n                type: dir\n");
 
     for path in native_libs {
         let name = path
@@ -150,7 +150,7 @@ fn nfpm_config(
             .unwrap_or_default();
 
         native_contents.push_str(&format!(
-            "              - src: {}\n                dst: /usr/lib/froststrap/{}\n",
+            "              - src: {}\n                dst: /usr/lib/vargostrap/{}\n",
             path.to_string_lossy(),
             name
         ));
@@ -158,12 +158,12 @@ fn nfpm_config(
 
     dedent(&format!(
         r#"
-            name: froststrap
+            name: vargostrap
             arch: {arch}
             platform: linux
             version: {version}
             license: MPL-2.0
-            maintainer: Froststrap
+            maintainer: Vargostrap
             description: Roblox bootstrapper and mod manager
 
             overrides:
@@ -182,13 +182,13 @@ fn nfpm_config(
 
             contents:
               - src: {}
-                dst: /usr/bin/Froststrap
+                dst: /usr/bin/Vargostrap
                 file_info:
                   mode: 0755
               - src: {}
-                dst: /usr/share/icons/hicolor/512x512/apps/froststrap.png
+                dst: /usr/share/icons/hicolor/512x512/apps/vargostrap.png
               - src: {}
-                dst: /usr/share/applications/Froststrap.desktop
+                dst: /usr/share/applications/Vargostrap.desktop
 
 {native_contents}
             scripts:

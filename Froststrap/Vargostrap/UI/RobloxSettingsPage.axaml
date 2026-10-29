@@ -1,0 +1,222 @@
+<!--
+SPDX-FileCopyrightText: 2026 Vargostrap
+
+SPDX-License-Identifier: MPL-2.0
+-->
+
+<UserControl
+    x:Class="Froststrap.Vargostrap.UI.RobloxSettingsPage"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Froststrap.UI.Elements.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:resources="using:Froststrap.Resources"
+    xmlns:ui="using:FluentAvalonia.UI.Controls"
+    xmlns:vui="clr-namespace:Froststrap.Vargostrap.UI"
+    d:DesignHeight="2200"
+    d:DesignWidth="1200"
+    x:DataType="vui:RobloxSettingsViewModel"
+    mc:Ignorable="d">
+
+    <UserControl.Styles>
+        <Style Selector="TextBlock.section">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Margin" Value="0,18,0,8" />
+        </Style>
+        <Style Selector="TextBlock.hint">
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="Foreground" Value="{DynamicResource TextFillColorSecondaryBrush}" />
+            <Setter Property="Margin" Value="0,0,0,8" />
+        </Style>
+        <Style Selector="TextBlock.value">
+            <Setter Property="MinWidth" Value="80" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="TextAlignment" Value="Right" />
+        </Style>
+    </UserControl.Styles>
+
+    <ScrollViewer>
+        <StackPanel Margin="14">
+
+            <ui:FAInfoBar Severity="Error" IsClosable="False" Margin="0,0,0,8"
+                          IsOpen="{x:Static vui:RobloxSettingsViewModel.FileMissing}"
+                          IsVisible="{x:Static vui:RobloxSettingsViewModel.FileMissing}"
+                          Title="Roblox's settings file wasn't found"
+                          Message="Launch Roblox once so it creates its settings file, then reopen this page." />
+
+            <ui:FAInfoBar Severity="Warning" IsClosable="False" Margin="0,0,0,8"
+                          IsOpen="{x:Static vui:RobloxSettingsViewModel.RobloxRunning}"
+                          IsVisible="{x:Static vui:RobloxSettingsViewModel.RobloxRunning}"
+                          Title="Roblox is running"
+                          Message="Roblox rewrites its settings file when it closes, which would undo changes you save now. Close Roblox first, or turn on Lock settings below." />
+
+            <TextBlock Classes="hint"
+                       Text="These are the same settings as Roblox's own in-game Settings menu, saved in Roblox's settings file. Click Save at the bottom to apply them. Roblox reads them the next time it starts." />
+
+            <!-- Backup and lock -->
+            <TextBlock Classes="section" Text="Backup and lock" />
+
+            <controls:CardExpander Header="Original settings backup" Description="{Binding BackupStatus}">
+                <controls:CardExpander.HeaderContent>
+                    <Button Content="Restore original" Command="{Binding RestoreBackupCommand}" IsEnabled="{Binding CanRestore}" />
+                </controls:CardExpander.HeaderContent>
+                <StackPanel Margin="0,8,0,0" Spacing="8">
+                    <TextBlock Classes="hint"
+                               Text="Restoring puts back the exact file Roblox had before Vargostrap first changed it, and turns off the lock. Close Roblox before restoring." />
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <Button Content="Open backup folder" Command="{Binding OpenBackupFolderCommand}" />
+                        <Button Content="{x:Static resources:Strings.Menu_GlobalSettings_OpenRobloxFolder}" Command="{Binding OpenRobloxFolderCommand}" />
+                    </StackPanel>
+                </StackPanel>
+            </controls:CardExpander>
+
+            <ui:FAInfoBar Severity="Warning" IsClosable="False" Margin="0,8,0,0"
+                          IsOpen="{Binding LockRemovedExternally}"
+                          IsVisible="{Binding LockRemovedExternally}"
+                          Title="The lock was removed"
+                          Message="You turned on Lock settings, but Roblox's settings file is no longer read-only. Roblox or another program may have removed the lock.">
+                <ui:FAInfoBar.ActionButton>
+                    <Button Content="Lock again" Command="{Binding RelockCommand}" />
+                </ui:FAInfoBar.ActionButton>
+            </ui:FAInfoBar>
+
+            <controls:OptionControl
+                Header="Lock settings (read-only)"
+                Description="Optional. Marks Roblox's settings file read-only so Roblox can't overwrite the values set here. While it's on, changes made in Roblox's in-game menu aren't remembered. Turn it off to undo it completely.">
+                <ToggleSwitch IsChecked="{Binding LockSettings, Mode=TwoWay}" />
+            </controls:OptionControl>
+
+            <ui:FAInfoBar Severity="Warning" IsClosable="False" Margin="0,8,0,0"
+                          IsOpen="{Binding HasLockReport}"
+                          IsVisible="{Binding HasLockReport}"
+                          Title="The lock may have caused a problem"
+                          Message="{Binding LockReport}">
+                <ui:FAInfoBar.ActionButton>
+                    <Button Content="Dismiss" Command="{Binding DismissLockReportCommand}" />
+                </ui:FAInfoBar.ActionButton>
+            </ui:FAInfoBar>
+
+            <StackPanel IsVisible="{x:Static vui:RobloxSettingsViewModel.FileAvailable}">
+
+                <!-- Graphics -->
+                <TextBlock Classes="section" Text="Graphics" />
+
+                <controls:OptionControl Header="Maximum frame rate"
+                                        Description="Highest FPS Roblox will render. Matching your monitor's refresh rate gives the smoothest result. Unlimited removes the cap in the settings file, but Roblox officially supports up to 240 and may still stop there.">
+                    <ComboBox MinWidth="200" Padding="10,5"
+                              ItemsSource="{x:Static vui:RobloxSettingsViewModel.FramerateCapOptions}"
+                              SelectedItem="{Binding SelectedFramerateCap, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate x:DataType="vui:FramerateCapOption">
+                                <TextBlock Text="{Binding Label}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </controls:OptionControl>
+
+                <controls:OptionControl Header="Graphics quality"
+                                        Description="0 = Automatic (Roblox picks based on your FPS). 1–10 = fixed quality, higher looks better but runs slower.">
+                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <Slider Width="250" Minimum="0" Maximum="10" TickFrequency="1" IsSnapToTickEnabled="True"
+                                Value="{Binding QualityLevel, Mode=TwoWay}" />
+                        <TextBlock Classes="value" Text="{Binding QualityLabel}" />
+                    </StackPanel>
+                </controls:OptionControl>
+
+                <controls:OptionControl Header="Fullscreen" Description="Start Roblox in fullscreen. You can still toggle it in game with F11.">
+                    <ToggleSwitch IsChecked="{Binding FullscreenEnabled, Mode=TwoWay}" />
+                </controls:OptionControl>
+
+                <!-- Audio -->
+                <TextBlock Classes="section" Text="Audio" />
+
+                <controls:OptionControl Header="Volume" Description="Roblox's master volume, from 0 (muted) to 10 (full).">
+                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <Slider Width="250" Minimum="0" Maximum="10" TickFrequency="1" IsSnapToTickEnabled="True"
+                                Value="{Binding Volume, Mode=TwoWay}" />
+                        <TextBlock Classes="value" Text="{Binding Volume, StringFormat=\{0:0\}}" />
+                    </StackPanel>
+                </controls:OptionControl>
+
+                <!-- Camera and controls -->
+                <TextBlock Classes="section" Text="Camera and controls" />
+
+                <controls:OptionControl Header="Camera sensitivity" Description="How fast the camera turns when you move the mouse. Roblox's default is 1.">
+                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <Slider Width="250" Minimum="0.2" Maximum="4" TickFrequency="0.1" IsSnapToTickEnabled="True"
+                                Value="{Binding CameraSensitivity, Mode=TwoWay}" />
+                        <TextBlock Classes="value" Text="{Binding CameraSensitivity, StringFormat=\{0:0.0\}}" />
+                    </StackPanel>
+                </controls:OptionControl>
+
+                <controls:OptionControl Header="Invert camera" Description="Moving the mouse up turns the camera down, like in flight games.">
+                    <ToggleSwitch IsChecked="{Binding InvertCamera, Mode=TwoWay}" />
+                </controls:OptionControl>
+
+                <controls:OptionControl Header="Shift lock switch" Description="Lets you press Shift to lock the camera behind your character, in games that allow it.">
+                    <ToggleSwitch IsChecked="{Binding ShiftLockSwitch, Mode=TwoWay}" />
+                </controls:OptionControl>
+
+                <!-- Interface -->
+                <TextBlock Classes="section" Text="Interface" />
+
+                <controls:OptionControl Header="Menu background transparency" Description="How see-through Roblox's menus and chat backgrounds are. 0% = solid, 100% = Roblox's default.">
+                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <Slider Width="250" Minimum="0" Maximum="100" TickFrequency="10" IsSnapToTickEnabled="True"
+                                Value="{Binding BackgroundTransparency, Mode=TwoWay}" />
+                        <TextBlock Classes="value" Text="{Binding BackgroundTransparency, StringFormat=\{0:0\}%}" />
+                    </StackPanel>
+                </controls:OptionControl>
+
+                <controls:OptionControl Header="Text size" Description="Size of text in Roblox's menus.">
+                    <ComboBox MinWidth="200" Padding="10,5"
+                              ItemsSource="{Binding TextSizes.Keys, Mode=OneTime}"
+                              SelectedItem="{Binding SelectedTextSize, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding ., Converter={StaticResource EnumNameConverter}}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </controls:OptionControl>
+
+                <controls:OptionControl Header="Reduced motion" Description="Cuts down on camera shake and menu animations.">
+                    <ToggleSwitch IsChecked="{Binding ReducedMotionEnabled, Mode=TwoWay}" />
+                </controls:OptionControl>
+
+                <!-- Other -->
+                <TextBlock Classes="section" Text="Other" />
+
+                <controls:OptionControl Header="Performance stats" Description="Shows Roblox's FPS, ping and memory overlay in game.">
+                    <ToggleSwitch IsChecked="{Binding PerformanceStats, Mode=TwoWay}" />
+                </controls:OptionControl>
+
+                <controls:OptionControl Header="Chat translation" Description="Automatically translates chat messages written in other languages.">
+                    <ToggleSwitch IsChecked="{Binding ChatTranslation, Mode=TwoWay}" />
+                </controls:OptionControl>
+
+                <!-- Advanced -->
+                <TextBlock Classes="section" Text="Advanced" />
+
+                <Grid ColumnDefinitions="*,*,*" RowDefinitions="Auto,Auto">
+                    <controls:CardAction Grid.Column="0" Margin="0,0,4,0" Icon="Import"
+                                         Header="{x:Static resources:Strings.Common_Import}"
+                                         Command="{Binding ImportCommand}" CommandParameter="{Binding $self}" />
+                    <controls:CardAction Grid.Column="1" Margin="4,0,4,0" Icon="ArrowRightFromLine"
+                                         Header="{x:Static resources:Strings.Common_Export}"
+                                         Command="{Binding ExportCommand}" CommandParameter="{Binding $self}" />
+                    <controls:CardAction Grid.Column="2" Margin="4,0,0,0" Icon="FolderOpen"
+                                         Header="{x:Static resources:Strings.Menu_GlobalSettings_OpenRobloxFolder}"
+                                         Command="{Binding OpenRobloxFolderCommand}" />
+                    <controls:CardAction Grid.Row="1" Grid.ColumnSpan="3" Icon="FilePenLine"
+                                         Header="Advanced settings editor"
+                                         Description="Every value in Roblox's settings file, including internal ones not shown in Roblox's menu. Only change these if you know what they do."
+                                         Command="{Binding OpenGlobalSettingsEditorCommand}" />
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

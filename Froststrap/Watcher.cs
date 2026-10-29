@@ -353,6 +353,8 @@ namespace Froststrap
             ActivityWatcher?.Start();
             WindowManipulation?.Start();
 
+            var vargoSession = Vargostrap.VargoSession.Begin(_watcherData, ActivityWatcher); // Vargostrap
+
             bool isStudio = _watcherData.LaunchMode == LaunchMode.Studio || _watcherData.LaunchMode == LaunchMode.StudioAuth;
 
             try
@@ -398,6 +400,8 @@ namespace Froststrap
                 }
             }
             catch (OperationCanceledException) { return; }
+
+            if (vargoSession is not null) await vargoSession.EndAsync(); // Vargostrap
 
             if (_gameModeHandle > 0)
             {

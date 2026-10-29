@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>Froststrap をバージョン {0} に自動更新できませんでした。ウェブサイトからダウンロードして実行し、手動で更新してください。</value>
+    <value>Vargostrap をバージョン {0} に自動更新できませんでした。ウェブサイトからダウンロードして実行し、手動で更新してください。</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Robloxは現在実行中です。別のインスタンスを起動すると、現在の実行中のインスタンスが終了します。それでも起動を続行しますか？</value>
@@ -127,10 +127,10 @@
     <value>現在、Robloxが利用できない可能性があります。詳細については{0}をご覧ください。</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>接続できませんでした。これは、インターネット接続の状態が悪いか、ファイアウォールによるブロックが原因である可能性があります。接続に問題がない場合は、ウイルス対策ソフトがFroststrapをブロックしていないかご確認ください。</value>
+    <value>接続できませんでした。これは、インターネット接続の状態が悪いか、ファイアウォールによるブロックが原因である可能性があります。接続に問題がない場合は、ウイルス対策ソフトがVargostrapをブロックしていないかご確認ください。</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>Froststrapには、Robloxをダウンロードしてインストールするのに十分なディスク容量がありません。ディスクの空き容量を確保してから、もう一度お試しください。</value>
+    <value>Vargostrapには、Robloxをダウンロードしてインストールするのに十分なディスク容量がありません。ディスクの空き容量を確保してから、もう一度お試しください。</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Robloxの改造を適用中...</value>
@@ -166,10 +166,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>Froststrap のアンインストールが正常に完了しました</value>
+    <value>Vargostrap のアンインストールが正常に完了しました</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>現在、Robloxが実行中ですが、Froststrapをアンインストールするには、Robloxを閉じておく必要があります。今すぐRobloxを閉じますか？</value>
+    <value>現在、Robloxが実行中ですが、Vargostrapをアンインストールするには、Robloxを閉じておく必要があります。今すぐRobloxを閉じますか？</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Roblox を実行するには、Windows Media Foundation コンポーネントが必要です。お使いの Windows が N エディションであるため、これらのコンポーネントがインストールされていないようです。まずこれらのコンポーネントをインストールしてから、Roblox を起動してください。</value>
@@ -278,14 +278,14 @@
     <value>接続エラー</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>Froststrap は {0} に接続できません</value>
+    <value>Vargostrap は {0} に接続できません</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>ログの内容をコピーする</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Froststrap/Froststrapの実行中に例外が発生しました</value>
+    <value>Vargostrap/Vargostrapの実行中に例外が発生しました</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>まず、[Froststrap Wiki]({0}) を確認し、この問題に対する修正がすでに公開されていないかご確認ください。
@@ -293,7 +293,7 @@
 もし修正が公開されていない場合は、生成されたログファイルのコピーを添付の上、[GitHubのイシュー]({1}) を通じてこの例外を報告してください。</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Froststrap 例外</value>
+    <value>Vargostrap 例外</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>カスタム</value>
@@ -527,10 +527,10 @@
     <value>カスタムテーマ {0} の削除に失敗しました: {1}</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>Froststrap が v{0} にアップグレードされました</value>
+    <value>Vargostrap が v{0} にアップグレードされました</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>起動したFroststrapのバージョンは、現在インストールされているバージョンとは異なります。
+    <value>起動したVargostrapのバージョンは、現在インストールされているバージョンとは異なります。
 現在インストールされているバージョンをアップグレードしますか？</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -574,10 +574,10 @@
     <value>現在開いているすべてのRobloxインスタンスを閉じるまで、変更内容の一部はすぐに反映されない場合がありますので、ご注意ください。</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>Froststrap はすでに実行されています</value>
+    <value>Vargostrap はすでに実行されています</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
-    <value>さまざまなオプションを使って、Froststrapのブートストラップをカスタマイズしましょう。</value>
+    <value>さまざまなオプションを使って、Vargostrapのブートストラップをカスタマイズしましょう。</value>
   </data>
   <data name="Menu.Appearance.CustomisationTitle.Description" xml:space="preserve">
     <value>ブートストラップのタイトルとして表示されるテキスト。</value>
@@ -586,16 +586,16 @@
     <value>タイトル</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Froststrapの外観を設定します。</value>
+    <value>Vargostrapの外観を設定します。</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Title" xml:space="preserve">
     <value>アプリのテーマ</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Description" xml:space="preserve">
-    <value>プリセットを使ってFroststrapのテーマを簡単にカスタマイズしたり、自分だけのオリジナルデザインを作成したりできます。</value>
+    <value>プリセットを使ってVargostrapのテーマを簡単にカスタマイズしたり、自分だけのオリジナルデザインを作成したりできます。</value>
   </data>
   <data name="Menu.Appearance.Icon.Description" xml:space="preserve">
-    <value>Froststrap で使用するアイコンを選択してください。</value>
+    <value>Vargostrap で使用するアイコンを選択してください。</value>
   </data>
   <data name="Menu.Appearance.Icon.Title" xml:space="preserve">
     <value>アイコン</value>
@@ -613,10 +613,10 @@
     <value>外観</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>Froststrapは、Robloxを起動する際に自動的にチェックを行い、安定版に更新されます。</value>
+    <value>Vargostrapは、Robloxを起動する際に自動的にチェックを行い、安定版に更新されます。</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Froststrapを自動的に更新する</value>
+    <value>Vargostrapを自動的に更新する</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>誤って別のRobloxインスタンスを起動してしまった場合でも、現在プレイ中のゲームが終了するのを防ぎます。</value>
@@ -625,7 +625,7 @@
     <value>インスタンス起動の確認</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Robloxを起動する際にFroststrapがどのような動作を行うかを設定します。</value>
+    <value>Robloxを起動する際にVargostrapがどのような動作を行うかを設定します。</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>次回起動時に、Robloxのクリーンインストールが行われます。</value>
@@ -802,7 +802,7 @@
     <value>デスクトップに近い</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Froststrapが、あなたがプレイしているRobloxのゲームを検知できるようにします。一部の機能では、これが必要になる場合があります。</value>
+    <value>Vargostrapが、あなたがプレイしているRobloxのゲームを検知できるようにします。一部の機能では、これが必要になる場合があります。</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>アクティビティの追跡を有効にする</value>
@@ -880,7 +880,7 @@
     <value>設定が保存されました！</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Froststrap の設定</value>
+    <value>Vargostrap の設定</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>ご希望の言語をお選びください</value>
@@ -902,7 +902,7 @@
     <value>グラフィックの品質を選択したレベルに固定します。注：この設定を有効にすると、Robloxメニューのグラフィックスライダーは、ゲーム内のレンダリング距離にのみ影響します。</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>FroststrapによるFastFlagsの管理を許可する</value>
+    <value>VargostrapによるFastFlagsの管理を許可する</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>これを無効にすると、ここで設定された内容はRobloxに反映されなくなります。</value>
@@ -932,7 +932,7 @@
     <value>Robloxのデフォルトの草のテクスチャを削除します。注：この設定は、個々のゲームで使用されるカスタム草のテクスチャには影響しません。</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>FroststrapではRobloxをダウンロードできません</value>
+    <value>VargostrapではRobloxをダウンロードできません</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>現在、Robloxはダウンロードできません。詳細については、以下のヘルプページをご覧ください：{0}</value>
@@ -942,7 +942,7 @@
     <value>ファイルからインポート</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Froststrap は '{0}' のフォルダに書き込みができないため、今回の起動に関するログファイルは作成されません。</value>
+    <value>Vargostrap は '{0}' のフォルダに書き込みができないため、今回の起動に関するログファイルは作成されません。</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>デフォルト</value>
@@ -960,22 +960,22 @@
     <value>デスクトップアイコン</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Froststrap をアンインストールする</value>
+    <value>Vargostrap をアンインストールする</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>アンインストールすると、システムからFroststrapが削除され、Robloxランチャーがまだインストールされている場合は、自動的にデフォルトの設定に再設定されます。
+    <value>アンインストールすると、システムからVargostrapが削除され、Robloxランチャーがまだインストールされている場合は、自動的にデフォルトの設定に再設定されます。
 
 Robloxに関する問題が発生したためにアンインストールまたは再インストールを行う場合は、まず[こちらのヘルプページ]({0})をお読みください。
 
-アンインストール処理では完全にクリーンアップできない場合があるため、Froststrapがインストールされていた場所に残ったファイルを手動で削除する必要があるかもしれません。
+アンインストール処理では完全にクリーンアップできない場合があるため、Vargostrapがインストールされていた場所に残ったファイルを手動で削除する必要があるかもしれません。
 
-Froststrapは「{1}」にインストールされていました。</value>
+Vargostrapは「{1}」にインストールされていました。</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>設定とMODを保持する</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>これらは、Froststrapがインストールされていた場所に保存され、再インストール時に自動的に復元されます。</value>
+    <value>これらは、Vargostrapがインストールされていた場所に保存され、再インストール時に自動的に復元されます。</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>アンインストール</value>
@@ -987,7 +987,7 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>現在、WebView2ランタイムがインストールされていません。これがないと、デスクトップアプリなど、Robloxの一部の機能が正常に動作しません。今すぐダウンロードしますか？</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>Froststrap は、デスクトップおよびスタートメニューへのショートカットを作成できませんでした。後で設定から作成してみてください。</value>
+    <value>Vargostrap は、デスクトップおよびスタートメニューへのショートカットを作成できませんでした。後で設定から作成してみてください。</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>まず、[Froststrap Wiki]({0}) を確認し、この問題に対する修正がすでに公開されていないか確認してください。
@@ -996,7 +996,7 @@ Froststrapは「{1}」にインストールされていました。</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Froststrapを簡単に起動できるように設定します。</value>
+    <value>Vargostrapを簡単に起動できるように設定します。</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>概要</value>
@@ -1023,14 +1023,14 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>アンインストールが完了するまでお待ちください。</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Froststrapについて</value>
+    <value>Vargostrapについて</value>
   </data>
   <data name="About.Licenses.Title" xml:space="preserve">
     <value>ライセンス</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>起動したFroststrapのバージョンは、現在インストールされているバージョンよりも古いものです。
+    <value>起動したVargostrapのバージョンは、現在インストールされているバージョンよりも古いものです。
 問題が発生したり、設定が変更されたりする可能性があります。再インストールすることをお勧めします。
 本当に続行しますか？</value>
   </data>
@@ -1043,7 +1043,7 @@ Froststrapは「{1}」にインストールされていました。</value>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>この現象が発生する原因や解決方法については、[こちらのヘルプ記事]({0})をご覧ください。
 
-[オリジナルのランチャー]({1})でRobloxが動作するか確認してください。動作しない場合は、これはFroststrapの問題ではありません。動作する場合は、ヘルプ記事を参照してください。</value>
+[オリジナルのランチャー]({1})でRobloxが動作するか確認してください。動作しない場合は、これはVargostrapの問題ではありません。動作する場合は、ヘルプ記事を参照してください。</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>読み込み中、しばらくお待ちください...</value>
@@ -1073,7 +1073,7 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>今回のリリースでは、Robloxのアップデート確認は行われず、MODの変更も反映されません。</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Robloxのインストールまたはアップデートが必要なため、Froststrapは続行できません。</value>
+    <value>Robloxのインストールまたはアップデートが必要なため、Vargostrapは続行できません。</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>利用不可</value>
@@ -1085,7 +1085,7 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>DPI スケーリングの動作や [フルスクリーン最適化]({0}) などのアプリケーションパラメータを設定します。</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Robloxはまだインストールされていません。このオプションを使用する前に、Froststrapを使ってRobloxを少なくとも1回起動してください。</value>
+    <value>Robloxはまだインストールされていません。このオプションを使用する前に、Vargostrapを使ってRobloxを少なくとも1回起動してください。</value>
   </data>
   <data name="Bootstrapper.JsonManagerSaveFailed" xml:space="preserve">
     <value>{0} の保存に失敗しました: {1}</value>
@@ -1100,10 +1100,10 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>Robloxのアイコンをフォルダに抽出する</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Froststrapが提供するさまざまなRobloxアイコンをショートカットに使用できるようになります。[使い方はこちら。]({0})</value>
+    <value>Vargostrapが提供するさまざまなRobloxアイコンをショートカットに使用できるようになります。[使い方はこちら。]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>Froststrap が Windows レジストリへの書き込みを行えません。ウイルス対策ソフトが干渉し、問題を引き起こしている可能性があります。Froststrap の動作を制限するような設定がないか、ご確認ください。</value>
+    <value>Vargostrap が Windows レジストリへの書き込みを行えません。ウイルス対策ソフトが干渉し、問題を引き起こしている可能性があります。Vargostrap の動作を制限するような設定がないか、ご確認ください。</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>すべてをデフォルト設定にリセットする</value>
@@ -1153,7 +1153,7 @@ Froststrapは「{1}」にインストールされていました。</value>
     <comment>Currently used under the "Froststrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Menu.Channel.Description" xml:space="preserve">
-    <value>Roblox および Froststrap のデプロイおよびインストール設定を変更します。</value>
+    <value>Roblox および Vargostrap のデプロイおよびインストール設定を変更します。</value>
   </data>
   <data name="Common.Version" xml:space="preserve">
     <value>バージョン</value>
@@ -1184,7 +1184,7 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>すみません</value>
   </data>
   <data name="Dialog.Bloxshade.Setting" xml:space="preserve">
-    <value>Froststrapは、Bloxshadeのサポートを終了しました。
+    <value>Vargostrapは、Bloxshadeのサポートを終了しました。
 詳細については、BloxshadeのDiscordサーバーにご参加ください。</value>
   </data>
   <data name="Common.Profiles" xml:space="preserve">
@@ -1210,7 +1210,7 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>自動チャンネル切り替えアクション</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
-    <value>Roblox や Froststrap が、あなたの優先チャンネルを変更しようとする場合があります。</value>
+    <value>Roblox や Vargostrap が、あなたの優先チャンネルを変更しようとする場合があります。</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
     <value>自動的に変更する</value>
@@ -1292,10 +1292,10 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>Robloxがグローバル設定を上書きしないようにする。</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Title" xml:space="preserve">
-    <value>Froststrap のアカウント権限</value>
+    <value>Vargostrap のアカウント権限</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Description" xml:space="preserve">
-    <value>認証クッキーを使用して、Roblox API にアクセスできるようにします。[Froststrap は何にアクセスしますか？]({0})</value>
+    <value>認証クッキーを使用して、Roblox API にアクセスできるようにします。[Vargostrap は何にアクセスしますか？]({0})</value>
   </data>
   <data name="Menu.Appearance.WindowsBackdrop.Title" xml:space="preserve">
     <value>窓の背景</value>
@@ -1367,10 +1367,10 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>ダブルクリック時の動作</value>
   </data>
   <data name="Menu.Integrations.DoubleClickAction.Description" xml:space="preserve">
-    <value>Robloxを起動中に、システムトレイにあるFroststrapをダブルクリックすると、特定のウィンドウが開きます。</value>
+    <value>Robloxを起動中に、システムトレイにあるVargostrapをダブルクリックすると、特定のウィンドウが開きます。</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Description" xml:space="preserve">
-    <value>これを有効にすると、アプリが起動している間、Discordのプロフィールにカスタムの「Playing Froststrap」RPCが表示されます。</value>
+    <value>これを有効にすると、アプリが起動している間、Discordのプロフィールにカスタムの「Playing Vargostrap」RPCが表示されます。</value>
   </data>
   <data name="Menu.Integrations.CustomStatusDisplay.Title" xml:space="preserve">
     <value>カスタムステータスの表示</value>
@@ -1445,10 +1445,10 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>コミュニティのモデレーター</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
-    <value>Froststrapのログ</value>
+    <value>Vargostrapのログ</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
-    <value>Froststrapのログが削除されます。</value>
+    <value>Vargostrapのログが削除されます。</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.FollowUser" xml:space="preserve">
     <value>今、友達がこのゲームをプレイしているようです。一緒にプレイしてみませんか？</value>
@@ -1457,7 +1457,7 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>BetterMatchmakingを有効にする</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.Description" xml:space="preserve">
-    <value>どのサーバーに参加するかは、Froststrapに任せてください。あなたからの距離が最も短いサーバーを優先します。</value>
+    <value>どのサーバーに参加するかは、Vargostrapに任せてください。あなたからの距離が最も短いサーバーを優先します。</value>
   </data>
   <data name="Menu.FastFlags.Presets.TextureQuality.Title" xml:space="preserve">
     <value>テクスチャの品質</value>
@@ -2044,7 +2044,7 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>プレリリース版の更新</value>
   </data>
   <data name="Menu.Deployment.AutoPreReleaseUpdate.Description" xml:space="preserve">
-    <value>Froststrapは、Robloxを起動する際に自動的に確認を行い、テスト版に更新されます。</value>
+    <value>Vargostrapは、Robloxを起動する際に自動的に確認を行い、テスト版に更新されます。</value>
   </data>
   <data name="Menu.TestMode.Description" xml:space="preserve">
     <value>Robloxの起動時に設定ウィンドウを自動的に非表示にし、Robloxの終了時に元に戻します。</value>
@@ -2430,7 +2430,7 @@ Froststrapは「{1}」にインストールされていました。</value>
     <value>小型サーバー</value>
   </data>
   <data name="Menu.RegionSelector.LoginRequired" xml:space="preserve">
-    <value>ご利用には、アカウントマネージャーでログインするか、「Froststrap アカウント権限」を有効にするか、または当社の Discord サーバーに報告してください。</value>
+    <value>ご利用には、アカウントマネージャーでログインするか、「Vargostrap アカウント権限」を有効にするか、または当社の Discord サーバーに報告してください。</value>
   </data>
   <data name="Menu.RegionSelector.EnterPlaceId" xml:space="preserve">
     <value>Place ID を入力し、「検索」をクリックしてサーバーを表示してください。</value>

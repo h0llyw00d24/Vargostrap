@@ -19,16 +19,16 @@ SPDX-License-Identifier: MPL-2.0
     <Version>$(AppVersion)</Version>
     <FileVersion>$(AppVersion)</FileVersion>
     <InformationalVersion>$(InfAppVersion)</InformationalVersion>
-    <Company>Froststrap</Company>
+    <Company>Vargostrap</Company>
     <Product>$(AssemblyName)</Product>
-    <AssemblyName>Froststrap</AssemblyName>
+    <AssemblyName>Vargostrap</AssemblyName>
     <RootNamespace>Froststrap</RootNamespace>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   	<PublishAot>true</PublishAot>
   	<PublishTrimmed>true</PublishTrimmed>
   	<TrimMode>full</TrimMode>
   	<NeutralLanguage>en</NeutralLanguage>
-    <Description>Froststrap - A Fishstrap fork</Description>
+    <Description>Vargostrap - A Froststrap fork</Description>
     <ApplicationIcon>Froststrap.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <DebuggerSupport>false</DebuggerSupport>

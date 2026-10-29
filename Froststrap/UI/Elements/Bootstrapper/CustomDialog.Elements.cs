@@ -462,7 +462,7 @@ namespace Froststrap.UI.Elements.Bootstrapper
             dialog.Margin = new Thickness(0, 0, 0, 0);
             dialog.Padding = new Thickness(0, 0, 0, 0);
 
-            string? title = xmlElement.Attribute("Title")?.Value?.ToString() ?? "Froststrap";
+            string? title = xmlElement.Attribute("Title")?.Value?.ToString() ?? App.ProjectName;
             dialog.Title = title;
 
             bool ignoreTitleBarInset = ParseXmlAttribute<bool>(xmlElement, "IgnoreTitleBarInset", false);
@@ -499,7 +499,7 @@ namespace Froststrap.UI.Elements.Bootstrapper
             dialog.RootTitleBar.ShowMaximize = ParseXmlAttribute<bool>(xmlElement, "ShowMaximize", false);
             dialog.RootTitleBar.ShowClose = ParseXmlAttribute<bool>(xmlElement, "ShowClose", true);
 
-            string? title = xmlElement.Attribute("Title")?.Value ?? "Froststrap";
+            string? title = xmlElement.Attribute("Title")?.Value ?? App.ProjectName;
             dialog.RootTitleBar.Title = title;
 
             if (OperatingSystem.IsMacOS())

@@ -42,7 +42,7 @@ namespace Froststrap.UI.Elements.Bootstrapper
                 _viewModel.IconColor = new SolidColorBrush(Color.FromRgb(57, 59, 61));
                 _viewModel.ProgressBarBackground = new SolidColorBrush(Color.FromRgb(189, 190, 190));
 
-                var uri = new Uri("avares://Froststrap/Resources/BootstrapperStyles/ByfronDialog/ByfronLogoLight.jpg");
+                var uri = new Uri("avares://Vargostrap/Resources/BootstrapperStyles/ByfronDialog/ByfronLogoLight.jpg");
                 _viewModel.ByfronLogoLocation = new Bitmap(Avalonia.Platform.AssetLoader.Open(uri));
             }
         }

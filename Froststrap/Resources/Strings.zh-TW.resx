@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>Froststrap 無法自動更新至版本 {0}。請手動從網站下載並執行該程式以進行更新。</value>
+    <value>Vargostrap 無法自動更新至版本 {0}。請手動從網站下載並執行該程式以進行更新。</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Roblox 目前正在執行中，若啟動另一個 Roblox 程式，將導致其關閉。您確定要繼續啟動嗎？</value>
@@ -127,10 +127,10 @@
     <value>Roblox 目前可能無法正常運作。請參閱 {0} 以獲取更多資訊。</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>無法建立連線，這很可能表示網路連線不佳或遭到防火牆阻擋。如果您的網路連線正常，請確認您的防毒軟體是否正在阻擋 Froststrap。</value>
+    <value>無法建立連線，這很可能表示網路連線不佳或遭到防火牆阻擋。如果您的網路連線正常，請確認您的防毒軟體是否正在阻擋 Vargostrap。</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>Froststrap 的磁碟空間不足，無法下載並安裝 Roblox。請釋放一些磁碟空間後再試一次。</value>
+    <value>Vargostrap 的磁碟空間不足，無法下載並安裝 Roblox。請釋放一些磁碟空間後再試一次。</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>正在套用 Roblox 模組...</value>
@@ -166,10 +166,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>Froststrap 已成功解除安裝</value>
+    <value>Vargostrap 已成功解除安裝</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox 目前正在執行中，但在解除安裝 Froststrap 之前必須先關閉該程式。您要現在關閉 Roblox 嗎？</value>
+    <value>Roblox 目前正在執行中，但在解除安裝 Vargostrap 之前必須先關閉該程式。您要現在關閉 Roblox 嗎？</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Roblox 需要使用 Windows Media Foundation 元件。您的系統似乎缺少這些元件，這很可能是因為您使用的是 Windows 的 N 版。請先安裝這些元件，然後再啟動 Roblox。</value>
@@ -284,14 +284,14 @@
     <value>連線錯誤</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>Froststrap 無法連線至 {0}</value>
+    <value>Vargostrap 無法連線至 {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>複製日誌內容</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>執行 Froststrap/Froststrap 時發生例外狀況</value>
+    <value>執行 Vargostrap/Vargostrap 時發生例外狀況</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>請先查閱 [Froststrap Wiki]({0})，確認此問題是否已透過修正方案解決。
@@ -299,7 +299,7 @@
 若尚未解決，請透過 [GitHub 問題單]({1}) 回報此異常，並附上生成的日誌檔案副本。</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Froststrap 例外情況</value>
+    <value>Vargostrap 例外情況</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>自訂</value>
@@ -311,16 +311,16 @@
     <value>仿製 Byfron（~2023 年）</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentDialog" xml:space="preserve">
-    <value>Froststrap（不透明）</value>
+    <value>Vargostrap（不透明）</value>
   </data>
   <data name="Enums.BootstrapperStyle.TwentyFiveDialog" xml:space="preserve">
     <value>Roblox（~2025 年）</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>Froststrap（經典版）</value>
+    <value>Vargostrap（經典版）</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>Froststrap（玻璃）</value>
+    <value>Vargostrap（玻璃）</value>
   </data>
   <data name="Enums.CursorType.From2006" xml:space="preserve">
     <value>~2006（卡通風格）</value>
@@ -533,10 +533,10 @@
     <value>無法刪除自訂佈景主題 {0}：{1}</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>Froststrap 已升級至v{0}</value>
+    <value>Vargostrap 已升級至v{0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>您啟動的 Froststrap 版本與目前安裝的版本不同。
+    <value>您啟動的 Vargostrap 版本與目前安裝的版本不同。
 您要升級目前安裝的版本嗎？</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -580,10 +580,10 @@
     <value>請注意，在您關閉所有目前開啟的 Roblox 程式之前，並非所有變更都會立即生效。</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>Froststrap 已經在執行中</value>
+    <value>Vargostrap 已經在執行中</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
-    <value>透過多種選項，自訂 Froststrap 的啟動器。</value>
+    <value>透過多種選項，自訂 Vargostrap 的啟動器。</value>
   </data>
   <data name="Menu.Appearance.CustomisationTitle.Description" xml:space="preserve">
     <value>顯示為啟動程式標題的文字。</value>
@@ -592,16 +592,16 @@
     <value>標題</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>設定 Froststrap 的外觀。</value>
+    <value>設定 Vargostrap 的外觀。</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Title" xml:space="preserve">
     <value>應用程式主題</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Description" xml:space="preserve">
-    <value>您可以透過預設樣式輕鬆自訂 Froststrap 主題，或打造屬於您自己的獨特風格。</value>
+    <value>您可以透過預設樣式輕鬆自訂 Vargostrap 主題，或打造屬於您自己的獨特風格。</value>
   </data>
   <data name="Menu.Appearance.Icon.Description" xml:space="preserve">
-    <value>選擇 Froststrap 應使用的圖示。</value>
+    <value>選擇 Vargostrap 應使用的圖示。</value>
   </data>
   <data name="Menu.Appearance.Icon.Title" xml:space="preserve">
     <value>圖示</value>
@@ -619,10 +619,10 @@
     <value>外觀</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>Froststrap 會在啟動 Roblox 時自動檢查並更新至穩定版本。</value>
+    <value>Vargostrap 會在啟動 Roblox 時自動檢查並更新至穩定版本。</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>自動更新 Froststrap</value>
+    <value>自動更新 Vargostrap</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>可防止因意外啟動另一個 Roblox 程式而導致現有遊戲關閉。</value>
@@ -631,7 +631,7 @@
     <value>Roblox 程式啟動確認</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>設定 Froststrap 在啟動 Roblox 時應執行的動作。</value>
+    <value>設定 Vargostrap 在啟動 Roblox 時應執行的動作。</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>下次啟動時，系統將對 Roblox 進行乾淨安裝。</value>
@@ -649,7 +649,7 @@
     <value>此 Flag 名稱已有對應的條目。</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
-    <value>Froststrap 清潔劑</value>
+    <value>Vargostrap 清潔劑</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
     <value>會自動清除舊資料以釋放空間。最初由 Fishstrap 所開發。</value>
@@ -808,7 +808,7 @@
     <value>接近桌面</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>允許 Froststrap 偵測您正在遊玩的 Roblox 遊戲。某些功能可能需要此權限。</value>
+    <value>允許 Vargostrap 偵測您正在遊玩的 Roblox 遊戲。某些功能可能需要此權限。</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>啟用活動追蹤</value>
@@ -886,7 +886,7 @@
     <value>設定已儲存！</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Froststrap 設定</value>
+    <value>Vargostrap 設定</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>選擇您偏好的語言</value>
@@ -908,7 +908,7 @@
     <value>將圖形品質鎖定為所選等級。注意：啟用此設定後，Roblox 選單中的圖形滑桿僅會影響遊戲中的渲染距離。</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>允許 Froststrap 管理 FastFlags</value>
+    <value>允許 Vargostrap 管理 FastFlags</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>若停用此設定，將防止此處所設定的任何內容套用至 Roblox。</value>
@@ -938,7 +938,7 @@
     <value>移除 Roblox 的預設草地貼圖。注意：此設定不會影響個別遊戲所使用的自訂草地貼圖。</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>Froststrap 無法下載 Roblox</value>
+    <value>Vargostrap 無法下載 Roblox</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>目前無法下載 Roblox。請閱讀以下說明頁面以獲取更多資訊：{0}</value>
@@ -948,7 +948,7 @@
     <value>從檔案匯入</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>由於 Froststrap 無法寫入 '{0}' 這個資料夾，因此本次啟動將不會產生任何日誌檔案</value>
+    <value>由於 Vargostrap 無法寫入 '{0}' 這個資料夾，因此本次啟動將不會產生任何日誌檔案</value>
   </data>
   <data name="Common.Disabled" xml:space="preserve">
     <value>已停用</value>
@@ -963,22 +963,22 @@
     <value>桌面圖示</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>解除安裝 Froststrap</value>
+    <value>解除安裝 Vargostrap</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>解除安裝將從您的系統中移除 Froststrap，並在 Roblox 啟動程式仍安裝於系統時，自動重新設定其預設設定。
+    <value>解除安裝將從您的系統中移除 Vargostrap，並在 Roblox 啟動程式仍安裝於系統時，自動重新設定其預設設定。
 
 若您是因為遇到 Roblox 相關問題而進行解除安裝或重新安裝，請先閱讀 [這篇說明頁面]({0})。
 
-解除安裝程序可能無法完全清理所有殘留檔案，因此您可能需要手動清理 Froststrap 原先安裝位置的殘留檔案。
+解除安裝程序可能無法完全清理所有殘留檔案，因此您可能需要手動清理 Vargostrap 原先安裝位置的殘留檔案。
 
-Froststrap 安裝於 "{1}" 位置。</value>
+Vargostrap 安裝於 "{1}" 位置。</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>保留我的設定和模組</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>這些檔案將保留在原先安裝 Froststrap 的位置，並會在重新安裝時自動還原。</value>
+    <value>這些檔案將保留在原先安裝 Vargostrap 的位置，並會在重新安裝時自動還原。</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>解除安裝</value>
@@ -990,7 +990,7 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>您目前尚未安裝 WebView2 執行環境。若未安裝此執行環境，部分 Roblox 功能將無法正常運作，例如桌面應用程式。您要現在下載嗎？</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>Froststrap 無法在桌面和「開始」選單中建立捷徑。請稍後嘗試透過設定建立這些捷徑。</value>
+    <value>Vargostrap 無法在桌面和「開始」選單中建立捷徑。請稍後嘗試透過設定建立這些捷徑。</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>請先查閱 [Froststrap Wiki]({0})，確認此問題是否已透過修正程式解決。
@@ -999,7 +999,7 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>設定如何輕鬆啟動 Froststrap。</value>
+    <value>設定如何輕鬆啟動 Vargostrap。</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>總論</value>
@@ -1026,14 +1026,14 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>請等待解除安裝程序完成。</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>關於 Froststrap</value>
+    <value>關於 Vargostrap</value>
   </data>
   <data name="About.Licenses.Title" xml:space="preserve">
     <value>授權</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>您啟動的 Froststrap 版本比目前安裝的版本更舊。
+    <value>您啟動的 Vargostrap 版本比目前安裝的版本更舊。
 可能會發生問題，且您的設定可能會被變更。建議重新安裝。
 您確定要繼續嗎？</value>
   </data>
@@ -1046,7 +1046,7 @@ Froststrap 安裝於 "{1}" 位置。</value>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>如需了解此現象可能發生的原因及解決方法，請參閱 [這篇說明文章]({0})。
 
-請確認 Roblox 是否能透過 [原始啟動程式]({1}) 正常運作。若無法運作，則此問題與 Froststrap 無關；若能正常運作，請參閱說明文章。</value>
+請確認 Roblox 是否能透過 [原始啟動程式]({1}) 正常運作。若無法運作，則此問題與 Vargostrap 無關；若能正常運作，請參閱說明文章。</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>正在載入，請稍候...</value>
@@ -1076,7 +1076,7 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>本次啟動時，系統將不會檢查 Roblox 是否有更新，也不會套用模組的變更。</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>由於需要安裝或升級 Roblox，Froststrap 無法繼續執行。</value>
+    <value>由於需要安裝或升級 Roblox，Vargostrap 無法繼續執行。</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>暫無</value>
@@ -1088,7 +1088,7 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>設定應用程式參數，例如 DPI 縮放行為和 [全螢幕最佳化]({0})。</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox 尚未安裝。在嘗試使用此選項之前，請先透過 Froststrap 至少啟動一次 Roblox。</value>
+    <value>Roblox 尚未安裝。在嘗試使用此選項之前，請先透過 Vargostrap 至少啟動一次 Roblox。</value>
   </data>
   <data name="Bootstrapper.JsonManagerSaveFailed" xml:space="preserve">
     <value>無法儲存 {0}：{1}</value>
@@ -1103,10 +1103,10 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>將 Roblox 圖示解壓縮至資料夾</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>讓您能在捷徑中使用 Froststrap 提供的各式 Roblox 圖示。[查看操作方法。]({0})</value>
+    <value>讓您能在捷徑中使用 Vargostrap 提供的各式 Roblox 圖示。[查看操作方法。]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>Froststrap 無法寫入 Windows 登錄檔。很可能是防毒軟體造成干擾並引發問題。請檢查以確保沒有任何因素會限制 Froststrap 的運作。</value>
+    <value>Vargostrap 無法寫入 Windows 登錄檔。很可能是防毒軟體造成干擾並引發問題。請檢查以確保沒有任何因素會限制 Vargostrap 的運作。</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>將所有設定重設為預設值</value>
@@ -1156,7 +1156,7 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <comment>Currently used under the "Froststrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Menu.Channel.Description" xml:space="preserve">
-    <value>變更 Roblox 和 Froststrap 的部署與安裝設定。</value>
+    <value>變更 Roblox 和 Vargostrap 的部署與安裝設定。</value>
   </data>
   <data name="Common.Version" xml:space="preserve">
     <value>版本</value>
@@ -1187,7 +1187,7 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>對不起</value>
   </data>
   <data name="Dialog.Bloxshade.Setting" xml:space="preserve">
-    <value>Froststrap 已不再支援 Bloxshade。
+    <value>Vargostrap 已不再支援 Bloxshade。
 如需更多資訊，請加入 Bloxshade 的 Discord 伺服器。</value>
   </data>
   <data name="Common.Profiles" xml:space="preserve">
@@ -1213,7 +1213,7 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>自動換台操作</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
-    <value>Roblox 或 Froststrap 可能會試圖變更您的預設頻道。</value>
+    <value>Roblox 或 Vargostrap 可能會試圖變更您的預設頻道。</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
     <value>自動</value>
@@ -1295,10 +1295,10 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>防止 Roblox 覆寫全域設定。</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Title" xml:space="preserve">
-    <value>Froststrap 帳戶權限</value>
+    <value>Vargostrap 帳戶權限</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Description" xml:space="preserve">
-    <value>透過您的驗證 Cookie 存取 Roblox API。[Froststrap 將存取哪些內容？]({0})</value>
+    <value>透過您的驗證 Cookie 存取 Roblox API。[Vargostrap 將存取哪些內容？]({0})</value>
   </data>
   <data name="Menu.Appearance.WindowsBackdrop.Title" xml:space="preserve">
     <value>視窗背景</value>
@@ -1370,10 +1370,10 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>雙擊動作</value>
   </data>
   <data name="Menu.Integrations.DoubleClickAction.Description" xml:space="preserve">
-    <value>在啟動 Roblox 時，若在系統匣中雙擊 Froststrap，將會開啟特定視窗。</value>
+    <value>在啟動 Roblox 時，若在系統匣中雙擊 Vargostrap，將會開啟特定視窗。</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Description" xml:space="preserve">
-    <value>啟用此功能，即可在應用程式開啟時，於您的 Discord 個人檔案中顯示自訂的「正在遊玩 Froststrap」RPC。</value>
+    <value>啟用此功能，即可在應用程式開啟時，於您的 Discord 個人檔案中顯示自訂的「正在遊玩 Vargostrap」RPC。</value>
   </data>
   <data name="Menu.Integrations.CustomStatusDisplay.Title" xml:space="preserve">
     <value>自訂狀態顯示</value>
@@ -1448,10 +1448,10 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>社群模組</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
-    <value>Froststrap 日誌</value>
+    <value>Vargostrap 日誌</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
-    <value>Froststrap 日誌將被刪除。</value>
+    <value>Vargostrap 日誌將被刪除。</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.FollowUser" xml:space="preserve">
     <value>看來有位朋友正在玩這款遊戲。你想加入他們嗎？</value>
@@ -1460,7 +1460,7 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>啟用「BetterMatchmaking」(更好的配對機制)</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.Description" xml:space="preserve">
-    <value>讓 Froststrap 決定您要加入哪個伺服器。系統會優先選擇距離您最近的伺服器。</value>
+    <value>讓 Vargostrap 決定您要加入哪個伺服器。系統會優先選擇距離您最近的伺服器。</value>
   </data>
   <data name="Menu.FastFlags.Presets.TextureQuality.Title" xml:space="preserve">
     <value>紋理品質</value>
@@ -2044,7 +2044,7 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>預發布版本的更新</value>
   </data>
   <data name="Menu.Deployment.AutoPreReleaseUpdate.Description" xml:space="preserve">
-    <value>在啟動 Roblox 時，Froststrap 會自動檢查並將自身更新至測試版本。</value>
+    <value>在啟動 Roblox 時，Vargostrap 會自動檢查並將自身更新至測試版本。</value>
   </data>
   <data name="Menu.TestMode.Description" xml:space="preserve">
     <value>在啟動 Roblox 時自動隱藏設定視窗，並在關閉 Roblox 時恢復顯示。</value>
@@ -2427,7 +2427,7 @@ Froststrap 安裝於 "{1}" 位置。</value>
     <value>小型伺服器</value>
   </data>
   <data name="Menu.RegionSelector.LoginRequired" xml:space="preserve">
-    <value>請透過「帳號管理器」登入，或啟用「Froststrap 帳戶權限」，或向我們的 Discord 伺服器回報此問題以進行使用。</value>
+    <value>請透過「帳號管理器」登入，或啟用「Vargostrap 帳戶權限」，或向我們的 Discord 伺服器回報此問題以進行使用。</value>
   </data>
   <data name="Menu.RegionSelector.EnterPlaceId" xml:space="preserve">
     <value>輸入地點 ID，然後點擊「搜尋」以查看伺服器。</value>

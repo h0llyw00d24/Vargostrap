@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>„Froststrap“ nepavyko automatiškai atnaujinti iki versijos {0}. Atnaujinkite jį rankiniu būdu – atsisiųskite ir paleiskite programą iš svetainės.</value>
+    <value>„Vargostrap“ nepavyko automatiškai atnaujinti iki versijos {0}. Atnaujinkite jį rankiniu būdu – atsisiųskite ir paleiskite programą iš svetainės.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>„Roblox“ šiuo metu veikia, o paleidus dar vieną instanciją ji bus uždaryta. Ar tikrai norite tęsti paleidimą?</value>
@@ -127,10 +127,10 @@
     <value>Šiuo metu „Roblox“ gali neveikti. Daugiau informacijos rasite {0}.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Nepavyko užmegzti ryšio, o tai greičiausiai reiškia, kad interneto ryšys yra prastas arba jį blokuoja ugniasienė. Jei jūsų interneto ryšys veikia tinkamai, įsitikinkite, kad jūsų antivirusinė programa neblokuoja „Froststrap“.</value>
+    <value>Nepavyko užmegzti ryšio, o tai greičiausiai reiškia, kad interneto ryšys yra prastas arba jį blokuoja ugniasienė. Jei jūsų interneto ryšys veikia tinkamai, įsitikinkite, kad jūsų antivirusinė programa neblokuoja „Vargostrap“.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>„Froststrap“ neturi pakankamai vietos diske, kad būtų galima atsisiųsti ir įdiegti „Roblox“. Prašome atlaisvinti šiek tiek vietos diske ir pabandyti dar kartą.</value>
+    <value>„Vargostrap“ neturi pakankamai vietos diske, kad būtų galima atsisiųsti ir įdiegti „Roblox“. Prašome atlaisvinti šiek tiek vietos diske ir pabandyti dar kartą.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Taikomos „Roblox“ modifikacijos...</value>
@@ -166,10 +166,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>„Froststrap“ buvo sėkmingai pašalinta</value>
+    <value>„Vargostrap“ buvo sėkmingai pašalinta</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Šiuo metu veikia „Roblox“, tačiau prieš pašalinant „Froststrap“ jį reikia uždaryti. Ar norite uždaryti „Roblox“ dabar?</value>
+    <value>Šiuo metu veikia „Roblox“, tačiau prieš pašalinant „Vargostrap“ jį reikia uždaryti. Ar norite uždaryti „Roblox“ dabar?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>„Roblox“ veikimui reikalingi „Windows Media Foundation“ komponentai. Atrodo, kad jų trūksta, greičiausiai dėl to, kad naudojate „Windows“ N versiją. Pirmiausia juos įdiekite, o tada paleiskite „Roblox“.</value>
@@ -278,14 +278,14 @@ Veikimo laikas: {1}</value>
     <value>Ryšio klaida</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>„Froststrap“ negali prisijungti prie {0}</value>
+    <value>„Vargostrap“ negali prisijungti prie {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Kopijuoti žurnalo turinį</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Vykdant „Froststrap/Froststrap“ įvyko išimtis</value>
+    <value>Vykdant „Vargostrap/Vargostrap“ įvyko išimtis</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Pirmiausia patikrinkite [„Froststrap“ Vikį]({0}), ar ši problema jau buvo išspręsta.
@@ -293,7 +293,7 @@ Veikimo laikas: {1}</value>
 Jei ne, prašome pranešti apie šią išimtį per [„GitHub“ užklausą]({1}) kartu su sukurtos žurnalo failo kopija.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>„Froststrap“ išimtis</value>
+    <value>„Vargostrap“ išimtis</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Pasirinktinis</value>
@@ -305,16 +305,16 @@ Jei ne, prašome pranešti apie šią išimtį per [„GitHub“ užklausą]({1}
     <value>Padirbtas „Byfron“ (~2023)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentDialog" xml:space="preserve">
-    <value>„Froststrap“ (nepermatomas)</value>
+    <value>„Vargostrap“ (nepermatomas)</value>
   </data>
   <data name="Enums.BootstrapperStyle.TwentyFiveDialog" xml:space="preserve">
     <value>„Roblox“ (~2025 m.)</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>„Froststrap“ (klasikinė versija)</value>
+    <value>„Vargostrap“ (klasikinė versija)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>„Froststrap“ (stiklas)</value>
+    <value>„Vargostrap“ (stiklas)</value>
   </data>
   <data name="Enums.CursorType.From2006" xml:space="preserve">
     <value>~2006 m. (animacinis stilius)</value>
@@ -356,7 +356,7 @@ Jei ne, prašome pranešti apie šią išimtį per [„GitHub“ užklausą]({1}
     <value>Šviesa</value>
   </data>
   <data name="Enums.Theme.Froststrap" xml:space="preserve">
-    <value>„Froststrap“</value>
+    <value>„Vargostrap“</value>
   </data>
   <data name="Enums.Theme.Pink" xml:space="preserve">
     <value>Rožinė</value>
@@ -539,10 +539,10 @@ Naudojamas numatytasis: {1}.</value>
     <value>Nepavyko ištrinti pasirinktos temos {0}: {1}</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>„Froststrap“ buvo atnaujintas iki v{0} versijos</value>
+    <value>„Vargostrap“ buvo atnaujintas iki v{0} versijos</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Jūsų paleista „Froststrap“ versija skiriasi nuo šiuo metu įdiegtos versijos.
+    <value>Jūsų paleista „Vargostrap“ versija skiriasi nuo šiuo metu įdiegtos versijos.
 Ar norite atnaujinti šiuo metu įdiegtą versiją?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -586,10 +586,10 @@ Ar norite atnaujinti šiuo metu įdiegtą versiją?</value>
     <value>Atkreipkite dėmesį, kad ne visi jūsų pakeitimai bus iškart pritaikyti, kol neuždarysite visų šiuo metu atidarytų „Roblox“ sesijų.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>„Froststrap“ jau veikia</value>
+    <value>„Vargostrap“ jau veikia</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
-    <value>Pritaikyti „Froststrap“ paleidimo programą naudodami įvairias parinktis.</value>
+    <value>Pritaikyti „Vargostrap“ paleidimo programą naudodami įvairias parinktis.</value>
   </data>
   <data name="Menu.Appearance.CustomisationTitle.Description" xml:space="preserve">
     <value>Tekstas, kuris rodomas kaip paleidimo programos pavadinimas.</value>
@@ -598,16 +598,16 @@ Ar norite atnaujinti šiuo metu įdiegtą versiją?</value>
     <value>Pavadinimas</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Nustatykite, kaip turėtų atrodyti „Froststrap“.</value>
+    <value>Nustatykite, kaip turėtų atrodyti „Vargostrap“.</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Title" xml:space="preserve">
     <value>Programėlių temos</value>
   </data>
   <data name="Menu.Appearance.Custom.Theme.Description" xml:space="preserve">
-    <value>Lengvai pritaikykite „Froststrap“ temas naudodami iš anksto nustatytus šablonus arba sukurkite savo unikalų stilių.</value>
+    <value>Lengvai pritaikykite „Vargostrap“ temas naudodami iš anksto nustatytus šablonus arba sukurkite savo unikalų stilių.</value>
   </data>
   <data name="Menu.Appearance.Icon.Description" xml:space="preserve">
-    <value>Pasirinkite, kokią piktogramą turėtų naudoti „Froststrap“.</value>
+    <value>Pasirinkite, kokią piktogramą turėtų naudoti „Vargostrap“.</value>
   </data>
   <data name="Menu.Appearance.Icon.Title" xml:space="preserve">
     <value>Piktograma</value>
@@ -625,10 +625,10 @@ Ar norite atnaujinti šiuo metu įdiegtą versiją?</value>
     <value>Išvaizda</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>„Froststrap“ paleidus „Roblox“ automatiškai patikrins ir atnaujins save iki stabilios versijos.</value>
+    <value>„Vargostrap“ paleidus „Roblox“ automatiškai patikrins ir atnaujins save iki stabilios versijos.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Automatiškai atnaujinti „Froststrap“</value>
+    <value>Automatiškai atnaujinti „Vargostrap“</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Apsaugo nuo esamo žaidimo uždarymo, jei netyčia paleidžiate kitą „Roblox“ instanciją.</value>
@@ -637,7 +637,7 @@ Ar norite atnaujinti šiuo metu įdiegtą versiją?</value>
     <value>Instancijos paleidimo patvirtinimas</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Nustatykite, ką „Froststrap“ turėtų daryti paleidžiant „Roblox“.</value>
+    <value>Nustatykite, ką „Vargostrap“ turėtų daryti paleidžiant „Roblox“.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Kitas paleidimas bus susijęs su „Roblox“ švariu įdiegimu.</value>
@@ -655,7 +655,7 @@ Ar norite atnaujinti šiuo metu įdiegtą versiją?</value>
     <value>Įrašas su šiuo vėliavos pavadinimu jau egzistuoja.</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
-    <value>„Froststrap“ valiklis</value>
+    <value>„Vargostrap“ valiklis</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
     <value>Automatiškai ištrina senus duomenis, kad atlaisvintų vietos. Sukūrė Fishstrap.</value>
@@ -814,7 +814,7 @@ Daugiau informacijos:
     <value>Panašu į darbalaukį</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Leidžia „Froststrap“ nustatyti, kokį „Roblox“ žaidimą žaidžiate. Tam tikroms funkcijoms tai gali būti būtina.</value>
+    <value>Leidžia „Vargostrap“ nustatyti, kokį „Roblox“ žaidimą žaidžiate. Tam tikroms funkcijoms tai gali būti būtina.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Įjungti veiklos stebėjimą</value>
@@ -892,7 +892,7 @@ Daugiau informacijos:
     <value>Nustatymai išsaugoti!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>„Froststrap“ nustatymai</value>
+    <value>„Vargostrap“ nustatymai</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Pasirinkite pageidaujamą kalbą</value>
@@ -914,7 +914,7 @@ Kai kurie tekstai gali būti neišversti į pasirinktą kalbą.</value>
     <value>Nustato fiksuotą grafikos kokybės lygį. Pastaba: įjungus šį nustatymą, „Roblox“ meniu esantis grafikos slankiklis turės įtakos tik vaizdo atkūrimo atstumui žaidime.</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Leisti „Froststrap“ valdyti „FastFlags“</value>
+    <value>Leisti „Vargostrap“ valdyti „FastFlags“</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Išjungus šią parinktį, čia nustatyti parametrai nebus pritaikyti „Roblox“ sistemoje.</value>
@@ -944,7 +944,7 @@ Kai kurie tekstai gali būti neišversti į pasirinktą kalbą.</value>
     <value>Pašalina „Roblox“ numatytąsias žolės tekstūras. Pastaba: šis nustatymas neturi įtakos atskiruose žaidimuose naudojamoms pasirinktinėms žolės tekstūroms.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>„Froststrap“ negali atsisiųsti „Roblox“</value>
+    <value>„Vargostrap“ negali atsisiųsti „Roblox“</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Šiuo metu „Roblox“ atsisiųsti negalima. Daugiau informacijos rasite šiame pagalbos puslapyje: {0}</value>
@@ -954,7 +954,7 @@ Kai kurie tekstai gali būti neišversti į pasirinktą kalbą.</value>
     <value>Importuoti iš failo</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Šio paleidimo metu žurnalo failas nebus įrašytas, nes „Froststrap“ negali įrašyti į aplanką „{0}“</value>
+    <value>Šio paleidimo metu žurnalo failas nebus įrašytas, nes „Vargostrap“ negali įrašyti į aplanką „{0}“</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Numatytasis</value>
@@ -972,22 +972,22 @@ Kai kurie tekstai gali būti neišversti į pasirinktą kalbą.</value>
     <value>Darbalaukio piktograma</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Pašalinti „Froststrap“</value>
+    <value>Pašalinti „Vargostrap“</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Pašalinus programą, „Froststrap“ bus pašalinta iš jūsų sistemos, o numatytasis „Roblox“ paleidimo programa bus automatiškai perkonfigūruota, jei ji vis dar yra įdiegta.
+    <value>Pašalinus programą, „Vargostrap“ bus pašalinta iš jūsų sistemos, o numatytasis „Roblox“ paleidimo programa bus automatiškai perkonfigūruota, jei ji vis dar yra įdiegta.
 
 Jei pašalinate ar iš naujo diegiate programą dėl problemų su „Roblox“, pirmiausia perskaitykite [šį pagalbos puslapį]({0}).
 
-Pašalinimo procesas gali nepašalinti visų likusių failų, todėl gali tekti rankiniu būdu išvalyti likusius failus iš vietos, kurioje buvo įdiegta „Froststrap“.
+Pašalinimo procesas gali nepašalinti visų likusių failų, todėl gali tekti rankiniu būdu išvalyti likusius failus iš vietos, kurioje buvo įdiegta „Vargostrap“.
 
-„Froststrap“ buvo įdiegta „{1}“.</value>
+„Vargostrap“ buvo įdiegta „{1}“.</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Išsaugoti mano nustatymus ir modifikacijas</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Jie bus išsaugoti toje vietoje, kurioje buvo įdiegta „Froststrap“, ir bus automatiškai atkurti ją įdiegus iš naujo.</value>
+    <value>Jie bus išsaugoti toje vietoje, kurioje buvo įdiegta „Vargostrap“, ir bus automatiškai atkurti ją įdiegus iš naujo.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Pašalinti</value>
@@ -999,7 +999,7 @@ Pašalinimo procesas gali nepašalinti visų likusių failų, todėl gali tekti 
     <value>Šiuo metu jūsų kompiuteryje nėra įdiegta „WebView2“ vykdymo aplinka. Be jos kai kurios „Roblox“ funkcijos, pavyzdžiui, darbalaukio programa, neveiks tinkamai. Ar norite ją atsisiųsti dabar?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>„Froststrap“ nepavyko sukurti nuorodų darbalaukyje ir „Pradžios“ meniu. Pabandykite jas sukurti vėliau per nustatymus.</value>
+    <value>„Vargostrap“ nepavyko sukurti nuorodų darbalaukyje ir „Pradžios“ meniu. Pabandykite jas sukurti vėliau per nustatymus.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Pirmiausia patikrinkite [„Froststrap Wiki“]({0}), ar ši problema jau buvo išspręsta.
@@ -1008,7 +1008,7 @@ Jei ne, prašome apie šią išimtį pranešti šio „forko“ prižiūrėtojam
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Nustatykite, kaip „Froststrap“ galima lengvai paleisti.</value>
+    <value>Nustatykite, kaip „Vargostrap“ galima lengvai paleisti.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Bendrieji reikalavimai</value>
@@ -1035,14 +1035,14 @@ Jei ne, prašome apie šią išimtį pranešti šio „forko“ prižiūrėtojam
     <value>Prašome palaukti, kol bus baigtas programos pašalinimas.</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Apie „Froststrap“</value>
+    <value>Apie „Vargostrap“</value>
   </data>
   <data name="About.Licenses.Title" xml:space="preserve">
     <value>Licencijos</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Jūsų paleista „Froststrap“ versija yra senesnė už šiuo metu įdiegtą versiją.
+    <value>Jūsų paleista „Vargostrap“ versija yra senesnė už šiuo metu įdiegtą versiją.
 Gali kilti problemų, o jūsų nustatymai gali būti pakeisti. Rekomenduojama iš naujo įdiegti programą.
 Ar tikrai norite tęsti?</value>
   </data>
@@ -1055,7 +1055,7 @@ Ar tikrai norite tęsti?</value>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Norėdami sužinoti, kodėl taip gali nutikti ir kaip šią problemą išspręsti, perskaitykite [šį pagalbos straipsnį]({0}).
 
-Patikrinkite, ar „Roblox“ veikia naudojant [originalią paleidimo programą]({1}). Jei neveikia, tai nėra „Froststrap“ problema. Jei veikia, kreipkitės į pagalbos straipsnį.</value>
+Patikrinkite, ar „Roblox“ veikia naudojant [originalią paleidimo programą]({1}). Jei neveikia, tai nėra „Vargostrap“ problema. Jei veikia, kreipkitės į pagalbos straipsnį.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Įkeliama, prašome palaukti...</value>
@@ -1085,7 +1085,7 @@ Patikrinkite, ar „Roblox“ veikia naudojant [originalią paleidimo programą]
     <value>Šio paleidimo metu „Roblox“ nebus tikrinama, ar yra atnaujinimų, o modifikacijų pakeitimai nebus pritaikyti.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Kadangi reikia įdiegti arba atnaujinti „Roblox“, „Froststrap“ negali tęsti veikimo.</value>
+    <value>Kadangi reikia įdiegti arba atnaujinti „Roblox“, „Vargostrap“ negali tęsti veikimo.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Nėra prieinama</value>
@@ -1097,7 +1097,7 @@ Patikrinkite, ar „Roblox“ veikia naudojant [originalią paleidimo programą]
     <value>Nustatykite programos parametrus, pavyzdžiui, DPI mastelio keitimo elgseną ir [visos ekrano optimizacijas]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>„Roblox“ dar nėra įdiegtas. Prieš bandydami naudotis šia parinktimi, bent kartą paleiskite „Roblox“ naudodami „Froststrap“.</value>
+    <value>„Roblox“ dar nėra įdiegtas. Prieš bandydami naudotis šia parinktimi, bent kartą paleiskite „Roblox“ naudodami „Vargostrap“.</value>
   </data>
   <data name="Bootstrapper.JsonManagerSaveFailed" xml:space="preserve">
     <value>Nepavyko išsaugoti {0}: {1}</value>
@@ -1112,10 +1112,10 @@ Patikrinkite, ar „Roblox“ veikia naudojant [originalią paleidimo programą]
     <value>Išgauti „Roblox“ piktogramas į aplanką</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Leidžia naudoti „Froststrap“ siūlomą „Roblox“ piktogramų rinkinį savo nuorodoms. [Sužinokite, kaip.]({0})</value>
+    <value>Leidžia naudoti „Vargostrap“ siūlomą „Roblox“ piktogramų rinkinį savo nuorodoms. [Sužinokite, kaip.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>„Froststrap“ negali įrašyti duomenų į „Windows“ registrą. Tikėtina, kad tai trukdo antivirusinė programa ir sukelia problemų. Prašome patikrinti, ar nėra nieko, kas galėtų riboti „Froststrap“ veikimą.</value>
+    <value>„Vargostrap“ negali įrašyti duomenų į „Windows“ registrą. Tikėtina, kad tai trukdo antivirusinė programa ir sukelia problemų. Prašome patikrinti, ar nėra nieko, kas galėtų riboti „Vargostrap“ veikimą.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Atkurti visus numatytuosius nustatymus</value>
@@ -1162,7 +1162,7 @@ Ar norite įjungti bandymo režimą?</value>
     <comment>Currently used under the "Froststrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Menu.Channel.Description" xml:space="preserve">
-    <value>Pakeiskite „Roblox“ ir „Froststrap“ diegimo ir įdiegimo nustatymus.</value>
+    <value>Pakeiskite „Roblox“ ir „Vargostrap“ diegimo ir įdiegimo nustatymus.</value>
   </data>
   <data name="Common.Version" xml:space="preserve">
     <value>Versija</value>
@@ -1193,7 +1193,7 @@ Ar norite įjungti bandymo režimą?</value>
     <value>Atsiprašau</value>
   </data>
   <data name="Dialog.Bloxshade.Setting" xml:space="preserve">
-    <value>„Froststrap“ nebepralaiko „Bloxshade“.
+    <value>„Vargostrap“ nebepralaiko „Bloxshade“.
 Norėdami gauti daugiau informacijos, prisijunkite prie „Bloxshade“ „Discord“ serverio.</value>
   </data>
   <data name="Common.Profiles" xml:space="preserve">
@@ -1219,7 +1219,7 @@ Ar norite pereiti prie numatytojo kanalo ({1})?</value>
     <value>Automatinis kanalų perjungimas</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
-    <value>„Roblox“ arba „Froststrap“ gali bandyti pakeisti jūsų pasirinktą kanalą.</value>
+    <value>„Roblox“ arba „Vargostrap“ gali bandyti pakeisti jūsų pasirinktą kanalą.</value>
   </data>
   <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
     <value>Keisti automatiškai</value>
@@ -1301,10 +1301,10 @@ Ar norite pakeisti numatytąjį kanalą į {0}?</value>
     <value>Neleiskite „Roblox“ pakeisti bendrųjų nustatymų.</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Title" xml:space="preserve">
-    <value>„Froststrap“ paskyros leidimai</value>
+    <value>„Vargostrap“ paskyros leidimai</value>
   </data>
   <data name="Menu.Behaviour.AllowCookieAccess.Description" xml:space="preserve">
-    <value>Suteikia prieigą prie „Roblox“ API naudodamas jūsų autentifikavimo slapuką. [Prie ko „Froststrap“ turės prieigą?]({0})</value>
+    <value>Suteikia prieigą prie „Roblox“ API naudodamas jūsų autentifikavimo slapuką. [Prie ko „Vargostrap“ turės prieigą?]({0})</value>
   </data>
   <data name="Menu.Appearance.WindowsBackdrop.Title" xml:space="preserve">
     <value>Langų fonas</value>
@@ -1376,13 +1376,13 @@ Ar norite pakeisti numatytąjį kanalą į {0}?</value>
     <value>Veiksmas dvigubai spustelėjus</value>
   </data>
   <data name="Menu.Integrations.DoubleClickAction.Description" xml:space="preserve">
-    <value>Paleidžiant „Roblox“, dvigubai spustelėjus „Froststrap“ piktogramą sisteminiame dėkle, atidaromas tam tikras langas.</value>
+    <value>Paleidžiant „Roblox“, dvigubai spustelėjus „Vargostrap“ piktogramą sisteminiame dėkle, atidaromas tam tikras langas.</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Title" xml:space="preserve">
-    <value>„Froststrap“ RPC</value>
+    <value>„Vargostrap“ RPC</value>
   </data>
   <data name="Menu.Integrations.FroststrapRPC.Description" xml:space="preserve">
-    <value>Įjunkite šią funkciją, kad, kol programa yra atidaryta, jūsų „Discord“ profilyje būtų rodomas pasirinktinis RPC „Playing Froststrap“.</value>
+    <value>Įjunkite šią funkciją, kad, kol programa yra atidaryta, jūsų „Discord“ profilyje būtų rodomas pasirinktinis RPC „Playing Vargostrap“.</value>
   </data>
   <data name="Menu.Integrations.CustomStatusDisplay.Title" xml:space="preserve">
     <value>Pasirinktinis būsenos rodymas</value>
@@ -1457,10 +1457,10 @@ Ar norite pakeisti numatytąjį kanalą į {0}?</value>
     <value>Bendruomenės moderatoriai</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
-    <value>„Froststrap“ žurnalai</value>
+    <value>„Vargostrap“ žurnalai</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
-    <value>„Froststrap“ žurnalai bus ištrinti.</value>
+    <value>„Vargostrap“ žurnalai bus ištrinti.</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.FollowUser" xml:space="preserve">
     <value>Atrodo, kad vienas iš draugų šiuo metu žaidžia šį žaidimą. Ar nori prisijungti prie jo?</value>
@@ -1469,7 +1469,7 @@ Ar norite pakeisti numatytąjį kanalą į {0}?</value>
     <value>Įjunkite „BetterMatchmaking“</value>
   </data>
   <data name="Menu.Bootstrapper.Experimental.BetterMatchmaking.Description" xml:space="preserve">
-    <value>Leiskite „Froststrap“ nuspręsti, prie kokių serverių prisijungsite. Programa teikia pirmenybę serveriui, kuris yra arčiausiai jūsų.</value>
+    <value>Leiskite „Vargostrap“ nuspręsti, prie kokių serverių prisijungsite. Programa teikia pirmenybę serveriui, kuris yra arčiausiai jūsų.</value>
   </data>
   <data name="Menu.FastFlags.Presets.TextureQuality.Title" xml:space="preserve">
     <value>Tekstūros kokybė</value>
@@ -2050,7 +2050,7 @@ Jame turi būti bent vienas iš šių aplankų: „content“, „ExtraContent�
     <value>Išankstinių versijų atnaujinimas</value>
   </data>
   <data name="Menu.Deployment.AutoPreReleaseUpdate.Description" xml:space="preserve">
-    <value>Paleidus „Roblox“, „Froststrap“ automatiškai patikrins ir atnaujins save į bandomąją versiją.</value>
+    <value>Paleidus „Roblox“, „Vargostrap“ automatiškai patikrins ir atnaujins save į bandomąją versiją.</value>
   </data>
   <data name="Menu.TestMode.Description" xml:space="preserve">
     <value>Paleidžiant „Roblox“, automatiškai paslėpti nustatymų langą, o uždarant „Roblox“ – jį vėl atkurti.</value>
@@ -2439,7 +2439,7 @@ Ar norite įdiegti šį įskiepį?</value>
     <value>Maži serveriai</value>
   </data>
   <data name="Menu.RegionSelector.LoginRequired" xml:space="preserve">
-    <value>Prisijunkite naudodami paskyros tvarkyklę, įjunkite „Froststrap Account Permission“ arba apie tai praneškite mūsų „Discord“ serveryje, kad galėtumėte naudotis šia funkcija.</value>
+    <value>Prisijunkite naudodami paskyros tvarkyklę, įjunkite „Vargostrap Account Permission“ arba apie tai praneškite mūsų „Discord“ serveryje, kad galėtumėte naudotis šia funkcija.</value>
   </data>
   <data name="Menu.RegionSelector.EnterPlaceId" xml:space="preserve">
     <value>Įveskite vietos ID ir spustelėkite „Ieškoti“, kad peržiūrėtumėte serverius.</value>

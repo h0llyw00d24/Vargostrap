@@ -72,7 +72,7 @@ SPDX-License-Identifier: MPL-2.0
             <TextBlock
                 FontSize="20"
                 FontWeight="Bold"
-                Text="Froststrap"
+                Text="Vargostrap"
                 Margin="0,10,0,0"
                 />
 
@@ -173,7 +173,7 @@ SPDX-License-Identifier: MPL-2.0
                                     IsVisible="{Binding IsPlayerHashChecking}" />
 
                                 <Image
-                                    Source="avares://Froststrap/Resources/MessageBox/Information.png"
+                                    Source="avares://Vargostrap/Resources/MessageBox/Information.png"
                                     Width="18"
                                     Height="18"
                                     Margin="0,0,8,0"
@@ -181,7 +181,7 @@ SPDX-License-Identifier: MPL-2.0
                                     IsVisible="{Binding IsPlayerHashValid}" />
 
                                 <Image
-                                    Source="avares://Froststrap/Resources/MessageBox/Error.png"
+                                    Source="avares://Vargostrap/Resources/MessageBox/Error.png"
                                     Width="18"
                                     Height="18"
                                     Margin="0,0,8,0"
@@ -284,7 +284,7 @@ SPDX-License-Identifier: MPL-2.0
                             Margin="0,8,0,0"
                             Orientation="Horizontal"
                             IsVisible="{Binding PlayerShowChannelWarning, Mode=OneWay}">
-                            <Image Source="avares://Froststrap/Resources/MessageBox/Warning.png"
+                            <Image Source="avares://Vargostrap/Resources/MessageBox/Warning.png"
                                    RenderOptions.BitmapInterpolationMode="HighQuality"
                                    Width="24"
                                    Height="24"/>
@@ -304,7 +304,7 @@ SPDX-License-Identifier: MPL-2.0
                             IsIndeterminate="True"
                             IsVisible="{Binding !PlayerShowLoadingError, Mode=OneWay}" />
 
-                        <Image Source="avares://Froststrap/Resources/MessageBox/FullQuality/Error.png"
+                        <Image Source="avares://Vargostrap/Resources/MessageBox/FullQuality/Error.png"
                                Grid.Column="0"
                                RenderOptions.BitmapInterpolationMode="HighQuality"
                                Margin="6"
@@ -382,7 +382,7 @@ SPDX-License-Identifier: MPL-2.0
                                     IsVisible="{Binding IsStudioHashChecking}" />
 
                                 <Image
-                                    Source="avares://Froststrap/Resources/MessageBox/Information.png"
+                                    Source="avares://Vargostrap/Resources/MessageBox/Information.png"
                                     Width="18"
                                     Height="18"
                                     Margin="0,0,8,0"
@@ -390,7 +390,7 @@ SPDX-License-Identifier: MPL-2.0
                                     IsVisible="{Binding IsStudioHashValid}" />
 
                                 <Image
-                                    Source="avares://Froststrap/Resources/MessageBox/Error.png"
+                                    Source="avares://Vargostrap/Resources/MessageBox/Error.png"
                                     Width="18"
                                     Height="18"
                                     Margin="0,0,8,0"
@@ -478,7 +478,7 @@ SPDX-License-Identifier: MPL-2.0
                             Margin="0,8,0,0"
                             Orientation="Horizontal"
                             IsVisible="{Binding StudioShowChannelWarning, Mode=OneWay}">
-                            <Image Source="avares://Froststrap/Resources/MessageBox/Warning.png"
+                            <Image Source="avares://Vargostrap/Resources/MessageBox/Warning.png"
                                    RenderOptions.BitmapInterpolationMode="HighQuality"
                                    Width="24"
                                    Height="24"/>
@@ -498,7 +498,7 @@ SPDX-License-Identifier: MPL-2.0
                             IsIndeterminate="True"
                             IsVisible="{Binding !StudioShowLoadingError, Mode=OneWay}" />
 
-                        <Image Source="avares://Froststrap/Resources/MessageBox/FullQuality/Error.png"
+                        <Image Source="avares://Vargostrap/Resources/MessageBox/FullQuality/Error.png"
                                Grid.Column="0"
                                RenderOptions.BitmapInterpolationMode="HighQuality"
                                Margin="6"
