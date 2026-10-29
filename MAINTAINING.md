@@ -24,6 +24,8 @@ Running any build registers it as the `roblox-player:` handler, replacing whiche
 2. Build the release.
 3. Create a GitHub Release for the tag and upload **everything** in `.build\velopack\`. Installed copies update themselves from the latest release (`Brand.UpdateRepository`), and Velopack needs all the files, not just Setup.exe.
 
+If `vpk` says "There is a release … equal or greater to the current version", `.build\velopack\` still holds a package of the same version. For a build you haven't published, delete that folder and rebuild. Otherwise tag a new version.
+
 ## Where things are
 
 - `Froststrap/Vargostrap/`: all Vargostrap features (namespace `Froststrap.Vargostrap`). `Brand.cs` holds the name, repo and update feed.
